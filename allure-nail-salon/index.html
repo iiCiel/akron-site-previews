@@ -3,292 +3,249 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Allure Nail Salon | Nail salon in Cuyahoga Falls, OH</title>
-<meta name="description" content="Allure Nail Salon at 2012 Chestnut Blvd, Cuyahoga Falls, OH 44223. Manicures, pedicures, gel nails, acrylic nails, dip powder, nail extensions and nail art, plus men&#39;s manicures and pedicures. Open Monday through Saturday. Call (330) 928-9204 to book.">
-<meta property="og:title" content="Allure Nail Salon">
-<meta property="og:description" content="Manicures, pedicures, gel, acrylic and dip on Chestnut Blvd in Cuyahoga Falls. Call to book.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#f5f3ee">
 <meta name="robots" content="noindex, nofollow">
+<title>Allure Nail Salon | Chestnut Blvd, Cuyahoga Falls (free preview)</title>
+<meta name="description" content="Preview page for Allure Nail Salon, 2012 Chestnut Blvd, Cuyahoga Falls, Ohio. Manicures, pedicures, gel, acrylic, dip powder, extensions and nail art. Call (330) 928-9204.">
+<meta name="theme-color" content="#11203b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Mulish:wght@400;600&display=swap">
-<style>/* Shared stylesheet. Colors and fonts come from each client's site.json via :root vars. */
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.6 var(--font);-webkit-font-smoothing:antialiased;padding-bottom:72px}
-@media (min-width:760px){body{padding-bottom:0}}
-img{max-width:100%;display:block}
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Lexend:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#11203b;
+  --ink2:#1b2e50;
+  --shell:#f4d9d4;
+  --shell2:#ecc3bd;
+  --tip:#fffaf6;
+  --rasp:#b8325a;
+  --gold:#c9a45c;
+  --mute:#cfd6e6;
+  --serif:'Marcellus',Georgia,serif;
+  --sans:'Lexend',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--tip);-webkit-text-size-adjust:100%;overflow-x:hidden}
 a{color:inherit}
-h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0 0 .6em;letter-spacing:-.01em}
-h2{font-size:clamp(1.8rem,5vw,2.6rem)}
-svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
-.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--rasp);outline-offset:3px}
+.demo-bar{background:var(--ink);color:#dfe5f2;font-size:.9375rem;text-align:center;padding:.6rem 1rem;line-height:1.35}
+.demo-bar a{color:var(--gold);font-weight:600}
+.wrap{max-width:1160px;margin:0 auto;padding:0 1.5rem}
+h1,h2{font-family:var(--serif);font-weight:400;line-height:1.08;text-wrap:balance}
+p{text-wrap:pretty}
 
-.demo-bar{background:var(--accent);color:var(--accent-text);text-align:center;font-size:.8rem;font-weight:600;padding:6px 16px}
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 1.6rem;border-radius:999px;font-weight:600;font-size:1.0625rem;text-decoration:none;border:2px solid transparent;white-space:nowrap}
+.btn-call{background:var(--rasp);color:#fff}
+.btn-call:hover{background:#9c2849}
+.btn-line{border-color:var(--ink);color:var(--ink);background:transparent}
+.btn-line:hover{background:var(--ink);color:var(--tip)}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.btn-gold:hover{background:#dbb870}
 
-.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.top-in{display:flex;align-items:center;gap:16px;height:60px}
-.logo{min-width:0;font-family:var(--display);text-decoration:none;font-size:1.1rem;margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{display:none;gap:24px}
-.top nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
-.top nav a:hover{color:var(--text)}
-@media (min-width:760px){.top nav{display:flex}}
+/* hero */
+.hero{background:var(--shell);position:relative;padding:3.5rem 0 5.5rem}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:2rem;align-items:center}
+.hero h1{font-size:clamp(2.6rem,5.4vw,4.6rem);letter-spacing:-.01em}
+.hero p.lede{margin-top:1.4rem;max-width:30rem;font-size:1.1875rem}
+.hero .acts{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.hero .meta{margin-top:1.8rem;font-size:.9875rem;color:#3a4766}
+.hero .meta b{font-weight:600;color:var(--ink)}
+.nails{width:100%;max-width:470px;justify-self:end;height:auto;display:block}
+.gloss{animation:gloss 2.4s ease-out .5s 1 both}
+@keyframes gloss{from{transform:translateX(-140px);opacity:0}30%{opacity:1}to{transform:translateX(0);opacity:1}}
 
-.btn{display:inline-flex;align-items:center;gap:.5em;background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:.85em 1.4em;border-radius:999px;min-height:48px;transition:transform .15s,filter .15s}
-.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.btn-sm{padding:.55em 1.1em;min-height:40px;font-size:.9rem;white-space:nowrap;flex:none}
-.btn-ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--text) 30%,transparent)}
+/* smile-line dividers */
+.smile{position:absolute;left:0;right:0;top:-1px;height:70px;width:100%;display:block}
+.sec{position:relative}
 
-.hero{position:relative;padding:72px 0 64px;overflow:hidden;
-  background:
-    linear-gradient(180deg,transparent 40%,var(--bg)),
-    var(--hero-img,none) center/cover,
-    repeating-linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,transparent) 0 18px,transparent 18px 36px),
-    var(--bg)}
-.hero::after{content:"";position:absolute;inset:0;background:color-mix(in srgb,var(--bg) 55%,transparent);z-index:0}
-.hero-in{position:relative;z-index:1}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:var(--accent);margin:0 0 14px}
-.hero h1{font-size:clamp(2.6rem,11vw,5.6rem)}
-.lede{font-size:1.15rem;color:var(--muted);max-width:34ch;margin:0 0 28px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.status{margin:22px 0 0;font-weight:600;color:var(--muted);min-height:1.6em;display:flex;align-items:center;gap:8px}
-.dot{width:10px;height:10px;border-radius:50%;background:#c2524a;display:inline-block}
-.dot.open{background:#4caf6e;box-shadow:0 0 0 4px rgba(76,175,110,.2)}
-@media (min-width:760px){.hero{padding:120px 0 100px}}
+/* services */
+.services{background:var(--ink);color:var(--tip);padding:7.5rem 0 5rem}
+.services .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:3.5rem;align-items:stretch}
+.services .intro{display:flex;flex-direction:column;justify-content:space-between;gap:2rem}
+.services h2{font-size:clamp(2.1rem,4vw,3.3rem)}
+.services .intro p{margin-top:1.1rem;color:var(--mute);max-width:24rem}
+.services .intro .btn{align-self:flex-start;margin-top:1.6rem}
+.moon{width:210px;height:auto;display:block}
+.list{list-style:none;display:grid;grid-template-columns:1fr 1fr;column-gap:2.5rem}
+.list li{display:grid;grid-template-columns:22px 1fr;gap:.9rem;align-items:start;padding:1.1rem 0;min-height:84px;border-top:1px solid rgba(255,250,246,.22)}
+.list li:nth-last-child(-n+2){border-bottom:1px solid rgba(255,250,246,.22)}
+.list svg{width:22px;height:22px;margin-top:.15rem}
+.list strong{display:block;font-family:var(--serif);font-size:1.3rem;font-weight:400;line-height:1.25}
+.list span{display:block;margin-top:.15rem;color:var(--mute);font-size:.9625rem;line-height:1.5}
 
-.section{padding:64px 0}
-.section.alt{background:var(--surface)}
-.svc-list{list-style:none;padding:0;margin:0;display:grid;gap:4px 48px}
-@media (min-width:760px){.svc-list{grid-template-columns:1fr 1fr}}
-.svc{padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.svc-top{display:flex;align-items:baseline;gap:10px}
-.svc h3{font-family:var(--font);font-weight:800;font-size:1.1rem;margin:0}
-.dots{flex:1;border-bottom:2px dotted color-mix(in srgb,var(--text) 25%,transparent);transform:translateY(-4px)}
-.svc strong{color:var(--accent);font-size:1.15rem}
-.svc p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
-.dur{white-space:nowrap}
-.note{color:var(--muted);font-size:.85rem;margin-top:20px}
-.menu-section{font-family:var(--display);font-size:1.3rem;color:var(--accent);margin:36px 0 4px;text-transform:uppercase;letter-spacing:.06em}
-.menu-section:first-of-type{margin-top:8px}
+/* visit */
+.visit{background:var(--shell);padding:8rem 0 5.5rem}
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:stretch}
+.card{border-radius:28px;padding:2.2rem 2.2rem 2rem}
+.hours{background:var(--tip)}
+.hours h2,.where h2{font-size:clamp(1.9rem,3.2vw,2.6rem);margin-bottom:1.2rem}
+.hours dl{display:grid;grid-template-columns:auto 1fr}
+.hours dt,.hours dd{padding:.9rem 0;border-bottom:1px solid #ead9d4}
+.hours dt{font-weight:500}
+.hours dd{text-align:right}
+.hours dt:last-of-type,.hours dd:last-of-type{border-bottom:0}
+.hours .closed{color:#6b6f80}
+.hours .today{color:var(--rasp);font-weight:600}
+.where{background:var(--ink);color:var(--tip);display:flex;flex-direction:column}
+.where address{font-style:normal;font-size:1.25rem;line-height:1.5;font-family:var(--serif);font-weight:400}
+.where .tel{display:block;margin-top:1.4rem;font-family:var(--serif);font-weight:400;font-size:2rem;color:var(--gold);text-decoration:none;line-height:1.1}
+.where p.note{margin-top:1.1rem;color:var(--mute)}
+.where .acts{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:auto;padding-top:1.8rem}
+.where .arc{width:100%;max-width:340px;height:auto;margin:1.6rem 0 0;display:block}
 
-.two-col{display:grid;gap:48px}
-@media (min-width:860px){.two-col{grid-template-columns:1fr 1fr;align-items:start}}
-.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
-.chips li{border:1px solid color-mix(in srgb,var(--accent) 50%,transparent);color:var(--accent);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600}
-.one-col{max-width:720px}
-.reviews{display:grid;gap:16px;align-content:start}
-.rating{display:flex;align-items:center;gap:10px;text-decoration:none;background:var(--bg);border-radius:16px;padding:18px 22px;border-left:4px solid var(--accent)}
-.rating svg{width:28px;height:28px;color:var(--accent)}
-.rating strong{font-family:var(--display);font-size:1.8rem;line-height:1}
-.rating span{color:var(--muted);font-size:.9rem}
-.review{margin:0;background:var(--bg);border-radius:16px;padding:20px 22px;border-left:4px solid var(--accent)}
-.review blockquote{margin:0 0 8px;font-size:1.05rem}
-.review figcaption{color:var(--muted);font-size:.85rem}
+footer{background:var(--ink);color:var(--mute);padding:2.6rem 0 3rem;font-size:.9875rem;position:relative}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1rem 2.5rem;justify-content:space-between;align-items:center}
+footer b{font-family:var(--serif);font-size:1.3rem;color:var(--tip);font-weight:400}
+footer a{color:var(--gold)}
 
-.grid-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;padding:8px 0}
-.grid-g img{aspect-ratio:1;object-fit:cover;border-radius:10px}
-
-.hours{width:100%;border-collapse:collapse}
-.hours th,.hours td{text-align:left;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.hours th{font-weight:600}
-.hours td{text-align:right;color:var(--muted)}
-.hours tr.today th,.hours tr.today td{color:var(--accent);font-weight:800}
-address{font-style:normal;display:grid;gap:10px;margin-bottom:20px}
-address a{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600}
-address a:hover{color:var(--accent)}
-.map{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--surface)}
-.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
-
-.book-band{background:var(--accent);color:var(--accent-text)}
-.band-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
-.band-in h2{margin:0}
-.book-band .btn{background:var(--accent-text);color:var(--accent)}
-
-.foot{padding:28px 0;color:var(--muted);font-size:.88rem}
-.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-.foot p{margin:0}
-.socials{display:flex;gap:16px}
-
-.mobile-bar{position:fixed;inset:auto 0 0 0;z-index:30;display:grid;grid-template-columns:1fr 1.3fr 1fr;background:var(--surface);border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent);padding-bottom:env(safe-area-inset-bottom)}
-.mobile-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;text-decoration:none;font-size:.78rem;font-weight:700}
-.mobile-bar a.primary{background:var(--accent);color:var(--accent-text)}
-.mobile-bar svg{width:22px;height:22px}
-@media (min-width:760px){.mobile-bar{display:none}}
-
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+.callbar{display:none}
+@media (max-width:860px){
+  .hero{padding:2.4rem 0 5.5rem}
+  .hero .wrap,.services .wrap,.visit .wrap{grid-template-columns:1fr}
+  .hero .wrap{gap:1.6rem}
+  .nails{justify-self:center;max-width:340px}
+  .services{padding:6rem 0 3.5rem}
+  .services .wrap{gap:2rem}
+  .moon{display:none}
+  .list{grid-template-columns:1fr}
+  .list li:nth-last-child(2){border-bottom:0}
+  .visit{padding:6rem 0 5rem}
+  .smile{height:38px}
+  .card{padding:1.7rem 1.4rem}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--ink);border-top:3px solid var(--gold);padding:.6rem .9rem calc(.6rem + env(safe-area-inset-bottom));gap:.75rem;align-items:center;justify-content:space-between;box-shadow:0 -8px 18px rgba(0,0,0,.3)}
+  .callbar span{color:var(--mute);font-size:1rem;line-height:1.2}
+  .callbar a{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 1.4rem;background:var(--rasp);color:#fff;font-weight:600;font-size:1.1rem;text-decoration:none;border-radius:999px;white-space:nowrap}
+  footer{padding-bottom:6rem}
+}
+@media (max-width:420px){
+  .wrap{padding:0 1.15rem}
+  .btn{padding:0 1.2rem}
+  .hero .acts .btn{flex:1 1 100%}
+  .where .tel{font-size:1.7rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .gloss{animation:none}
+}
 </style>
-<style>:root{--bg:#f5f3ee;--surface:#e3ebe7;--text:#13241f;--muted:#4a5d57;--accent:#1d5f55;--accent-text:#ffffff;--font:'Mulish', system-ui, sans-serif;--display:'Marcellus', Georgia, serif}</style>
-
 </head>
 <body>
 <div class="demo-bar">Free preview made for Allure Nail Salon by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
-<header class="top">
-  <div class="wrap top-in">
-    <a class="logo" href="#top">Allure Nail Salon</a>
-    <nav aria-label="Main"><a href="#services">Services</a><a href="#hours">Hours</a><a href="#visit">Visit</a></nav>
-    <a class="btn btn-sm" href="tel:3309289204">Call to book</a>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Polished nails, right on Chestnut Blvd.</h1>
+      <p class="lede">Manicures, pedicures, gel, acrylic and dip powder in Cuyahoga Falls, for women and men. Call to book a time.</p>
+      <div class="acts">
+        <a class="btn btn-call" href="tel:+13309289204">Call (330) 928-9204</a>
+        <a class="btn btn-line" href="#visit">See hours</a>
+      </div>
+      <p class="meta"><b>Open Monday to Saturday</b></p>
+    </div>
+
+    <svg class="nails" viewBox="0 0 470 520" role="img" aria-label="Three drawn nails: a French tip, a navy round nail and a raspberry almond nail, each with a pale half-moon at the base">
+      <defs>
+        <clipPath id="nA"><path d="M150 500 C132 500 128 488 128 470 L128 150 C128 70 170 20 235 20 C300 20 342 70 342 150 L342 470 C342 488 338 500 320 500 Z"/></clipPath>
+        <clipPath id="nB"><path d="M18 500 C6 500 4 492 4 480 L4 290 C4 232 32 200 70 200 C108 200 136 232 136 290 L136 480 C136 492 134 500 122 500 Z"/></clipPath>
+        <clipPath id="nC"><path d="M348 500 C336 500 334 492 334 480 L334 330 C334 270 372 190 406 150 C440 190 466 270 466 330 L466 480 C466 492 464 500 452 500 Z"/></clipPath>
+        <linearGradient id="sheen" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+      </defs>
+      <!-- centre: French tip -->
+      <g clip-path="url(#nA)">
+        <rect x="100" y="0" width="270" height="520" fill="#f9c9c8"/>
+        <path d="M100 0 H370 V170 Q235 262 100 170 Z" fill="#fffaf6"/>
+        <ellipse cx="235" cy="506" rx="92" ry="82" fill="#fffaf6"/><ellipse cx="235" cy="524" rx="74" ry="66" fill="#f9c9c8"/>
+        <g class="gloss"><rect x="150" y="30" width="26" height="430" rx="13" fill="url(#sheen)" transform="skewX(-6)"/></g>
+      </g>
+      <!-- left: navy round -->
+      <g clip-path="url(#nB)">
+        <rect x="0" y="180" width="140" height="340" fill="#11203b"/>
+        <ellipse cx="70" cy="508" rx="50" ry="46" fill="#5a6d98"/><ellipse cx="70" cy="524" rx="38" ry="34" fill="#11203b"/>
+        <rect x="22" y="236" width="14" height="210" rx="7" fill="#fff" opacity=".22"/>
+      </g>
+      <!-- right: raspberry almond -->
+      <g clip-path="url(#nC)">
+        <rect x="330" y="140" width="140" height="380" fill="#b8325a"/>
+        <ellipse cx="400" cy="508" rx="50" ry="46" fill="#f0b4c6"/><ellipse cx="400" cy="524" rx="38" ry="34" fill="#b8325a"/>
+        <rect x="354" y="290" width="12" height="160" rx="6" fill="#fff" opacity=".28"/>
+      </g>
+      <!-- skin line -->
+      <path d="M0 505 H470" stroke="#c9a45c" stroke-width="3"/>
+    </svg>
   </div>
 </header>
 
-<main id="top">
-  <section class="hero">
-    <div class="wrap hero-in">
-      <p class="eyebrow">Nail salon · Chestnut Blvd, Cuyahoga Falls</p>
-      <h1>Polished nails,<br>right on Chestnut Blvd.</h1>
-      <p class="lede">Manicures, pedicures, gel, acrylic and dip on Chestnut Blvd in Cuyahoga Falls. Call to book.</p>
-      <div class="cta-row">
-        <a class="btn" href="tel:3309289204"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call to book</a>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=2012%20Chestnut%20Blvd%2C%20Cuyahoga%20Falls%2C%20OH%2044223" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Directions</a>
-      </div>
-      <p class="status" id="open-status" aria-live="polite"></p>
-    </div>
-  </section>
-
-  <section id="services" class="section">
-    <div class="wrap">
-      <h2>Services</h2>
-      <ul class="svc-list">
-        <li class="svc">
-          <div class="svc-top"><h3>Manicures</h3></div>
-          <p>Classic manicures, or pair one with a pedicure.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Pedicures</h3></div>
-          
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Gel nails</h3></div>
-          <p>Gel polish and gel extensions.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Acrylic nails</h3></div>
-          
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Dip powder</h3></div>
-          
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Nail extensions</h3></div>
-          
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Nail art</h3></div>
-          <p>Designs and details. Ask when you book.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Men&#39;s manicures &amp; pedicures</h3></div>
-          
-        </li></ul>
-      <p class="note">Call (330) 928-9204 for current prices and openings.</p>
-    </div>
-  </section>
-
-  <section class="section alt">
-    <div class="wrap one-col">
+<main>
+<section class="sec services" id="services">
+  <svg class="smile" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H1440 Q720 140 0 0 Z" fill="#f4d9d4"/></svg>
+  <div class="wrap">
+    <div class="intro">
       <div>
-        <h2>Your neighborhood nail salon.</h2>
-        <p>Allure Nail Salon is at 2012 Chestnut Blvd in Cuyahoga Falls. Come in Monday through Saturday for manicures, pedicures, gel, acrylic, dip powder, extensions and nail art, for women and men. Call (330) 928-9204 to book a time.</p>
-        <ul class="chips"><li>Open from 8am Tuesday to Friday</li><li>Saturdays 8am to 2pm</li><li>Men&#39;s manicures and pedicures too</li><li>Call to book</li></ul>
+        <h2>Manicures to nail art.</h2>
+        <p>Call (330) 928-9204 for current prices and openings.</p>
+        <a class="btn btn-gold" href="tel:+13309289204">Call to book</a>
       </div>
-      
+      <svg class="moon" viewBox="0 0 150 150" aria-hidden="true"><defs><mask id="mn"><rect width="150" height="150" fill="#fff"/><circle cx="92" cy="62" r="52" fill="#000"/></mask></defs><circle cx="75" cy="75" r="62" fill="#c9a45c" mask="url(#mn)"/></svg>
     </div>
-  </section>
-  
 
-  <section id="hours" class="section">
-    <div class="wrap two-col">
-      <div>
-        <h2>Hours</h2>
-        <table class="hours"><tbody>
-        <tr data-day="1" data-slots="08:30-19:00-7pm">
-          <th scope="row">Monday</th>
-          <td>8:30am – 7pm</td>
-        </tr>
-        <tr data-day="2" data-slots="08:00-19:00-7pm">
-          <th scope="row">Tuesday</th>
-          <td>8am – 7pm</td>
-        </tr>
-        <tr data-day="3" data-slots="08:00-19:00-7pm">
-          <th scope="row">Wednesday</th>
-          <td>8am – 7pm</td>
-        </tr>
-        <tr data-day="4" data-slots="08:00-19:00-7pm">
-          <th scope="row">Thursday</th>
-          <td>8am – 7pm</td>
-        </tr>
-        <tr data-day="5" data-slots="08:00-19:00-7pm">
-          <th scope="row">Friday</th>
-          <td>8am – 7pm</td>
-        </tr>
-        <tr data-day="6" data-slots="08:00-14:00-2pm">
-          <th scope="row">Saturday</th>
-          <td>8am – 2pm</td>
-        </tr>
-        <tr data-day="0" data-slots="">
-          <th scope="row">Sunday</th>
-          <td>Closed</td>
-        </tr></tbody></table>
-      </div>
-      <div id="visit">
-        <h2>Visit</h2>
-        <address>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=2012%20Chestnut%20Blvd%2C%20Cuyahoga%20Falls%2C%20OH%2044223" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>2012 Chestnut Blvd, Cuyahoga Falls, OH 44223</a>
-          <a href="tel:3309289204"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(330) 928-9204</a>
-          
-        </address>
-        <div class="map">
-          <iframe title="Map to Allure Nail Salon" src="https://www.google.com/maps?q=Allure%20Nail%20Salon%2C%202012%20Chestnut%20Blvd%2C%20Cuyahoga%20Falls%2C%20OH%2044223&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
+    <ul class="list">
+      <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M2 15a9 9 0 0 1 18 0a9 6 0 0 0 -18 0Z" fill="#c9a45c"/></svg><div><strong>Manicures</strong><span>Classic manicures, or pair one with a pedicure.</span></div></li>
+      <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M2 15a9 9 0 0 1 18 0a9 6 0 0 0 -18 0Z" fill="#c9a45c"/></svg><div><strong>Pedicures</strong></div></li>
+      <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M2 15a9 9 0 0 1 18 0a9 6 0 0 0 -18 0Z" fill="#c9a45c"/></svg><div><strong>Gel nails</strong><span>Gel polish and gel extensions.</span></div></li>
+      <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M2 15a9 9 0 0 1 18 0a9 6 0 0 0 -18 0Z" fill="#c9a45c"/></svg><div><strong>Acrylic nails</strong></div></li>
+      <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M2 15a9 9 0 0 1 18 0a9 6 0 0 0 -18 0Z" fill="#c9a45c"/></svg><div><strong>Dip powder</strong></div></li>
+      <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M2 15a9 9 0 0 1 18 0a9 6 0 0 0 -18 0Z" fill="#c9a45c"/></svg><div><strong>Nail extensions</strong></div></li>
+      <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M2 15a9 9 0 0 1 18 0a9 6 0 0 0 -18 0Z" fill="#c9a45c"/></svg><div><strong>Nail art</strong><span>Designs and details. Ask when you book.</span></div></li>
+      <li><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M2 15a9 9 0 0 1 18 0a9 6 0 0 0 -18 0Z" fill="#c9a45c"/></svg><div><strong>Men's manicures and pedicures</strong></div></li>
+    </ul>
+  </div>
+</section>
 
-  <section class="section book-band">
-    <div class="wrap band-in">
-      <h2>Ready for fresh nails? Give Allure a call.</h2>
-      <a class="btn" href="tel:3309289204"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call to book</a>
+<section class="sec visit" id="visit">
+  <svg class="smile" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0 H1440 Q720 140 0 0 Z" fill="#11203b"/></svg>
+  <div class="wrap">
+    <div class="card hours">
+      <h2>Hours</h2>
+      <dl id="hrs">
+        <dt data-d="1">Monday</dt><dd data-d="1">8:30 am – 7 pm</dd>
+        <dt data-d="2">Tuesday</dt><dd data-d="2">8 am – 7 pm</dd>
+        <dt data-d="3">Wednesday</dt><dd data-d="3">8 am – 7 pm</dd>
+        <dt data-d="4">Thursday</dt><dd data-d="4">8 am – 7 pm</dd>
+        <dt data-d="5">Friday</dt><dd data-d="5">8 am – 7 pm</dd>
+        <dt data-d="6">Saturday</dt><dd data-d="6">8 am – 2 pm</dd>
+        <dt data-d="0">Sunday</dt><dd class="closed" data-d="0">Closed</dd>
+      </dl>
     </div>
-  </section>
+    <div class="card where">
+      <h2>Find us</h2>
+      <address>Allure Nail Salon<br>2012 Chestnut Blvd<br>Cuyahoga Falls, OH 44223</address>
+      <a class="tel" href="tel:+13309289204">(330) 928-9204</a>
+      <p class="note">Appointments are by phone. Call to book.</p>
+      <svg class="arc" viewBox="0 0 400 110" aria-hidden="true"><path d="M10 10 Q200 150 390 10" fill="none" stroke="#c9a45c" stroke-width="3" stroke-linecap="round"/><path d="M60 10 Q200 110 340 10" fill="none" stroke="#fffaf6" stroke-opacity=".35" stroke-width="2" stroke-linecap="round"/></svg>
+      <div class="acts">
+        <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&amp;query=Allure%20Nail%20Salon%2C%202012%20Chestnut%20Blvd%2C%20Cuyahoga%20Falls%2C%20OH%2044223" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn btn-line" style="border-color:var(--tip);color:var(--tip)" href="https://www.facebook.com/167309239948179/" target="_blank" rel="noopener">Facebook</a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer class="foot">
-  <div class="wrap foot-in">
-    <p>© <span id="yr"></span> Allure Nail Salon</p>
-    <p class="socials"><a href="https://www.facebook.com/167309239948179/" rel="noopener" target="_blank">Facebook</a></p>
+<footer>
+  <div class="wrap">
+    <div><b>Allure Nail Salon</b><br>Cuyahoga Falls, Ohio</div>
+    <div>Free preview by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a>, not the official website.</div>
   </div>
 </footer>
 
-<nav class="mobile-bar" aria-label="Quick actions">
-  <a href="tel:3309289204"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call</span></a>
-  <a href="https://www.google.com/maps/dir/?api=1&destination=2012%20Chestnut%20Blvd%2C%20Cuyahoga%20Falls%2C%20OH%2044223" target="_blank" rel="noopener" class="primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Directions</span></a>
-  <a href="#hours"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg><span>Hours</span></a>
-</nav>
+<div class="callbar"><span>Allure Nail Salon</span><a href="tel:+13309289204">Call to book</a></div>
 
 <script>
 (function(){
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  // "Open now" uses the shop's own time zone, not the visitor's clock.
-  var parts={};
-  new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'long',hour:'2-digit',minute:'2-digit',hourCycle:'h23'})
-    .formatToParts(new Date()).forEach(function(p){parts[p.type]=p.value});
-  var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  var day=days.indexOf(parts.weekday),mins=(+parts.hour)*60+(+parts.minute);
-  var toMin=function(s){var p=s.split(':');return +p[0]*60+ +p[1]};
-  var rows=document.querySelectorAll('.hours tr'),el=document.getElementById('open-status'),msg='';
-  rows.forEach(function(r){
-    if(+r.dataset.day!==day)return;
-    r.classList.add('today');
-    // data-slots: "09:00-13:30-1:30pm,16:00-19:30-7:30pm" (split shifts allowed)
-    msg='<span class="dot"></span>Closed now';
-    (r.dataset.slots||'').split(',').forEach(function(s){
-      var p=s.split('-');
-      if(p[0]&&mins>=toMin(p[0])&&mins<toMin(p[1]))msg='<span class="dot open"></span>Open now · until '+p[2];
-    });
-  });
-  el.innerHTML=msg;
+  var d=new Date().getDay();
+  document.querySelectorAll('#hrs [data-d="'+d+'"]').forEach(function(e){e.classList.add('today')});
 })();
 </script>
 </body>

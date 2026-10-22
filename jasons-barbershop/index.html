@@ -1,274 +1,235 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jasons&#39; Barber Shop | Barbershop in Kent, OH</title>
-<meta name="description" content="Jasons&#39; Barber Shop at 135 E Erie St #201, Kent, OH 44240. Haircuts, scissor cuts and beard trims. Open Tuesday to Friday 9am to 5:30pm and Saturday 9am to 3pm. Call (330) 807-1903.">
-<meta property="og:title" content="Jasons&#39; Barber Shop">
-<meta property="og:description" content="Haircuts and beard trims on E Erie St in Kent. Walk in or call ahead, Tuesday to Saturday.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#f8f3e8">
 <meta name="robots" content="noindex, nofollow">
+<title>Jasons' Barber Shop · Suite 201, 135 E Erie St, Kent, OH</title>
+<meta name="description" content="Jasons' Barber Shop, Suite 201 at 135 E Erie St in Kent, Ohio. Haircuts, scissor cuts and beard trims. Open Tuesday to Saturday. Call (330) 807-1903.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Libre+Franklin:wght@400;600&display=swap">
-<style>/* Shared stylesheet. Colors and fonts come from each client's site.json via :root vars. */
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.6 var(--font);-webkit-font-smoothing:antialiased;padding-bottom:72px}
-@media (min-width:760px){body{padding-bottom:0}}
-img{max-width:100%;display:block}
+<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@500;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wall:#b7c2b9;
+  --ink:#1b1f1d;
+  --felt:#141616;
+  --letter:#f3f1ea;
+  --brass:#b8923f;
+  --brass-hi:#e6c877;
+  --brass-ink:#2a2110;
+  --oak:#6a4a2c;
+  --oak-hi:#8d6540;
+  --floor:#26292a;
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--wall);color:var(--ink);font-family:'Source Serif 4',Georgia,serif;font-size:1.125rem;line-height:1.55;
+  background-image:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,0) 40%,rgba(0,0,0,.06));}
 a{color:inherit}
-h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0 0 .6em;letter-spacing:-.01em}
-h2{font-size:clamp(1.8rem,5vw,2.6rem)}
-svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
-.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--brass-hi);outline-offset:3px}
+.demo-bar{background:#101312;color:#e2e6e1;font-family:'Chivo',sans-serif;font-size:.9375rem;text-align:center;padding:.6rem 1rem;line-height:1.35}
+.demo-bar a{color:var(--brass-hi);font-weight:700}
 
-.demo-bar{background:var(--accent);color:var(--accent-text);text-align:center;font-size:.8rem;font-weight:600;padding:6px 16px}
+/* ---------- the board ---------- */
+.wrap{width:min(100% - 2rem,1040px);margin-inline:auto}
+.frame{position:relative;background:linear-gradient(145deg,var(--oak-hi),var(--oak) 55%,#53381f);padding:clamp(.7rem,2vw,1.15rem);border-radius:4px;
+  box-shadow:0 1px 0 rgba(255,255,255,.25) inset,0 22px 36px -14px rgba(20,24,22,.55),0 3px 6px rgba(20,24,22,.35)}
+.frame::before,.frame::after{content:"";position:absolute;top:50%;width:9px;height:9px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,var(--brass-hi),var(--brass) 60%,#6d5420);transform:translateY(-50%)}
+.frame::before{left:calc(clamp(.7rem,2vw,1.15rem)/2 - 4.5px)}
+.frame::after{right:calc(clamp(.7rem,2vw,1.15rem)/2 - 4.5px)}
+.felt{position:relative;background-color:var(--felt);
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' seed='4'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .55 0'/></filter><rect width='220' height='220' filter='url(%23n)' opacity='.16'/></svg>");
+  box-shadow:inset 0 3px 10px rgba(0,0,0,.8);border-radius:2px;padding:clamp(.9rem,2.6vw,1.8rem)}
 
-.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.top-in{display:flex;align-items:center;gap:16px;height:60px}
-.logo{min-width:0;font-family:var(--display);text-decoration:none;font-size:1.1rem;margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{display:none;gap:24px}
-.top nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
-.top nav a:hover{color:var(--text)}
-@media (min-width:760px){.top nav{display:flex}}
+/* a row of push-in letters sitting in a groove */
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:.4rem 1.5rem;flex-wrap:wrap;
+  font-family:'Chivo',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--letter);
+  line-height:1;padding:.62em 0 .5em;border-bottom:2px solid #060707;box-shadow:0 1px 0 rgba(255,255,255,.07)}
+.row:last-child{border-bottom:0;box-shadow:none}
+.row span{white-space:nowrap}
+.row > span, .letters{text-shadow:0 1px 0 #8f8c84,0 2px 2px rgba(0,0,0,.65)}
+.row.gold{color:var(--brass-hi);text-shadow:0 1px 0 #6d5420,0 2px 2px rgba(0,0,0,.65)}
+.row.s1{font-size:clamp(.82rem,2.9vw,1.05rem)}
+.row.s2{font-size:clamp(1rem,4.6vw,1.4rem)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.row.s3{font-size:clamp(1.9rem,8.6vw,5.2rem);font-weight:800}
+.panel .row{position:relative;min-height:3.35rem;align-items:center;padding-block:.35em}
+.row.today{background:linear-gradient(90deg,rgba(230,200,119,.16),rgba(230,200,119,0) 85%)}
+.row.today::before{content:"";position:absolute;left:-.95rem;top:50%;margin-top:-.38rem;border:.38rem solid transparent;border-left:.6rem solid var(--brass-hi);border-right:0}
+.hint{font-size:.78em;color:#d9d6cd}
 
-.btn{display:inline-flex;align-items:center;gap:.5em;background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:.85em 1.4em;border-radius:999px;min-height:48px;transition:transform .15s,filter .15s}
-.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.btn-sm{padding:.55em 1.1em;min-height:40px;font-size:.9rem;white-space:nowrap;flex:none}
-.btn-ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--text) 30%,transparent)}
+/* hero */
+.hero{padding:clamp(1.4rem,4vw,3rem) 0 clamp(1.4rem,3vw,2.2rem)}
+.hero .felt{padding-block:clamp(.6rem,2vw,1.4rem)}
+.nameplate{display:grid;grid-template-columns:1fr auto;gap:0 clamp(1.2rem,4vw,3rem);align-items:stretch}
+.nameplate .row{border-bottom:0;box-shadow:none}
+.suite{flex-direction:column;justify-content:center;align-items:flex-start;border-left:2px solid #060707 !important;padding-left:clamp(1.2rem,4vw,3rem);padding-block:.4em;gap:.1rem}
+.suite .sw{font-size:clamp(1rem,2.2vw,1.5rem)}
+.suite .sn{font-size:clamp(3rem,7vw,5.6rem);font-weight:800;letter-spacing:.04em;line-height:.9}
+.name-row{display:block;padding-block:.5em .42em}
+.name-row .l2{display:block}
+.name-row .l1{display:block;margin-bottom:.12em}
+.letter{display:inline-block}
+.js .letter{animation:push .5s cubic-bezier(.2,.8,.3,1) both;animation-delay:calc(var(--i)*38ms + 250ms)}
+@keyframes push{from{opacity:0;transform:translateY(-.5em) scale(.9)}to{opacity:1;transform:none}}
+.lede{display:grid;grid-template-columns:1.1fr .9fr;gap:1.2rem 2.4rem;align-items:center;margin-top:clamp(1.4rem,3vw,2.2rem)}
+.lede p{font-size:clamp(1.2rem,2.4vw,1.55rem);line-height:1.45;max-width:36ch;text-wrap:balance}
 
-.hero{position:relative;padding:72px 0 64px;overflow:hidden;
-  background:
-    linear-gradient(180deg,transparent 40%,var(--bg)),
-    var(--hero-img,none) center/cover,
-    repeating-linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,transparent) 0 18px,transparent 18px 36px),
-    var(--bg)}
-.hero::after{content:"";position:absolute;inset:0;background:color-mix(in srgb,var(--bg) 55%,transparent);z-index:0}
-.hero-in{position:relative;z-index:1}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:var(--accent);margin:0 0 14px}
-.hero h1{font-size:clamp(2.6rem,11vw,5.6rem)}
-.lede{font-size:1.15rem;color:var(--muted);max-width:34ch;margin:0 0 28px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.status{margin:22px 0 0;font-weight:600;color:var(--muted);min-height:1.6em;display:flex;align-items:center;gap:8px}
-.dot{width:10px;height:10px;border-radius:50%;background:#c2524a;display:inline-block}
-.dot.open{background:#4caf6e;box-shadow:0 0 0 4px rgba(76,175,110,.2)}
-@media (min-width:760px){.hero{padding:120px 0 100px}}
+/* brass buzzer */
+.buzzer{justify-self:stretch;display:flex;align-items:center;gap:.9rem;min-height:84px;padding:.6rem 1.4rem .6rem .9rem;text-decoration:none;
+  background:linear-gradient(160deg,#d3b05f,var(--brass) 55%,#8f6f2c);color:var(--brass-ink);border-radius:6px;
+  box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 -2px 0 rgba(0,0,0,.25) inset,0 8px 16px -6px rgba(20,20,10,.5);font-family:'Chivo',sans-serif;line-height:1.15}
+.buzzer .knob{flex:none;width:54px;height:54px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f5f1e6,#c9c4b4 55%,#7b776a);box-shadow:0 2px 0 #4d3f19,0 0 0 4px rgba(0,0,0,.18);display:grid;place-items:center}
+.buzzer .knob svg{width:24px;height:24px}
+.buzzer b{display:block;font-size:1.45rem;font-weight:800}
+.buzzer small{display:block;font-size:1.05rem;font-weight:500}
+.buzzer:hover .knob{transform:translateY(2px);box-shadow:0 0 0 #4d3f19,0 0 0 4px rgba(0,0,0,.18)}
+.buzzer:active .knob{transform:translateY(2px)}
 
-.section{padding:64px 0}
-.section.alt{background:var(--surface)}
-.svc-list{list-style:none;padding:0;margin:0;display:grid;gap:4px 48px}
-@media (min-width:760px){.svc-list{grid-template-columns:1fr 1fr}}
-.svc{padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.svc-top{display:flex;align-items:baseline;gap:10px}
-.svc h3{font-family:var(--font);font-weight:800;font-size:1.1rem;margin:0}
-.dots{flex:1;border-bottom:2px dotted color-mix(in srgb,var(--text) 25%,transparent);transform:translateY(-4px)}
-.svc strong{color:var(--accent);font-size:1.15rem}
-.svc p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
-.dur{white-space:nowrap}
-.note{color:var(--muted);font-size:.85rem;margin-top:20px}
-.menu-section{font-family:var(--display);font-size:1.3rem;color:var(--accent);margin:36px 0 4px;text-transform:uppercase;letter-spacing:.06em}
-.menu-section:first-of-type{margin-top:8px}
+/* directory */
+.directory{padding:clamp(1rem,3vw,2rem) 0 clamp(2rem,5vw,3.6rem)}
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(1.4rem,4vw,3.2rem)}
+.panel{min-width:0}
+.panel .row.s2 .r{font-weight:500;letter-spacing:.06em}
 
-.two-col{display:grid;gap:48px}
-@media (min-width:860px){.two-col{grid-template-columns:1fr 1fr;align-items:start}}
-.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
-.chips li{border:1px solid color-mix(in srgb,var(--accent) 50%,transparent);color:var(--accent);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600}
-.one-col{max-width:720px}
-.reviews{display:grid;gap:16px;align-content:start}
-.rating{display:flex;align-items:center;gap:10px;text-decoration:none;background:var(--bg);border-radius:16px;padding:18px 22px;border-left:4px solid var(--accent)}
-.rating svg{width:28px;height:28px;color:var(--accent)}
-.rating strong{font-family:var(--display);font-size:1.8rem;line-height:1}
-.rating span{color:var(--muted);font-size:.9rem}
-.review{margin:0;background:var(--bg);border-radius:16px;padding:20px 22px;border-left:4px solid var(--accent)}
-.review blockquote{margin:0 0 8px;font-size:1.05rem}
-.review figcaption{color:var(--muted);font-size:.85rem}
 
-.grid-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;padding:8px 0}
-.grid-g img{aspect-ratio:1;object-fit:cover;border-radius:10px}
+/* visit plaque */
+.visit{padding:0 0 clamp(2.4rem,6vw,4.2rem)}
+.plaque{background:linear-gradient(150deg,#d9bb6c,var(--brass) 50%,#a07f34);color:var(--brass-ink);border-radius:4px;padding:clamp(1.4rem,3.5vw,2.4rem);
+  display:grid;grid-template-columns:1.3fr 1fr;gap:1.6rem clamp(1.4rem,4vw,3rem);align-items:center;
+  box-shadow:0 1px 0 rgba(255,255,255,.55) inset,0 0 0 1px #7a5f22,0 16px 28px -14px rgba(20,24,22,.55)}
+.plaque h2{font-family:'Source Serif 4',serif;font-weight:600;font-size:clamp(1.55rem,4.2vw,2.5rem);line-height:1.18;text-shadow:0 1px 0 rgba(255,255,255,.4)}
+.plaque h2 em{display:block;font-style:normal;font-family:'Chivo',sans-serif;font-weight:800;font-size:.58em;letter-spacing:.06em;margin-top:.35em}
+.acts{display:grid;gap:.8rem}
+.btn{display:flex;align-items:center;justify-content:center;min-height:52px;padding:0 1.2rem;border-radius:5px;font-family:'Chivo',sans-serif;font-weight:700;font-size:1.05rem;text-decoration:none;text-align:center}
+.btn.dark{background:var(--felt);color:var(--letter)}
+.btn.line{border:2px solid var(--brass-ink);color:var(--brass-ink)}
+.btn:hover{filter:brightness(1.12)}
 
-.hours{width:100%;border-collapse:collapse}
-.hours th,.hours td{text-align:left;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.hours th{font-weight:600}
-.hours td{text-align:right;color:var(--muted)}
-.hours tr.today th,.hours tr.today td{color:var(--accent);font-weight:800}
-address{font-style:normal;display:grid;gap:10px;margin-bottom:20px}
-address a{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600}
-address a:hover{color:var(--accent)}
-.map{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--surface)}
-.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
+/* floor */
+footer{background:var(--floor);color:#d6dad6;font-family:'Chivo',sans-serif;font-size:.9375rem;padding:1.4rem 0 1.6rem;border-top:6px solid #151717}
+footer p{max-width:60ch}
+footer a{color:var(--brass-hi)}
+.callbar{display:none}
 
-.book-band{background:var(--accent);color:var(--accent-text)}
-.band-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
-.band-in h2{margin:0}
-.book-band .btn{background:var(--accent-text);color:var(--accent)}
-
-.foot{padding:28px 0;color:var(--muted);font-size:.88rem}
-.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-.foot p{margin:0}
-.socials{display:flex;gap:16px}
-
-.mobile-bar{position:fixed;inset:auto 0 0 0;z-index:30;display:grid;grid-template-columns:1fr 1.3fr 1fr;background:var(--surface);border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent);padding-bottom:env(safe-area-inset-bottom)}
-.mobile-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;text-decoration:none;font-size:.78rem;font-weight:700}
-.mobile-bar a.primary{background:var(--accent);color:var(--accent-text)}
-.mobile-bar svg{width:22px;height:22px}
-@media (min-width:760px){.mobile-bar{display:none}}
-
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+@media (max-width:760px){
+  body{font-size:1.0625rem}
+  .panels{grid-template-columns:1fr}
+  .panel + .panel{margin-top:1.4rem}
+  .lede{grid-template-columns:1fr}
+  .nameplate{grid-template-columns:1fr}
+  .suite{flex-direction:row;justify-content:space-between;align-items:baseline;border-left:0 !important;border-top:2px solid #060707;padding-left:0;padding-top:.5em}
+  .suite .sw{font-size:1.15rem}.suite .sn{font-size:2.3rem}
+  .panel .row.today::before{left:-.8rem}
+  .buzzer{width:100%}
+  .plaque{grid-template-columns:1fr}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--felt);border-top:3px solid var(--brass);padding:.6rem .9rem calc(.6rem + env(safe-area-inset-bottom));gap:.75rem;align-items:center;justify-content:space-between;box-shadow:0 -8px 18px rgba(0,0,0,.3);font-family:'Chivo',sans-serif}
+  .callbar span{color:var(--letter);font-size:1rem;line-height:1.2;font-weight:700}
+  .callbar a{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 1.25rem;background:var(--brass);color:var(--brass-ink);font-weight:800;font-size:1.15rem;text-decoration:none;border-radius:5px;white-space:nowrap}
+  footer{padding-bottom:5.6rem}
+  .row{letter-spacing:.07em}
+}
+@media (prefers-reduced-motion:reduce){
+  .js .letter{animation:none}
+  .buzzer .knob{transition:none}
+}
 </style>
-<style>:root{--bg:#f8f3e8;--surface:#ece2cc;--text:#1c1a24;--muted:#55505e;--accent:#1e2f5c;--accent-text:#ffffff;--font:'Libre Franklin', system-ui, sans-serif;--display:'Anton', 'Libre Franklin', sans-serif}</style>
-
 </head>
 <body>
-<div class="demo-bar">Free preview made for Jasons&#39; Barber Shop by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
-<header class="top">
-  <div class="wrap top-in">
-    <a class="logo" href="#top">Jasons&#39; Barber Shop</a>
-    <nav aria-label="Main"><a href="#services">Services</a><a href="#hours">Hours</a><a href="#visit">Visit</a></nav>
-    <a class="btn btn-sm" href="tel:3308071903">Call to book</a>
-  </div>
-</header>
+<div class="demo-bar">Free preview made for Jasons' Barber Shop by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
 
-<main id="top">
-  <section class="hero">
-    <div class="wrap hero-in">
-      <p class="eyebrow">Barbershop · E Erie St, Kent</p>
-      <h1>Clean cuts<br>in Kent.</h1>
-      <p class="lede">Haircuts and beard trims on E Erie St in Kent. Walk in or call ahead, Tuesday to Saturday.</p>
-      <div class="cta-row">
-        <a class="btn" href="tel:3308071903"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call to book</a>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=135%20E%20Erie%20St%20%23201%2C%20Kent%2C%20OH%2044240" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Directions</a>
-      </div>
-      <p class="status" id="open-status" aria-live="polite"></p>
-    </div>
-  </section>
-
-  <section id="services" class="section">
-    <div class="wrap">
-      <h2>Services</h2>
-      <ul class="svc-list">
-        <li class="svc">
-          <div class="svc-top"><h3>Haircuts</h3></div>
-          <p>Haircuts at the shop on E Erie St. Call (330) 807-1903 with any questions.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Scissor cuts</h3></div>
-          <p>Prefer scissors over clippers? Just ask your barber.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Beard trims</h3></div>
-          <p>Beard trims and shaping, on their own or with a haircut.</p>
-        </li></ul>
-      <p class="note">Call (330) 807-1903 for prices and wait times.</p>
-    </div>
-  </section>
-
-  <section class="section alt">
-    <div class="wrap one-col">
-      <div>
-        <h2>A Kent barbershop on E Erie St.</h2>
-        <p>Jasons&#39; Barber Shop is at 135 E Erie St, Suite 201, in Kent. Stop in for a haircut, a scissor cut or a beard trim Tuesday through Saturday, or call (330) 807-1903 before you come.</p>
-        <ul class="chips"><li>Haircuts &amp; beard trims</li><li>Walk in or call ahead</li><li>Open Saturdays 9am–3pm</li><li>Closed Sundays &amp; Mondays</li></ul>
-      </div>
-      
-    </div>
-  </section>
-  
-
-  <section id="hours" class="section">
-    <div class="wrap two-col">
-      <div>
-        <h2>Hours</h2>
-        <table class="hours"><tbody>
-        <tr data-day="1" data-slots="">
-          <th scope="row">Monday</th>
-          <td>Closed</td>
-        </tr>
-        <tr data-day="2" data-slots="09:00-17:30-5:30pm">
-          <th scope="row">Tuesday</th>
-          <td>9am – 5:30pm</td>
-        </tr>
-        <tr data-day="3" data-slots="09:00-17:30-5:30pm">
-          <th scope="row">Wednesday</th>
-          <td>9am – 5:30pm</td>
-        </tr>
-        <tr data-day="4" data-slots="09:00-17:30-5:30pm">
-          <th scope="row">Thursday</th>
-          <td>9am – 5:30pm</td>
-        </tr>
-        <tr data-day="5" data-slots="09:00-17:30-5:30pm">
-          <th scope="row">Friday</th>
-          <td>9am – 5:30pm</td>
-        </tr>
-        <tr data-day="6" data-slots="09:00-15:00-3pm">
-          <th scope="row">Saturday</th>
-          <td>9am – 3pm</td>
-        </tr>
-        <tr data-day="0" data-slots="">
-          <th scope="row">Sunday</th>
-          <td>Closed</td>
-        </tr></tbody></table>
-      </div>
-      <div id="visit">
-        <h2>Visit</h2>
-        <address>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=135%20E%20Erie%20St%20%23201%2C%20Kent%2C%20OH%2044240" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>135 E Erie St #201, Kent, OH 44240</a>
-          <a href="tel:3308071903"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(330) 807-1903</a>
-          
-        </address>
-        <div class="map">
-          <iframe title="Map to Jasons&#39; Barber Shop" src="https://www.google.com/maps?q=Jasons'%20Barber%20Shop%2C%20135%20E%20Erie%20St%20%23201%2C%20Kent%2C%20OH%2044240&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<header class="hero">
+  <div class="wrap">
+    <div class="frame">
+      <div class="felt">
+        <div class="row s1"><span>135 E Erie St</span><span>Kent, Ohio</span></div>
+        <div class="nameplate">
+          <h1 class="row s3 name-row" aria-label="Jasons' Barber Shop">
+            <span class="l1 letters" data-push>Jasons'</span>
+            <span class="l2 letters" data-push>Barber Shop</span>
+          </h1>
+          <div class="suite row gold"><span class="sw">Suite</span><span class="sn">201</span></div>
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="section book-band">
-    <div class="wrap band-in">
-      <h2>Due for a cut? Stop by E Erie St.</h2>
-      <a class="btn" href="tel:3308071903"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call to book</a>
+    <div class="lede">
+      <p>Haircuts and beard trims on E&nbsp;Erie&nbsp;St in Kent. Walk in or call ahead, Tuesday to Saturday.</p>
+      <a class="buzzer" href="tel:+13308071903"><span class="knob" aria-hidden="true"><svg viewBox="0 0 24 24" fill="#2a2110"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg></span><span><b>Call the shop</b><small>(330) 807-1903</small></span></a>
     </div>
-  </section>
+  </div>
+</header>
+
+<main>
+<section class="directory" aria-label="Services and hours">
+  <div class="wrap">
+    <div class="frame">
+      <div class="felt">
+        <div class="panels">
+          <div class="panel">
+            <div class="row gold s2"><span>Services</span></div>
+            <div class="row s2"><span>Haircuts</span></div>
+            <div class="row s2"><span>Scissor cuts</span></div>
+            <div class="row s2"><span>Beard trims</span></div>
+            <div class="row s1"><span>Call for prices</span><span class="hint">(330) 807-1903</span></div>
+          </div>
+          <div class="panel" id="hours">
+            <div class="row gold s2"><span>Hours</span></div>
+            <div class="row s2" data-day="1"><span>Mon</span><span class="r">Closed</span></div>
+            <div class="row s2" data-day="2,3,4,5"><span>Tue – Fri</span><span class="r" aria-label="9 am to 5:30 pm">9 – 5:30</span></div>
+            <div class="row s2" data-day="6"><span>Sat</span><span class="r" aria-label="9 am to 3 pm">9 – 3</span></div>
+            <div class="row s2" data-day="0"><span>Sun</span><span class="r">Closed</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="visit" aria-label="Find the shop">
+  <div class="wrap">
+    <div class="plaque">
+      <h2>135 E Erie St<br>Kent, OH 44240<em>Suite 201</em></h2>
+      <div class="acts">
+        <a class="btn dark" href="https://www.google.com/maps/search/?api=1&amp;query=Jasons'%20Barber%20Shop%2C%20135%20E%20Erie%20St%20%23201%2C%20Kent%2C%20OH%2044240" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn line" href="https://www.facebook.com/p/Jasons-Barber-Shop-100063588729875/" target="_blank" rel="noopener">Shop on Facebook</a>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer class="foot">
-  <div class="wrap foot-in">
-    <p>© <span id="yr"></span> Jasons&#39; Barber Shop</p>
-    <p class="socials"><a href="https://www.facebook.com/p/Jasons-Barber-Shop-100063588729875/" rel="noopener" target="_blank">Facebook</a></p>
+<footer>
+  <div class="wrap">
+    <p>Jasons' Barber Shop preview. Hours and details are from public listings and may change, so call (330) 807-1903 before you come. This page is a free sample, not the official website.</p>
   </div>
 </footer>
 
-<nav class="mobile-bar" aria-label="Quick actions">
-  <a href="tel:3308071903"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call</span></a>
-  <a href="https://www.google.com/maps/dir/?api=1&destination=135%20E%20Erie%20St%20%23201%2C%20Kent%2C%20OH%2044240" target="_blank" rel="noopener" class="primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Directions</span></a>
-  <a href="#hours"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg><span>Hours</span></a>
-</nav>
+<div class="callbar"><span>Jasons' Barber Shop</span><a href="tel:+13308071903">Call now</a></div>
 
 <script>
 (function(){
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  // "Open now" uses the shop's own time zone, not the visitor's clock.
-  var parts={};
-  new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'long',hour:'2-digit',minute:'2-digit',hourCycle:'h23'})
-    .formatToParts(new Date()).forEach(function(p){parts[p.type]=p.value});
-  var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  var day=days.indexOf(parts.weekday),mins=(+parts.hour)*60+(+parts.minute);
-  var toMin=function(s){var p=s.split(':');return +p[0]*60+ +p[1]};
-  var rows=document.querySelectorAll('.hours tr'),el=document.getElementById('open-status'),msg='';
-  rows.forEach(function(r){
-    if(+r.dataset.day!==day)return;
-    r.classList.add('today');
-    // data-slots: "09:00-13:30-1:30pm,16:00-19:30-7:30pm" (split shifts allowed)
-    msg='<span class="dot"></span>Closed now';
-    (r.dataset.slots||'').split(',').forEach(function(s){
-      var p=s.split('-');
-      if(p[0]&&mins>=toMin(p[0])&&mins<toMin(p[1]))msg='<span class="dot open"></span>Open now · until '+p[2];
+  var d=document.documentElement;
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduce){
+    d.classList.add('js');
+    var i=0;
+    document.querySelectorAll('[data-push]').forEach(function(el){
+      var t=el.textContent;el.textContent='';
+      for(var k=0;k<t.length;k++){
+        var s=document.createElement('span');
+        s.className='letter';s.setAttribute('aria-hidden','true');
+        s.style.setProperty('--i',i++);
+        s.textContent=t[k]===' '?' ':t[k];
+        el.appendChild(s);
+      }
     });
+  }
+  var today=new Date().getDay();
+  document.querySelectorAll('[data-day]').forEach(function(r){
+    if(r.getAttribute('data-day').split(',').indexOf(String(today))>-1)r.classList.add('today');
   });
-  el.innerHTML=msg;
 })();
 </script>
 </body>

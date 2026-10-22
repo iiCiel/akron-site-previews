@@ -3,261 +3,244 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Portage Lakes Barber &amp; Styling | Barbershop in Akron, OH</title>
-<meta name="description" content="Portage Lakes Barber &amp; Styling at 503 Portage Lakes Dr, Suite E, Akron, OH 44319. Haircuts, beard trims and line-ups. Open Tuesday through Saturday. Book online on Booksy or call (330) 644-3293.">
-<meta property="og:title" content="Portage Lakes Barber &amp; Styling">
-<meta property="og:description" content="Trusted by generations. Raising the bar, one cut at a time.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#fbf8f3">
 <meta name="robots" content="noindex, nofollow">
+<title>Portage Lakes Barber &amp; Styling | Akron, Ohio (free preview)</title>
+<meta name="description" content="Preview page for Portage Lakes Barber &amp; Styling, 503 Portage Lakes Dr, Suite E, Akron, Ohio. Haircuts, beard trims and line-ups. Book online or call (330) 644-3293.">
+<meta name="theme-color" content="#10283b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&amp;family=Inter:wght@400;600&display=swap">
-<style>/* Shared stylesheet. Colors and fonts come from each client's site.json via :root vars. */
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.6 var(--font);-webkit-font-smoothing:antialiased;padding-bottom:72px}
-@media (min-width:760px){body{padding-bottom:0}}
-img{max-width:100%;display:block}
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Young+Serif&display=swap" rel="stylesheet">
+<style>
+:root{
+  --land:#e9ecd0;
+  --land-2:#dde2bd;
+  --ink:#14283a;
+  --muted:#38505f;
+  --navy:#10283b;
+  --w1:#d6ecef;
+  --w2:#c1e1e7;
+  --w3:#a9d3dd;
+  --w4:#8fc4d3;
+  --w5:#72b1c5;
+  --shore:#1d4f66;
+  --buoy:#c8302a;
+  --buoy-dk:#a52620;
+  --nun:#1f7a4d;
+  --display:"Young Serif","Georgia",serif;
+  --text:"Atkinson Hyperlegible","Verdana","Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--text);font-size:1.125rem;line-height:1.55;color:var(--ink);background:var(--land);-webkit-text-size-adjust:100%;padding-bottom:76px}
 a{color:inherit}
-h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0 0 .6em;letter-spacing:-.01em}
-h2{font-size:clamp(1.8rem,5vw,2.6rem)}
-svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
-.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+svg{max-width:100%}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.1;margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1160px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
 
-.demo-bar{background:var(--accent);color:var(--accent-text);text-align:center;font-size:.8rem;font-weight:600;padding:6px 16px}
+.demo-bar{background:var(--navy);color:#dbe9ee;font-size:.9375rem;text-align:center;padding:.6rem 1rem;line-height:1.35}
+.demo-bar a{color:#ffd9a0;font-weight:700}
+.demo-bar a:focus-visible{outline-color:#ffd9a0}
 
-.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.top-in{display:flex;align-items:center;gap:16px;height:60px}
-.logo{min-width:0;font-family:var(--display);text-decoration:none;font-size:1.1rem;margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{display:none;gap:24px}
-.top nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
-.top nav a:hover{color:var(--text)}
-@media (min-width:760px){.top nav{display:flex}}
+/* chart svg bits */
+.chart{display:block;width:100%;height:auto}
+.snd{font-family:var(--display);font-size:15px;fill:#14283a;font-style:italic;text-anchor:middle;opacity:.8}
+.nlab{font-family:var(--display);font-size:16px;fill:#14283a}
+.bob{animation:bob 4.5s ease-in-out infinite;transform-box:fill-box}
+.buoy:nth-of-type(2) .bob{animation-delay:-1.4s}
+.buoy:nth-of-type(3) .bob{animation-delay:-2.8s}
+@keyframes bob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-2px) rotate(2deg)}}
+.glyph{width:26px;height:36px;flex:none;display:block}
 
-.btn{display:inline-flex;align-items:center;gap:.5em;background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:.85em 1.4em;border-radius:999px;min-height:48px;transition:transform .15s,filter .15s}
-.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.btn-sm{padding:.55em 1.1em;min-height:40px;font-size:.9rem;white-space:nowrap;flex:none}
-.btn-ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--text) 30%,transparent)}
+/* ---------- hero ---------- */
+.hero-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(1.75rem,4vw,3rem);align-items:center;padding-top:clamp(1.75rem,4vw,3.5rem);padding-bottom:clamp(2.25rem,5vw,4.5rem)}
+.where{font-size:1.0625rem;color:var(--muted);margin-bottom:1rem;display:flex;align-items:center;gap:.6rem}
+.where svg{width:20px;height:28px}
+h1{font-size:clamp(2.6rem,5vw,4.2rem);letter-spacing:-.005em;color:var(--ink)}
+.name{margin-top:1.1rem;font-size:1.25rem;font-weight:700}
+.lede{margin-top:.9rem;max-width:28em;font-size:1.1875rem;color:var(--muted)}
+.cta-row{margin-top:1.75rem;display:flex;flex-wrap:wrap;gap:.8rem 1.1rem;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;min-height:56px;padding:.5rem 1.6rem;background:var(--buoy);color:#fff;font-weight:700;font-size:1.25rem;text-decoration:none;border-radius:999px;border:2px solid var(--buoy)}
+.btn:hover{background:var(--buoy-dk);border-color:var(--buoy-dk)}
+.btn svg{width:22px;height:22px;flex:none}
+.btn.alt{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.alt:hover{background:var(--ink);color:var(--land)}
+.hero-map{padding:6px}
 
-.hero{position:relative;padding:72px 0 64px;overflow:hidden;
-  background:
-    linear-gradient(180deg,transparent 40%,var(--bg)),
-    var(--hero-img,none) center/cover,
-    repeating-linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,transparent) 0 18px,transparent 18px 36px),
-    var(--bg)}
-.hero::after{content:"";position:absolute;inset:0;background:color-mix(in srgb,var(--bg) 55%,transparent);z-index:0}
-.hero-in{position:relative;z-index:1}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:var(--accent);margin:0 0 14px}
-.hero h1{font-size:clamp(2.6rem,11vw,5.6rem)}
-.lede{font-size:1.15rem;color:var(--muted);max-width:34ch;margin:0 0 28px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.status{margin:22px 0 0;font-weight:600;color:var(--muted);min-height:1.6em;display:flex;align-items:center;gap:8px}
-.dot{width:10px;height:10px;border-radius:50%;background:#c2524a;display:inline-block}
-.dot.open{background:#4caf6e;box-shadow:0 0 0 4px rgba(76,175,110,.2)}
-@media (min-width:760px){.hero{padding:120px 0 100px}}
+/* ---------- services ---------- */
+.depths{background:var(--w2);border-top:2px solid var(--shore);border-bottom:2px solid var(--shore);position:relative;background-image:repeating-linear-gradient(180deg,transparent 0 46px,rgba(29,79,102,.12) 46px 47px)}
+.depths-in{padding-top:clamp(2.5rem,6vw,5rem);padding-bottom:clamp(2.5rem,6vw,5rem)}
+h2{font-size:clamp(1.9rem,3.8vw,3rem)}
+.sub{margin-top:.8rem;max-width:34em;color:var(--muted)}
+.rows{margin:2.25rem 0 0;padding:0;list-style:none;border-top:1.5px solid var(--ink)}
+.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:.5rem clamp(1.5rem,4vw,3rem);align-items:center;padding:1.15rem 0;border-bottom:1px solid rgba(20,40,58,.45)}
+.row h3{font-size:1.45rem}
+.row p{margin-top:.25rem;color:var(--muted);max-width:30em}
+.gauge{display:grid;grid-template-columns:5.5rem minmax(0,1fr);align-items:center;gap:.9rem}
+.num{font-family:var(--display);font-size:2.4rem;line-height:1;font-style:italic;white-space:nowrap;display:flex;align-items:baseline;gap:.3rem}
+.num small{font-family:var(--text);font-style:normal;font-size:.95rem;color:var(--muted)}
+.track{height:20px;background:rgba(255,255,255,.55);border:1.5px solid var(--ink);border-radius:2px;position:relative}
+.fill{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,var(--w3),var(--w5) 55%,#3f89a3);border-right:2px solid var(--ink)}
+.track i{position:absolute;top:0;bottom:0;width:1px;background:rgba(20,40,58,.35)}
+.scale{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 clamp(1.5rem,4vw,3rem);margin-top:.6rem;font-size:.95rem;color:var(--muted)}
+.scale div{grid-column:2;margin-left:calc(5.5rem + .9rem);display:flex;justify-content:space-between}
+.mem-h{margin-top:clamp(2.5rem,5vw,3.75rem);font-size:clamp(1.5rem,2.8vw,2rem)}
+.mem{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;margin-top:1.25rem}
+.mem>div{background:var(--w1);border:1.5px solid var(--ink);outline:1px solid var(--ink);outline-offset:3px;padding:1.25rem 1.4rem}
+.mem .num{font-size:2.3rem}
+.mem h3{font-size:1.25rem;margin-top:.5rem}
+.mem p{margin-top:.35rem;color:var(--muted)}
+.fine{margin-top:1.5rem;color:var(--muted);font-size:1rem;max-width:44em}
+.book{margin-top:1.75rem}
 
-.section{padding:64px 0}
-.section.alt{background:var(--surface)}
-.svc-list{list-style:none;padding:0;margin:0;display:grid;gap:4px 48px}
-@media (min-width:760px){.svc-list{grid-template-columns:1fr 1fr}}
-.svc{padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.svc-top{display:flex;align-items:baseline;gap:10px}
-.svc h3{font-family:var(--font);font-weight:800;font-size:1.1rem;margin:0}
-.dots{flex:1;border-bottom:2px dotted color-mix(in srgb,var(--text) 25%,transparent);transform:translateY(-4px)}
-.svc strong{color:var(--accent);font-size:1.15rem}
-.svc p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
-.dur{white-space:nowrap}
-.note{color:var(--muted);font-size:.85rem;margin-top:20px}
-.menu-section{font-family:var(--display);font-size:1.3rem;color:var(--accent);margin:36px 0 4px;text-transform:uppercase;letter-spacing:.06em}
-.menu-section:first-of-type{margin-top:8px}
+/* ---------- about ---------- */
+.about-in{padding-top:clamp(2.75rem,6vw,5rem);padding-bottom:clamp(2.5rem,6vw,4.5rem);display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(1.5rem,5vw,4rem);align-items:center}
+.big{font-family:var(--display);font-size:clamp(7rem,16vw,12.5rem);line-height:.8;font-style:italic;color:var(--shore);letter-spacing:-.02em}
+.big-cap{margin-top:1.5rem;font-size:1.25rem;font-weight:700;max-width:12em}
+.about-copy p{max-width:32em}
+.about-copy .mark{margin-top:1.1rem;color:var(--muted);font-size:1.0625rem}
+.legend{list-style:none;margin:1.6rem 0 0;padding:1rem 0 0;border-top:1.5px solid var(--ink);display:grid;grid-template-columns:repeat(3,auto);gap:.75rem 1.25rem}
+.legend li{display:flex;align-items:center;gap:.6rem;font-size:1.0625rem;line-height:1.3}
 
-.two-col{display:grid;gap:48px}
-@media (min-width:860px){.two-col{grid-template-columns:1fr 1fr;align-items:start}}
-.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
-.chips li{border:1px solid color-mix(in srgb,var(--accent) 50%,transparent);color:var(--accent);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600}
-.one-col{max-width:720px}
-.reviews{display:grid;gap:16px;align-content:start}
-.rating{display:flex;align-items:center;gap:10px;text-decoration:none;background:var(--bg);border-radius:16px;padding:18px 22px;border-left:4px solid var(--accent)}
-.rating svg{width:28px;height:28px;color:var(--accent)}
-.rating strong{font-family:var(--display);font-size:1.8rem;line-height:1}
-.rating span{color:var(--muted);font-size:.9rem}
-.review{margin:0;background:var(--bg);border-radius:16px;padding:20px 22px;border-left:4px solid var(--accent)}
-.review blockquote{margin:0 0 8px;font-size:1.05rem}
-.review figcaption{color:var(--muted);font-size:.85rem}
+/* ---------- visit ---------- */
+.visit{background:var(--land-2);border-top:2px solid var(--ink)}
+.visit-in{padding-top:clamp(2.5rem,6vw,4.5rem);padding-bottom:clamp(2.5rem,6vw,4.5rem);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(1.75rem,4vw,3.5rem);align-items:center}
+.tb{margin:1.75rem 0 0;border:2px solid var(--ink);background:var(--land)}
+.tb div{display:grid;grid-template-columns:7.5rem minmax(0,1fr);gap:1rem;padding:.85rem 1.1rem;border-bottom:1px solid var(--ink)}
+.tb div:last-child{border-bottom:0}
+.tb dt{font-weight:700}
+.tb dd{margin:0}
+.tb a{font-weight:700;text-underline-offset:.2em;display:inline-flex;align-items:center;min-height:44px}
+.tb .tight a{min-height:0}
+.visit .cta-row{margin-top:1.5rem}
+.inset{padding:6px}
 
-.grid-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;padding:8px 0}
-.grid-g img{aspect-ratio:1;object-fit:cover;border-radius:10px}
+footer{background:var(--navy);color:#cfe0e6;padding:2rem 0 2.25rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1rem 3rem;justify-content:space-between;align-items:center}
+footer strong{font-family:var(--display);font-weight:400;font-size:1.3rem;color:#fff}
+footer p{font-size:1rem}
+footer a{font-weight:700;display:inline-flex;align-items:center;min-height:44px;margin-right:1.25rem}
+footer a:focus-visible{outline-color:#ffd9a0}
 
-.hours{width:100%;border-collapse:collapse}
-.hours th,.hours td{text-align:left;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.hours th{font-weight:600}
-.hours td{text-align:right;color:var(--muted)}
-.hours tr.today th,.hours tr.today td{color:var(--accent);font-weight:800}
-address{font-style:normal;display:grid;gap:10px;margin-bottom:20px}
-address a{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600}
-address a:hover{color:var(--accent)}
-.map{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--surface)}
-.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.65rem clamp(1rem,4vw,2.5rem);border-top:3px solid var(--buoy)}
+.callbar span{font-family:var(--display);font-size:1.1rem;line-height:1.15}
+.callbar a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.4rem 1.3rem;background:var(--buoy);color:#fff;font-weight:700;border-radius:999px;text-decoration:none;white-space:nowrap}
+.callbar a:focus-visible{outline-color:#fff}
 
-.book-band{background:var(--accent);color:var(--accent-text)}
-.band-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
-.band-in h2{margin:0}
-.book-band .btn{background:var(--accent-text);color:var(--accent)}
-
-.foot{padding:28px 0;color:var(--muted);font-size:.88rem}
-.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-.foot p{margin:0}
-.socials{display:flex;gap:16px}
-
-.mobile-bar{position:fixed;inset:auto 0 0 0;z-index:30;display:grid;grid-template-columns:1fr 1.3fr 1fr;background:var(--surface);border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent);padding-bottom:env(safe-area-inset-bottom)}
-.mobile-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;text-decoration:none;font-size:.78rem;font-weight:700}
-.mobile-bar a.primary{background:var(--accent);color:var(--accent-text)}
-.mobile-bar svg{width:22px;height:22px}
-@media (min-width:760px){.mobile-bar{display:none}}
-
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+@media (max-width:900px){
+  .hero-in,.about-in,.visit-in{grid-template-columns:minmax(0,1fr)}
+  .hero-map{order:2}
+  .row{grid-template-columns:minmax(0,1fr)}
+  .scale{grid-template-columns:minmax(0,1fr)}
+  .scale div{grid-column:1}
+  .big{font-size:clamp(6.5rem,32vw,9rem)}
+  .about-in{gap:1.5rem}
+}
+@media (max-width:620px){
+  body{font-size:1.0625rem}
+  .mem{grid-template-columns:minmax(0,1fr)}
+  .legend{grid-template-columns:minmax(0,1fr)}
+  .tb div{grid-template-columns:5.5rem minmax(0,1fr);gap:.75rem}
+  .btn{width:100%}
+  .callbar span{font-size:.95rem}
+  .callbar a{padding:.4rem 1rem}
+  .num{font-size:2.1rem}
+  .gauge{grid-template-columns:5rem minmax(0,1fr)}
+  .scale div{margin-left:calc(5rem + .9rem)}
+}
+@media (prefers-reduced-motion:reduce){
+  .bob{animation:none}
+  html{scroll-behavior:auto}
+}
 </style>
-<style>:root{--bg:#fbf8f3;--surface:#f0ebe2;--text:#1d2a2a;--muted:#5f6b6b;--accent:#1a6f6a;--accent-text:#ffffff;--font:'Inter', system-ui, sans-serif;--display:'Oswald', 'Inter', sans-serif}</style>
-
 </head>
 <body>
 <div class="demo-bar">Free preview made for Portage Lakes Barber &amp; Styling by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
-<header class="top">
-  <div class="wrap top-in">
-    <a class="logo" href="#top">Portage Lakes Barber &amp; Styling</a>
-    <nav aria-label="Main"><a href="#services">Services</a><a href="#hours">Hours</a><a href="#visit">Visit</a></nav>
-    <a class="btn btn-sm" href="https://booksy.com/en-us/1500898_tyler-j-portage-lakes-barber-styling_barber-shop_31848_akron" target="_blank" rel="noopener">Book online</a>
+
+<header class="wrap hero-in">
+  <div>
+    <p class="where"><svg class="glyph" viewBox="-14 -34 28 40" aria-hidden="true"><circle cx="0" cy="-14" r="10" fill="#14283a"/><circle cx="0" cy="-14" r="4" fill="#e9ecd0"/><ellipse cx="0" cy="1" rx="12" ry="3.5" fill="none" stroke="#1d4f66" stroke-width="1.4"/></svg>Portage Lakes Drive, Akron</p>
+    <h1>Sharp fades. Classic cuts.</h1>
+    <p class="name">Portage Lakes Barber &amp; Styling</p>
+    <p class="lede">A relaxed, professional barbershop with haircuts, beard trims and line-ups. Book a chair online, or tap to call.</p>
+    <div class="cta-row">
+      <a class="btn" href="tel:+13306443293"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call (330) 644-3293</a>
+      <a class="btn alt" href="https://booksy.com/en-us/1500898_tyler-j-portage-lakes-barber-styling_barber-shop_31848_akron" target="_blank" rel="noopener">Book online</a>
+    </div>
   </div>
+  <div class="hero-map"><svg class="chart" viewBox="0 0 640 560" role="img" aria-label="Decorative depth chart of a lake with contour lines, depth soundings and buoys"><rect width="640" height="560" fill="#e9ecd0"/><path d="M617.5,258.0C617.4,263.6 616.4,269.3 614.6,274.8C612.8,280.3 609.9,285.7 606.6,290.8C603.2,295.9 598.9,300.8 594.5,305.4C590.0,310.0 584.8,314.3 579.8,318.4C574.8,322.4 569.4,326.1 564.4,329.8C559.5,333.5 554.5,336.9 550.2,340.4C545.8,343.9 541.7,347.3 538.2,350.9C534.7,354.6 531.7,358.3 529.1,362.3C526.4,366.3 524.4,370.6 522.3,375.1C520.3,379.5 518.7,384.4 516.8,389.2C514.9,394.1 513.2,399.2 511.0,404.1C508.7,409.0 506.2,414.1 503.1,418.6C500.0,423.0 496.4,427.4 492.1,431.0C487.9,434.5 483.0,437.7 477.6,439.8C472.3,442.0 466.2,443.5 460.0,444.1C453.7,444.7 446.9,444.4 440.2,443.5C433.5,442.6 426.5,440.8 419.9,438.7C413.3,436.6 406.6,433.8 400.4,431.1C394.2,428.5 388.3,425.3 382.8,422.8C377.3,420.3 372.2,417.7 367.4,415.9C362.5,414.1 358.2,412.7 353.8,412.1C349.5,411.5 345.5,411.7 341.3,412.4C337.1,413.2 333.0,414.9 328.5,416.8C324.1,418.8 319.6,421.6 314.7,424.3C309.8,427.0 304.6,430.2 299.1,433.0C293.7,435.8 287.8,438.7 282.0,440.9C276.1,443.1 269.9,445.0 264.0,446.0C258.0,447.0 251.9,447.4 246.3,446.9C240.6,446.3 235.1,445.0 230.1,442.9C225.2,440.8 220.6,437.8 216.6,434.3C212.7,430.8 209.2,426.5 206.3,422.0C203.4,417.6 201.2,412.5 199.2,407.4C197.3,402.4 195.9,397.1 194.7,392.0C193.5,386.9 192.8,381.7 192.0,376.8C191.2,371.9 190.6,367.2 189.9,362.7C189.3,358.2 188.6,354.0 187.8,349.9C187.1,345.9 186.2,342.2 185.2,338.5C184.2,334.8 183.1,331.4 181.9,328.0C180.7,324.6 179.4,321.3 178.1,318.1C176.7,314.8 175.3,311.6 173.9,308.4C172.4,305.2 170.9,302.1 169.3,298.9C167.6,295.7 165.9,292.5 164.0,289.3C162.1,286.0 160.0,282.8 157.6,279.4C155.1,276.1 152.5,272.7 149.4,269.2C146.3,265.6 142.8,262.0 138.9,258.0C135.0,254.0 130.7,249.9 126.2,245.4C121.6,240.9 116.6,236.2 111.7,231.0C106.8,225.8 101.5,220.3 96.7,214.4C92.0,208.6 87.1,202.3 83.2,195.9C79.2,189.5 75.5,182.7 72.9,176.0C70.4,169.3 68.5,162.3 67.9,155.7C67.3,149.1 67.7,142.5 69.2,136.5C70.8,130.4 73.6,124.6 77.3,119.5C81.1,114.4 86.1,109.8 91.6,105.9C97.1,102.0 103.7,98.7 110.4,95.9C117.1,93.2 124.6,91.1 131.9,89.3C139.2,87.5 146.8,86.4 154.0,85.1C161.2,83.9 168.4,83.1 175.1,82.0C181.8,80.9 188.2,79.9 194.2,78.5C200.2,77.1 205.8,75.5 211.2,73.6C216.6,71.7 221.6,69.4 226.7,67.0C231.7,64.6 236.6,61.8 241.6,59.2C246.7,56.6 251.7,53.8 257.0,51.5C262.3,49.3 267.8,47.1 273.5,45.7C279.1,44.4 285.1,43.5 291.1,43.7C297.0,43.8 303.2,44.8 309.2,46.8C315.1,48.7 321.2,51.7 326.8,55.6C332.4,59.4 337.8,64.4 342.6,69.8C347.5,75.2 351.9,81.6 355.8,88.0C359.6,94.4 362.9,101.5 365.7,108.2C368.5,114.8 370.7,121.8 372.7,127.9C374.7,134.1 376.1,140.0 377.7,145.0C379.2,150.0 380.4,154.5 382.0,158.0C383.6,161.4 385.1,164.1 387.2,166.0C389.3,167.8 391.6,168.8 394.6,169.2C397.5,169.7 401.0,169.3 405.0,168.8C409.0,168.2 413.6,167.1 418.6,166.0C423.6,165.0 429.2,163.6 435.0,162.5C440.8,161.4 447.1,160.3 453.4,159.7C459.8,159.0 466.4,158.5 473.0,158.4C479.5,158.4 486.2,158.7 492.8,159.4C499.3,160.1 505.9,161.3 512.3,162.7C518.7,164.2 525.0,166.1 531.2,168.3C537.3,170.5 543.4,173.1 549.3,175.9C555.2,178.8 561.0,182.0 566.6,185.5C572.1,189.0 577.6,192.8 582.6,196.9C587.6,201.1 592.4,205.5 596.7,210.2C600.9,214.8 604.8,219.9 607.9,225.0C610.9,230.2 613.5,235.7 615.1,241.2C616.7,246.7 617.6,252.4 617.5,258.0Z" fill="#d6ecef" stroke="#1d4f66" stroke-width="2"/><path d="M539.6,267.0C539.5,271.3 539.0,275.6 537.9,279.9C536.9,284.1 535.3,288.3 533.3,292.3C531.4,296.3 528.9,300.2 526.2,303.9C523.6,307.7 520.5,311.2 517.5,314.7C514.5,318.1 511.2,321.3 508.1,324.6C505.0,327.8 501.8,330.8 498.9,333.9C496.0,337.0 493.2,340.0 490.6,343.1C488.0,346.2 485.7,349.3 483.5,352.6C481.2,355.8 479.3,359.2 477.3,362.6C475.2,366.1 473.4,369.7 471.4,373.2C469.4,376.8 467.4,380.5 465.1,384.0C462.8,387.6 460.4,391.1 457.6,394.4C454.7,397.6 451.6,400.8 448.2,403.5C444.7,406.2 440.9,408.6 436.7,410.5C432.6,412.4 428.1,413.9 423.5,414.9C418.9,415.9 413.9,416.4 409.0,416.6C404.1,416.7 399.0,416.4 394.1,415.8C389.2,415.3 384.2,414.3 379.5,413.4C374.8,412.4 370.1,411.2 365.7,410.2C361.3,409.3 357.1,408.2 353.0,407.6C348.9,406.9 345.1,406.3 341.2,406.2C337.4,406.0 333.7,406.2 329.9,406.7C326.1,407.1 322.3,408.0 318.4,408.9C314.5,409.9 310.6,411.2 306.4,412.5C302.3,413.7 298.0,415.2 293.6,416.4C289.2,417.5 284.6,418.8 280.0,419.5C275.4,420.3 270.6,420.9 266.0,421.0C261.4,421.1 256.7,420.8 252.3,420.0C247.9,419.2 243.6,418.0 239.5,416.3C235.5,414.6 231.7,412.4 228.3,409.9C224.8,407.4 221.7,404.4 218.8,401.3C216.0,398.2 213.5,394.8 211.2,391.4C208.9,387.9 207.0,384.3 205.2,380.7C203.3,377.1 201.8,373.5 200.2,370.0C198.7,366.4 197.3,362.9 195.9,359.6C194.5,356.2 193.2,352.9 191.8,349.7C190.5,346.5 189.1,343.4 187.7,340.3C186.4,337.3 185.0,334.3 183.6,331.3C182.2,328.3 180.8,325.4 179.5,322.4C178.1,319.5 176.8,316.5 175.5,313.6C174.2,310.6 172.9,307.6 171.6,304.6C170.3,301.6 169.1,298.6 167.7,295.6C166.4,292.6 165.0,289.5 163.6,286.4C162.1,283.3 160.5,280.2 158.8,276.9C157.1,273.7 155.3,270.4 153.3,267.0C151.3,263.6 149.1,260.0 146.9,256.3C144.7,252.6 142.2,248.8 139.9,244.7C137.6,240.7 135.2,236.4 133.1,232.1C131.0,227.7 128.9,223.1 127.3,218.4C125.7,213.8 124.3,209.0 123.5,204.2C122.8,199.4 122.4,194.5 122.8,189.9C123.1,185.2 124.0,180.5 125.6,176.2C127.2,171.9 129.5,167.6 132.2,163.8C135.0,160.0 138.5,156.5 142.3,153.3C146.1,150.2 150.5,147.4 155.0,144.9C159.5,142.4 164.4,140.3 169.3,138.4C174.2,136.4 179.3,134.9 184.2,133.3C189.1,131.7 194.1,130.4 198.8,129.0C203.5,127.5 208.1,126.2 212.6,124.7C217.0,123.2 221.3,121.6 225.5,119.9C229.7,118.3 233.7,116.4 237.8,114.6C241.8,112.7 245.8,110.7 249.9,108.9C254.0,107.0 258.1,105.1 262.4,103.5C266.7,101.9 271.1,100.4 275.6,99.3C280.1,98.3 284.8,97.6 289.4,97.4C294.1,97.3 298.9,97.5 303.6,98.4C308.3,99.3 313.0,100.7 317.5,102.7C322.0,104.6 326.5,107.1 330.6,110.0C334.7,112.8 338.6,116.2 342.2,119.6C345.8,123.1 349.1,126.9 352.2,130.6C355.2,134.3 357.9,138.1 360.5,141.6C363.2,145.1 365.5,148.6 367.8,151.6C370.1,154.6 372.3,157.4 374.6,159.7C376.9,162.0 379.2,163.9 381.8,165.5C384.3,167.1 386.9,168.2 389.9,169.2C392.8,170.1 396.0,170.7 399.4,171.2C402.8,171.7 406.5,171.9 410.3,172.2C414.2,172.5 418.3,172.7 422.5,173.1C426.7,173.5 431.1,173.9 435.5,174.6C439.9,175.2 444.4,176.0 448.8,177.1C453.3,178.1 457.7,179.4 462.0,180.9C466.4,182.4 470.6,184.1 474.8,186.1C479.0,188.0 483.0,190.2 487.0,192.6C490.9,194.9 494.8,197.5 498.5,200.3C502.2,203.0 505.8,206.0 509.2,209.1C512.6,212.2 515.9,215.5 518.9,219.0C521.9,222.4 524.8,226.1 527.3,229.9C529.8,233.6 532.1,237.6 533.9,241.6C535.8,245.7 537.2,249.9 538.2,254.1C539.1,258.4 539.6,262.7 539.6,267.0Z" fill="#c1e1e7" stroke="#3b7b93" stroke-width="1"/><path d="M475.3,276.0C475.2,279.2 474.9,282.5 474.3,285.7C473.7,288.9 472.8,292.0 471.6,295.1C470.5,298.2 469.0,301.2 467.5,304.2C465.9,307.1 464.1,309.9 462.2,312.7C460.4,315.5 458.3,318.1 456.4,320.8C454.4,323.4 452.3,325.9 450.4,328.5C448.4,331.0 446.5,333.5 444.6,336.0C442.7,338.5 440.9,341.0 439.1,343.6C437.3,346.1 435.7,348.7 433.9,351.3C432.2,353.9 430.5,356.5 428.6,359.2C426.8,361.8 425.0,364.4 422.9,367.0C420.9,369.5 418.8,372.0 416.4,374.4C414.1,376.7 411.5,379.0 408.8,381.0C406.1,383.0 403.1,384.9 400.0,386.4C396.9,388.0 393.6,389.3 390.2,390.4C386.8,391.5 383.2,392.2 379.6,392.8C376.1,393.4 372.4,393.6 368.7,393.8C365.1,393.9 361.4,393.8 357.9,393.7C354.3,393.6 350.8,393.3 347.3,393.1C343.9,392.9 340.6,392.6 337.3,392.4C334.0,392.3 330.8,392.2 327.6,392.2C324.4,392.3 321.3,392.4 318.1,392.7C315.0,393.0 311.8,393.4 308.6,393.8C305.4,394.3 302.1,394.8 298.8,395.3C295.5,395.8 292.1,396.4 288.6,396.8C285.2,397.2 281.6,397.6 278.1,397.7C274.6,397.8 271.0,397.8 267.5,397.5C264.0,397.2 260.5,396.6 257.1,395.8C253.7,395.0 250.4,393.9 247.3,392.6C244.1,391.3 241.1,389.7 238.3,387.9C235.5,386.1 232.8,384.1 230.3,381.9C227.8,379.8 225.6,377.4 223.4,375.0C221.3,372.7 219.3,370.1 217.5,367.6C215.6,365.1 213.9,362.6 212.2,360.0C210.6,357.5 209.0,354.9 207.5,352.4C206.0,349.9 204.5,347.4 203.1,344.9C201.7,342.4 200.3,340.0 198.9,337.5C197.5,335.1 196.2,332.6 194.9,330.2C193.6,327.7 192.4,325.3 191.2,322.8C190.0,320.3 188.9,317.8 187.8,315.3C186.7,312.8 185.6,310.3 184.6,307.8C183.7,305.2 182.7,302.6 181.8,300.1C180.9,297.5 180.0,294.9 179.1,292.2C178.2,289.6 177.3,286.9 176.3,284.2C175.4,281.5 174.4,278.8 173.5,276.0C172.5,273.2 171.4,270.3 170.4,267.4C169.4,264.5 168.4,261.5 167.4,258.4C166.5,255.3 165.5,252.1 164.7,248.8C164.0,245.6 163.2,242.2 162.8,238.9C162.4,235.5 162.1,232.1 162.2,228.7C162.2,225.3 162.5,221.8 163.2,218.5C163.9,215.2 164.9,211.9 166.3,208.8C167.7,205.6 169.5,202.6 171.5,199.8C173.6,196.9 176.0,194.3 178.7,191.8C181.3,189.4 184.3,187.1 187.3,185.0C190.4,182.9 193.7,181.1 197.0,179.3C200.3,177.6 203.7,176.0 207.1,174.5C210.5,173.0 213.9,171.6 217.3,170.2C220.6,168.8 224.0,167.5 227.2,166.1C230.5,164.8 233.7,163.4 236.9,162.0C240.1,160.6 243.2,159.2 246.4,157.8C249.5,156.4 252.7,155.0 255.9,153.6C259.1,152.3 262.4,151.0 265.7,149.8C269.1,148.7 272.5,147.7 276.0,146.9C279.4,146.1 283.0,145.5 286.6,145.2C290.2,145.0 293.8,144.9 297.4,145.3C301.0,145.6 304.7,146.2 308.2,147.1C311.7,148.0 315.2,149.3 318.5,150.7C321.8,152.2 325.0,153.9 328.1,155.7C331.2,157.5 334.1,159.6 336.9,161.6C339.6,163.6 342.2,165.7 344.8,167.7C347.3,169.7 349.7,171.7 352.1,173.6C354.5,175.4 356.8,177.1 359.1,178.7C361.5,180.3 363.8,181.7 366.2,182.9C368.6,184.2 371.0,185.3 373.6,186.3C376.2,187.3 378.8,188.2 381.6,189.1C384.3,189.9 387.2,190.7 390.1,191.5C393.1,192.4 396.1,193.2 399.1,194.1C402.2,195.1 405.3,196.0 408.3,197.2C411.4,198.3 414.5,199.5 417.5,200.9C420.5,202.3 423.5,203.8 426.4,205.4C429.3,207.0 432.1,208.8 434.9,210.7C437.6,212.6 440.3,214.7 442.8,216.8C445.4,219.0 447.8,221.3 450.2,223.6C452.5,226.0 454.8,228.5 456.9,231.1C459.0,233.7 461.1,236.4 462.9,239.1C464.8,241.9 466.5,244.8 468.0,247.7C469.5,250.7 470.9,253.7 471.9,256.8C473.0,259.9 473.9,263.1 474.4,266.3C475.0,269.5 475.3,272.8 475.3,276.0Z" fill="#a9d3dd" stroke="#3b7b93" stroke-width="1"/><path d="M418.4,285.0C418.4,287.3 418.3,289.6 417.9,291.9C417.6,294.2 417.0,296.5 416.4,298.8C415.7,301.0 414.9,303.2 413.9,305.4C413.0,307.5 411.9,309.6 410.8,311.7C409.7,313.8 408.5,315.8 407.3,317.8C406.0,319.7 404.7,321.7 403.4,323.6C402.1,325.5 400.8,327.4 399.5,329.3C398.2,331.2 396.9,333.1 395.5,334.9C394.2,336.8 392.9,338.7 391.5,340.6C390.1,342.4 388.8,344.3 387.3,346.1C385.8,348.0 384.4,349.8 382.7,351.6C381.1,353.3 379.5,355.1 377.7,356.7C375.9,358.3 374.0,359.9 372.0,361.3C369.9,362.8 367.8,364.1 365.6,365.3C363.4,366.5 361.0,367.5 358.6,368.4C356.2,369.3 353.7,370.1 351.2,370.7C348.7,371.3 346.1,371.8 343.6,372.2C341.0,372.5 338.4,372.8 335.8,373.0C333.3,373.2 330.7,373.3 328.2,373.4C325.7,373.5 323.2,373.5 320.8,373.6C318.3,373.7 315.9,373.8 313.5,373.9C311.0,374.0 308.6,374.1 306.2,374.2C303.8,374.4 301.4,374.6 299.0,374.8C296.5,374.9 294.1,375.1 291.6,375.3C289.1,375.4 286.6,375.6 284.0,375.6C281.5,375.6 278.9,375.6 276.4,375.5C273.8,375.3 271.2,375.1 268.7,374.7C266.2,374.3 263.6,373.8 261.2,373.1C258.8,372.4 256.3,371.6 254.0,370.6C251.7,369.7 249.5,368.5 247.4,367.3C245.2,366.1 243.2,364.7 241.2,363.2C239.3,361.8 237.5,360.2 235.7,358.6C234.0,357.0 232.4,355.3 230.8,353.6C229.2,351.9 227.7,350.1 226.3,348.4C224.9,346.6 223.5,344.8 222.2,343.0C220.9,341.2 219.6,339.4 218.4,337.6C217.2,335.8 216.0,334.0 214.8,332.2C213.7,330.3 212.6,328.5 211.6,326.6C210.5,324.8 209.5,322.9 208.6,321.0C207.6,319.1 206.8,317.2 205.9,315.3C205.1,313.3 204.3,311.4 203.6,309.4C202.9,307.4 202.2,305.5 201.6,303.5C201.0,301.5 200.4,299.5 199.8,297.4C199.3,295.4 198.8,293.3 198.3,291.3C197.8,289.2 197.3,287.1 196.8,285.0C196.4,282.9 196.0,280.7 195.6,278.6C195.2,276.4 194.8,274.2 194.5,271.9C194.2,269.7 193.9,267.4 193.7,265.1C193.6,262.8 193.5,260.4 193.5,258.1C193.6,255.8 193.8,253.4 194.1,251.0C194.5,248.7 195.0,246.4 195.7,244.1C196.4,241.8 197.3,239.5 198.4,237.4C199.5,235.2 200.8,233.1 202.2,231.1C203.7,229.1 205.4,227.2 207.1,225.4C208.9,223.6 210.9,221.9 212.9,220.3C214.9,218.7 217.1,217.2 219.3,215.8C221.5,214.4 223.8,213.1 226.0,211.9C228.3,210.6 230.6,209.4 232.9,208.3C235.2,207.1 237.5,206.0 239.8,205.0C242.1,203.9 244.4,202.8 246.7,201.8C249.0,200.7 251.3,199.7 253.6,198.6C256.0,197.6 258.3,196.6 260.7,195.7C263.0,194.8 265.4,193.9 267.9,193.1C270.3,192.3 272.8,191.6 275.4,191.1C277.9,190.5 280.5,190.1 283.1,189.8C285.7,189.5 288.3,189.4 290.9,189.5C293.5,189.5 296.2,189.8 298.7,190.2C301.3,190.5 303.9,191.1 306.4,191.8C308.9,192.5 311.3,193.4 313.7,194.3C316.1,195.2 318.3,196.3 320.6,197.3C322.8,198.4 324.9,199.6 327.0,200.7C329.2,201.8 331.2,202.9 333.2,204.0C335.2,205.1 337.2,206.2 339.1,207.3C341.1,208.3 343.0,209.3 345.0,210.2C347.0,211.2 349.0,212.0 351.0,212.9C353.0,213.8 355.0,214.6 357.1,215.5C359.2,216.4 361.3,217.2 363.4,218.1C365.5,219.0 367.6,219.9 369.7,220.9C371.8,221.9 374.0,222.9 376.0,224.0C378.1,225.1 380.2,226.3 382.2,227.6C384.2,228.8 386.2,230.2 388.1,231.6C390.0,233.0 391.8,234.5 393.6,236.1C395.3,237.7 397.0,239.4 398.7,241.1C400.3,242.8 401.8,244.6 403.3,246.4C404.8,248.3 406.2,250.2 407.5,252.2C408.8,254.1 410.0,256.2 411.2,258.2C412.3,260.3 413.3,262.4 414.2,264.6C415.1,266.8 415.9,269.0 416.5,271.2C417.1,273.5 417.6,275.8 418.0,278.1C418.3,280.4 418.5,282.7 418.4,285.0Z" fill="#8fc4d3" stroke="#3b7b93" stroke-width="1"/><path d="M365.7,294.0C365.7,295.5 365.6,297.0 365.4,298.4C365.2,299.9 365.0,301.4 364.6,302.8C364.2,304.2 363.8,305.7 363.3,307.1C362.8,308.5 362.2,309.9 361.6,311.2C360.9,312.6 360.3,313.9 359.5,315.2C358.8,316.5 358.1,317.8 357.3,319.1C356.5,320.3 355.7,321.6 354.9,322.8C354.0,324.1 353.2,325.3 352.3,326.5C351.4,327.7 350.6,328.9 349.6,330.1C348.7,331.3 347.8,332.5 346.8,333.7C345.8,334.8 344.8,336.0 343.7,337.1C342.6,338.2 341.5,339.3 340.3,340.3C339.1,341.3 337.8,342.3 336.5,343.2C335.2,344.1 333.8,345.0 332.4,345.8C331.0,346.5 329.5,347.3 328.0,347.9C326.5,348.5 324.9,349.1 323.3,349.6C321.7,350.1 320.1,350.5 318.5,350.8C316.9,351.2 315.2,351.5 313.6,351.7C312.0,352.0 310.3,352.1 308.7,352.3C307.1,352.5 305.5,352.6 303.8,352.7C302.2,352.9 300.6,353.0 299.0,353.1C297.4,353.2 295.8,353.3 294.2,353.3C292.6,353.4 291.0,353.5 289.4,353.5C287.8,353.6 286.1,353.6 284.5,353.6C282.9,353.6 281.2,353.6 279.6,353.6C277.9,353.5 276.3,353.4 274.6,353.2C273.0,353.0 271.4,352.7 269.7,352.4C268.1,352.1 266.5,351.7 264.9,351.2C263.4,350.7 261.8,350.2 260.3,349.5C258.8,348.9 257.3,348.2 255.9,347.4C254.5,346.7 253.2,345.8 251.9,344.9C250.6,344.0 249.3,343.1 248.1,342.1C246.9,341.1 245.8,340.1 244.7,339.0C243.6,338.0 242.5,336.9 241.5,335.8C240.5,334.7 239.5,333.6 238.6,332.4C237.6,331.3 236.7,330.1 235.9,329.0C235.0,327.8 234.2,326.6 233.4,325.4C232.6,324.2 231.8,323.0 231.1,321.8C230.4,320.5 229.7,319.3 229.1,318.0C228.4,316.8 227.8,315.5 227.3,314.2C226.7,312.9 226.2,311.6 225.8,310.3C225.3,309.0 224.9,307.6 224.5,306.3C224.1,305.0 223.8,303.6 223.5,302.3C223.1,300.9 222.9,299.5 222.6,298.2C222.4,296.8 222.2,295.4 222.0,294.0C221.8,292.6 221.6,291.2 221.5,289.8C221.4,288.4 221.3,286.9 221.3,285.5C221.3,284.0 221.2,282.6 221.3,281.1C221.4,279.7 221.5,278.2 221.7,276.7C221.9,275.2 222.2,273.8 222.5,272.3C222.9,270.9 223.3,269.4 223.9,268.0C224.4,266.6 225.0,265.2 225.8,263.8C226.5,262.5 227.4,261.1 228.3,259.9C229.2,258.6 230.2,257.4 231.3,256.2C232.4,255.0 233.6,253.9 234.8,252.9C236.0,251.8 237.3,250.8 238.6,249.9C240.0,248.9 241.3,248.0 242.7,247.1C244.1,246.3 245.5,245.4 247.0,244.6C248.4,243.8 249.8,243.1 251.3,242.3C252.7,241.6 254.2,240.9 255.7,240.2C257.1,239.5 258.6,238.8 260.1,238.2C261.6,237.5 263.2,236.9 264.7,236.3C266.2,235.7 267.8,235.2 269.4,234.7C271.0,234.2 272.6,233.8 274.2,233.4C275.9,233.1 277.5,232.8 279.2,232.6C280.9,232.4 282.6,232.3 284.3,232.2C285.9,232.2 287.6,232.3 289.3,232.4C291.0,232.5 292.6,232.8 294.3,233.1C295.9,233.4 297.5,233.8 299.1,234.2C300.7,234.6 302.2,235.1 303.8,235.6C305.3,236.2 306.8,236.7 308.2,237.3C309.7,237.9 311.1,238.5 312.5,239.1C313.9,239.8 315.3,240.4 316.7,241.0C318.1,241.6 319.4,242.2 320.8,242.9C322.2,243.5 323.5,244.1 324.9,244.7C326.2,245.3 327.6,246.0 329.0,246.6C330.3,247.3 331.7,247.9 333.0,248.6C334.4,249.3 335.7,250.0 337.0,250.8C338.4,251.6 339.7,252.3 341.0,253.2C342.2,254.0 343.5,254.9 344.7,255.8C345.9,256.8 347.1,257.7 348.2,258.7C349.4,259.7 350.5,260.8 351.5,261.9C352.6,263.0 353.6,264.1 354.5,265.3C355.5,266.5 356.4,267.7 357.2,268.9C358.1,270.2 358.9,271.5 359.6,272.8C360.4,274.1 361.1,275.4 361.7,276.8C362.3,278.1 362.9,279.5 363.4,280.9C363.9,282.3 364.3,283.8 364.7,285.2C365.0,286.6 365.3,288.1 365.4,289.6C365.6,291.0 365.7,292.5 365.7,294.0Z" fill="#72b1c5" stroke="#3b7b93" stroke-width="1"/><path d="M206.2,455.0C206.6,457.0 206.8,459.1 206.7,461.1C206.7,463.2 206.4,465.2 205.9,467.2C205.4,469.2 204.6,471.2 203.5,473.0C202.5,474.9 201.2,476.7 199.7,478.4C198.2,480.0 196.4,481.6 194.5,483.0C192.7,484.5 190.5,485.8 188.3,486.9C186.2,488.1 183.8,489.1 181.4,489.9C179.1,490.8 176.6,491.6 174.2,492.2C171.8,492.8 169.4,493.3 167.0,493.8C164.7,494.2 162.4,494.6 160.3,494.9C158.1,495.2 156.1,495.5 154.2,495.8C152.3,496.2 150.5,496.5 148.8,496.9C147.2,497.2 145.6,497.7 144.2,498.2C142.8,498.7 141.5,499.3 140.3,500.0C139.0,500.7 137.9,501.5 136.8,502.3C135.7,503.2 134.6,504.2 133.5,505.2C132.4,506.3 131.3,507.4 130.1,508.5C129.0,509.6 127.8,510.8 126.5,511.9C125.2,513.0 123.9,514.2 122.4,515.2C121.0,516.2 119.5,517.2 117.9,518.0C116.3,518.9 114.7,519.6 113.0,520.2C111.3,520.8 109.5,521.2 107.7,521.5C105.9,521.8 104.1,521.8 102.3,521.8C100.5,521.7 98.7,521.4 96.9,521.0C95.2,520.6 93.4,520.1 91.8,519.4C90.1,518.7 88.5,517.9 87.0,517.0C85.5,516.2 84.0,515.2 82.6,514.2C81.2,513.2 79.9,512.1 78.6,511.1C77.4,510.1 76.1,509.0 74.9,508.0C73.7,507.0 72.5,506.0 71.4,505.1C70.2,504.2 69.0,503.3 67.7,502.5C66.5,501.7 65.3,500.9 64.0,500.2C62.7,499.4 61.3,498.8 59.9,498.1C58.5,497.4 57.0,496.8 55.5,496.1C54.0,495.5 52.4,494.8 50.8,494.1C49.2,493.4 47.6,492.7 46.0,491.9C44.3,491.1 42.7,490.3 41.1,489.3C39.6,488.4 38.0,487.4 36.5,486.3C35.1,485.2 33.7,484.1 32.4,482.8C31.1,481.6 29.9,480.2 28.8,478.8C27.7,477.5 26.8,476.0 26.0,474.5C25.1,473.0 24.4,471.4 23.9,469.8C23.3,468.2 22.8,466.6 22.4,465.0C22.0,463.3 21.8,461.7 21.6,460.0C21.3,458.4 21.2,456.7 21.1,455.0C21.0,453.3 20.9,451.6 20.8,449.9C20.7,448.2 20.7,446.5 20.6,444.8C20.6,443.1 20.5,441.3 20.5,439.5C20.4,437.8 20.3,436.0 20.3,434.1C20.2,432.3 20.2,430.4 20.2,428.5C20.2,426.5 20.2,424.6 20.4,422.6C20.5,420.6 20.7,418.6 21.1,416.6C21.4,414.6 21.8,412.6 22.5,410.7C23.1,408.7 23.9,406.8 24.9,404.9C25.9,403.1 27.0,401.3 28.4,399.7C29.8,398.1 31.3,396.6 33.1,395.3C34.9,394.0 36.8,392.8 38.9,391.9C41.1,391.0 43.4,390.3 45.8,389.8C48.2,389.3 50.7,389.1 53.3,389.1C55.8,389.0 58.5,389.3 61.2,389.7C63.8,390.1 66.5,390.8 69.0,391.6C71.6,392.4 74.2,393.4 76.6,394.5C79.0,395.6 81.3,396.9 83.5,398.1C85.7,399.4 87.7,400.7 89.6,402.0C91.5,403.3 93.3,404.6 94.9,405.8C96.5,407.0 98.0,408.1 99.4,409.1C100.8,410.1 102.0,411.0 103.2,411.7C104.5,412.4 105.6,412.9 106.7,413.3C107.8,413.7 108.9,413.9 110.0,414.0C111.1,414.0 112.3,413.9 113.5,413.7C114.7,413.5 115.9,413.1 117.3,412.7C118.6,412.3 120.0,411.8 121.5,411.3C123.0,410.8 124.6,410.2 126.3,409.7C128.0,409.1 129.7,408.6 131.6,408.2C133.4,407.7 135.3,407.3 137.2,407.1C139.1,406.8 141.1,406.6 143.0,406.5C145.0,406.4 147.0,406.5 148.9,406.7C150.9,406.8 152.8,407.1 154.7,407.5C156.6,407.9 158.5,408.4 160.3,409.1C162.1,409.7 163.9,410.4 165.6,411.2C167.4,412.0 169.1,413.0 170.7,413.9C172.4,414.9 174.0,415.9 175.6,417.0C177.2,418.2 178.8,419.3 180.4,420.5C181.9,421.8 183.5,423.0 185.0,424.4C186.5,425.7 188.0,427.1 189.5,428.5C191.0,430.0 192.5,431.5 193.9,433.1C195.3,434.7 196.7,436.3 197.9,438.0C199.2,439.7 200.4,441.5 201.5,443.3C202.6,445.2 203.6,447.1 204.3,449.0C205.1,451.0 205.8,453.0 206.2,455.0Z" fill="#d6ecef" stroke="#1d4f66" stroke-width="2"/><path d="M190.7,449.6C190.9,451.1 191.0,452.7 190.9,454.2C190.8,455.8 190.6,457.3 190.3,458.8C189.9,460.3 189.4,461.8 188.8,463.3C188.1,464.7 187.3,466.1 186.4,467.4C185.5,468.8 184.4,470.1 183.2,471.3C182.0,472.5 180.7,473.6 179.4,474.6C178.0,475.7 176.5,476.6 175.1,477.5C173.6,478.4 172.0,479.2 170.5,479.9C168.9,480.7 167.4,481.4 165.8,482.0C164.3,482.6 162.8,483.2 161.3,483.7C159.8,484.3 158.4,484.8 157.0,485.3C155.6,485.8 154.3,486.3 153.0,486.9C151.7,487.4 150.5,487.9 149.3,488.5C148.1,489.1 147.0,489.7 145.9,490.3C144.8,490.9 143.7,491.6 142.7,492.3C141.6,493.0 140.5,493.7 139.4,494.5C138.4,495.2 137.3,496.0 136.1,496.7C135.0,497.5 133.9,498.3 132.7,499.0C131.5,499.7 130.2,500.5 128.9,501.1C127.6,501.7 126.3,502.4 124.9,502.9C123.5,503.4 122.1,503.9 120.7,504.2C119.2,504.5 117.7,504.8 116.2,505.0C114.8,505.1 113.2,505.2 111.7,505.1C110.3,505.0 108.7,504.9 107.3,504.6C105.8,504.4 104.3,504.0 102.9,503.6C101.5,503.2 100.1,502.6 98.8,502.1C97.5,501.5 96.2,500.8 94.9,500.2C93.6,499.5 92.4,498.8 91.2,498.1C90.0,497.4 88.9,496.6 87.7,495.9C86.6,495.2 85.5,494.4 84.4,493.7C83.3,493.0 82.2,492.3 81.1,491.6C80.0,490.9 78.9,490.2 77.7,489.5C76.6,488.8 75.5,488.2 74.3,487.5C73.2,486.8 72.0,486.2 70.8,485.5C69.6,484.8 68.5,484.1 67.3,483.3C66.1,482.6 64.9,481.8 63.7,481.0C62.5,480.2 61.4,479.4 60.3,478.5C59.2,477.6 58.1,476.6 57.0,475.6C56.0,474.7 55.0,473.6 54.1,472.5C53.3,471.4 52.4,470.3 51.7,469.1C50.9,467.9 50.3,466.7 49.7,465.5C49.1,464.2 48.6,462.9 48.2,461.6C47.8,460.3 47.4,459.0 47.1,457.7C46.9,456.4 46.7,455.0 46.5,453.7C46.4,452.3 46.3,451.0 46.2,449.6C46.1,448.2 46.1,446.9 46.1,445.5C46.1,444.2 46.2,442.8 46.2,441.4C46.3,440.0 46.3,438.6 46.4,437.2C46.5,435.8 46.6,434.4 46.8,433.0C46.9,431.6 47.0,430.2 47.2,428.7C47.4,427.3 47.7,425.8 48.0,424.3C48.3,422.9 48.6,421.4 49.1,419.9C49.5,418.5 50.0,417.0 50.7,415.6C51.3,414.1 52.0,412.7 52.9,411.4C53.7,410.1 54.7,408.8 55.7,407.6C56.8,406.3 58.0,405.2 59.3,404.2C60.6,403.2 62.0,402.2 63.5,401.4C65.1,400.6 66.7,399.9 68.4,399.4C70.1,398.8 71.8,398.4 73.6,398.1C75.4,397.8 77.3,397.7 79.1,397.7C81.0,397.6 82.9,397.8 84.7,398.0C86.5,398.2 88.4,398.5 90.2,398.9C91.9,399.2 93.7,399.7 95.3,400.2C97.0,400.7 98.6,401.3 100.1,401.8C101.7,402.3 103.1,402.9 104.5,403.4C105.9,404.0 107.3,404.5 108.5,404.9C109.8,405.4 111.0,405.8 112.2,406.2C113.4,406.5 114.6,406.8 115.7,407.0C116.9,407.2 118.0,407.4 119.2,407.4C120.3,407.5 121.4,407.5 122.6,407.5C123.8,407.5 125.0,407.4 126.3,407.3C127.5,407.2 128.8,407.1 130.1,407.0C131.4,406.9 132.8,406.7 134.2,406.7C135.6,406.6 137.0,406.5 138.5,406.5C139.9,406.5 141.4,406.5 142.9,406.6C144.3,406.7 145.8,406.9 147.3,407.1C148.8,407.3 150.3,407.7 151.7,408.0C153.2,408.4 154.6,408.9 156.0,409.4C157.4,410.0 158.8,410.6 160.2,411.3C161.5,411.9 162.8,412.7 164.1,413.5C165.3,414.3 166.5,415.1 167.7,416.0C168.9,416.9 170.1,417.9 171.2,418.9C172.3,419.8 173.4,420.9 174.5,421.9C175.6,423.0 176.6,424.1 177.6,425.2C178.6,426.4 179.6,427.5 180.6,428.8C181.6,430.0 182.5,431.2 183.4,432.5C184.3,433.8 185.1,435.1 185.9,436.5C186.7,437.8 187.4,439.2 188.0,440.7C188.7,442.1 189.2,443.6 189.7,445.1C190.1,446.5 190.4,448.1 190.7,449.6Z" fill="#c1e1e7" stroke="#3b7b93" stroke-width="1"/><path d="M180.4,444.2C180.5,445.3 180.5,446.5 180.4,447.7C180.4,448.8 180.2,450.0 180.0,451.1C179.7,452.2 179.4,453.3 179.0,454.4C178.6,455.5 178.1,456.6 177.5,457.6C176.9,458.7 176.2,459.7 175.5,460.6C174.8,461.6 173.9,462.5 173.1,463.4C172.2,464.3 171.3,465.1 170.4,465.9C169.4,466.6 168.4,467.4 167.4,468.1C166.4,468.8 165.4,469.4 164.4,470.1C163.4,470.7 162.3,471.3 161.3,471.8C160.3,472.4 159.3,473.0 158.3,473.5C157.3,474.0 156.3,474.5 155.3,475.1C154.4,475.6 153.4,476.1 152.5,476.6C151.5,477.2 150.6,477.7 149.7,478.2C148.7,478.7 147.8,479.3 146.9,479.8C146.0,480.4 145.1,480.9 144.1,481.4C143.2,482.0 142.2,482.5 141.2,483.0C140.3,483.6 139.3,484.1 138.2,484.6C137.2,485.0 136.2,485.5 135.1,485.9C134.0,486.3 132.9,486.7 131.8,487.0C130.7,487.4 129.5,487.6 128.3,487.9C127.2,488.1 126.0,488.2 124.8,488.3C123.6,488.4 122.4,488.4 121.2,488.4C120.0,488.3 118.8,488.2 117.6,488.1C116.5,487.9 115.3,487.7 114.1,487.4C113.0,487.1 111.9,486.8 110.8,486.4C109.7,486.0 108.6,485.6 107.5,485.1C106.5,484.7 105.4,484.2 104.4,483.7C103.4,483.2 102.4,482.7 101.5,482.1C100.5,481.6 99.6,481.1 98.6,480.5C97.7,480.0 96.8,479.4 95.8,478.8C94.9,478.3 94.0,477.7 93.1,477.1C92.2,476.6 91.3,476.0 90.3,475.4C89.4,474.8 88.5,474.2 87.6,473.6C86.7,472.9 85.9,472.3 85.0,471.6C84.1,471.0 83.2,470.3 82.4,469.6C81.5,468.9 80.7,468.1 79.9,467.4C79.1,466.6 78.4,465.8 77.6,464.9C76.9,464.1 76.2,463.2 75.6,462.3C75.0,461.4 74.4,460.5 73.9,459.6C73.4,458.6 72.9,457.6 72.5,456.7C72.1,455.7 71.7,454.7 71.4,453.6C71.1,452.6 70.9,451.6 70.7,450.5C70.5,449.5 70.3,448.4 70.2,447.4C70.1,446.3 70.0,445.3 70.0,444.2C70.0,443.1 70.0,442.1 70.0,441.0C70.1,440.0 70.1,438.9 70.2,437.8C70.3,436.8 70.4,435.7 70.6,434.6C70.7,433.5 70.9,432.5 71.0,431.4C71.2,430.3 71.4,429.2 71.7,428.1C72.0,427.1 72.2,426.0 72.6,424.9C72.9,423.8 73.3,422.7 73.7,421.7C74.2,420.6 74.6,419.5 75.2,418.5C75.7,417.5 76.3,416.5 77.0,415.5C77.7,414.5 78.5,413.5 79.3,412.7C80.1,411.8 81.0,410.9 82.0,410.1C82.9,409.3 84.0,408.6 85.0,407.9C86.1,407.3 87.3,406.7 88.5,406.2C89.6,405.7 90.9,405.2 92.2,404.9C93.4,404.5 94.7,404.2 96.0,404.0C97.3,403.8 98.7,403.7 100.0,403.6C101.3,403.5 102.6,403.5 103.9,403.6C105.2,403.6 106.5,403.7 107.8,403.8C109.0,404.0 110.2,404.1 111.4,404.3C112.6,404.5 113.8,404.7 114.9,404.9C116.1,405.1 117.2,405.3 118.3,405.5C119.3,405.6 120.4,405.8 121.4,406.0C122.5,406.1 123.5,406.3 124.5,406.4C125.6,406.5 126.6,406.6 127.6,406.7C128.6,406.8 129.6,406.8 130.7,406.9C131.7,406.9 132.7,407.0 133.8,407.0C134.8,407.1 135.9,407.1 137.0,407.2C138.1,407.3 139.2,407.3 140.3,407.4C141.4,407.5 142.5,407.7 143.6,407.8C144.8,408.0 145.9,408.2 147.0,408.4C148.1,408.7 149.3,409.0 150.4,409.3C151.5,409.6 152.6,410.0 153.7,410.5C154.7,410.9 155.8,411.4 156.8,411.9C157.8,412.4 158.9,413.0 159.8,413.6C160.8,414.2 161.7,414.9 162.7,415.6C163.6,416.3 164.5,417.0 165.3,417.8C166.2,418.5 167.0,419.3 167.8,420.1C168.6,420.9 169.4,421.8 170.1,422.7C170.8,423.5 171.6,424.4 172.2,425.3C172.9,426.3 173.6,427.2 174.2,428.2C174.8,429.1 175.4,430.1 176.0,431.1C176.6,432.1 177.1,433.2 177.6,434.2C178.1,435.3 178.5,436.4 178.9,437.4C179.2,438.5 179.6,439.7 179.8,440.8C180.1,441.9 180.3,443.1 180.4,444.2Z" fill="#a9d3dd" stroke="#3b7b93" stroke-width="1"/><text x="455" y="158" class="snd">20</text><text x="394.2" y="207" class="snd">35</text><text x="273.4" y="246" class="snd">45</text><text x="320.6" y="293" class="snd">55</text><text x="287.8" y="306" class="snd">55</text><text x="214.2" y="337" class="snd">35</text><text x="185" y="278" class="snd">20</text><text x="373.4" y="346" class="snd">45</text><text x="355" y="408" class="snd">20</text><text x="118" y="453.6" class="snd">35</text><text x="69" y="495" class="snd">20</text><g class="buoy" transform="translate(485 340)"><ellipse cx="0" cy="0" rx="13" ry="4" fill="none" stroke="#1d4f66" stroke-width="1" opacity=".6"/><g class="bob"><rect x="-6" y="-22" width="12" height="18" rx="1" fill="#c8302a"/><rect x="-6" y="-10" width="12" height="3" fill="#fff"/><circle cx="0" cy="-24" r="1.8" fill="#14283a"/></g></g><g class="buoy" transform="translate(239 146)"><ellipse cx="0" cy="0" rx="13" ry="4" fill="none" stroke="#1d4f66" stroke-width="1" opacity=".6"/><g class="bob"><path d="M-6,-4 L0,-26 L6,-4Z" fill="#1f7a4d"/><rect x="-6" y="-8" width="12" height="3" fill="#fff"/><circle cx="0" cy="-28" r="1.8" fill="#14283a"/></g></g><g class="buoy" transform="translate(155 431)"><ellipse cx="0" cy="0" rx="13" ry="4" fill="none" stroke="#1d4f66" stroke-width="1" opacity=".6"/><g class="bob"><rect x="-6" y="-22" width="12" height="18" rx="1" fill="#c8302a"/><rect x="-6" y="-10" width="12" height="3" fill="#fff"/><circle cx="0" cy="-24" r="1.8" fill="#14283a"/></g></g><g transform="translate(556 92)"><path d="M0,-30 L9,10 L0,2 L-9,10Z" fill="#14283a"/><text x="0" y="30" text-anchor="middle" class="nlab">N</text></g><rect x="7" y="7" width="626" height="546" fill="none" stroke="#14283a" stroke-width="1.4"/><rect x="14" y="14" width="612" height="532" fill="none" stroke="#14283a" stroke-width="1"/><rect x="14" y="7" width="24" height="7" fill="#14283a"/><rect x="14" y="546" width="24" height="7" fill="#14283a"/><rect x="38" y="7" width="24" height="7" fill="#fff"/><rect x="38" y="546" width="24" height="7" fill="#fff"/><rect x="62" y="7" width="24" height="7" fill="#14283a"/><rect x="62" y="546" width="24" height="7" fill="#14283a"/><rect x="86" y="7" width="24" height="7" fill="#fff"/><rect x="86" y="546" width="24" height="7" fill="#fff"/><rect x="110" y="7" width="24" height="7" fill="#14283a"/><rect x="110" y="546" width="24" height="7" fill="#14283a"/><rect x="134" y="7" width="24" height="7" fill="#fff"/><rect x="134" y="546" width="24" height="7" fill="#fff"/><rect x="158" y="7" width="24" height="7" fill="#14283a"/><rect x="158" y="546" width="24" height="7" fill="#14283a"/><rect x="182" y="7" width="24" height="7" fill="#fff"/><rect x="182" y="546" width="24" height="7" fill="#fff"/><rect x="206" y="7" width="24" height="7" fill="#14283a"/><rect x="206" y="546" width="24" height="7" fill="#14283a"/><rect x="230" y="7" width="24" height="7" fill="#fff"/><rect x="230" y="546" width="24" height="7" fill="#fff"/><rect x="254" y="7" width="24" height="7" fill="#14283a"/><rect x="254" y="546" width="24" height="7" fill="#14283a"/><rect x="278" y="7" width="24" height="7" fill="#fff"/><rect x="278" y="546" width="24" height="7" fill="#fff"/><rect x="302" y="7" width="24" height="7" fill="#14283a"/><rect x="302" y="546" width="24" height="7" fill="#14283a"/><rect x="326" y="7" width="24" height="7" fill="#fff"/><rect x="326" y="546" width="24" height="7" fill="#fff"/><rect x="350" y="7" width="24" height="7" fill="#14283a"/><rect x="350" y="546" width="24" height="7" fill="#14283a"/><rect x="374" y="7" width="24" height="7" fill="#fff"/><rect x="374" y="546" width="24" height="7" fill="#fff"/><rect x="398" y="7" width="24" height="7" fill="#14283a"/><rect x="398" y="546" width="24" height="7" fill="#14283a"/><rect x="422" y="7" width="24" height="7" fill="#fff"/><rect x="422" y="546" width="24" height="7" fill="#fff"/><rect x="446" y="7" width="24" height="7" fill="#14283a"/><rect x="446" y="546" width="24" height="7" fill="#14283a"/><rect x="470" y="7" width="24" height="7" fill="#fff"/><rect x="470" y="546" width="24" height="7" fill="#fff"/><rect x="494" y="7" width="24" height="7" fill="#14283a"/><rect x="494" y="546" width="24" height="7" fill="#14283a"/><rect x="518" y="7" width="24" height="7" fill="#fff"/><rect x="518" y="546" width="24" height="7" fill="#fff"/><rect x="542" y="7" width="24" height="7" fill="#14283a"/><rect x="542" y="546" width="24" height="7" fill="#14283a"/><rect x="566" y="7" width="24" height="7" fill="#fff"/><rect x="566" y="546" width="24" height="7" fill="#fff"/><rect x="590" y="7" width="24" height="7" fill="#14283a"/><rect x="590" y="546" width="24" height="7" fill="#14283a"/><rect x="614" y="7" width="24" height="7" fill="#fff"/><rect x="614" y="546" width="24" height="7" fill="#fff"/><rect x="7" y="14" width="7" height="24" fill="#14283a"/><rect x="626" y="14" width="7" height="24" fill="#14283a"/><rect x="7" y="38" width="7" height="24" fill="#fff"/><rect x="626" y="38" width="7" height="24" fill="#fff"/><rect x="7" y="62" width="7" height="24" fill="#14283a"/><rect x="626" y="62" width="7" height="24" fill="#14283a"/><rect x="7" y="86" width="7" height="24" fill="#fff"/><rect x="626" y="86" width="7" height="24" fill="#fff"/><rect x="7" y="110" width="7" height="24" fill="#14283a"/><rect x="626" y="110" width="7" height="24" fill="#14283a"/><rect x="7" y="134" width="7" height="24" fill="#fff"/><rect x="626" y="134" width="7" height="24" fill="#fff"/><rect x="7" y="158" width="7" height="24" fill="#14283a"/><rect x="626" y="158" width="7" height="24" fill="#14283a"/><rect x="7" y="182" width="7" height="24" fill="#fff"/><rect x="626" y="182" width="7" height="24" fill="#fff"/><rect x="7" y="206" width="7" height="24" fill="#14283a"/><rect x="626" y="206" width="7" height="24" fill="#14283a"/><rect x="7" y="230" width="7" height="24" fill="#fff"/><rect x="626" y="230" width="7" height="24" fill="#fff"/><rect x="7" y="254" width="7" height="24" fill="#14283a"/><rect x="626" y="254" width="7" height="24" fill="#14283a"/><rect x="7" y="278" width="7" height="24" fill="#fff"/><rect x="626" y="278" width="7" height="24" fill="#fff"/><rect x="7" y="302" width="7" height="24" fill="#14283a"/><rect x="626" y="302" width="7" height="24" fill="#14283a"/><rect x="7" y="326" width="7" height="24" fill="#fff"/><rect x="626" y="326" width="7" height="24" fill="#fff"/><rect x="7" y="350" width="7" height="24" fill="#14283a"/><rect x="626" y="350" width="7" height="24" fill="#14283a"/><rect x="7" y="374" width="7" height="24" fill="#fff"/><rect x="626" y="374" width="7" height="24" fill="#fff"/><rect x="7" y="398" width="7" height="24" fill="#14283a"/><rect x="626" y="398" width="7" height="24" fill="#14283a"/><rect x="7" y="422" width="7" height="24" fill="#fff"/><rect x="626" y="422" width="7" height="24" fill="#fff"/><rect x="7" y="446" width="7" height="24" fill="#14283a"/><rect x="626" y="446" width="7" height="24" fill="#14283a"/><rect x="7" y="470" width="7" height="24" fill="#fff"/><rect x="626" y="470" width="7" height="24" fill="#fff"/><rect x="7" y="494" width="7" height="24" fill="#14283a"/><rect x="626" y="494" width="7" height="24" fill="#14283a"/><rect x="7" y="518" width="7" height="24" fill="#fff"/><rect x="626" y="518" width="7" height="24" fill="#fff"/><rect x="7" y="542" width="7" height="24" fill="#14283a"/><rect x="626" y="542" width="7" height="24" fill="#14283a"/></svg></div>
 </header>
 
-<main id="top">
-  <section class="hero">
-    <div class="wrap hero-in">
-      <p class="eyebrow">Barbershop · Portage Lakes Dr, Akron</p>
-      <h1>Sharp fades.<br>Classic cuts.</h1>
-      <p class="lede">Trusted by generations. Raising the bar, one cut at a time.</p>
+<section class="depths" aria-labelledby="svc">
+  <div class="wrap depths-in">
+    <h2 id="svc">Every service, and how long it takes</h2>
+    <p class="sub">On a chart the number is the depth. Here it's minutes in the chair.</p>
+    <ul class="rows">
+      <li class="row"><div><h3>Haircut &amp; Beard Combo</h3><p>Haircut and beard in one appointment.</p></div><div class="gauge"><div class="num">55<small>min</small></div><div class="track"><span class="fill" style="width:91.7%"></span><i style="left:25%"></i><i style="left:50%"></i><i style="left:75%"></i></div></div></li>
+      <li class="row"><div><h3>Haircut</h3><p>Consultation, clipper or shear cut, straight-razor neckline and styling.</p></div><div class="gauge"><div class="num">45<small>min</small></div><div class="track"><span class="fill" style="width:75%"></span><i style="left:25%"></i><i style="left:50%"></i><i style="left:75%"></i></div></div></li>
+      <li class="row"><div><h3>Kid's Haircut</h3><p>Ages 12 to 17.</p></div><div class="gauge"><div class="num">35<small>min</small></div><div class="track"><span class="fill" style="width:58.3%"></span><i style="left:25%"></i><i style="left:50%"></i><i style="left:75%"></i></div></div></li>
+      <li class="row"><div><h3>Beard</h3><p>Trim, shape and lineup.</p></div><div class="gauge"><div class="num">20<small>min</small></div><div class="track"><span class="fill" style="width:33.3%"></span><i style="left:25%"></i><i style="left:50%"></i><i style="left:75%"></i></div></div></li>
+      <li class="row"><div><h3>Just a Line Up</h3><p>Hairline and neckline edge-up with a straight-razor finish.</p></div><div class="gauge"><div class="num">20<small>min</small></div><div class="track"><span class="fill" style="width:33.3%"></span><i style="left:25%"></i><i style="left:50%"></i><i style="left:75%"></i></div></div></li>
+    </ul>
+    <div class="scale" aria-hidden="true"><div><span>0</span><span>15</span><span>30</span><span>45</span><span>60 min</span></div></div>
+
+    <h3 class="mem-h">VIP memberships</h3>
+    <div class="mem">
+      <div><div class="num">30<small>days</small></div><h3>Monthly</h3><p>Up to one haircut per week. Haircuts only.</p></div>
+      <div><div class="num">365<small>days</small></div><h3>Yearly</h3><p>Up to one haircut every 7 days, priority booking. Haircuts only.</p></div>
+    </div>
+    <p class="fine">Services and times are as listed on the shop's Booksy page and may change. Ask the shop about memberships.</p>
+    <p class="book"><a class="btn" href="https://booksy.com/en-us/1500898_tyler-j-portage-lakes-barber-styling_barber-shop_31848_akron" target="_blank" rel="noopener">Book online on Booksy</a></p>
+  </div>
+</section>
+
+<section class="wrap about-in" aria-labelledby="about">
+  <div>
+    <div class="big" aria-hidden="true">32</div>
+    <p class="big-cap">years in the community, in the shop's own words</p>
+  </div>
+  <div class="about-copy">
+    <h2 id="about">Trusted by generations</h2>
+    <p style="margin-top:1rem">The shop has been serving the community for 32 years and is now under new co-ownership. It blends timeless tradition with modern precision, from sharp fades to classic cuts, in a relaxed, professional setting.</p>
+    <p class="mark">Rated 5.0 from 60 ratings on its Booksy page.</p>
+    <ul class="legend" aria-label="Good to know">
+      <li><svg class="glyph" viewBox="-14 -34 28 40" aria-hidden="true"><rect x="-7" y="-26" width="14" height="22" rx="1" fill="#c8302a"/><rect x="-7" y="-13" width="14" height="4" fill="#fff"/><ellipse cx="0" cy="1" rx="12" ry="3.5" fill="none" stroke="#1d4f66" stroke-width="1.4"/></svg>Parking space</li>
+      <li><svg class="glyph" viewBox="-14 -34 28 40" aria-hidden="true"><path d="M-8,-4 L0,-30 L8,-4Z" fill="#1f7a4d"/><rect x="-8" y="-10" width="16" height="4" fill="#fff"/><ellipse cx="0" cy="1" rx="12" ry="3.5" fill="none" stroke="#1d4f66" stroke-width="1.4"/></svg>Child-friendly</li>
+      <li><svg class="glyph" viewBox="-14 -34 28 40" aria-hidden="true"><circle cx="0" cy="-14" r="10" fill="#14283a"/><circle cx="0" cy="-14" r="4" fill="#e9ecd0"/><ellipse cx="0" cy="1" rx="12" ry="3.5" fill="none" stroke="#1d4f66" stroke-width="1.4"/></svg>Accessible for people with disabilities</li>
+    </ul>
+  </div>
+</section>
+
+<section class="visit" aria-labelledby="visit">
+  <div class="wrap visit-in">
+    <div>
+      <h2 id="visit">Find the shop on Portage Lakes Drive</h2>
+      <dl class="tb">
+        <div><dt>Address</dt><dd>503 Portage Lakes Dr, Suite E<br>Akron, OH 44319</dd></div>
+        <div><dt>Open</dt><dd>Tuesday through Saturday. Closed Sunday and Monday. Call for today's hours.</dd></div>
+        <div><dt>Phone</dt><dd><a href="tel:+13306443293">(330) 644-3293</a></dd></div>
+        <div><dt>Online</dt><dd><a href="https://www.facebook.com/PortageLakesBarberStyling/" target="_blank" rel="noopener">Facebook page</a></dd></div>
+      </dl>
       <div class="cta-row">
-        <a class="btn" href="https://booksy.com/en-us/1500898_tyler-j-portage-lakes-barber-styling_barber-shop_31848_akron" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg>Book online</a>
-        <a class="btn btn-ghost" href="tel:3306443293"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(330) 644-3293</a>
-      </div>
-      <p class="status" id="open-status" aria-live="polite"></p>
-    </div>
-  </section>
-
-  <section id="services" class="section">
-    <div class="wrap">
-      <h2>Services &amp; prices</h2>
-      <ul class="svc-list">
-        <li class="svc">
-          <div class="svc-top"><h3>Haircut</h3><span class="dots" aria-hidden="true"></span><strong>$30</strong></div>
-          <p>Consultation, clipper or shear cut, straight-razor neckline and styling. Up to 10% off when you book online. <span class="dur">· 45 min</span></p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Haircut &amp; Beard Combo</h3><span class="dots" aria-hidden="true"></span><strong>$35</strong></div>
-          <p>Haircut and beard in one appointment. Up to 10% off when you book online. <span class="dur">· 55 min</span></p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Kid&#39;s Haircut</h3><span class="dots" aria-hidden="true"></span><strong>$20</strong></div>
-          <p>Ages 12–17. <span class="dur">· 35 min</span></p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Beard</h3><span class="dots" aria-hidden="true"></span><strong>$20</strong></div>
-          <p>Trim, shape and lineup. <span class="dur">· 20 min</span></p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Just a Line Up</h3><span class="dots" aria-hidden="true"></span><strong>$20</strong></div>
-          <p>Hairline and neckline edge-up with a straight-razor finish. <span class="dur">· 20 min</span></p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>VIP Membership, Monthly</h3><span class="dots" aria-hidden="true"></span><strong>$119</strong></div>
-          <p>Up to one haircut per week. Haircuts only. <span class="dur">· 30 days</span></p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>VIP Membership, Yearly</h3><span class="dots" aria-hidden="true"></span><strong>$1,399</strong></div>
-          <p>Up to one haircut every 7 days, priority booking and locked-in pricing. Haircuts only. <span class="dur">· 365 days</span></p>
-        </li></ul>
-      <p class="note">Prices as posted on the shop&#39;s Booksy page for booking with Tyler J., and they may change. Call (330) 644-3293 to confirm. VIP memberships are paid in full, in cash, at the first appointment. They are non-refundable and non-transferable, and unused haircuts don&#39;t roll over. Book online through Booksy.</p>
-    </div>
-  </section>
-
-  <section class="section alt">
-    <div class="wrap two-col">
-      <div>
-        <h2>32 years in the community.</h2>
-        <p>The shop has been serving the community for 32 years and is now under new co-ownership. It blends timeless tradition with modern precision, from sharp fades to classic cuts, in a relaxed, professional setting. Open Tuesday through Saturday, closed Sunday and Monday. Book online or call ahead.</p>
-        <ul class="chips"><li>Open Tuesday–Saturday</li><li>Online booking on Booksy</li><li>Parking space</li><li>Child-friendly</li><li>Accessible for people with disabilities</li></ul>
-      </div>
-      <div class="reviews"><a class="rating" href="https://booksy.com/en-us/1500898_tyler-j-portage-lakes-barber-styling_barber-shop_31848_akron" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><strong>5.0</strong><span>60 reviews on Booksy (Tyler J.)</span></a></div>
-    </div>
-  </section>
-  
-
-  <section id="hours" class="section">
-    <div class="wrap two-col">
-      <div>
-        <h2>Hours</h2>
-        <p class="note">Call <a href="tel:3306443293">(330) 644-3293</a> for today's hours.</p>
-      </div>
-      <div id="visit">
-        <h2>Visit</h2>
-        <address>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=503%20Portage%20Lakes%20Dr%2C%20Suite%20E%2C%20Akron%2C%20OH%2044319" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>503 Portage Lakes Dr, Suite E, Akron, OH 44319</a>
-          <a href="tel:3306443293"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(330) 644-3293</a>
-          
-        </address>
-        <div class="map">
-          <iframe title="Map to Portage Lakes Barber &amp; Styling" src="https://www.google.com/maps?q=Portage%20Lakes%20Barber%20%26%20Styling%2C%20503%20Portage%20Lakes%20Dr%2C%20Suite%20E%2C%20Akron%2C%20OH%2044319&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Portage%20Lakes%20Barber%20%26%20Styling%2C%20503%20Portage%20Lakes%20Dr%2C%20Suite%20E%2C%20Akron%2C%20OH%2044319" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn alt" href="https://booksy.com/en-us/1500898_tyler-j-portage-lakes-barber-styling_barber-shop_31848_akron" target="_blank" rel="noopener">Book online</a>
       </div>
     </div>
-  </section>
+    <div class="inset"><svg class="chart" viewBox="0 0 480 380" role="img" aria-label="Decorative depth chart of a lake with a buoy" ><rect width="480" height="380" fill="#e9ecd0"/><path d="M440.5,190.0C440.4,194.0 439.6,198.0 438.3,201.9C437.1,205.8 435.3,209.7 433.2,213.4C431.1,217.0 428.6,220.6 425.9,224.0C423.2,227.4 420.2,230.6 417.1,233.7C414.1,236.8 410.8,239.7 407.6,242.4C404.3,245.2 400.9,247.8 397.5,250.3C394.1,252.8 390.7,255.1 387.2,257.3C383.7,259.5 380.2,261.6 376.6,263.4C373.0,265.3 369.4,267.0 365.6,268.5C361.9,270.0 358.0,271.3 354.1,272.3C350.2,273.4 346.2,274.2 342.1,274.8C338.0,275.4 333.9,275.7 329.7,275.7C325.6,275.8 321.4,275.5 317.4,275.2C313.3,274.8 309.2,274.1 305.4,273.4C301.5,272.6 297.8,271.7 294.3,270.8C290.8,270.0 287.4,268.9 284.3,268.2C281.2,267.4 278.4,266.6 275.8,266.1C273.1,265.7 270.8,265.3 268.5,265.4C266.2,265.5 264.2,265.8 262.2,266.5C260.2,267.3 258.3,268.4 256.4,269.8C254.4,271.2 252.5,273.0 250.4,275.0C248.3,277.0 246.1,279.4 243.7,281.9C241.3,284.3 238.8,287.0 236.0,289.5C233.2,292.1 230.1,294.8 226.9,297.2C223.7,299.7 220.2,302.1 216.6,304.1C213.0,306.1 209.2,307.9 205.4,309.2C201.6,310.6 197.7,311.7 193.8,312.3C189.9,313.0 186.0,313.2 182.2,313.1C178.4,313.0 174.6,312.5 170.9,311.8C167.3,311.1 163.7,310.0 160.3,308.8C156.8,307.6 153.4,306.1 150.1,304.6C146.7,303.2 143.5,301.5 140.1,299.9C136.8,298.3 133.5,296.7 130.0,295.1C126.5,293.5 123.0,291.9 119.2,290.3C115.5,288.7 111.6,287.2 107.6,285.5C103.6,283.9 99.3,282.3 95.1,280.6C90.8,278.8 86.3,277.0 81.9,274.9C77.6,272.9 73.1,270.7 68.9,268.2C64.8,265.7 60.6,263.0 57.0,260.1C53.4,257.1 50.0,253.8 47.2,250.3C44.5,246.9 42.2,243.1 40.6,239.2C39.1,235.3 38.1,231.1 38.0,226.9C37.8,222.8 38.4,218.4 39.7,214.2C41.0,210.0 43.1,205.7 45.7,201.7C48.3,197.6 51.7,193.7 55.4,190.0C59.1,186.3 63.5,182.8 67.9,179.7C72.4,176.5 77.3,173.6 82.0,170.9C86.7,168.3 91.7,165.9 96.4,163.7C101.0,161.6 105.7,159.7 110.0,157.9C114.2,156.1 118.3,154.6 121.9,153.0C125.6,151.5 128.9,150.1 131.8,148.6C134.7,147.1 137.3,145.6 139.5,144.1C141.8,142.5 143.7,140.9 145.5,139.2C147.2,137.5 148.7,135.7 150.1,133.8C151.5,131.9 152.7,130.0 154.0,127.9C155.3,125.9 156.5,123.8 157.8,121.7C159.1,119.6 160.4,117.5 161.9,115.4C163.4,113.3 164.9,111.2 166.6,109.2C168.2,107.1 170.0,105.1 171.9,103.1C173.7,101.2 175.7,99.2 177.8,97.3C179.8,95.3 181.9,93.4 184.1,91.5C186.3,89.5 188.6,87.6 190.9,85.5C193.2,83.5 195.6,81.4 198.1,79.2C200.7,77.1 203.2,74.8 205.9,72.6C208.7,70.3 211.5,67.9 214.5,65.6C217.5,63.3 220.6,61.0 224.0,58.8C227.3,56.6 230.8,54.5 234.4,52.6C238.1,50.8 241.9,49.1 245.8,47.8C249.7,46.5 253.7,45.5 257.7,45.0C261.7,44.5 265.8,44.4 269.8,44.9C273.7,45.3 277.6,46.2 281.3,47.7C284.9,49.1 288.4,51.1 291.6,53.5C294.8,55.8 297.7,58.7 300.2,61.8C302.8,64.9 305.0,68.4 306.9,72.0C308.8,75.5 310.4,79.4 311.8,83.1C313.1,86.8 314.1,90.6 315.2,94.1C316.2,97.7 317.0,101.1 318.0,104.2C318.9,107.3 319.8,110.1 321.1,112.6C322.3,115.0 323.7,117.2 325.5,119.0C327.3,120.8 329.4,122.3 332.1,123.6C334.7,124.9 337.8,125.8 341.3,126.7C344.8,127.7 348.8,128.4 353.1,129.2C357.5,130.1 362.3,130.8 367.2,131.8C372.2,132.8 377.5,133.9 382.7,135.4C387.8,136.8 393.3,138.5 398.3,140.5C403.3,142.5 408.3,144.8 412.8,147.4C417.2,150.0 421.5,153.0 425.0,156.2C428.5,159.4 431.6,162.9 434.0,166.6C436.3,170.2 438.1,174.1 439.2,178.0C440.3,181.9 440.7,186.0 440.5,190.0Z" fill="#d6ecef" stroke="#1d4f66" stroke-width="2"/><path d="M399.5,197.2C399.4,200.2 399.0,203.2 398.3,206.2C397.6,209.1 396.5,212.1 395.3,214.9C394.1,217.7 392.5,220.5 390.9,223.1C389.3,225.8 387.5,228.4 385.6,230.9C383.8,233.4 381.7,235.8 379.7,238.1C377.6,240.4 375.5,242.6 373.3,244.8C371.1,246.9 368.8,249.0 366.5,250.9C364.2,252.9 361.9,254.8 359.4,256.5C357.0,258.3 354.5,260.0 351.9,261.5C349.3,263.0 346.7,264.5 344.0,265.7C341.2,267.0 338.4,268.1 335.6,269.1C332.7,270.1 329.8,270.9 326.8,271.5C323.9,272.2 320.9,272.7 317.9,273.1C315.0,273.5 312.0,273.7 309.1,273.8C306.2,274.0 303.3,274.0 300.6,274.0C297.8,274.1 295.1,274.0 292.6,274.0C290.0,274.0 287.5,274.0 285.1,274.1C282.7,274.2 280.5,274.4 278.3,274.7C276.1,275.0 274.0,275.5 271.9,276.1C269.8,276.7 267.7,277.4 265.6,278.3C263.5,279.2 261.5,280.3 259.3,281.4C257.1,282.6 254.9,283.9 252.6,285.1C250.2,286.4 247.8,287.8 245.3,289.1C242.7,290.4 240.1,291.7 237.3,292.9C234.6,294.0 231.7,295.1 228.8,296.0C225.8,296.8 222.8,297.6 219.8,298.0C216.7,298.5 213.6,298.8 210.6,298.8C207.6,298.9 204.5,298.7 201.5,298.3C198.5,297.9 195.6,297.2 192.7,296.4C189.9,295.7 187.1,294.6 184.3,293.6C181.6,292.5 178.9,291.2 176.3,289.9C173.6,288.6 171.1,287.2 168.5,285.8C165.9,284.4 163.3,283.0 160.7,281.5C158.1,280.0 155.5,278.6 152.8,277.1C150.1,275.6 147.4,274.1 144.6,272.5C141.8,271.0 139.0,269.4 136.1,267.7C133.3,266.0 130.4,264.3 127.5,262.5C124.7,260.6 121.9,258.7 119.2,256.6C116.5,254.4 113.9,252.2 111.6,249.8C109.3,247.4 107.1,244.8 105.3,242.2C103.6,239.5 102.0,236.6 100.9,233.7C99.8,230.8 99.1,227.7 98.8,224.7C98.5,221.6 98.6,218.4 99.1,215.3C99.6,212.2 100.5,209.1 101.8,206.1C103.1,203.0 104.8,200.0 106.7,197.2C108.6,194.4 110.9,191.6 113.3,189.0C115.6,186.5 118.2,184.0 120.8,181.7C123.4,179.4 126.2,177.3 128.8,175.2C131.4,173.2 134.1,171.3 136.6,169.5C139.1,167.7 141.5,166.0 143.8,164.3C146.0,162.6 148.1,161.0 150.1,159.3C152.1,157.7 153.8,156.1 155.5,154.5C157.2,152.8 158.7,151.2 160.2,149.5C161.7,147.8 163.1,146.1 164.5,144.4C165.8,142.6 167.1,140.9 168.5,139.1C169.9,137.3 171.2,135.6 172.7,133.8C174.1,132.1 175.6,130.3 177.2,128.6C178.7,126.9 180.4,125.2 182.1,123.5C183.8,121.9 185.6,120.3 187.5,118.8C189.4,117.2 191.3,115.7 193.3,114.3C195.3,112.8 197.4,111.4 199.5,109.9C201.6,108.5 203.8,107.1 206.0,105.7C208.2,104.3 210.5,102.9 212.8,101.5C215.2,100.1 217.6,98.7 220.0,97.3C222.5,95.9 225.0,94.5 227.7,93.1C230.3,91.8 233.0,90.4 235.8,89.2C238.6,88.0 241.5,86.8 244.5,85.8C247.4,84.9 250.5,84.0 253.6,83.4C256.7,82.7 259.9,82.3 263.1,82.1C266.2,82.0 269.4,82.1 272.5,82.4C275.6,82.8 278.7,83.5 281.7,84.5C284.6,85.4 287.5,86.7 290.2,88.2C292.8,89.7 295.4,91.6 297.7,93.5C300.1,95.4 302.2,97.7 304.2,99.9C306.2,102.1 307.9,104.6 309.6,107.0C311.2,109.3 312.7,111.8 314.1,114.1C315.6,116.5 316.9,118.8 318.2,121.0C319.6,123.1 320.9,125.2 322.4,127.1C323.8,129.0 325.3,130.8 327.0,132.4C328.7,134.0 330.6,135.5 332.6,136.9C334.7,138.2 336.9,139.5 339.4,140.7C341.8,142.0 344.5,143.1 347.3,144.4C350.2,145.6 353.2,146.8 356.2,148.2C359.3,149.5 362.5,150.9 365.6,152.5C368.7,154.1 372.0,155.9 374.9,157.8C377.9,159.7 380.8,161.8 383.4,164.1C386.0,166.3 388.4,168.8 390.5,171.3C392.5,173.9 394.3,176.7 395.7,179.5C397.0,182.3 398.1,185.2 398.7,188.2C399.3,191.2 399.6,194.2 399.5,197.2Z" fill="#c1e1e7" stroke="#3b7b93" stroke-width="1"/><path d="M369.8,204.4C369.8,206.6 369.5,208.9 369.1,211.1C368.7,213.3 368.1,215.5 367.4,217.6C366.6,219.8 365.8,221.9 364.8,223.9C363.8,226.0 362.7,228.0 361.5,229.9C360.4,231.9 359.1,233.8 357.8,235.6C356.5,237.5 355.1,239.3 353.6,241.0C352.2,242.8 350.7,244.5 349.2,246.1C347.6,247.7 346.0,249.3 344.3,250.8C342.7,252.3 341.0,253.8 339.2,255.1C337.4,256.5 335.5,257.8 333.6,259.0C331.7,260.2 329.8,261.3 327.7,262.3C325.7,263.3 323.6,264.3 321.5,265.1C319.4,265.9 317.3,266.7 315.1,267.3C313.0,268.0 310.8,268.5 308.7,269.0C306.5,269.5 304.4,269.9 302.2,270.3C300.1,270.7 298.0,271.0 296.0,271.3C293.9,271.7 291.9,272.0 289.9,272.3C287.9,272.7 286.0,273.0 284.1,273.4C282.1,273.8 280.3,274.2 278.4,274.7C276.5,275.2 274.6,275.7 272.7,276.3C270.8,276.8 269.0,277.5 267.0,278.1C265.1,278.7 263.1,279.4 261.1,280.1C259.0,280.7 257.0,281.4 254.8,282.0C252.7,282.6 250.5,283.2 248.3,283.7C246.1,284.2 243.8,284.7 241.5,285.0C239.2,285.2 236.8,285.5 234.5,285.5C232.1,285.6 229.8,285.5 227.4,285.3C225.1,285.1 222.8,284.7 220.5,284.2C218.2,283.7 216.0,283.1 213.8,282.4C211.6,281.7 209.4,280.8 207.3,279.9C205.2,279.0 203.1,278.0 201.1,276.9C199.1,275.9 197.1,274.7 195.1,273.6C193.2,272.4 191.3,271.2 189.3,270.0C187.4,268.8 185.5,267.5 183.5,266.3C181.6,265.0 179.7,263.7 177.7,262.3C175.8,261.0 173.8,259.6 171.9,258.2C170.0,256.8 168.1,255.3 166.2,253.7C164.4,252.2 162.5,250.6 160.8,248.9C159.1,247.1 157.4,245.4 155.9,243.5C154.4,241.6 153.0,239.7 151.8,237.6C150.6,235.6 149.6,233.5 148.8,231.3C148.1,229.2 147.5,226.9 147.1,224.7C146.8,222.4 146.7,220.1 146.8,217.8C147.0,215.6 147.3,213.3 147.9,211.0C148.5,208.8 149.3,206.6 150.2,204.4C151.2,202.2 152.3,200.1 153.5,198.1C154.8,196.1 156.2,194.1 157.6,192.3C159.0,190.4 160.5,188.6 162.0,186.8C163.4,185.1 165.0,183.4 166.4,181.8C167.9,180.2 169.4,178.6 170.8,177.1C172.2,175.6 173.6,174.1 174.9,172.6C176.2,171.1 177.5,169.6 178.7,168.1C179.9,166.7 181.1,165.2 182.3,163.7C183.5,162.3 184.7,160.8 185.9,159.3C187.1,157.9 188.3,156.4 189.5,155.0C190.7,153.5 192.0,152.1 193.3,150.7C194.6,149.3 196.0,147.9 197.4,146.5C198.8,145.2 200.3,143.9 201.9,142.6C203.4,141.3 205.0,140.1 206.6,138.9C208.3,137.7 210.0,136.6 211.7,135.5C213.5,134.4 215.3,133.3 217.1,132.3C218.9,131.3 220.8,130.3 222.7,129.3C224.6,128.3 226.6,127.4 228.5,126.4C230.5,125.5 232.6,124.6 234.6,123.7C236.7,122.9 238.8,122.0 240.9,121.2C243.1,120.4 245.3,119.7 247.6,119.0C249.8,118.3 252.1,117.7 254.5,117.2C256.8,116.7 259.2,116.2 261.6,115.9C264.0,115.7 266.4,115.5 268.9,115.5C271.3,115.5 273.7,115.6 276.1,116.0C278.5,116.3 280.9,116.8 283.2,117.4C285.5,118.1 287.8,118.9 289.9,119.9C292.1,120.9 294.1,122.0 296.1,123.3C298.1,124.5 299.9,125.9 301.7,127.4C303.5,128.8 305.1,130.3 306.7,131.9C308.3,133.4 309.7,135.1 311.2,136.6C312.6,138.2 313.9,139.8 315.3,141.3C316.7,142.9 318.0,144.4 319.3,145.8C320.7,147.2 322.1,148.6 323.5,150.0C325.0,151.3 326.5,152.6 328.0,153.9C329.6,155.1 331.3,156.3 333.0,157.5C334.7,158.8 336.5,160.0 338.4,161.2C340.2,162.5 342.2,163.7 344.1,165.0C346.0,166.4 348.0,167.7 349.9,169.2C351.8,170.7 353.7,172.3 355.4,173.9C357.2,175.6 358.9,177.3 360.4,179.1C361.9,181.0 363.4,182.9 364.5,184.9C365.7,186.9 366.8,189.0 367.6,191.2C368.4,193.3 369.0,195.5 369.3,197.7C369.7,199.9 369.9,202.2 369.8,204.4Z" fill="#a9d3dd" stroke="#3b7b93" stroke-width="1"/><path d="M346.4,211.6C346.4,213.2 346.2,214.8 346.0,216.4C345.8,217.9 345.4,219.5 345.0,221.0C344.6,222.6 344.1,224.1 343.5,225.6C342.9,227.1 342.2,228.5 341.5,230.0C340.8,231.4 340.0,232.8 339.2,234.2C338.3,235.6 337.5,236.9 336.5,238.2C335.6,239.5 334.6,240.8 333.6,242.1C332.6,243.3 331.5,244.5 330.4,245.7C329.3,246.9 328.2,248.0 327.0,249.1C325.8,250.1 324.5,251.2 323.2,252.2C321.9,253.1 320.6,254.1 319.2,254.9C317.8,255.8 316.4,256.6 314.9,257.4C313.5,258.1 312.0,258.8 310.5,259.5C309.0,260.1 307.5,260.7 305.9,261.3C304.4,261.8 302.9,262.3 301.3,262.7C299.8,263.2 298.2,263.6 296.7,264.0C295.2,264.4 293.7,264.8 292.1,265.1C290.6,265.5 289.1,265.8 287.6,266.2C286.1,266.5 284.6,266.9 283.1,267.3C281.6,267.6 280.1,268.0 278.6,268.3C277.1,268.7 275.6,269.1 274.1,269.4C272.5,269.8 271.0,270.1 269.4,270.4C267.8,270.8 266.2,271.1 264.6,271.3C262.9,271.6 261.3,271.8 259.6,272.0C257.9,272.2 256.2,272.3 254.5,272.3C252.8,272.4 251.1,272.4 249.4,272.2C247.7,272.1 246.0,271.9 244.3,271.7C242.6,271.4 240.9,271.0 239.3,270.6C237.6,270.2 236.0,269.7 234.4,269.1C232.8,268.5 231.2,267.9 229.7,267.2C228.2,266.5 226.7,265.7 225.2,264.9C223.7,264.1 222.3,263.3 220.9,262.4C219.5,261.5 218.1,260.6 216.7,259.6C215.3,258.7 214.0,257.7 212.6,256.8C211.3,255.8 210.0,254.8 208.7,253.7C207.3,252.7 206.0,251.6 204.8,250.5C203.5,249.4 202.3,248.2 201.1,247.0C199.9,245.8 198.7,244.6 197.6,243.3C196.5,242.1 195.4,240.7 194.5,239.4C193.5,238.0 192.6,236.6 191.9,235.1C191.1,233.7 190.4,232.1 189.9,230.6C189.4,229.1 188.9,227.5 188.6,225.9C188.4,224.3 188.2,222.7 188.2,221.1C188.1,219.5 188.2,217.9 188.5,216.3C188.7,214.7 189.0,213.1 189.5,211.6C189.9,210.1 190.5,208.5 191.1,207.0C191.7,205.5 192.4,204.1 193.1,202.7C193.8,201.3 194.7,199.9 195.5,198.5C196.3,197.2 197.1,195.9 198.0,194.6C198.9,193.3 199.7,192.1 200.6,190.8C201.5,189.6 202.3,188.4 203.2,187.2C204.1,186.0 205.0,184.8 205.8,183.6C206.7,182.5 207.6,181.3 208.5,180.2C209.4,179.0 210.3,177.9 211.2,176.7C212.1,175.6 213.1,174.5 214.1,173.4C215.1,172.3 216.1,171.2 217.1,170.2C218.2,169.1 219.3,168.1 220.4,167.1C221.6,166.1 222.7,165.2 224.0,164.2C225.2,163.3 226.4,162.4 227.7,161.5C229.0,160.7 230.4,159.9 231.7,159.1C233.1,158.3 234.5,157.5 235.9,156.8C237.4,156.1 238.8,155.4 240.3,154.8C241.8,154.1 243.3,153.5 244.8,152.9C246.3,152.3 247.9,151.7 249.5,151.2C251.1,150.6 252.7,150.1 254.3,149.7C255.9,149.2 257.6,148.8 259.3,148.4C261.0,148.0 262.7,147.7 264.4,147.4C266.1,147.2 267.9,147.0 269.6,146.9C271.4,146.8 273.2,146.7 274.9,146.8C276.7,146.8 278.5,147.0 280.2,147.2C281.9,147.5 283.7,147.8 285.4,148.3C287.0,148.7 288.7,149.2 290.3,149.9C291.9,150.5 293.5,151.2 295.0,152.0C296.5,152.8 298.0,153.6 299.4,154.5C300.8,155.5 302.1,156.4 303.4,157.4C304.7,158.4 305.9,159.5 307.1,160.5C308.3,161.5 309.4,162.6 310.6,163.6C311.7,164.7 312.8,165.7 313.9,166.8C315.0,167.8 316.1,168.8 317.3,169.9C318.4,170.9 319.5,171.9 320.6,172.9C321.8,173.9 322.9,174.9 324.1,175.9C325.3,176.9 326.5,177.9 327.7,179.0C328.9,180.0 330.1,181.1 331.3,182.2C332.5,183.3 333.7,184.4 334.8,185.6C335.9,186.8 337.1,188.1 338.1,189.3C339.1,190.6 340.1,192.0 341.0,193.4C341.9,194.7 342.7,196.2 343.4,197.6C344.0,199.1 344.6,200.6 345.1,202.2C345.5,203.7 345.9,205.3 346.1,206.8C346.3,208.4 346.4,210.0 346.4,211.6Z" fill="#8fc4d3" stroke="#3b7b93" stroke-width="1"/><path d="M326.4,218.8C326.4,219.8 326.3,220.8 326.2,221.8C326.1,222.8 325.9,223.8 325.6,224.8C325.4,225.8 325.1,226.8 324.8,227.7C324.5,228.7 324.1,229.6 323.7,230.6C323.3,231.5 322.8,232.4 322.4,233.3C321.9,234.2 321.4,235.1 320.8,236.0C320.3,236.8 319.7,237.7 319.1,238.5C318.5,239.3 317.8,240.1 317.2,240.9C316.5,241.7 315.8,242.5 315.0,243.2C314.3,243.9 313.5,244.6 312.7,245.3C311.9,246.0 311.1,246.6 310.3,247.2C309.4,247.9 308.5,248.4 307.6,249.0C306.7,249.5 305.8,250.1 304.8,250.5C303.9,251.0 302.9,251.5 302.0,251.9C301.0,252.3 300.0,252.7 299.0,253.1C298.0,253.5 297.0,253.8 296.0,254.1C295.0,254.4 294.0,254.7 293.0,255.0C292.0,255.3 291.0,255.6 290.0,255.8C289.0,256.1 288.0,256.3 286.9,256.6C285.9,256.8 284.9,257.0 283.9,257.2C282.8,257.4 281.8,257.6 280.8,257.8C279.7,258.0 278.7,258.2 277.6,258.3C276.5,258.4 275.5,258.6 274.4,258.7C273.3,258.8 272.2,258.8 271.1,258.9C270.0,258.9 268.9,258.9 267.8,258.8C266.7,258.8 265.6,258.7 264.5,258.6C263.4,258.4 262.3,258.3 261.2,258.0C260.1,257.8 259.0,257.5 257.9,257.2C256.9,256.9 255.8,256.6 254.8,256.2C253.8,255.8 252.8,255.3 251.8,254.9C250.8,254.4 249.8,253.9 248.9,253.4C247.9,252.9 247.0,252.3 246.1,251.7C245.2,251.1 244.3,250.5 243.4,249.9C242.6,249.3 241.7,248.6 240.9,248.0C240.0,247.3 239.2,246.6 238.4,245.9C237.6,245.2 236.8,244.5 236.1,243.8C235.3,243.0 234.5,242.3 233.8,241.5C233.1,240.7 232.4,239.9 231.8,239.0C231.1,238.2 230.5,237.3 230.0,236.4C229.4,235.5 228.9,234.6 228.4,233.7C228.0,232.8 227.6,231.8 227.2,230.8C226.9,229.9 226.6,228.9 226.4,227.9C226.2,226.9 226.1,225.8 226.0,224.8C225.9,223.8 225.9,222.8 226.0,221.8C226.1,220.8 226.2,219.8 226.4,218.8C226.5,217.8 226.8,216.8 227.1,215.9C227.3,214.9 227.7,213.9 228.0,213.0C228.4,212.1 228.8,211.1 229.2,210.2C229.6,209.3 230.1,208.5 230.5,207.6C231.0,206.7 231.5,205.9 232.0,205.0C232.5,204.2 233.0,203.3 233.5,202.5C234.0,201.7 234.6,200.9 235.1,200.1C235.7,199.3 236.3,198.5 236.8,197.8C237.4,197.0 238.0,196.2 238.7,195.5C239.3,194.7 239.9,194.0 240.6,193.3C241.3,192.5 242.0,191.8 242.7,191.1C243.4,190.4 244.2,189.8 244.9,189.1C245.7,188.5 246.5,187.9 247.3,187.3C248.2,186.7 249.0,186.1 249.9,185.5C250.8,185.0 251.7,184.5 252.6,183.9C253.5,183.4 254.5,183.0 255.4,182.5C256.4,182.1 257.4,181.6 258.4,181.2C259.3,180.8 260.4,180.5 261.4,180.1C262.4,179.7 263.4,179.4 264.5,179.1C265.5,178.8 266.6,178.5 267.7,178.3C268.8,178.0 269.9,177.8 271.0,177.6C272.1,177.4 273.2,177.3 274.3,177.1C275.4,177.0 276.6,176.9 277.7,176.9C278.8,176.9 280.0,176.9 281.1,177.0C282.2,177.0 283.4,177.1 284.5,177.3C285.6,177.5 286.8,177.7 287.8,177.9C288.9,178.2 290.0,178.5 291.1,178.9C292.1,179.2 293.2,179.7 294.2,180.1C295.2,180.6 296.2,181.1 297.1,181.6C298.0,182.1 299.0,182.7 299.8,183.3C300.7,183.9 301.6,184.5 302.4,185.1C303.3,185.7 304.1,186.4 304.9,187.0C305.7,187.7 306.4,188.3 307.2,189.0C308.0,189.7 308.7,190.3 309.5,191.0C310.2,191.7 311.0,192.4 311.7,193.0C312.4,193.7 313.2,194.4 313.9,195.1C314.6,195.8 315.3,196.5 316.0,197.3C316.7,198.0 317.5,198.8 318.1,199.5C318.8,200.3 319.5,201.1 320.1,201.9C320.7,202.7 321.4,203.6 321.9,204.4C322.5,205.3 323.0,206.2 323.5,207.1C324.0,208.0 324.4,208.9 324.8,209.9C325.1,210.8 325.4,211.8 325.7,212.8C325.9,213.8 326.1,214.8 326.2,215.8C326.3,216.8 326.4,217.8 326.4,218.8Z" fill="#72b1c5" stroke="#3b7b93" stroke-width="1"/><text x="189" y="157.2" class="snd">35</text><text x="278" y="208.4" class="snd">45</text><text x="276" y="228.8" class="snd">55</text><text x="320" y="280" class="snd">20</text><g class="buoy" transform="translate(170 250)"><ellipse cx="0" cy="0" rx="13" ry="4" fill="none" stroke="#1d4f66" stroke-width="1" opacity=".6"/><g class="bob"><rect x="-6" y="-22" width="12" height="18" rx="1" fill="#c8302a"/><rect x="-6" y="-10" width="12" height="3" fill="#fff"/><circle cx="0" cy="-24" r="1.8" fill="#14283a"/></g></g><g class="buoy" transform="translate(340 120)"><ellipse cx="0" cy="0" rx="13" ry="4" fill="none" stroke="#1d4f66" stroke-width="1" opacity=".6"/><g class="bob"><path d="M-6,-4 L0,-26 L6,-4Z" fill="#1f7a4d"/><rect x="-6" y="-8" width="12" height="3" fill="#fff"/><circle cx="0" cy="-28" r="1.8" fill="#14283a"/></g></g><rect x="5" y="5" width="470" height="370" fill="none" stroke="#14283a" stroke-width="1.4"/><rect x="12" y="12" width="456" height="356" fill="none" stroke="#14283a" stroke-width="1"/><rect x="12" y="5" width="24" height="7" fill="#14283a"/><rect x="12" y="368" width="24" height="7" fill="#14283a"/><rect x="36" y="5" width="24" height="7" fill="#fff"/><rect x="36" y="368" width="24" height="7" fill="#fff"/><rect x="60" y="5" width="24" height="7" fill="#14283a"/><rect x="60" y="368" width="24" height="7" fill="#14283a"/><rect x="84" y="5" width="24" height="7" fill="#fff"/><rect x="84" y="368" width="24" height="7" fill="#fff"/><rect x="108" y="5" width="24" height="7" fill="#14283a"/><rect x="108" y="368" width="24" height="7" fill="#14283a"/><rect x="132" y="5" width="24" height="7" fill="#fff"/><rect x="132" y="368" width="24" height="7" fill="#fff"/><rect x="156" y="5" width="24" height="7" fill="#14283a"/><rect x="156" y="368" width="24" height="7" fill="#14283a"/><rect x="180" y="5" width="24" height="7" fill="#fff"/><rect x="180" y="368" width="24" height="7" fill="#fff"/><rect x="204" y="5" width="24" height="7" fill="#14283a"/><rect x="204" y="368" width="24" height="7" fill="#14283a"/><rect x="228" y="5" width="24" height="7" fill="#fff"/><rect x="228" y="368" width="24" height="7" fill="#fff"/><rect x="252" y="5" width="24" height="7" fill="#14283a"/><rect x="252" y="368" width="24" height="7" fill="#14283a"/><rect x="276" y="5" width="24" height="7" fill="#fff"/><rect x="276" y="368" width="24" height="7" fill="#fff"/><rect x="300" y="5" width="24" height="7" fill="#14283a"/><rect x="300" y="368" width="24" height="7" fill="#14283a"/><rect x="324" y="5" width="24" height="7" fill="#fff"/><rect x="324" y="368" width="24" height="7" fill="#fff"/><rect x="348" y="5" width="24" height="7" fill="#14283a"/><rect x="348" y="368" width="24" height="7" fill="#14283a"/><rect x="372" y="5" width="24" height="7" fill="#fff"/><rect x="372" y="368" width="24" height="7" fill="#fff"/><rect x="396" y="5" width="24" height="7" fill="#14283a"/><rect x="396" y="368" width="24" height="7" fill="#14283a"/><rect x="420" y="5" width="24" height="7" fill="#fff"/><rect x="420" y="368" width="24" height="7" fill="#fff"/><rect x="444" y="5" width="24" height="7" fill="#14283a"/><rect x="444" y="368" width="24" height="7" fill="#14283a"/><rect x="5" y="12" width="7" height="24" fill="#14283a"/><rect x="468" y="12" width="7" height="24" fill="#14283a"/><rect x="5" y="36" width="7" height="24" fill="#fff"/><rect x="468" y="36" width="7" height="24" fill="#fff"/><rect x="5" y="60" width="7" height="24" fill="#14283a"/><rect x="468" y="60" width="7" height="24" fill="#14283a"/><rect x="5" y="84" width="7" height="24" fill="#fff"/><rect x="468" y="84" width="7" height="24" fill="#fff"/><rect x="5" y="108" width="7" height="24" fill="#14283a"/><rect x="468" y="108" width="7" height="24" fill="#14283a"/><rect x="5" y="132" width="7" height="24" fill="#fff"/><rect x="468" y="132" width="7" height="24" fill="#fff"/><rect x="5" y="156" width="7" height="24" fill="#14283a"/><rect x="468" y="156" width="7" height="24" fill="#14283a"/><rect x="5" y="180" width="7" height="24" fill="#fff"/><rect x="468" y="180" width="7" height="24" fill="#fff"/><rect x="5" y="204" width="7" height="24" fill="#14283a"/><rect x="468" y="204" width="7" height="24" fill="#14283a"/><rect x="5" y="228" width="7" height="24" fill="#fff"/><rect x="468" y="228" width="7" height="24" fill="#fff"/><rect x="5" y="252" width="7" height="24" fill="#14283a"/><rect x="468" y="252" width="7" height="24" fill="#14283a"/><rect x="5" y="276" width="7" height="24" fill="#fff"/><rect x="468" y="276" width="7" height="24" fill="#fff"/><rect x="5" y="300" width="7" height="24" fill="#14283a"/><rect x="468" y="300" width="7" height="24" fill="#14283a"/><rect x="5" y="324" width="7" height="24" fill="#fff"/><rect x="468" y="324" width="7" height="24" fill="#fff"/><rect x="5" y="348" width="7" height="24" fill="#14283a"/><rect x="468" y="348" width="7" height="24" fill="#14283a"/></svg></div>
+  </div>
+</section>
 
-  <section class="section book-band">
-    <div class="wrap band-in">
-      <h2>Due for a fresh cut?</h2>
-      <a class="btn" href="https://booksy.com/en-us/1500898_tyler-j-portage-lakes-barber-styling_barber-shop_31848_akron" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg>Book online</a>
+<footer>
+  <div class="wrap">
+    <div>
+      <strong>Portage Lakes Barber &amp; Styling</strong>
+      <p>503 Portage Lakes Dr, Suite E, Akron, OH 44319 · Raising the bar, one cut at a time.</p>
     </div>
-  </section>
-</main>
-
-<footer class="foot">
-  <div class="wrap foot-in">
-    <p>© <span id="yr"></span> Portage Lakes Barber &amp; Styling</p>
-    <p class="socials"><a href="https://www.facebook.com/PortageLakesBarberStyling/" rel="noopener" target="_blank">Facebook</a><a href="https://www.instagram.com/haircutsbytyler/" rel="noopener" target="_blank">Instagram (haircutsbytyler)</a></p>
+    <div><a href="tel:+13306443293">(330) 644-3293</a><a href="https://www.facebook.com/PortageLakesBarberStyling/" target="_blank" rel="noopener">Facebook</a></div>
   </div>
 </footer>
 
-<nav class="mobile-bar" aria-label="Quick actions">
-  <a href="tel:3306443293"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call</span></a>
-  <a href="https://booksy.com/en-us/1500898_tyler-j-portage-lakes-barber-styling_barber-shop_31848_akron" target="_blank" rel="noopener" class="primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg><span>Book</span></a>
-  <a href="https://www.google.com/maps/dir/?api=1&destination=503%20Portage%20Lakes%20Dr%2C%20Suite%20E%2C%20Akron%2C%20OH%2044319" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Directions</span></a>
-</nav>
-
-<script>
-(function(){
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  // "Open now" uses the shop's own time zone, not the visitor's clock.
-  var parts={};
-  new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'long',hour:'2-digit',minute:'2-digit',hourCycle:'h23'})
-    .formatToParts(new Date()).forEach(function(p){parts[p.type]=p.value});
-  var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  var day=days.indexOf(parts.weekday),mins=(+parts.hour)*60+(+parts.minute);
-  var toMin=function(s){var p=s.split(':');return +p[0]*60+ +p[1]};
-  var rows=document.querySelectorAll('.hours tr'),el=document.getElementById('open-status'),msg='';
-  rows.forEach(function(r){
-    if(+r.dataset.day!==day)return;
-    r.classList.add('today');
-    // data-slots: "09:00-13:30-1:30pm,16:00-19:30-7:30pm" (split shifts allowed)
-    msg='<span class="dot"></span>Closed now';
-    (r.dataset.slots||'').split(',').forEach(function(s){
-      var p=s.split('-');
-      if(p[0]&&mins>=toMin(p[0])&&mins<toMin(p[1]))msg='<span class="dot open"></span>Open now · until '+p[2];
-    });
-  });
-  el.innerHTML=msg;
-})();
-</script>
+<div class="callbar"><span>Portage Lakes Barber &amp; Styling</span><a href="tel:+13306443293">Call now</a></div>
 </body>
 </html>

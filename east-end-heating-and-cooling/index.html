@@ -3,245 +3,283 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>East End Heating &amp; Cooling | Heating &amp; cooling in Akron, OH</title>
-<meta name="description" content="East End Heating &amp; Cooling, Akron, Ohio. Furnace and heating service, air conditioning service and duct cleaning. Call (234) 571-8838.">
-<meta property="og:title" content="East End Heating &amp; Cooling">
-<meta property="og:description" content="Heating, air conditioning and duct cleaning for homes in Akron and nearby. Call for a quote.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#f6f3ee">
 <meta name="robots" content="noindex, nofollow">
+<title>East End Heating &amp; Cooling | Akron, Ohio (free preview)</title>
+<meta name="description" content="Preview page for East End Heating &amp; Cooling, Akron, Ohio. Heating service, air conditioning service and duct cleaning. Call (234) 571-8838.">
+<meta name="theme-color" content="#12303d">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&amp;family=Source+Sans+3:wght@400;600&display=swap">
-<style>/* Shared stylesheet. Colors and fonts come from each client's site.json via :root vars. */
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.6 var(--font);-webkit-font-smoothing:antialiased;padding-bottom:72px}
-@media (min-width:760px){body{padding-bottom:0}}
-img{max-width:100%;display:block}
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --duct:#12303d;
+  --duct-2:#0c2430;
+  --paint:#f1f3ef;
+  --paint-2:#e2e7e1;
+  --warm:#f0a03c;
+  --warm-ink:#8f3d08;
+  --warm-tint:#fbe2c1;
+  --cool:#86cdea;
+  --cool-ink:#0e5a7c;
+  --cool-tint:#cfe9f4;
+  --ink:#16262e;
+  --display:"Syne","Arial Black","Helvetica Neue",sans-serif;
+  --text:"Figtree","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--text);font-size:1.125rem;line-height:1.55;color:var(--ink);background:var(--paint);-webkit-text-size-adjust:100%}
+::selection{background:var(--warm);color:var(--duct-2)}
 a{color:inherit}
-h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0 0 .6em;letter-spacing:-.01em}
-h2{font-size:clamp(1.8rem,5vw,2.6rem)}
-svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
-.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+a:focus-visible{outline:3px solid var(--warm);outline-offset:3px}
+.on-light a:focus-visible{outline-color:var(--cool-ink)}
+svg{max-width:100%}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.05;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
 
-.demo-bar{background:var(--accent);color:var(--accent-text);text-align:center;font-size:.8rem;font-weight:600;padding:6px 16px}
+.demo-bar{background:var(--duct-2);color:#cfdde3;font-size:.9375rem;text-align:center;padding:.6rem 1rem;line-height:1.35}
+.demo-bar a{color:var(--warm);font-weight:700}
 
-.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.top-in{display:flex;align-items:center;gap:16px;height:60px}
-.logo{min-width:0;font-family:var(--display);text-decoration:none;font-size:1.1rem;margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{display:none;gap:24px}
-.top nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
-.top nav a:hover{color:var(--text)}
-@media (min-width:760px){.top nav{display:flex}}
+/* ---------- hero ---------- */
+.hero{background:var(--duct);color:var(--paint);position:relative;overflow:hidden}
+.hero-in{max-width:1200px;margin:0 auto;padding:clamp(2rem,5vw,4rem) clamp(1.25rem,4vw,2.5rem) clamp(2.5rem,5vw,4.5rem);display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(1rem,2vw,2rem);align-items:center}
+.where{font-weight:700;color:var(--cool);margin:0 0 1rem;font-size:1.125rem}
+h1{font-size:clamp(2rem,4.2vw,3.5rem);letter-spacing:-.02em}
+.lede{margin-top:1.25rem;font-size:clamp(1.2rem,2vw,1.45rem);max-width:26em;color:#d6e3e8}
+.cta-row{margin-top:2rem;display:flex;flex-wrap:wrap;gap:.9rem 1.6rem;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:.7rem;min-height:58px;padding:.55rem 1.6rem;background:var(--warm);color:var(--duct-2);font-weight:700;font-size:1.3rem;text-decoration:none;border-radius:999px;box-shadow:0 4px 0 #a86a1b,0 12px 24px rgba(0,0,0,.28);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(2px);box-shadow:0 2px 0 #a86a1b,0 6px 14px rgba(0,0,0,.28)}
+.btn svg{width:22px;height:22px;flex:none}
+.link{font-weight:700;text-underline-offset:.28em;text-decoration-thickness:2px;display:inline-flex;align-items:center;min-height:44px}
+.link:hover{color:var(--warm)}
 
-.btn{display:inline-flex;align-items:center;gap:.5em;background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:.85em 1.4em;border-radius:999px;min-height:48px;transition:transform .15s,filter .15s}
-.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.btn-sm{padding:.55em 1.1em;min-height:40px;font-size:.9rem;white-space:nowrap;flex:none}
-.btn-ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--text) 30%,transparent)}
+.vent{width:108%;max-width:none;margin-left:0;height:auto;display:block}.vent-wrap{overflow:visible}
+.vent .flow{fill:none;stroke-linecap:round;stroke-width:3.2}
+.vent .w{stroke:var(--warm)}
+.vent .c{stroke:var(--cool)}
+.vent .flow{stroke-dasharray:2 15 40 15;animation:drift 5.5s linear infinite}
+.vent .flow:nth-of-type(2n){animation-duration:7s}
+.vent .flow:nth-of-type(3n){animation-duration:4.6s}
+@keyframes drift{to{stroke-dashoffset:-72}}
+.vent-cap{font-size:.9375rem;color:#a9c0c9;margin-top:.4rem}
 
-.hero{position:relative;padding:72px 0 64px;overflow:hidden;
-  background:
-    linear-gradient(180deg,transparent 40%,var(--bg)),
-    var(--hero-img,none) center/cover,
-    repeating-linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,transparent) 0 18px,transparent 18px 36px),
-    var(--bg)}
-.hero::after{content:"";position:absolute;inset:0;background:color-mix(in srgb,var(--bg) 55%,transparent);z-index:0}
-.hero-in{position:relative;z-index:1}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:var(--accent);margin:0 0 14px}
-.hero h1{font-size:clamp(2.6rem,11vw,5.6rem)}
-.lede{font-size:1.15rem;color:var(--muted);max-width:34ch;margin:0 0 28px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.status{margin:22px 0 0;font-weight:600;color:var(--muted);min-height:1.6em;display:flex;align-items:center;gap:8px}
-.dot{width:10px;height:10px;border-radius:50%;background:#c2524a;display:inline-block}
-.dot.open{background:#4caf6e;box-shadow:0 0 0 4px rgba(76,175,110,.2)}
-@media (min-width:760px){.hero{padding:120px 0 100px}}
+/* ---------- services as louver slats ---------- */
+.services{padding:clamp(3rem,6vw,5rem) 0 0;background:var(--paint)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+.services h2{font-size:clamp(2rem,4vw,3.2rem);max-width:15em}
+.svc-intro{margin-top:.8rem;max-width:32em;color:#38505b}
+.slats{margin-top:clamp(2rem,4vw,3rem);--cut:34px}
+.slat{position:relative;clip-path:polygon(0 var(--cut),100% 0,100% calc(100% - var(--cut)),0 100%);margin-top:calc(var(--cut) * -1);padding:calc(var(--cut) + 1.9rem) 0 calc(var(--cut) + 1.9rem)}
+.slat:first-child{margin-top:0}
+.slat-in{max-width:1200px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,260px);gap:1.5rem 3rem;align-items:center}
+.slat h3{font-size:clamp(1.7rem,3.2vw,2.5rem)}
+.slat p{margin-top:.5rem;font-size:1.2rem;max-width:28em}
+.slat svg{width:100%;height:70px;display:block}
+.slat svg path{fill:none;stroke-width:3;stroke-linecap:round}
+.slat.heat{background:var(--warm-tint);color:#3b1a05}
+.slat.heat h3{color:var(--warm-ink)}
+.slat.heat svg path{stroke:#c9661a}
+.slat.cool{background:var(--cool-tint);color:#0b2a39}
+.slat.cool h3{color:var(--cool-ink)}
+.slat.cool svg path{stroke:#2b87b0}
+.slat.duct{background:var(--paint-2);color:var(--ink)}
+.slat.duct h3{color:var(--duct)}
+.slat.duct svg path{stroke:#4d6a77}
+.svc-note{background:var(--paint);padding:clamp(2.25rem,4vw,3rem) 0 clamp(3rem,6vw,4.5rem);font-size:1.3rem;font-weight:500}
+.svc-note a{font-weight:700;text-underline-offset:.25em}
 
-.section{padding:64px 0}
-.section.alt{background:var(--surface)}
-.svc-list{list-style:none;padding:0;margin:0;display:grid;gap:4px 48px}
-@media (min-width:760px){.svc-list{grid-template-columns:1fr 1fr}}
-.svc{padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.svc-top{display:flex;align-items:baseline;gap:10px}
-.svc h3{font-family:var(--font);font-weight:800;font-size:1.1rem;margin:0}
-.dots{flex:1;border-bottom:2px dotted color-mix(in srgb,var(--text) 25%,transparent);transform:translateY(-4px)}
-.svc strong{color:var(--accent);font-size:1.15rem}
-.svc p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
-.dur{white-space:nowrap}
-.note{color:var(--muted);font-size:.85rem;margin-top:20px}
-.menu-section{font-family:var(--display);font-size:1.3rem;color:var(--accent);margin:36px 0 4px;text-transform:uppercase;letter-spacing:.06em}
-.menu-section:first-of-type{margin-top:8px}
+/* ---------- about ---------- */
+.about{background:var(--duct);color:var(--paint);padding:clamp(3rem,6vw,5rem) 0;position:relative;overflow:hidden}
+.about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(2rem,5vw,4rem);align-items:center}
+.about h2{font-size:clamp(1.9rem,3.8vw,3rem)}
+.about p{margin-top:1rem;max-width:32em;color:#d6e3e8}
+.tags{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.tags li{display:flex;align-items:center;gap:1rem;padding:1rem 0;border-top:2px solid rgba(255,255,255,.18);font-family:var(--display);font-size:clamp(1.3rem,2.4vw,1.8rem);font-weight:700}
+.tags li:last-child{border-bottom:2px solid rgba(255,255,255,.18)}
+.tags i{flex:none;width:44px;height:14px;border-radius:7px;background:var(--cool)}
+.tags li:nth-child(1) i{background:var(--warm)}
+.tags li:nth-child(3) i{background:linear-gradient(90deg,var(--warm),var(--cool))}
+.tags li:nth-child(4) i{background:#9db3bd}
 
-.two-col{display:grid;gap:48px}
-@media (min-width:860px){.two-col{grid-template-columns:1fr 1fr;align-items:start}}
-.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
-.chips li{border:1px solid color-mix(in srgb,var(--accent) 50%,transparent);color:var(--accent);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600}
-.one-col{max-width:720px}
-.reviews{display:grid;gap:16px;align-content:start}
-.rating{display:flex;align-items:center;gap:10px;text-decoration:none;background:var(--bg);border-radius:16px;padding:18px 22px;border-left:4px solid var(--accent)}
-.rating svg{width:28px;height:28px;color:var(--accent)}
-.rating strong{font-family:var(--display);font-size:1.8rem;line-height:1}
-.rating span{color:var(--muted);font-size:.9rem}
-.review{margin:0;background:var(--bg);border-radius:16px;padding:20px 22px;border-left:4px solid var(--accent)}
-.review blockquote{margin:0 0 8px;font-size:1.05rem}
-.review figcaption{color:var(--muted);font-size:.85rem}
+.plate{justify-self:center;width:100%;max-width:380px;background:var(--paint);color:var(--duct);border-radius:16px;padding:1.6rem 2rem 1.4rem;text-align:center;border:6px solid #cfd6cf;box-shadow:inset 0 0 0 3px var(--duct)}
+.plate b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(2.6rem,5vw,3.6rem);line-height:1}
+.plate span{display:block;font-family:var(--display);font-weight:700;font-size:clamp(1.8rem,4vw,2.6rem);margin-top:.3rem;color:var(--cool-ink)}
+.plate i{display:block;height:8px;margin-top:1rem;border-radius:4px;background:linear-gradient(90deg,var(--warm),var(--cool))}
+/* ---------- contact ---------- */
+.visit{padding:clamp(3rem,6vw,5rem) 0;background:var(--paint)}
+.visit-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(2rem,5vw,4rem);align-items:center}
+.visit h2{font-size:clamp(2rem,4.2vw,3.3rem)}
+.visit .city{margin-top:.7rem;font-size:1.25rem;color:#38505b;max-width:30em}
+.visit .acts{margin-top:1.75rem;display:flex;flex-wrap:wrap;gap:.9rem 1.6rem;align-items:center}
+.visit .btn{background:var(--duct);color:var(--paint);box-shadow:0 4px 0 #061219,0 12px 24px rgba(18,48,61,.25)}
+.visit .btn:hover{box-shadow:0 2px 0 #061219,0 6px 14px rgba(18,48,61,.25)}
+.visit .link:hover{color:var(--cool-ink)}
+.reg{background:var(--paint-2);border-radius:18px;padding:clamp(1.5rem,3vw,2.25rem);border:3px solid var(--duct)}
+.reg h3{font-size:1.6rem}
+.reg dl{margin:1.1rem 0 0;display:grid;grid-template-columns:auto 1fr;gap:.55rem 1.25rem;font-size:1.15rem}
+.reg dt{font-weight:700}
+.reg dd{margin:0}
+.reg a{text-underline-offset:.2em}
+.reg .fine{margin-top:1rem;font-size:.95rem;color:#38505b}
 
-.grid-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;padding:8px 0}
-.grid-g img{aspect-ratio:1;object-fit:cover;border-radius:10px}
+footer{background:var(--duct-2);color:#a9c0c9;padding:1.5rem 0 2rem;font-size:.9375rem}
+footer p{max-width:46em}
+footer a{color:#cfdde3}
 
-.hours{width:100%;border-collapse:collapse}
-.hours th,.hours td{text-align:left;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.hours th{font-weight:600}
-.hours td{text-align:right;color:var(--muted)}
-.hours tr.today th,.hours tr.today td{color:var(--accent);font-weight:800}
-address{font-style:normal;display:grid;gap:10px;margin-bottom:20px}
-address a{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600}
-address a:hover{color:var(--accent)}
-.map{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--surface)}
-.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
+.callbar{display:none}
 
-.book-band{background:var(--accent);color:var(--accent-text)}
-.band-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
-.band-in h2{margin:0}
-.book-band .btn{background:var(--accent-text);color:var(--accent)}
-
-.foot{padding:28px 0;color:var(--muted);font-size:.88rem}
-.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-.foot p{margin:0}
-.socials{display:flex;gap:16px}
-
-.mobile-bar{position:fixed;inset:auto 0 0 0;z-index:30;display:grid;grid-template-columns:1fr 1.3fr 1fr;background:var(--surface);border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent);padding-bottom:env(safe-area-inset-bottom)}
-.mobile-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;text-decoration:none;font-size:.78rem;font-weight:700}
-.mobile-bar a.primary{background:var(--accent);color:var(--accent-text)}
-.mobile-bar svg{width:22px;height:22px}
-@media (min-width:760px){.mobile-bar{display:none}}
-
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+@media (max-width:860px){
+  .hero-in,.about-grid,.visit-grid{grid-template-columns:minmax(0,1fr)}
+  .vent-wrap{order:-1;max-width:300px}.vent{width:100%;margin-left:0}.vent-cap{display:none}
+  .slats{--cut:22px}
+  .slat-in{grid-template-columns:minmax(0,1fr)}
+  .slat svg{height:44px;max-width:220px}
+}
+@media (max-width:640px){
+  body{font-size:1.0625rem;padding-bottom:78px}
+  .hero-in{padding-top:1.25rem}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--duct);border-top:3px solid var(--warm);padding:.6rem .9rem calc(.6rem + env(safe-area-inset-bottom));gap:.75rem;align-items:center;justify-content:space-between;box-shadow:0 -8px 18px rgba(0,0,0,.3)}
+  .callbar span{color:#d6e3e8;font-size:1rem;line-height:1.2}
+  .callbar a{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 1.3rem;background:var(--warm);color:var(--duct-2);font-weight:700;font-size:1.2rem;text-decoration:none;border-radius:999px;white-space:nowrap}
+  .cta-row .btn,.visit .btn{width:100%;justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .vent .flow{animation:none}
+  .btn{transition:none}
+}
 </style>
-<style>:root{--bg:#f6f3ee;--surface:#e7e0d3;--text:#1d1a16;--muted:#5a5246;--accent:#b3361b;--accent-text:#ffffff;--font:'Source Sans 3', system-ui, sans-serif;--display:'Oswald', 'Source Sans 3', sans-serif}</style>
-
 </head>
 <body>
 <div class="demo-bar">Free preview made for East End Heating &amp; Cooling by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
-<header class="top">
-  <div class="wrap top-in">
-    <a class="logo" href="#top">East End Heating &amp; Cooling</a>
-    <nav aria-label="Main"><a href="#services">Services</a><a href="#hours">Hours</a><a href="#visit">Visit</a></nav>
-    <a class="btn btn-sm" href="tel:2345718838">Call for a quote</a>
+
+<header class="hero">
+  <div class="hero-in">
+    <div>
+      <p class="where">Akron, Ohio</p>
+      <h1>East End Heating &amp; Cooling</h1>
+      <p class="lede">Furnace or AC acting up? Call East End.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+12345718838"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call (234) 571-8838</a>
+        <a class="link" href="#services">See what they do</a>
+      </div>
+    </div>
+
+    <div class="vent-wrap">
+      <svg class="vent" viewBox="0 0 640 420" role="img" aria-label="A louvered supply-register grille with warm air lines curving up and cool air lines curving down">
+        <defs>
+          <linearGradient id="slat" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#e8ece6"/><stop offset="1" stop-color="#b9c3bc"/>
+          </linearGradient>
+        </defs>
+        <!-- air lines -->
+        <g aria-hidden="true">
+          <path class="flow w" d="M262 120 C360 118 420 104 470 70 S580 34 628 40"/>
+          <path class="flow w" d="M262 146 C370 146 430 134 486 104 S590 70 632 78"/>
+          <path class="flow w" d="M262 172 C380 172 450 164 508 140 S600 112 634 118"/>
+          <path class="flow w" d="M262 198 C390 198 470 192 530 176 S610 156 636 160"/>
+          <path class="flow c" d="M262 232 C390 232 470 238 530 254 S610 274 636 270"/>
+          <path class="flow c" d="M262 258 C380 258 450 268 508 292 S600 320 634 314"/>
+          <path class="flow c" d="M262 284 C370 284 430 298 486 328 S590 362 632 354"/>
+          <path class="flow c" d="M262 310 C360 312 420 328 470 362 S580 398 628 392"/>
+        </g>
+        <!-- register -->
+        <g>
+          <rect x="14" y="30" width="248" height="360" rx="16" fill="#cfd6cf"/>
+          <rect x="14" y="30" width="248" height="360" rx="16" fill="none" stroke="#f5f7f2" stroke-width="5"/>
+          <rect x="34" y="50" width="208" height="320" rx="8" fill="#071820"/>
+          <g>
+            <rect x="34" y="58"  width="208" height="26" rx="3" fill="url(#slat)"/>
+            <rect x="34" y="96"  width="208" height="26" rx="3" fill="url(#slat)"/>
+            <rect x="34" y="134" width="208" height="26" rx="3" fill="url(#slat)"/>
+            <rect x="34" y="172" width="208" height="26" rx="3" fill="url(#slat)"/>
+            <rect x="34" y="210" width="208" height="26" rx="3" fill="url(#slat)"/>
+            <rect x="34" y="248" width="208" height="26" rx="3" fill="url(#slat)"/>
+            <rect x="34" y="286" width="208" height="26" rx="3" fill="url(#slat)"/>
+            <rect x="34" y="324" width="208" height="26" rx="3" fill="url(#slat)"/>
+          </g>
+          <g fill="#071820" opacity=".28">
+            <rect x="34" y="80" width="208" height="4"/><rect x="34" y="118" width="208" height="4"/><rect x="34" y="156" width="208" height="4"/><rect x="34" y="194" width="208" height="4"/><rect x="34" y="232" width="208" height="4"/><rect x="34" y="270" width="208" height="4"/><rect x="34" y="308" width="208" height="4"/><rect x="34" y="346" width="208" height="4"/>
+          </g>
+          <circle cx="30" cy="46" r="4" fill="#9aa59d"/><circle cx="246" cy="46" r="4" fill="#9aa59d"/>
+          <circle cx="30" cy="374" r="4" fill="#9aa59d"/><circle cx="246" cy="374" r="4" fill="#9aa59d"/>
+        </g>
+      </svg>
+      <p class="vent-cap">Warm air in winter, cool air in summer.</p>
+    </div>
   </div>
 </header>
 
-<main id="top">
-  <section class="hero">
-    <div class="wrap hero-in">
-      <p class="eyebrow">Heating &amp; air conditioning · Akron, Ohio</p>
-      <h1>Furnace or AC acting up?<br>Call East End.</h1>
-      <p class="lede">Heating, air conditioning and duct cleaning for homes in Akron and nearby. Call for a quote.</p>
-      <div class="cta-row">
-        <a class="btn" href="tel:2345718838"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call for a quote</a>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Serving%20the%20Akron%20area%2C%20Akron%2C%20OH%2044312" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Directions</a>
-      </div>
-      <p class="status" id="open-status" aria-live="polite"></p>
-    </div>
-  </section>
-
-  <section id="services" class="section">
-    <div class="wrap">
-      <h2>Services</h2>
-      <ul class="svc-list">
-        <li class="svc">
-          <div class="svc-top"><h3>Heating service</h3></div>
-          <p>Furnace and heating system repair and maintenance.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Air conditioning service</h3></div>
-          <p>AC repair and maintenance.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Duct cleaning</h3></div>
-          <p>Cleaning for your home&#39;s ductwork.</p>
-        </li></ul>
-      <p class="note">Every home is different. Call (234) 571-8838 to describe the problem and get a quote.</p>
-    </div>
-  </section>
-
-  <section class="section alt">
-    <div class="wrap one-col">
-      <div>
-        <h2>Akron&#39;s heating and cooling company.</h2>
-        <p>East End Heating &amp; Cooling serves homes in the Akron area with heating, air conditioning and duct cleaning. Call (234) 571-8838 to talk through a heating or cooling problem.</p>
-        <ul class="chips"><li>Heating service</li><li>Air conditioning service</li><li>Duct cleaning</li><li>Serving the Akron area</li></ul>
-      </div>
-      
-    </div>
-  </section>
-  
-
-  <section id="hours" class="section">
-    <div class="wrap two-col">
-      <div>
-        <h2>Hours</h2>
-        <p class="note">Call <a href="tel:2345718838">(234) 571-8838</a> for today's hours.</p>
-      </div>
-      <div id="visit">
-        <h2>Visit</h2>
-        <address>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=Serving%20the%20Akron%20area%2C%20Akron%2C%20OH%2044312" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Serving the Akron area, Akron, OH 44312</a>
-          <a href="tel:2345718838"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(234) 571-8838</a>
-          
-        </address>
-        <div class="map">
-          <iframe title="Map to East End Heating &amp; Cooling" src="https://www.google.com/maps?q=Akron%2C%20OH&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+<main class="on-light">
+<section class="services" id="services" aria-labelledby="svc-h">
+  <div class="wrap">
+    <h2 id="svc-h">Heat when it is cold. Cool air when it is not.</h2>
+    <p class="svc-intro">Three kinds of work for homes in Akron and nearby.</p>
+  </div>
+  <div class="slats">
+    <div class="slat heat">
+      <div class="slat-in">
+        <div><h3>Heating service</h3><p>Furnace and heating system repair and maintenance.</p></div>
+        <svg viewBox="0 0 260 70" aria-hidden="true"><path d="M0 52 C60 52 90 14 150 20 S230 30 258 6"/><path d="M0 64 C70 64 100 32 160 38 S236 48 258 26" opacity=".6"/></svg>
       </div>
     </div>
-  </section>
-
-  <section class="section book-band">
-    <div class="wrap band-in">
-      <h2>Heat or AC not working? Call East End.</h2>
-      <a class="btn" href="tel:2345718838"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call for a quote</a>
+    <div class="slat cool">
+      <div class="slat-in">
+        <div><h3>Air conditioning service</h3><p>AC repair and maintenance.</p></div>
+        <svg viewBox="0 0 260 70" aria-hidden="true"><path d="M0 18 C60 18 90 56 150 50 S230 40 258 64"/><path d="M0 6 C70 6 100 38 160 32 S236 22 258 44" opacity=".6"/></svg>
+      </div>
     </div>
-  </section>
+    <div class="slat duct">
+      <div class="slat-in">
+        <div><h3>Duct cleaning</h3><p>Cleaning for your home's ductwork.</p></div>
+        <svg viewBox="0 0 260 70" aria-hidden="true"><path d="M0 22 H258"/><path d="M0 36 H258" opacity=".7"/><path d="M0 50 H258" opacity=".45"/></svg>
+      </div>
+    </div>
+  </div>
+  <div class="svc-note">
+    <div class="wrap">Every home is different. <a href="tel:+12345718838">Call (234) 571-8838</a> to describe the problem and get a quote.</div>
+  </div>
+</section>
+
+<section class="about" aria-labelledby="about-h">
+  <div class="wrap about-grid">
+    <div>
+      <h2 id="about-h">Akron's heating and cooling company.</h2>
+      <p>East End Heating &amp; Cooling serves homes in the Akron area with heating, air conditioning and duct cleaning. Call to talk through a heating or cooling problem.</p>
+    </div>
+    <div class="plate"><b>Akron</b><span>44312</span><i></i></div>
+  </div>
+</section>
+
+<section class="visit" aria-labelledby="visit-h">
+  <div class="wrap visit-grid">
+    <div>
+      <h2 id="visit-h">Call to book a visit.</h2>
+      <p class="city">East End serves the Akron area, ZIP 44312. Call to ask about hours and whether they can come out to your home.</p>
+      <div class="acts">
+        <a class="btn" href="tel:+12345718838"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call (234) 571-8838</a>
+        <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Akron%2C%20OH" target="_blank" rel="noopener">Akron on the map</a>
+      </div>
+    </div>
+    <div class="reg">
+      <h3>Reach East End</h3>
+      <dl>
+        <dt>Phone</dt><dd><a href="tel:+12345718838">(234) 571-8838</a></dd>
+        <dt>Area</dt><dd>Akron, Ohio 44312 and nearby</dd>
+        <dt>Facebook</dt><dd><a href="https://www.facebook.com/eastendhvac/" target="_blank" rel="noopener">East End Heating &amp; Cooling LLC</a></dd>
+      </dl>
+      <p class="fine">Listed online as heating, air conditioning and duct cleaning.</p>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer class="foot">
-  <div class="wrap foot-in">
-    <p>© <span id="yr"></span> East End Heating &amp; Cooling</p>
-    <p class="socials"><a href="https://www.facebook.com/eastendhvac/" rel="noopener" target="_blank">Facebook</a></p>
+<footer>
+  <div class="wrap">
+    <p>Preview by Soliman A., University of Akron. Built from public listings; the artwork is illustrated.</p>
   </div>
 </footer>
 
-<nav class="mobile-bar" aria-label="Quick actions">
-  <a href="tel:2345718838"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call</span></a>
-  <a href="https://www.google.com/maps/dir/?api=1&destination=Serving%20the%20Akron%20area%2C%20Akron%2C%20OH%2044312" target="_blank" rel="noopener" class="primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Directions</span></a>
-  <a href="#hours"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg><span>Hours</span></a>
-</nav>
-
-<script>
-(function(){
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  // "Open now" uses the shop's own time zone, not the visitor's clock.
-  var parts={};
-  new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'long',hour:'2-digit',minute:'2-digit',hourCycle:'h23'})
-    .formatToParts(new Date()).forEach(function(p){parts[p.type]=p.value});
-  var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  var day=days.indexOf(parts.weekday),mins=(+parts.hour)*60+(+parts.minute);
-  var toMin=function(s){var p=s.split(':');return +p[0]*60+ +p[1]};
-  var rows=document.querySelectorAll('.hours tr'),el=document.getElementById('open-status'),msg='';
-  rows.forEach(function(r){
-    if(+r.dataset.day!==day)return;
-    r.classList.add('today');
-    // data-slots: "09:00-13:30-1:30pm,16:00-19:30-7:30pm" (split shifts allowed)
-    msg='<span class="dot"></span>Closed now';
-    (r.dataset.slots||'').split(',').forEach(function(s){
-      var p=s.split('-');
-      if(p[0]&&mins>=toMin(p[0])&&mins<toMin(p[1]))msg='<span class="dot open"></span>Open now · until '+p[2];
-    });
-  });
-  el.innerHTML=msg;
-})();
-</script>
+<div class="callbar"><span>East End Heating &amp; Cooling</span><a href="tel:+12345718838">Call now</a></div>
 </body>
 </html>

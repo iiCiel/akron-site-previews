@@ -3,264 +3,246 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pilgrim Square Barbers | Barbershop in Akron, OH</title>
-<meta name="description" content="Pilgrim Square Barbers at 2307 West Market Street, Akron, OH. Walk-in haircuts for men and boys, $22, cash only. Open Monday through Saturday. Call (330) 864-2758.">
-<meta property="og:title" content="Pilgrim Square Barbers">
-<meta property="og:description" content="Walk-in haircuts on West Market Street. No appointment needed.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#181513">
 <meta name="robots" content="noindex, nofollow">
+<title>Pilgrim Square Barbers | West Market Street, Akron (free preview)</title>
+<meta name="description" content="Preview page for Pilgrim Square Barbers, 2307 West Market Street, Akron, Ohio. Haircuts for men and boys, walk-ins welcome, open Monday through Saturday. Call (330) 864-2758.">
+<meta name="theme-color" content="#0a3a40">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Lato:wght@400;700&display=swap">
-<style>/* Shared stylesheet. Colors and fonts come from each client's site.json via :root vars. */
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.6 var(--font);-webkit-font-smoothing:antialiased;padding-bottom:72px}
-@media (min-width:760px){body{padding-bottom:0}}
-img{max-width:100%;display:block}
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#0e6a6e;
+  --deep:#0a3a40;
+  --coral:#ee6a50;
+  --coral-ink:#a53a24;
+  --aqua:#d6eded;
+  --paper:#f6fbfa;
+  --ink:#10262a;
+  --pole:#2a373b;
+  --display:"Righteous","Futura","Trebuchet MS",sans-serif;
+  --text:"Work Sans","Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html{background:#072a2f}body{margin:0;background:var(--paper);font-family:var(--text);font-size:1.125rem;line-height:1.55;color:var(--ink);background:var(--paper);-webkit-text-size-adjust:100%}
 a{color:inherit}
-h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0 0 .6em;letter-spacing:-.01em}
-h2{font-size:clamp(1.8rem,5vw,2.6rem)}
-svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
-.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+a:focus-visible,button:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+svg{max-width:100%}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;line-height:1.05;text-wrap:balance}
+p{margin:0}
 
-.demo-bar{background:var(--accent);color:var(--accent-text);text-align:center;font-size:.8rem;font-weight:600;padding:6px 16px}
+.demo-bar{background:var(--deep);color:#d3e9e8;font-size:.9375rem;text-align:center;padding:.6rem 1rem;line-height:1.35}
+.demo-bar a{color:#ffb4a3;font-weight:700}
 
-.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.top-in{display:flex;align-items:center;gap:16px;height:60px}
-.logo{min-width:0;font-family:var(--display);text-decoration:none;font-size:1.1rem;margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{display:none;gap:24px}
-.top nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
-.top nav a:hover{color:var(--text)}
-@media (min-width:760px){.top nav{display:flex}}
+/* ---------- hero: the pylon sign ---------- */
+.hero{position:relative;background:var(--aqua);overflow:hidden;isolation:isolate}
+.hero .boom{position:absolute;z-index:-1;pointer-events:none}
+.hero .boom.b2{width:210px;left:-60px;top:6%;opacity:.7}
+.hero-in{max-width:1120px;margin:0 auto;padding:clamp(1.75rem,4vw,3.5rem) clamp(1.25rem,4vw,2.5rem) 0;display:grid;grid-template-columns:minmax(0,440px) minmax(0,1fr);gap:clamp(2rem,6vw,5.5rem);align-items:center}
 
-.btn{display:inline-flex;align-items:center;gap:.5em;background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:.85em 1.4em;border-radius:999px;min-height:48px;transition:transform .15s,filter .15s}
-.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.btn-sm{padding:.55em 1.1em;min-height:40px;font-size:.9rem;white-space:nowrap;flex:none}
-.btn-ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--text) 30%,transparent)}
+.pylon{justify-self:center;width:100%;max-width:440px}
+.cap{display:block;width:100%;height:auto;margin-bottom:-14px;position:relative;z-index:1}
+.frame{background:var(--pole);padding:12px;border-radius:30px 30px 10px 10px;display:grid;gap:10px;box-shadow:0 18px 30px rgba(10,58,64,.28)}
+.panel{position:relative;padding:1.2rem 1.5rem;border-radius:6px;text-align:center}
+.panel::after{content:"";position:absolute;inset:5px;border:2px solid currentColor;border-radius:3px;opacity:.55;pointer-events:none}
+.p-name{background:var(--teal);color:#fff;border-radius:20px 20px 6px 6px;padding:1.9rem 1.5rem 1.7rem}
+.p-name h1{font-size:clamp(2.5rem,9vw,3.6rem);letter-spacing:.01em;line-height:.98}
+.p-name h1 span{display:block}
+.p-name h1 .sub{margin-top:.5rem;display:inline-block;font-size:.5em;letter-spacing:.2em;background:var(--paper);color:var(--teal);padding:.2em .8em .15em;border-radius:99px}
+.p-walk{background:var(--coral);color:var(--deep)}
+.p-walk p{font-family:var(--display);font-size:clamp(2.2rem,7vw,3rem);line-height:1}
+.p-cash{background:var(--paper);color:var(--teal);padding:.9rem 1.5rem}
+.p-cash p{font-family:var(--display);font-size:clamp(1.35rem,4.4vw,1.75rem);letter-spacing:.03em}
+.legs{display:flex;justify-content:space-between;padding:0 18%}
+.legs i{display:block;width:20px;height:clamp(44px,9vw,118px);background:linear-gradient(90deg,#1c282c,var(--pole) 40%,#3b4a4f)}
+.lit .panel{animation:glow 1.2s ease-out backwards}
+.lit .p-walk{animation-delay:.25s}.lit .p-cash{animation-delay:.5s}
+@keyframes glow{0%{filter:brightness(.55)}55%{filter:brightness(1.18)}100%{filter:none}}
 
-.hero{position:relative;padding:72px 0 64px;overflow:hidden;
-  background:
-    linear-gradient(180deg,transparent 40%,var(--bg)),
-    var(--hero-img,none) center/cover,
-    repeating-linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,transparent) 0 18px,transparent 18px 36px),
-    var(--bg)}
-.hero::after{content:"";position:absolute;inset:0;background:color-mix(in srgb,var(--bg) 55%,transparent);z-index:0}
-.hero-in{position:relative;z-index:1}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:var(--accent);margin:0 0 14px}
-.hero h1{font-size:clamp(2.6rem,11vw,5.6rem)}
-.lede{font-size:1.15rem;color:var(--muted);max-width:34ch;margin:0 0 28px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.status{margin:22px 0 0;font-weight:600;color:var(--muted);min-height:1.6em;display:flex;align-items:center;gap:8px}
-.dot{width:10px;height:10px;border-radius:50%;background:#c2524a;display:inline-block}
-.dot.open{background:#4caf6e;box-shadow:0 0 0 4px rgba(76,175,110,.2)}
-@media (min-width:760px){.hero{padding:120px 0 100px}}
+.hero-copy{padding-bottom:clamp(2.25rem,5vw,4rem);align-self:center}
+.lede{font-family:var(--display);font-size:clamp(1.7rem,3.4vw,2.5rem);line-height:1.12;max-width:15em;color:var(--deep);text-wrap:balance}
+.lede-sub{margin-top:1rem;font-size:1.2rem;max-width:26em;color:#2a4448}
+.cta-row{margin-top:1.75rem;display:flex;flex-wrap:wrap;gap:.9rem 1.6rem;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:.7rem;min-height:56px;padding:.55rem 1.6rem;background:var(--coral);color:var(--deep);font-weight:700;font-size:1.25rem;text-decoration:none;border-radius:99px;box-shadow:0 4px 0 var(--coral-ink);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(2px);box-shadow:0 2px 0 var(--coral-ink)}
+.btn svg{width:22px;height:22px;flex:none}
+.link{font-weight:700;text-underline-offset:.28em;text-decoration-thickness:2px;display:inline-flex;align-items:center;min-height:44px}
+.link:hover{color:var(--teal)}
+.status{margin-top:1.25rem;font-weight:500;color:#2a4448;min-height:1.5em}
+.lot{height:30px;background:var(--pole);position:relative;margin-top:0}
+.lot::before{content:"";position:absolute;inset:7px 0;background:repeating-linear-gradient(90deg,transparent 0 56px,#f2f6f5 56px 60px,transparent 60px 116px);opacity:.85}
 
-.section{padding:64px 0}
-.section.alt{background:var(--surface)}
-.svc-list{list-style:none;padding:0;margin:0;display:grid;gap:4px 48px}
-@media (min-width:760px){.svc-list{grid-template-columns:1fr 1fr}}
-.svc{padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.svc-top{display:flex;align-items:baseline;gap:10px}
-.svc h3{font-family:var(--font);font-weight:800;font-size:1.1rem;margin:0}
-.dots{flex:1;border-bottom:2px dotted color-mix(in srgb,var(--text) 25%,transparent);transform:translateY(-4px)}
-.svc strong{color:var(--accent);font-size:1.15rem}
-.svc p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
-.dur{white-space:nowrap}
-.note{color:var(--muted);font-size:.85rem;margin-top:20px}
-.menu-section{font-family:var(--display);font-size:1.3rem;color:var(--accent);margin:36px 0 4px;text-transform:uppercase;letter-spacing:.06em}
-.menu-section:first-of-type{margin-top:8px}
+/* ---------- about ---------- */
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+.about{padding:clamp(3rem,7vw,6rem) 0}
+.about-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,6vw,5rem);align-items:center}
+.about h2{font-size:clamp(2.1rem,4.2vw,3.3rem);color:var(--teal)}
+.about p{margin-top:1.1rem;max-width:30em}
+.about .src{font-size:.95rem;color:#3d5559}
+.chain{background:var(--aqua);border-radius:26px;padding:clamp(1.5rem,3vw,2.25rem) clamp(1.25rem,3vw,2.25rem) 1.5rem}
+.chain svg{display:block;width:100%;height:auto}
+.chain figcaption{display:flex;justify-content:space-between;font-family:var(--display);color:var(--deep);font-size:1.15rem;margin-top:.6rem}
+.chain{margin:0}
 
-.two-col{display:grid;gap:48px}
-@media (min-width:860px){.two-col{grid-template-columns:1fr 1fr;align-items:start}}
-.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
-.chips li{border:1px solid color-mix(in srgb,var(--accent) 50%,transparent);color:var(--accent);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600}
-.one-col{max-width:720px}
-.reviews{display:grid;gap:16px;align-content:start}
-.rating{display:flex;align-items:center;gap:10px;text-decoration:none;background:var(--bg);border-radius:16px;padding:18px 22px;border-left:4px solid var(--accent)}
-.rating svg{width:28px;height:28px;color:var(--accent)}
-.rating strong{font-family:var(--display);font-size:1.8rem;line-height:1}
-.rating span{color:var(--muted);font-size:.9rem}
-.review{margin:0;background:var(--bg);border-radius:16px;padding:20px 22px;border-left:4px solid var(--accent)}
-.review blockquote{margin:0 0 8px;font-size:1.05rem}
-.review figcaption{color:var(--muted);font-size:.85rem}
+/* ---------- hours + visit ---------- */
+.visit{background:var(--deep);color:#e8f4f3;padding:clamp(3rem,7vw,5.5rem) 0}
+.visit-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(1.75rem,5vw,4rem);align-items:stretch}
+.board{background:var(--paper);color:var(--ink);border-radius:20px 20px 8px 8px;padding:1.6rem clamp(1.25rem,3vw,2rem) 1.4rem;position:relative}
+.board::after{content:"";position:absolute;inset:6px;border:2px solid var(--teal);border-radius:15px 15px 4px 4px;opacity:.45;pointer-events:none}
+.board h2{font-size:clamp(1.8rem,3.4vw,2.5rem);color:var(--teal);text-align:center}
+.board ul{list-style:none;margin:1.1rem 0 0;padding:0}
+.board li{display:grid;grid-template-columns:1fr auto;gap:1rem;padding:.55rem .75rem;border-radius:8px;font-size:1.15rem}
+.board li+li{border-top:1px dashed #b9d4d3}
+.board li b{font-weight:700}
+.board li.closed span{color:#4a6165}
+.board li.today{background:var(--coral);color:var(--deep);border-top-color:transparent}
+.board li.today+li{border-top-color:transparent}
+.board .fine{margin-top:.9rem;text-align:center;font-size:.95rem;color:#3d5559}
+.where{display:flex;flex-direction:column;justify-content:center;background:var(--teal);border-radius:20px 20px 8px 8px;padding:2rem clamp(1.5rem,3.5vw,2.75rem);position:relative}
+.where::after{content:"";position:absolute;inset:6px;border:2px solid #fff;border-radius:15px 15px 4px 4px;opacity:.4;pointer-events:none}
+.where h2{font-size:clamp(2rem,4.4vw,3.2rem);color:#fff}
+.where .city{margin-top:.5rem;font-family:var(--display);font-size:1.4rem;color:#ffb4a3}
+.where .acts{margin-top:1.9rem;display:flex;flex-wrap:wrap;gap:.9rem 1.6rem;align-items:center}
+.where .link:hover{color:#ffb4a3}
+.where .phone{margin-top:1.6rem;font-family:var(--display);font-size:clamp(1.8rem,4vw,2.6rem);text-decoration:none;color:#fff;display:inline-block;min-height:44px}
 
-.grid-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;padding:8px 0}
-.grid-g img{aspect-ratio:1;object-fit:cover;border-radius:10px}
+footer{background:#072a2f;color:#a9c8c6;padding:1.4rem 0 2rem;font-size:.9375rem}
+footer p{max-width:48em}
+.callbar{display:none}
 
-.hours{width:100%;border-collapse:collapse}
-.hours th,.hours td{text-align:left;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.hours th{font-weight:600}
-.hours td{text-align:right;color:var(--muted)}
-.hours tr.today th,.hours tr.today td{color:var(--accent);font-weight:800}
-address{font-style:normal;display:grid;gap:10px;margin-bottom:20px}
-address a{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600}
-address a:hover{color:var(--accent)}
-.map{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--surface)}
-.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
-
-.book-band{background:var(--accent);color:var(--accent-text)}
-.band-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
-.band-in h2{margin:0}
-.book-band .btn{background:var(--accent-text);color:var(--accent)}
-
-.foot{padding:28px 0;color:var(--muted);font-size:.88rem}
-.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-.foot p{margin:0}
-.socials{display:flex;gap:16px}
-
-.mobile-bar{position:fixed;inset:auto 0 0 0;z-index:30;display:grid;grid-template-columns:1fr 1.3fr 1fr;background:var(--surface);border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent);padding-bottom:env(safe-area-inset-bottom)}
-.mobile-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;text-decoration:none;font-size:.78rem;font-weight:700}
-.mobile-bar a.primary{background:var(--accent);color:var(--accent-text)}
-.mobile-bar svg{width:22px;height:22px}
-@media (min-width:760px){.mobile-bar{display:none}}
-
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+@media (max-width:860px){
+  .hero-in{grid-template-columns:minmax(0,1fr);gap:1.75rem}
+  .pylon{max-width:400px}
+  .hero-copy{padding-bottom:2.25rem}
+  .about-grid,.visit-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:640px){
+  body{font-size:1.0625rem;padding-bottom:76px}
+  .p-name{padding:1.5rem 1rem 1.35rem}
+  .panel{padding:1rem}
+  .p-cash{padding:.75rem 1rem}
+  .cta-row .btn{width:100%;justify-content:center}
+  .board li{font-size:1.05rem;padding:.6rem .5rem}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--teal);border-top:3px solid var(--coral);padding:.6rem .9rem calc(.6rem + env(safe-area-inset-bottom));gap:.75rem;align-items:center;justify-content:space-between;box-shadow:0 -8px 18px rgba(0,0,0,.3)}
+  .callbar span{color:#e3f2f1;font-size:1rem;line-height:1.2;font-family:var(--display)}
+  .callbar a{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 1.4rem;background:var(--coral);color:var(--deep);font-weight:700;font-size:1.2rem;text-decoration:none;border-radius:99px;white-space:nowrap}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .lit .panel{animation:none}
+  .btn{transition:none}
+}
 </style>
-<style>:root{--bg:#181513;--surface:#231f1c;--text:#f5efe9;--muted:#b0a59b;--accent:#d0784a;--accent-text:#1a120d;--font:'Lato', system-ui, sans-serif;--display:'Playfair Display', Georgia, serif}</style>
-
 </head>
 <body>
 <div class="demo-bar">Free preview made for Pilgrim Square Barbers by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
-<header class="top">
-  <div class="wrap top-in">
-    <a class="logo" href="#top">Pilgrim Square Barbers</a>
-    <nav aria-label="Main"><a href="#services">Services</a><a href="#hours">Hours</a><a href="#visit">Visit</a></nav>
-    <a class="btn btn-sm" href="tel:3308642758">Call the shop</a>
+
+<header class="hero">
+  <div class="hero-in">
+    <div class="pylon lit">
+      <svg class="cap" viewBox="0 0 440 74" aria-hidden="true">
+        <path d="M30 70C40 24 120 6 220 6S400 24 410 70Z" fill="#ee6a50"/>
+        <path d="M70 70C80 38 140 24 220 24S360 38 370 70Z" fill="#f9a08e" opacity=".55"/>
+        <g fill="#f6fbfa"><circle cx="220" cy="34" r="6"/><circle cx="166" cy="42" r="4"/><circle cx="274" cy="42" r="4"/></g>
+      </svg>
+      <div class="frame">
+        <div class="panel p-name"><h1><span>Pilgrim</span><span>Square</span><span class="sub">BARBERS</span></h1></div>
+        <div class="panel p-walk"><p>Walk in.</p></div>
+        <div class="panel p-cash"><p>Cash only</p></div>
+      </div>
+      <div class="legs" aria-hidden="true"><i></i><i></i></div>
+    </div>
+
+    <div class="hero-copy">
+      <p class="lede">Haircuts for men and boys on West Market Street.</p>
+      <p class="lede-sub">No appointment needed. Stop by during shop hours, or call first.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+13308642758"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call (330) 864-2758</a>
+        <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Pilgrim%20Square%20Barbers%2C%202307%20West%20Market%20Street%2C%20Akron%2C%20OH%2044313" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <p class="status" id="status"></p>
+    </div>
   </div>
+  <div class="lot" aria-hidden="true"></div>
 </header>
 
-<main id="top">
-  <section class="hero">
-    <div class="wrap hero-in">
-      <p class="eyebrow">Barbershop · West Market Street, Akron</p>
-      <h1>Walk in.<br>Look sharp.</h1>
-      <p class="lede">Walk-in haircuts on West Market Street. No appointment needed.</p>
-      <div class="cta-row">
-        <a class="btn" href="tel:3308642758"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call the shop</a>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=2307%20West%20Market%20Street%2C%20Akron%2C%20OH%2044313" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Directions</a>
-      </div>
-      <p class="status" id="open-status" aria-live="polite"></p>
+<main>
+<section class="about" aria-labelledby="about-h">
+  <div class="wrap about-grid">
+    <div>
+      <h2 id="about-h">A barbershop for over 50 years.</h2>
+      <p>The shop's own website says this spot on West Market Street has been a barbershop for over 50 years, and that the current proprietor is its third owner since the 1960s.</p>
+      <p class="src">Source: pilgrimsquarebarbers.com</p>
     </div>
-  </section>
+    <figure class="chain">
+      <svg viewBox="0 0 420 190" role="img" aria-label="Three boomerang markers along a line from the 1960s to today, one for each owner of the shop">
+        <line x1="20" y1="120" x2="400" y2="120" stroke="#0a3a40" stroke-width="4" stroke-linecap="round"/>
+        <g fill="none" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M54 96L104 62L154 92" stroke="#0e6a6e"/>
+          <path d="M180 96L230 62L280 92" stroke="#0e6a6e"/>
+          <path d="M268 96L318 62L368 92" stroke="#ee6a50" transform="translate(40 0)"/>
+        </g>
+        <g stroke="#0a3a40" stroke-width="3" stroke-linecap="round"><line x1="104" y1="120" x2="104" y2="134"/><line x1="230" y1="120" x2="230" y2="134"/><line x1="356" y1="120" x2="356" y2="134"/></g>
+        <g font-family="Righteous, sans-serif" font-size="18" fill="#0a3a40" text-anchor="middle">
+          <text x="104" y="160">1st owner</text><text x="230" y="160">2nd owner</text><text x="356" y="160">3rd owner</text>
+        </g>
+      </svg>
+      <figcaption><span>The 1960s</span><span>Today</span></figcaption>
+    </figure>
+  </div>
+</section>
 
-  <section id="services" class="section">
-    <div class="wrap">
-      <h2>Services &amp; prices</h2>
-      <ul class="svc-list">
-        <li class="svc">
-          <div class="svc-top"><h3>Haircuts for men and boys</h3><span class="dots" aria-hidden="true"></span><strong>$22</strong></div>
-          <p>Cash only. Walk-ins, no appointment needed.</p>
-        </li></ul>
-      <p class="note">Cash only. Prices may change, so call (330) 864-2758 to confirm.</p>
+<section class="visit" aria-labelledby="visit-h">
+  <div class="wrap visit-grid">
+    <div class="board">
+      <h2>Shop hours</h2>
+      <ul id="hours">
+        <li data-d="1"><b>Monday</b><span>9 AM to 5:30 PM</span></li>
+        <li data-d="2"><b>Tuesday</b><span>9 AM to 5:30 PM</span></li>
+        <li data-d="3"><b>Wednesday</b><span>9 AM to 5:30 PM</span></li>
+        <li data-d="4"><b>Thursday</b><span>10 AM to 5:30 PM</span></li>
+        <li data-d="5"><b>Friday</b><span>9 AM to 5:30 PM</span></li>
+        <li data-d="6"><b>Saturday</b><span>8 AM to 2 PM</span></li>
+        <li data-d="0" class="closed"><b>Sunday</b><span>Closed</span></li>
+      </ul>
+      <p class="fine">Hours as listed online. Call to confirm first.</p>
     </div>
-  </section>
-
-  <section class="section alt">
-    <div class="wrap two-col">
-      <div>
-        <h2>A barbershop for over 50 years.</h2>
-        <p>This spot on West Market Street has been a barbershop for over 50 years, and Scott, the proprietor, is its third owner since the 1960s. Your barbers are Scott, Lori and Steve. Haircuts for men and boys are $22, cash only. No appointment needed: just walk in.</p>
-        <ul class="chips"><li>Walk-ins, no appointment needed</li><li>$22 haircuts</li><li>Cash only</li><li>Open Monday–Saturday</li></ul>
-      </div>
-      <div class="reviews"><a class="rating" href="https://www.bing.com/search?q=Pilgrim+Square+Barber+Shop+2307+W+Market+St+Akron" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><strong>4.5</strong><span>28 reviews on Yelp</span></a></div>
-    </div>
-  </section>
-  
-
-  <section id="hours" class="section">
-    <div class="wrap two-col">
-      <div>
-        <h2>Hours</h2>
-        <table class="hours"><tbody>
-        <tr data-day="1" data-slots="09:00-17:30-5:30pm">
-          <th scope="row">Monday</th>
-          <td>9am – 5:30pm</td>
-        </tr>
-        <tr data-day="2" data-slots="09:00-17:30-5:30pm">
-          <th scope="row">Tuesday</th>
-          <td>9am – 5:30pm</td>
-        </tr>
-        <tr data-day="3" data-slots="09:00-17:30-5:30pm">
-          <th scope="row">Wednesday</th>
-          <td>9am – 5:30pm</td>
-        </tr>
-        <tr data-day="4" data-slots="10:00-17:30-5:30pm">
-          <th scope="row">Thursday</th>
-          <td>10am – 5:30pm</td>
-        </tr>
-        <tr data-day="5" data-slots="09:00-17:30-5:30pm">
-          <th scope="row">Friday</th>
-          <td>9am – 5:30pm</td>
-        </tr>
-        <tr data-day="6" data-slots="08:00-14:00-2pm">
-          <th scope="row">Saturday</th>
-          <td>8am – 2pm</td>
-        </tr>
-        <tr data-day="0" data-slots="">
-          <th scope="row">Sunday</th>
-          <td>Closed</td>
-        </tr></tbody></table>
-      </div>
-      <div id="visit">
-        <h2>Visit</h2>
-        <address>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=2307%20West%20Market%20Street%2C%20Akron%2C%20OH%2044313" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>2307 West Market Street, Akron, OH 44313</a>
-          <a href="tel:3308642758"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(330) 864-2758</a>
-          
-        </address>
-        <div class="map">
-          <iframe title="Map to Pilgrim Square Barbers" src="https://www.google.com/maps?q=Pilgrim%20Square%20Barbers%2C%202307%20West%20Market%20Street%2C%20Akron%2C%20OH%2044313&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    <div class="where">
+      <h2 id="visit-h">2307 West Market Street</h2>
+      <p class="city">Akron, Ohio 44313</p>
+      <div class="acts">
+        <a class="btn" href="tel:+13308642758"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call the shop</a>
+        <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Pilgrim%20Square%20Barbers%2C%202307%20West%20Market%20Street%2C%20Akron%2C%20OH%2044313" target="_blank" rel="noopener">Get directions</a>
       </div>
     </div>
-  </section>
-
-  <section class="section book-band">
-    <div class="wrap band-in">
-      <h2>Due for a cut? Just walk in.</h2>
-      <a class="btn" href="tel:3308642758"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call the shop</a>
-    </div>
-  </section>
+  </div>
+</section>
 </main>
 
-<footer class="foot">
-  <div class="wrap foot-in">
-    <p>© <span id="yr"></span> Pilgrim Square Barbers</p>
-    <p class="socials"><a href="https://www.pilgrimsquarebarbers.com/" rel="noopener" target="_blank">Official website</a></p>
+<footer>
+  <div class="wrap">
+    <p>Preview by Soliman A., University of Akron. Not affiliated with Pilgrim Square Barbers. Built from public listings and the shop's own website; the sign is an illustration. <a href="https://www.pilgrimsquarebarbers.com/" target="_blank" rel="noopener">Official website</a></p>
   </div>
 </footer>
 
-<nav class="mobile-bar" aria-label="Quick actions">
-  <a href="tel:3308642758"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call</span></a>
-  <a href="https://www.google.com/maps/dir/?api=1&destination=2307%20West%20Market%20Street%2C%20Akron%2C%20OH%2044313" target="_blank" rel="noopener" class="primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Directions</span></a>
-  <a href="#hours"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg><span>Hours</span></a>
-</nav>
+<div class="callbar"><span>Pilgrim Square Barbers</span><a href="tel:+13308642758">Call now</a></div>
 
 <script>
 (function(){
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  // "Open now" uses the shop's own time zone, not the visitor's clock.
-  var parts={};
-  new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'long',hour:'2-digit',minute:'2-digit',hourCycle:'h23'})
-    .formatToParts(new Date()).forEach(function(p){parts[p.type]=p.value});
-  var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  var day=days.indexOf(parts.weekday),mins=(+parts.hour)*60+(+parts.minute);
-  var toMin=function(s){var p=s.split(':');return +p[0]*60+ +p[1]};
-  var rows=document.querySelectorAll('.hours tr'),el=document.getElementById('open-status'),msg='';
-  rows.forEach(function(r){
-    if(+r.dataset.day!==day)return;
-    r.classList.add('today');
-    // data-slots: "09:00-13:30-1:30pm,16:00-19:30-7:30pm" (split shifts allowed)
-    msg='<span class="dot"></span>Closed now';
-    (r.dataset.slots||'').split(',').forEach(function(s){
-      var p=s.split('-');
-      if(p[0]&&mins>=toMin(p[0])&&mins<toMin(p[1]))msg='<span class="dot open"></span>Open now · until '+p[2];
-    });
-  });
-  el.innerHTML=msg;
+  try{
+    var now=new Date(new Date().toLocaleString('en-US',{timeZone:'America/New_York'}));
+    var d=now.getDay();
+    var li=document.querySelector('#hours li[data-d="'+d+'"]');
+    if(li)li.classList.add('today');
+    var mins=now.getHours()*60+now.getMinutes();
+    var o={1:[540,1050],2:[540,1050],3:[540,1050],4:[600,1050],5:[540,1050],6:[480,840]}[d];
+    var s=document.getElementById('status');
+    if(!o){s.textContent='Closed today. Open again Monday at 9 AM.';return;}
+    var end=d===6?'2 PM':'5:30 PM';
+    if(mins>=o[0]&&mins<o[1])s.textContent='Open today until '+end+' (per listed hours).';
+    else s.textContent='Listed hours today: '+li.lastElementChild.textContent+'.';
+  }catch(e){}
 })();
 </script>
 </body>

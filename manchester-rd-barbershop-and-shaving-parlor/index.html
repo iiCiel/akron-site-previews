@@ -3,288 +3,349 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Manchester Rd Barbershop &amp; Shaving Parlor | Barbershop in Akron, OH</title>
-<meta name="description" content="Manchester Rd Barbershop &amp; Shaving Parlor at 3446 Manchester Rd, Akron, OH 44319. Haircuts, face shaves and cut-and-beard-trim combos. Open Monday through Saturday. Book online or call (330) 217-1109.">
-<meta property="og:title" content="Manchester Rd Barbershop &amp; Shaving Parlor">
-<meta property="og:description" content="Haircuts, face shaves and cut-and-beard-trim combos on Manchester Rd in Akron. Book online or call the shop.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#10201a">
 <meta name="robots" content="noindex, nofollow">
+<title>Manchester Rd Barbershop &amp; Shaving Parlor | Akron, Ohio (free preview)</title>
+<meta name="description" content="Preview page for Manchester Rd Barbershop &amp; Shaving Parlor, 3446 Manchester Rd, Akron, Ohio. Haircuts, face shaves and hot towel shaves. Call (330) 217-1109.">
+<meta name="theme-color" content="#5f1626">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Lato:wght@400;700&display=swap">
-<style>/* Shared stylesheet. Colors and fonts come from each client's site.json via :root vars. */
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.6 var(--font);-webkit-font-smoothing:antialiased;padding-bottom:72px}
-@media (min-width:760px){body{padding-bottom:0}}
-img{max-width:100%;display:block}
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --table:#cfd5d8;
+  --label:#f3f1e9;
+  --ink:#16181b;
+  --oxblood:#5f1626;
+  --oxblood-deep:#3f0e19;
+  --brass:#d1a94f;
+  --brass-ink:#6e500c;
+  --muted:#464a4f;
+  --steel:#8f99a1;
+  --display:"Cinzel","Trajan Pro",Georgia,serif;
+  --text:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--text);font-size:1.125rem;line-height:1.55;color:var(--ink);background:var(--table);-webkit-text-size-adjust:100%}
+::selection{background:var(--oxblood);color:var(--label)}
 a{color:inherit}
-h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0 0 .6em;letter-spacing:-.01em}
-h2{font-size:clamp(1.8rem,5vw,2.6rem)}
-svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
-.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+a:focus-visible,button:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.on-light a:focus-visible{outline-color:var(--oxblood)}
+svg{max-width:100%}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.1;letter-spacing:.02em;margin:0;text-wrap:balance}
+p{margin:0}
 
-.demo-bar{background:var(--accent);color:var(--accent-text);text-align:center;font-size:.8rem;font-weight:600;padding:6px 16px}
+.demo-bar{background:var(--ink);color:#d8dce0;font-size:.9375rem;text-align:center;padding:.6rem 1rem;line-height:1.35}
+.demo-bar a{color:var(--brass);font-weight:600}
 
-.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.top-in{display:flex;align-items:center;gap:16px;height:60px}
-.logo{min-width:0;font-family:var(--display);text-decoration:none;font-size:1.1rem;margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{display:none;gap:24px}
-.top nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
-.top nav a:hover{color:var(--text)}
-@media (min-width:760px){.top nav{display:flex}}
-
-.btn{display:inline-flex;align-items:center;gap:.5em;background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:.85em 1.4em;border-radius:999px;min-height:48px;transition:transform .15s,filter .15s}
-.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.btn-sm{padding:.55em 1.1em;min-height:40px;font-size:.9rem;white-space:nowrap;flex:none}
-.btn-ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--text) 30%,transparent)}
-
-.hero{position:relative;padding:72px 0 64px;overflow:hidden;
+/* ---------- apothecary label frame ---------- */
+.label{
+  position:relative;
   background:
-    linear-gradient(180deg,transparent 40%,var(--bg)),
-    var(--hero-img,none) center/cover,
-    repeating-linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,transparent) 0 18px,transparent 18px 36px),
-    var(--bg)}
-.hero::after{content:"";position:absolute;inset:0;background:color-mix(in srgb,var(--bg) 55%,transparent);z-index:0}
-.hero-in{position:relative;z-index:1}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:var(--accent);margin:0 0 14px}
-.hero h1{font-size:clamp(2.6rem,11vw,5.6rem)}
-.lede{font-size:1.15rem;color:var(--muted);max-width:34ch;margin:0 0 28px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.status{margin:22px 0 0;font-weight:600;color:var(--muted);min-height:1.6em;display:flex;align-items:center;gap:8px}
-.dot{width:10px;height:10px;border-radius:50%;background:#c2524a;display:inline-block}
-.dot.open{background:#4caf6e;box-shadow:0 0 0 4px rgba(76,175,110,.2)}
-@media (min-width:760px){.hero{padding:120px 0 100px}}
+    radial-gradient(circle at 0 0,var(--table) 0 16px,transparent 16.5px) 0 0/51% 51% no-repeat,
+    radial-gradient(circle at 100% 0,var(--table) 0 16px,transparent 16.5px) 100% 0/51% 51% no-repeat,
+    radial-gradient(circle at 0 100%,var(--table) 0 16px,transparent 16.5px) 0 100%/51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%,var(--table) 0 16px,transparent 16.5px) 100% 100%/51% 51% no-repeat,
+    var(--label);
+  color:var(--ink);
+  padding:clamp(2.1rem,4vw,3.2rem) clamp(1.6rem,4vw,3.4rem);
+  box-shadow:0 1px 0 rgba(255,255,255,.5),0 12px 22px rgba(30,40,48,.2);
+}
+.label::before{ /* inner double rule */
+  content:"";position:absolute;inset:11px;pointer-events:none;
+  border:2px solid var(--oxblood);
+  box-shadow:inset 0 0 0 4px var(--label),inset 0 0 0 5px var(--oxblood);
+  -webkit-mask:radial-gradient(circle at 0 0,transparent 0 11px,#000 11.5px) 0 0/51% 51% no-repeat,
+    radial-gradient(circle at 100% 0,transparent 0 11px,#000 11.5px) 100% 0/51% 51% no-repeat,
+    radial-gradient(circle at 0 100%,transparent 0 11px,#000 11.5px) 0 100%/51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%,transparent 0 11px,#000 11.5px) 100% 100%/51% 51% no-repeat;
+  mask:radial-gradient(circle at 0 0,transparent 0 11px,#000 11.5px) 0 0/51% 51% no-repeat,
+    radial-gradient(circle at 100% 0,transparent 0 11px,#000 11.5px) 100% 0/51% 51% no-repeat,
+    radial-gradient(circle at 0 100%,transparent 0 11px,#000 11.5px) 0 100%/51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%,transparent 0 11px,#000 11.5px) 100% 100%/51% 51% no-repeat;
+}
+.label > *{position:relative}
+.label.red{
+  background:
+    radial-gradient(circle at 0 0,var(--table) 0 16px,transparent 16.5px) 0 0/51% 51% no-repeat,
+    radial-gradient(circle at 100% 0,var(--table) 0 16px,transparent 16.5px) 100% 0/51% 51% no-repeat,
+    radial-gradient(circle at 0 100%,var(--table) 0 16px,transparent 16.5px) 0 100%/51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%,var(--table) 0 16px,transparent 16.5px) 100% 100%/51% 51% no-repeat,
+    var(--oxblood);
+  color:var(--label);
+}
+.label.red::before{border-color:var(--brass);box-shadow:inset 0 0 0 4px var(--oxblood),inset 0 0 0 5px var(--brass)}
+.label.ink{
+  background:
+    radial-gradient(circle at 0 0,var(--table) 0 16px,transparent 16.5px) 0 0/51% 51% no-repeat,
+    radial-gradient(circle at 100% 0,var(--table) 0 16px,transparent 16.5px) 100% 0/51% 51% no-repeat,
+    radial-gradient(circle at 0 100%,var(--table) 0 16px,transparent 16.5px) 0 100%/51% 51% no-repeat,
+    radial-gradient(circle at 100% 100%,var(--table) 0 16px,transparent 16.5px) 100% 100%/51% 51% no-repeat,
+    var(--ink);
+  color:var(--label);
+}
+.label.ink::before{border-color:var(--brass);box-shadow:inset 0 0 0 4px var(--ink),inset 0 0 0 5px var(--brass)}
 
-.section{padding:64px 0}
-.section.alt{background:var(--surface)}
-.svc-list{list-style:none;padding:0;margin:0;display:grid;gap:4px 48px}
-@media (min-width:760px){.svc-list{grid-template-columns:1fr 1fr}}
-.svc{padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.svc-top{display:flex;align-items:baseline;gap:10px}
-.svc h3{font-family:var(--font);font-weight:800;font-size:1.1rem;margin:0}
-.dots{flex:1;border-bottom:2px dotted color-mix(in srgb,var(--text) 25%,transparent);transform:translateY(-4px)}
-.svc strong{color:var(--accent);font-size:1.15rem}
-.svc p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
-.dur{white-space:nowrap}
-.note{color:var(--muted);font-size:.85rem;margin-top:20px}
-.menu-section{font-family:var(--display);font-size:1.3rem;color:var(--accent);margin:36px 0 4px;text-transform:uppercase;letter-spacing:.06em}
-.menu-section:first-of-type{margin-top:8px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 clamp(.9rem,3vw,2rem)}
 
-.two-col{display:grid;gap:48px}
-@media (min-width:860px){.two-col{grid-template-columns:1fr 1fr;align-items:start}}
-.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
-.chips li{border:1px solid color-mix(in srgb,var(--accent) 50%,transparent);color:var(--accent);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600}
-.one-col{max-width:720px}
-.reviews{display:grid;gap:16px;align-content:start}
-.rating{display:flex;align-items:center;gap:10px;text-decoration:none;background:var(--bg);border-radius:16px;padding:18px 22px;border-left:4px solid var(--accent)}
-.rating svg{width:28px;height:28px;color:var(--accent)}
-.rating strong{font-family:var(--display);font-size:1.8rem;line-height:1}
-.rating span{color:var(--muted);font-size:.9rem}
-.review{margin:0;background:var(--bg);border-radius:16px;padding:20px 22px;border-left:4px solid var(--accent)}
-.review blockquote{margin:0 0 8px;font-size:1.05rem}
-.review figcaption{color:var(--muted);font-size:.85rem}
+/* ---------- hero ---------- */
+.hero{padding:clamp(1.1rem,3vw,2.2rem) 0 clamp(1rem,2.5vw,1.8rem)}
+.hero .label{text-align:center}
+.crest{display:block;margin:0 auto 1.1rem;width:min(300px,70%);height:14px}
+h1{font-size:clamp(2rem,6.2vw,4.8rem);letter-spacing:.02em;line-height:1.05;color:var(--oxblood)}
+h1 .l2{display:block;font-weight:500;font-size:.36em;line-height:1.3;margin-top:.7em;color:var(--ink);letter-spacing:.14em}
+.razor-wrap{margin:clamp(.8rem,2vw,1.4rem) auto 0;max-width:960px}
+.razor{display:block;width:100%;height:auto;overflow:visible}
+.blade{transform-origin:770px 124px;animation:open 2.4s cubic-bezier(.16,1,.3,1) .3s backwards}
+@keyframes open{0%{transform:rotate(172deg)}100%{transform:rotate(0deg)}}
+.razor .etch{font-family:var(--display);font-size:17px;font-weight:500;letter-spacing:.3em;fill:#2a2f34}
+.services-line{margin-top:clamp(.9rem,2vw,1.4rem);font-family:var(--display);font-weight:500;font-size:clamp(1.05rem,2.2vw,1.55rem);letter-spacing:.08em;line-height:1.35;text-wrap:balance}
+.lede{margin:.7rem auto 0;max-width:30em;text-wrap:balance;color:var(--muted)}
+.cta-row{margin-top:1.7rem;display:flex;flex-wrap:wrap;gap:.8rem 1rem;justify-content:center;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;min-height:54px;padding:.5rem 1.6rem;background:var(--oxblood);color:var(--label);font-weight:600;font-size:1.15rem;text-decoration:none;border:2px solid var(--oxblood);border-radius:2px;box-shadow:0 3px 0 var(--oxblood-deep),0 8px 14px rgba(40,10,20,.25);transition:transform .15s,box-shadow .15s,background .15s}
+.btn:hover{transform:translateY(1px);box-shadow:0 2px 0 var(--oxblood-deep),0 4px 10px rgba(40,10,20,.25)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.line{background:transparent;color:var(--ink);border-color:var(--ink);box-shadow:none}
+.btn.line:hover{background:var(--ink);color:var(--label);transform:none}
+.red .btn,.ink .btn{background:var(--brass);color:var(--ink);border-color:var(--brass);box-shadow:0 3px 0 #8d6d1f,0 8px 14px rgba(0,0,0,.28)}
+.ink .btn.line,.red .btn.line{background:transparent;color:var(--label);border-color:var(--label);box-shadow:none}
+.ink .btn.line:hover,.red .btn.line:hover{background:var(--label);color:var(--ink)}
+.rating{margin-top:1.8rem;padding-top:1.1rem;font-size:1rem;color:var(--muted);display:flex;justify-content:center;gap:.7rem;align-items:center;flex-wrap:wrap;line-height:1.3}
+.rating::before,.rating::after{content:"";height:1px;flex:1 1 40px;max-width:150px;background:var(--oxblood)}
+.rating b{font-family:var(--display);font-variant-numeric:lining-nums;font-feature-settings:"lnum";font-size:1.5rem;color:var(--oxblood);font-weight:700}
+.rating a{color:var(--muted)}
 
-.grid-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;padding:8px 0}
-.grid-g img{aspect-ratio:1;object-fit:cover;border-radius:10px}
+/* ---------- pair of labels ---------- */
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(1rem,2.5vw,1.8rem);padding:clamp(.5rem,1.5vw,1rem) 0}
+.pair .label{padding-left:clamp(1.8rem,3.6vw,3rem);padding-right:clamp(1.8rem,3.6vw,3rem)}
+h2{font-size:clamp(1.7rem,3.4vw,2.5rem);text-align:center}
+.red h2{color:var(--brass)}
+.rule-orn{display:block;margin:.7rem auto 1.4rem;width:150px;height:12px}
+.menu{list-style:none;margin:0;padding:0}
+.menu li{display:flex;align-items:baseline;gap:.6rem;padding:.55rem 0;font-size:1.2rem;line-height:1.3}
+.menu .n{flex:0 1 auto}
+.menu .dots{flex:1 1 20px;min-width:14px;border-bottom:2px dotted rgba(243,241,233,.5);transform:translateY(-.25em)}
+.menu .t{flex:none;font-family:var(--display);font-weight:500;letter-spacing:.04em;color:var(--brass);font-size:1rem;text-align:right}
+.menu small{display:block;font-size:.9rem;color:#e1d9c9;font-weight:400}
+.note{margin-top:1.4rem;font-size:.95rem;color:#e1d9c9;text-align:center;text-wrap:balance}
 
-.hours{width:100%;border-collapse:collapse}
-.hours th,.hours td{text-align:left;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.hours th{font-weight:600}
-.hours td{text-align:right;color:var(--muted)}
-.hours tr.today th,.hours tr.today td{color:var(--accent);font-weight:800}
-address{font-style:normal;display:grid;gap:10px;margin-bottom:20px}
-address a{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600}
-address a:hover{color:var(--accent)}
-.map{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--surface)}
-.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
+.hours{margin:0;display:grid;grid-template-columns:1fr auto;gap:0}
+.hours dt,.hours dd{margin:0;padding:.55rem 0;border-bottom:1px dotted rgba(22,24,27,.45);font-size:1.2rem;line-height:1.3}
+.hours dt{font-weight:600}
+.hours dd{text-align:right;font-variant-numeric:tabular-nums}
+.hours .closed{color:var(--muted)}
+.hours .today{background:rgba(95,22,38,.12)}.hours dt.today{box-shadow:-.6rem 0 0 rgba(95,22,38,.12)}.hours dd.today{box-shadow:.6rem 0 0 rgba(95,22,38,.12)}
+.hours .today.is-open::after{content:none}
+.hours-note{margin-top:1.4rem;text-align:center;font-size:.95rem;color:var(--muted)}
 
-.book-band{background:var(--accent);color:var(--accent-text)}
-.band-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
-.band-in h2{margin:0}
-.book-band .btn{background:var(--accent-text);color:var(--accent)}
+/* ---------- visit ---------- */
+.visit{padding:clamp(.5rem,1.5vw,1rem) 0 clamp(1.5rem,3vw,2.5rem)}
+.visit-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:center}
+.visit h2{text-align:left;color:var(--brass)}
+.addr{margin-top:1.1rem;font-family:var(--display);font-weight:500;font-size:clamp(1.25rem,2.6vw,1.8rem);letter-spacing:.06em;line-height:1.35}
+.addr span{display:block}
+.visit p.small{text-wrap:balance;margin-top:1rem;color:#cdd3d8;max-width:26em}
+.stack{display:grid;gap:.9rem}
+.stack .btn{width:100%}
 
-.foot{padding:28px 0;color:var(--muted);font-size:.88rem}
-.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-.foot p{margin:0}
-.socials{display:flex;gap:16px}
+footer{background:var(--ink);color:#aeb5bb;padding:1.6rem 0 2.2rem;font-size:.9375rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 2rem;justify-content:space-between}
+footer p{max-width:44em}
+footer a{color:var(--label);white-space:nowrap}
 
-.mobile-bar{position:fixed;inset:auto 0 0 0;z-index:30;display:grid;grid-template-columns:1fr 1.3fr 1fr;background:var(--surface);border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent);padding-bottom:env(safe-area-inset-bottom)}
-.mobile-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;text-decoration:none;font-size:.78rem;font-weight:700}
-.mobile-bar a.primary{background:var(--accent);color:var(--accent-text)}
-.mobile-bar svg{width:22px;height:22px}
-@media (min-width:760px){.mobile-bar{display:none}}
+.callbar{display:none}
 
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+@media (max-width:860px){
+  .pair{grid-template-columns:minmax(0,1fr)}
+  .visit-grid{grid-template-columns:minmax(0,1fr)}
+  .visit h2{text-align:center}
+  .addr{text-align:center}
+  .visit p.small{margin-left:auto;margin-right:auto;text-align:center}
+}
+@media (max-width:640px){
+  body{font-size:1.0625rem;padding-bottom:84px}
+  .label{padding:2rem 1.25rem}
+  .label::before{inset:8px}
+  .pair .label{padding-left:1.35rem;padding-right:1.35rem}
+  .menu li{font-size:1.1rem}
+  .hours dt,.hours dd{font-size:1.1rem}
+  .razor .etch{font-size:19px}
+  .razor-wrap{width:112%;margin:1.3rem 0 0 -6%}
+  .rating::before,.rating::after{display:none}
+  .rating{flex-direction:column;gap:.2rem}
+  .cta-row{flex-direction:column;align-items:stretch}
+  .cta-row .btn{width:100%}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--oxblood);border-top:3px solid var(--brass);padding:.6rem .9rem calc(.6rem + env(safe-area-inset-bottom));gap:.75rem;align-items:center;justify-content:space-between;box-shadow:0 -8px 18px rgba(0,0,0,.3)}
+  .callbar span{color:var(--label);font-size:1rem;line-height:1.2}
+  .callbar a{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 1.3rem;background:var(--brass);color:var(--ink);font-weight:700;font-size:1.15rem;text-decoration:none;border-radius:2px;white-space:nowrap}
+}
+@media (prefers-reduced-motion:reduce){
+  .blade{animation:none}
+  html{scroll-behavior:auto}
+  .btn{transition:none}
+}
 </style>
-<style>:root{--bg:#10201a;--surface:#183027;--text:#f1efe8;--muted:#a7b5ad;--accent:#d9c27a;--accent-text:#132018;--font:'Lato', system-ui, sans-serif;--display:'Playfair Display', Georgia, serif}</style>
-
 </head>
 <body>
 <div class="demo-bar">Free preview made for Manchester Rd Barbershop &amp; Shaving Parlor by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
-<header class="top">
-  <div class="wrap top-in">
-    <a class="logo" href="#top">Manchester Rd Barbershop &amp; Shaving Parlor</a>
-    <nav aria-label="Main"><a href="#services">Services</a><a href="#hours">Hours</a><a href="#visit">Visit</a></nav>
-    <a class="btn btn-sm" href="https://manchesterrdbarbershopandshavingparlor.resurva.com/" target="_blank" rel="noopener">Book online</a>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="label on-light">
+      <svg class="crest" viewBox="0 0 300 14" aria-hidden="true" fill="none" stroke="#5f1626" stroke-width="1.4">
+        <path d="M0 7H122M178 7H300"/><path d="M0 11H110M190 11H300" stroke-width=".8"/>
+        <path d="M150 1l7 6-7 6-7-6z" fill="#5f1626"/><circle cx="130" cy="7" r="2.2" fill="#5f1626"/><circle cx="170" cy="7" r="2.2" fill="#5f1626"/>
+      </svg>
+      <h1>Manchester Rd<span class="l2">Barbershop &amp; Shaving Parlor</span></h1>
+
+      <div class="razor-wrap">
+        <svg class="razor" viewBox="40 74 960 186" role="img" aria-label="Engraving of an open straight razor">
+          <defs>
+            <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#4f585f"/>
+              <stop offset=".14" stop-color="#9aa4ab"/>
+              <stop offset=".5" stop-color="#e6eaec"/>
+              <stop offset=".86" stop-color="#b6bfc5"/>
+              <stop offset="1" stop-color="#7e8890"/>
+            </linearGradient>
+            <linearGradient id="horn" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#3a1d12"/>
+              <stop offset=".45" stop-color="#7a4a2a"/>
+              <stop offset="1" stop-color="#2a140c"/>
+            </linearGradient>
+            <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#fff"/>
+              <stop offset=".75" stop-color="#fff" stop-opacity=".25"/>
+              <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+            </linearGradient>
+            <mask id="fadeMask" maskUnits="userSpaceOnUse" x="0" y="80" width="800" height="100"><rect x="0" y="84" width="800" height="92" fill="url(#fade)"/></mask>
+            <pattern id="ruled" width="6" height="3.2" patternUnits="userSpaceOnUse"><line x1="0" y1="1.6" x2="6" y2="1.6" stroke="#1d2226" stroke-width=".9"/></pattern>
+            <pattern id="flute" width="9" height="40" patternUnits="userSpaceOnUse"><line x1="4.5" y1="0" x2="4.5" y2="40" stroke="#e0c58a" stroke-width=".9" opacity=".55"/></pattern>
+            <pattern id="cross" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(40)"><line x1="0" y1="0" x2="0" y2="5" stroke="#16181b" stroke-width=".9"/></pattern>
+            <path id="etchPath" d="M150 128H610"/>
+          </defs>
+
+          <!-- ground shadow, cross-hatched like an engraving -->
+          <ellipse cx="500" cy="248" rx="440" ry="7" fill="url(#cross)" opacity=".7"/>
+
+          <!-- scales (handle) -->
+          <g transform="rotate(24 770 124)">
+            <path d="M752 104H948Q984 106 984 126Q984 146 948 148H752Z" fill="url(#horn)" stroke="#16181b" stroke-width="2"/>
+            <path d="M752 104H948Q984 106 984 126Q984 146 948 148H752Z" fill="url(#flute)"/>
+            <path d="M752 112H950" stroke="#e8d4a2" stroke-width="1.2" opacity=".5"/>
+            <path d="M752 141H950" stroke="#000" stroke-width="1.2" opacity=".5"/>
+            <path d="M744 100H766V152H744Z" fill="#c9a24b" stroke="#16181b" stroke-width="1.6"/>
+            <path d="M944 108V144" stroke="#c9a24b" stroke-width="5"/>
+            <path d="M936 108V144" stroke="#16181b" stroke-width="1"/>
+          </g>
+
+          <!-- blade -->
+          <g class="blade">
+            <path id="bladeShape" d="M76 88H662L690 94Q716 100 736 106L782 112V138L736 146Q706 150 686 162Q668 168 650 168L120 170Q82 166 66 134Q58 104 76 88Z" fill="url(#steel)" stroke="#16181b" stroke-width="2.4" stroke-linejoin="round"/>
+            <!-- spine -->
+            <path d="M76 88H662L690 94L690 104H72Q64 96 76 88Z" fill="#3b434a" stroke="#16181b" stroke-width="1.8"/>
+            <path d="M82 94H664" stroke="#a9b3ba" stroke-width="1.4"/>
+            <!-- hollow-grind engraving -->
+            <rect x="90" y="108" width="590" height="58" fill="url(#ruled)" mask="url(#fadeMask)" opacity=".8"/>
+            <path d="M92 108H674" stroke="#16181b" stroke-width="1.4"/>
+            <path d="M104 166L668 164" stroke="#16181b" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M100 168L660 167" stroke="#fff" stroke-width="1" opacity=".9"/>
+            <!-- etched lettering -->
+            <rect x="150" y="113" width="470" height="30" fill="#e9edef" opacity=".92"/>
+            <path d="M150 114H620M150 142H620" stroke="#16181b" stroke-width="1"/>
+            <text class="etch"><textPath href="#etchPath" startOffset="2%" textLength="440" lengthAdjust="spacing">MANCHESTER RD · AKRON · OHIO</textPath></text>
+            <!-- tang notch -->
+            <path d="M700 122Q728 118 744 126" fill="none" stroke="#16181b" stroke-width="1.4"/>
+            <path d="M706 138H760M712 132H766" stroke="#16181b" stroke-width="1" opacity=".7"/>
+          </g>
+          <!-- pivot pin -->
+          <circle cx="770" cy="124" r="9" fill="#d1a94f" stroke="#16181b" stroke-width="2"/>
+          <circle cx="770" cy="124" r="3" fill="#16181b"/>
+        </svg>
+      </div>
+
+      <p class="services-line">Haircuts, face shaves and hot towel shaves.</p>
+      <p class="lede">A modern barbershop with an old&#8209;school flair, on Manchester Rd in Akron.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+13302171109"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call (330) 217-1109</a>
+        <a class="btn line" href="https://manchesterrdbarbershopandshavingparlor.resurva.com/" target="_blank" rel="noopener">Book online</a>
+      </div>
+      <p class="rating"><b>4.9</b> <span>from about 290 Google reviews, per <a href="https://reviews.birdeye.com/manchester-rd-barbershop-and-shaving-parlor-170206806278677" target="_blank" rel="noopener">Birdeye</a></span></p>
+    </div>
   </div>
 </header>
 
-<main id="top">
-  <section class="hero">
-    <div class="wrap hero-in">
-      <p class="eyebrow">Barbershop · Manchester Rd, Akron</p>
-      <h1>Haircuts and<br>hot towel shaves.</h1>
-      <p class="lede">Haircuts, face shaves and cut-and-beard-trim combos on Manchester Rd in Akron. Book online or call the shop.</p>
-      <div class="cta-row">
-        <a class="btn" href="https://manchesterrdbarbershopandshavingparlor.resurva.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg>Book online</a>
-        <a class="btn btn-ghost" href="tel:3302171109"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(330) 217-1109</a>
-      </div>
-      <p class="status" id="open-status" aria-live="polite"></p>
-    </div>
-  </section>
+<main>
+  <div class="wrap">
+    <div class="pair">
+      <section class="label red" aria-labelledby="svc-h">
+        <h2 id="svc-h">Services</h2>
+        <svg class="rule-orn" viewBox="0 0 150 12" aria-hidden="true" fill="none" stroke="#d1a94f" stroke-width="1.3"><path d="M0 6H62M88 6H150"/><path d="M75 0l6 6-6 6-6-6z" fill="#d1a94f"/></svg>
+        <ul class="menu">
+          <li><span class="n">Haircut</span><span class="dots"></span><span class="t">30 min</span></li>
+          <li><span class="n">Haircut and beard trim</span><span class="dots"></span><span class="t">45 min</span></li>
+          <li><span class="n">Shave and a haircut</span><span class="dots"></span><span class="t">1 hr</span></li>
+          <li><span class="n">Face shave</span><span class="dots"></span><span class="t">30 min</span></li>
+          <li><span class="n">Senior cut, 65 and over</span><span class="dots"></span><span class="t">30 min</span></li>
+          <li><span class="n">Kids cut, 12 and under</span><span class="dots"></span><span class="t">30 min</span></li>
+          <li><span class="n">Hot towel shaves</span><span class="dots"></span><span class="t">ask the shop</span></li>
+        </ul>
+        <p class="note">Menu and times from the shop's online booking page.</p>
+      </section>
 
-  <section id="services" class="section">
+      <section class="label on-light" aria-labelledby="hrs-h">
+        <h2 id="hrs-h">Hours</h2>
+        <svg class="rule-orn" viewBox="0 0 150 12" aria-hidden="true" fill="none" stroke="#5f1626" stroke-width="1.3"><path d="M0 6H62M88 6H150"/><path d="M75 0l6 6-6 6-6-6z" fill="#5f1626"/></svg>
+        <dl class="hours" id="hours">
+          <dt data-d="1">Monday</dt><dd>9 am to 5 pm</dd>
+          <dt data-d="2">Tuesday</dt><dd>9 am to 5 pm</dd>
+          <dt data-d="3">Wednesday</dt><dd>9 am to 5 pm</dd>
+          <dt data-d="4">Thursday</dt><dd>9 am to 5 pm</dd>
+          <dt data-d="5">Friday</dt><dd>9 am to 5 pm</dd>
+          <dt data-d="6">Saturday</dt><dd>8 am to 1 pm</dd>
+          <dt data-d="0">Sunday</dt><dd class="closed">Closed</dd>
+        </dl>
+        <p class="hours-note">Hours per Birdeye. Call to confirm.</p>
+      </section>
+    </div>
+  </div>
+
+  <section class="visit" aria-labelledby="visit-h">
     <div class="wrap">
-      <h2>Services &amp; prices</h2>
-      <ul class="svc-list">
-        <li class="svc">
-          <div class="svc-top"><h3>Haircut</h3><span class="dots" aria-hidden="true"></span><strong>$23</strong></div>
-          <p>30 min</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Haircut + beard trim</h3><span class="dots" aria-hidden="true"></span><strong>$35</strong></div>
-          <p>45 min</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Shave and a haircut</h3><span class="dots" aria-hidden="true"></span><strong>$46</strong></div>
-          <p>1 hr</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Face shave</h3><span class="dots" aria-hidden="true"></span><strong>$23</strong></div>
-          <p>30 min</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Senior cut (65 and over)</h3><span class="dots" aria-hidden="true"></span><strong>$21</strong></div>
-          <p>30 min</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Kids cut (12 and under)</h3><span class="dots" aria-hidden="true"></span><strong>$21</strong></div>
-          <p>30 min</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Hot towel shaves</h3></div>
-          <p>Ask the shop about pricing.</p>
-        </li></ul>
-      <p class="note">Prices are from the shop&#39;s online booking menu and may change. Call (330) 217-1109 to confirm. Book online through Resurva.</p>
-    </div>
-  </section>
-
-  <section class="section alt">
-    <div class="wrap two-col">
-      <div>
-        <h2>A modern barbershop with an old-school flair.</h2>
-        <p>Manchester Rd Barbershop &amp; Shaving Parlor is at 3446 Manchester Rd in Akron, open Monday through Saturday. A haircut is $23, a face shave is $23, and a shave and a haircut is $46. Seniors 65 and over and kids 12 and under get a $21 cut. Book online through Resurva or call (330) 217-1109.</p>
-        <ul class="chips"><li>Book online</li><li>Hot towel shaves</li><li>$21 senior and kids cuts</li><li>Open Monday–Saturday</li></ul>
-      </div>
-      <div class="reviews"><a class="rating" href="https://reviews.birdeye.com/manchester-rd-barbershop-and-shaving-parlor-170206806278677" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><strong>4.9</strong><span>290 reviews on Google (via Birdeye)</span></a></div>
-    </div>
-  </section>
-  
-
-  <section id="hours" class="section">
-    <div class="wrap two-col">
-      <div>
-        <h2>Hours</h2>
-        <table class="hours"><tbody>
-        <tr data-day="1" data-slots="09:00-17:00-5pm">
-          <th scope="row">Monday</th>
-          <td>9am – 5pm</td>
-        </tr>
-        <tr data-day="2" data-slots="09:00-17:00-5pm">
-          <th scope="row">Tuesday</th>
-          <td>9am – 5pm</td>
-        </tr>
-        <tr data-day="3" data-slots="09:00-17:00-5pm">
-          <th scope="row">Wednesday</th>
-          <td>9am – 5pm</td>
-        </tr>
-        <tr data-day="4" data-slots="09:00-17:00-5pm">
-          <th scope="row">Thursday</th>
-          <td>9am – 5pm</td>
-        </tr>
-        <tr data-day="5" data-slots="09:00-17:00-5pm">
-          <th scope="row">Friday</th>
-          <td>9am – 5pm</td>
-        </tr>
-        <tr data-day="6" data-slots="08:00-13:00-1pm">
-          <th scope="row">Saturday</th>
-          <td>8am – 1pm</td>
-        </tr>
-        <tr data-day="0" data-slots="">
-          <th scope="row">Sunday</th>
-          <td>Closed</td>
-        </tr></tbody></table>
-      </div>
-      <div id="visit">
-        <h2>Visit</h2>
-        <address>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=3446%20Manchester%20Rd%2C%20Akron%2C%20OH%2044319" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>3446 Manchester Rd, Akron, OH 44319</a>
-          <a href="tel:3302171109"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(330) 217-1109</a>
-          
-        </address>
-        <div class="map">
-          <iframe title="Map to Manchester Rd Barbershop &amp; Shaving Parlor" src="https://www.google.com/maps?q=Manchester%20Rd%20Barbershop%20%26%20Shaving%20Parlor%2C%203446%20Manchester%20Rd%2C%20Akron%2C%20OH%2044319&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="label ink">
+        <div class="visit-grid">
+          <div>
+            <h2 id="visit-h">Find the shop</h2>
+            <p class="addr"><span>3446 Manchester Rd</span><span>Akron, Ohio 44319</span></p>
+            <p class="small">Tap Directions to open the route in Google Maps.</p>
+          </div>
+          <div class="stack">
+            <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Manchester%20Rd%20Barbershop%20%26%20Shaving%20Parlor%2C%203446%20Manchester%20Rd%2C%20Akron%2C%20OH%2044319" target="_blank" rel="noopener">Get directions</a>
+            <a class="btn line" href="tel:+13302171109">Call (330) 217-1109</a>
+            <a class="btn line" href="https://www.facebook.com/greatestbarbershop/" target="_blank" rel="noopener">Shop's Facebook page</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
-  <section class="section book-band">
-    <div class="wrap band-in">
-      <h2>Due for a cut or a shave? Book your chair.</h2>
-      <a class="btn" href="https://manchesterrdbarbershopandshavingparlor.resurva.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg>Book online</a>
-    </div>
-  </section>
 </main>
 
-<footer class="foot">
-  <div class="wrap foot-in">
-    <p>© <span id="yr"></span> Manchester Rd Barbershop &amp; Shaving Parlor</p>
-    <p class="socials"><a href="https://www.facebook.com/greatestbarbershop/" rel="noopener" target="_blank">Facebook</a></p>
+<footer>
+  <div class="wrap">
+    <p>Manchester Rd Barbershop &amp; Shaving Parlor · 3446 Manchester Rd, Akron, OH 44319 · <a href="tel:+13302171109">(330) 217-1109</a></p>
+    <p>Free preview by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a>, a University of Akron student. Not the official website.</p>
   </div>
 </footer>
 
-<nav class="mobile-bar" aria-label="Quick actions">
-  <a href="tel:3302171109"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call</span></a>
-  <a href="https://manchesterrdbarbershopandshavingparlor.resurva.com/" target="_blank" rel="noopener" class="primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg><span>Book</span></a>
-  <a href="https://www.google.com/maps/dir/?api=1&destination=3446%20Manchester%20Rd%2C%20Akron%2C%20OH%2044319" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Directions</span></a>
-</nav>
+<div class="callbar"><span>Manchester Rd Barbershop</span><a href="tel:+13302171109">Call now</a></div>
 
 <script>
 (function(){
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  // "Open now" uses the shop's own time zone, not the visitor's clock.
-  var parts={};
-  new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'long',hour:'2-digit',minute:'2-digit',hourCycle:'h23'})
-    .formatToParts(new Date()).forEach(function(p){parts[p.type]=p.value});
-  var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  var day=days.indexOf(parts.weekday),mins=(+parts.hour)*60+(+parts.minute);
-  var toMin=function(s){var p=s.split(':');return +p[0]*60+ +p[1]};
-  var rows=document.querySelectorAll('.hours tr'),el=document.getElementById('open-status'),msg='';
-  rows.forEach(function(r){
-    if(+r.dataset.day!==day)return;
-    r.classList.add('today');
-    // data-slots: "09:00-13:30-1:30pm,16:00-19:30-7:30pm" (split shifts allowed)
-    msg='<span class="dot"></span>Closed now';
-    (r.dataset.slots||'').split(',').forEach(function(s){
-      var p=s.split('-');
-      if(p[0]&&mins>=toMin(p[0])&&mins<toMin(p[1]))msg='<span class="dot open"></span>Open now · until '+p[2];
-    });
-  });
-  el.innerHTML=msg;
+  var d=new Date().getDay();
+  var dt=document.querySelector('#hours dt[data-d="'+d+'"]');
+  if(!dt)return;
+  dt.classList.add('today');dt.nextElementSibling.classList.add('today');
+  dt.setAttribute('aria-label',dt.textContent+', today');
 })();
 </script>
 </body>

@@ -3,317 +3,249 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dee&#39;s 50&#39;s Place Diner | Restaurant in Barberton, OH</title>
-<meta name="description" content="Dee&#39;s 50&#39;s Place Diner at 581 Norton Ave, Barberton, OH. Breakfast, Swiss steak, Al&#39;s Hungarian Sausage and home-style plates. Open Monday through Saturday 6am to 7:30pm and Sunday 7am to 1:30pm. Call (330) 745-6310.">
-<meta property="og:title" content="Dee&#39;s 50&#39;s Place Diner">
-<meta property="og:description" content="A 1950s diner on Norton Ave in Barberton. Breakfast from 6am, home-style lunch and dinner, and car shows.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#f2faf7">
 <meta name="robots" content="noindex, nofollow">
+<title>Dee's 50's Place Diner | 581 Norton Ave, Barberton, OH</title>
+<meta name="description" content="Preview page for Dee's 50's Place Diner, 581 Norton Ave, Barberton, Ohio. Breakfast, Swiss steak, Al's Hungarian Sausage and home-style plates. Call (330) 745-6310.">
+<meta name="theme-color" content="#5fd6c9">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Righteous&amp;family=Nunito:wght@400;600;800&display=swap">
-<style>/* Shared stylesheet. Colors and fonts come from each client's site.json via :root vars. */
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.6 var(--font);-webkit-font-smoothing:antialiased;padding-bottom:72px}
-@media (min-width:760px){body{padding-bottom:0}}
-img{max-width:100%;display:block}
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Rammetto+One&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#5fd6c9;
+  --teal-deep:#0b4f4b;
+  --mint:#e6f6f2;
+  --cherry:#b5122b;
+  --cherry-dark:#7d0a1d;
+  --ink:#08302d;
+  --board:#0f1f1e;
+  --chrome:linear-gradient(180deg,#ffffff 0%,#dfe5e8 20%,#8e9aa1 50%,#eef2f3 64%,#a7b2b8 100%);
+  --display:'Rammetto One','Arial Black',sans-serif;
+  --text:'Lexend',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--text);font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--mint);overflow-x:hidden}
 a{color:inherit}
-h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0 0 .6em;letter-spacing:-.01em}
-h2{font-size:clamp(1.8rem,5vw,2.6rem)}
-svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
-.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--cherry);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.1;text-wrap:balance}
+p{text-wrap:pretty}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
 
-.demo-bar{background:var(--accent);color:var(--accent-text);text-align:center;font-size:.8rem;font-weight:600;padding:6px 16px}
+.demo-bar{background:var(--teal-deep);color:#d6f3ee;font-size:.9375rem;text-align:center;padding:.6rem 1rem;line-height:1.35}
+.demo-bar a{color:#fff;font-weight:600}
 
-.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.top-in{display:flex;align-items:center;gap:16px;height:60px}
-.logo{min-width:0;font-family:var(--display);text-decoration:none;font-size:1.1rem;margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{display:none;gap:24px}
-.top nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
-.top nav a:hover{color:var(--text)}
-@media (min-width:760px){.top nav{display:flex}}
+/* chrome trim */
+.chrome{height:20px;background:var(--chrome);border-block:1px solid #5d6a70;box-shadow:0 2px 0 rgba(0,0,0,.18);position:relative}
+.chrome::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 50%,#6f7b82 0 2.4px,transparent 3px) 0 0/56px 100%;opacity:.55}
 
-.btn{display:inline-flex;align-items:center;gap:.5em;background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:.85em 1.4em;border-radius:999px;min-height:48px;transition:transform .15s,filter .15s}
-.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.btn-sm{padding:.55em 1.1em;min-height:40px;font-size:.9rem;white-space:nowrap;flex:none}
-.btn-ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--text) 30%,transparent)}
+/* hero */
+.hero{background:var(--teal);padding:clamp(2.25rem,5vw,4.5rem) 0 clamp(2.25rem,5vw,4rem)}
+.hero .wrap{display:grid;gap:2rem;grid-template-columns:1.2fr .8fr;align-items:center}
+.hero h1{font-size:clamp(2.2rem,4.6vw,3.6rem);color:var(--ink)}
+.hero h1 span{display:block}
+.hero h1 span+span{color:var(--cherry-dark)}
+.hero .lede{margin-top:1.25rem;max-width:30rem;font-size:1.1875rem}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem 1.25rem;margin-top:1.75rem;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:.6rem;min-height:56px;padding:0 1.6rem;background:var(--cherry);color:#fff;font-weight:600;font-size:1.1875rem;text-decoration:none;border-radius:999px;box-shadow:0 4px 0 var(--cherry-dark),0 8px 16px rgba(8,48,45,.25);transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:22px;height:22px}
+.link{display:inline-flex;align-items:center;min-height:44px;font-weight:600;text-decoration-thickness:2px;text-underline-offset:4px}
 
-.hero{position:relative;padding:72px 0 64px;overflow:hidden;
-  background:
-    linear-gradient(180deg,transparent 40%,var(--bg)),
-    var(--hero-img,none) center/cover,
-    repeating-linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,transparent) 0 18px,transparent 18px 36px),
-    var(--bg)}
-.hero::after{content:"";position:absolute;inset:0;background:color-mix(in srgb,var(--bg) 55%,transparent);z-index:0}
-.hero-in{position:relative;z-index:1}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:var(--accent);margin:0 0 14px}
-.hero h1{font-size:clamp(2.6rem,11vw,5.6rem)}
-.lede{font-size:1.15rem;color:var(--muted);max-width:34ch;margin:0 0 28px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.status{margin:22px 0 0;font-weight:600;color:var(--muted);min-height:1.6em;display:flex;align-items:center;gap:8px}
-.dot{width:10px;height:10px;border-radius:50%;background:#c2524a;display:inline-block}
-.dot.open{background:#4caf6e;box-shadow:0 0 0 4px rgba(76,175,110,.2)}
-@media (min-width:760px){.hero{padding:120px 0 100px}}
+/* booth back */
+.booth{position:relative;border-radius:22px;padding:12px;background:var(--chrome);box-shadow:0 10px 0 rgba(8,48,45,.22);min-height:300px;height:100%}
+.booth-inner{position:relative;border-radius:12px;overflow:hidden;height:100%;min-height:276px;background:var(--cherry)}
+.booth-inner svg.tuft{position:absolute;inset:0;width:100%;height:100%;display:block}
+.booth-inner::before{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 24px var(--cherry);border-radius:12px;pointer-events:none;z-index:1}
+.booth-inner::after{content:"";position:absolute;inset:11px;border:2px dashed rgba(255,226,230,.9);border-radius:6px;pointer-events:none;z-index:2}
+.plate{z-index:3}
+.plate{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);width:min(82%,330px);background:var(--chrome);border:1px solid #5d6a70;border-radius:10px;padding:.7rem 1rem;text-align:center;color:var(--ink);font-weight:600;font-size:1rem;line-height:1.3;box-shadow:0 3px 8px rgba(0,0,0,.3)}
+.plate b{display:block;font-family:var(--display);font-weight:400;font-size:1.65rem;line-height:1.1;color:var(--cherry-dark)}
 
-.section{padding:64px 0}
-.section.alt{background:var(--surface)}
-.svc-list{list-style:none;padding:0;margin:0;display:grid;gap:4px 48px}
-@media (min-width:760px){.svc-list{grid-template-columns:1fr 1fr}}
-.svc{padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.svc-top{display:flex;align-items:baseline;gap:10px}
-.svc h3{font-family:var(--font);font-weight:800;font-size:1.1rem;margin:0}
-.dots{flex:1;border-bottom:2px dotted color-mix(in srgb,var(--text) 25%,transparent);transform:translateY(-4px)}
-.svc strong{color:var(--accent);font-size:1.15rem}
-.svc p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
-.dur{white-space:nowrap}
-.note{color:var(--muted);font-size:.85rem;margin-top:20px}
-.menu-section{font-family:var(--display);font-size:1.3rem;color:var(--accent);margin:36px 0 4px;text-transform:uppercase;letter-spacing:.06em}
-.menu-section:first-of-type{margin-top:8px}
+/* menu board */
+.menu{padding:clamp(3rem,6vw,5.5rem) 0}
+.menu-head{max-width:40rem;margin-bottom:2rem}
+.menu-head h2{font-size:clamp(2rem,4.4vw,3.2rem)}
+.menu-head p{margin-top:.9rem}
+.board-frame{background:var(--chrome);padding:12px;border-radius:14px;box-shadow:0 10px 0 rgba(8,48,45,.2)}
+.board{background:var(--board);border-radius:6px;padding:.75rem clamp(1rem,3vw,2.25rem);display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(1.5rem,5vw,4rem);box-shadow:inset 0 0 0 2px #000,inset 0 0 40px rgba(0,0,0,.6)}
+.board ul{list-style:none;padding:0}
+.board li{min-height:3.5rem;display:flex;align-items:center;color:#fff;font-weight:600;font-size:clamp(.98rem,1.9vw,1.2rem);letter-spacing:.07em;text-transform:uppercase;line-height:1.25;border-bottom:3px solid #040a0a;box-shadow:0 1px 0 #2c4442;padding:.35rem 0;text-shadow:0 0 1px rgba(255,255,255,.4)}
+.board li.hd{color:var(--teal);font-family:var(--display);font-weight:400;letter-spacing:.04em;font-size:clamp(1.05rem,2vw,1.3rem)}
 
-.two-col{display:grid;gap:48px}
-@media (min-width:860px){.two-col{grid-template-columns:1fr 1fr;align-items:start}}
-.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
-.chips li{border:1px solid color-mix(in srgb,var(--accent) 50%,transparent);color:var(--accent);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600}
-.one-col{max-width:720px}
-.reviews{display:grid;gap:16px;align-content:start}
-.rating{display:flex;align-items:center;gap:10px;text-decoration:none;background:var(--bg);border-radius:16px;padding:18px 22px;border-left:4px solid var(--accent)}
-.rating svg{width:28px;height:28px;color:var(--accent)}
-.rating strong{font-family:var(--display);font-size:1.8rem;line-height:1}
-.rating span{color:var(--muted);font-size:.9rem}
-.review{margin:0;background:var(--bg);border-radius:16px;padding:20px 22px;border-left:4px solid var(--accent)}
-.review blockquote{margin:0 0 8px;font-size:1.05rem}
-.review figcaption{color:var(--muted);font-size:.85rem}
+/* visit */
+.visit{padding:0 0 clamp(3rem,6vw,5.5rem)}
+.visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.panel{border-radius:18px;padding:clamp(1.25rem,3.5vw,2.5rem);min-width:0}
+.find{background:var(--teal);display:flex;flex-direction:column;gap:1rem}
+.find h2,.hours h2{font-size:clamp(1.8rem,3.6vw,2.5rem)}
+.find address{font-style:normal;font-size:1.25rem;line-height:1.45}
+.find .actions{margin-top:.5rem}
+.sign{margin-top:auto;padding-top:1.25rem}
+.sign svg{display:block;width:100%;max-width:340px;height:auto}
+.hours{position:relative;background:var(--cherry);color:#fff}
+.hours::after{content:"";position:absolute;inset:10px;border:2px dashed rgba(255,226,230,.85);border-radius:12px;pointer-events:none}
+.hours-inner{padding:.4rem .5rem}
+.hrow{display:flex;justify-content:space-between;gap:.75rem;align-items:baseline;padding:.9rem 0;border-bottom:2px dotted rgba(255,226,230,.6);font-size:1.15rem}
+.hrow:first-of-type{margin-top:.75rem}
+.hrow span:last-child{font-weight:600}
+.also{list-style:none;padding:0;margin-top:1.25rem;display:grid;gap:.5rem}
+.also li{padding-left:1.7rem;position:relative}
+.also li::before{content:"";position:absolute;left:0;top:.55em;width:.8rem;height:.8rem;border-radius:50%;background:var(--chrome);border:1px solid #5d6a70}
 
-.grid-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;padding:8px 0}
-.grid-g img{aspect-ratio:1;object-fit:cover;border-radius:10px}
+footer{background:var(--board);color:#cfe3e0;padding:2rem 0 2.5rem;font-size:1rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:1rem 2.5rem;justify-content:space-between;align-items:center}
+footer strong{font-family:var(--display);font-weight:400;font-size:1.25rem;color:#fff}
+footer .wrap>div+div{display:flex;flex-direction:column;align-items:flex-end}
+footer a{color:#fff;display:inline-flex;align-items:center;min-height:44px}
 
-.hours{width:100%;border-collapse:collapse}
-.hours th,.hours td{text-align:left;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.hours th{font-weight:600}
-.hours td{text-align:right;color:var(--muted)}
-.hours tr.today th,.hours tr.today td{color:var(--accent);font-weight:800}
-address{font-style:normal;display:grid;gap:10px;margin-bottom:20px}
-address a{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600}
-address a:hover{color:var(--accent)}
-.map{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--surface)}
-.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
-
-.book-band{background:var(--accent);color:var(--accent-text)}
-.band-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
-.band-in h2{margin:0}
-.book-band .btn{background:var(--accent-text);color:var(--accent)}
-
-.foot{padding:28px 0;color:var(--muted);font-size:.88rem}
-.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-.foot p{margin:0}
-.socials{display:flex;gap:16px}
-
-.mobile-bar{position:fixed;inset:auto 0 0 0;z-index:30;display:grid;grid-template-columns:1fr 1.3fr 1fr;background:var(--surface);border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent);padding-bottom:env(safe-area-inset-bottom)}
-.mobile-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;text-decoration:none;font-size:.78rem;font-weight:700}
-.mobile-bar a.primary{background:var(--accent);color:var(--accent-text)}
-.mobile-bar svg{width:22px;height:22px}
-@media (min-width:760px){.mobile-bar{display:none}}
-
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+.callbar{display:none}
+@media (max-width:820px){
+  .hero .wrap{grid-template-columns:1fr}
+  .booth{min-height:230px}
+  .booth-inner{min-height:206px}
+  .board{grid-template-columns:1fr}
+  .board ul+ul{margin-top:1.25rem}
+  .visit .wrap{grid-template-columns:minmax(0,1fr)}
+  footer .wrap>div+div{align-items:flex-start}
+  body{padding-bottom:84px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--board);border-top:4px solid var(--teal);padding:.6rem .9rem calc(.6rem + env(safe-area-inset-bottom));gap:.75rem;align-items:center;justify-content:space-between}
+  .callbar span{color:#d6f3ee;font-size:1rem;line-height:1.2}
+  .callbar a{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 1.4rem;background:var(--cherry);color:#fff;font-weight:600;font-size:1.15rem;text-decoration:none;border-radius:999px;white-space:nowrap}
+}
+@media (max-width:420px){
+  .hrow{font-size:1.02rem}
+  .hrow span:last-child{white-space:nowrap}
+  .btn{width:100%;justify-content:center}
+  .board-frame{padding:8px}
+  .board li{letter-spacing:.05em}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
-<style>:root{--bg:#f2faf7;--surface:#d8f0ea;--text:#132b2f;--muted:#3d5a5c;--accent:#a3122a;--accent-text:#ffffff;--font:'Nunito', system-ui, sans-serif;--display:'Righteous', 'Arial Black', sans-serif}</style>
-
 </head>
 <body>
-<div class="demo-bar">Free preview made for Dee&#39;s 50&#39;s Place Diner by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
-<header class="top">
-  <div class="wrap top-in">
-    <a class="logo" href="#top">Dee&#39;s 50&#39;s Place Diner</a>
-    <nav aria-label="Main"><a href="#services">Menu</a><a href="#hours">Hours</a><a href="#visit">Visit</a></nav>
-    <a class="btn btn-sm" href="tel:3307456310">Call the diner</a>
+<div class="demo-bar">Free preview made for Dee's 50's Place Diner by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1><span>Breakfast at six.</span><span>Swiss steak by supper.</span></h1>
+      <p class="lede">Dee's 50's Place Diner on Norton Ave in Barberton. Eat in, sit outside, or call ahead for carry-out.</p>
+      <div class="actions">
+        <a class="btn" href="tel:+13307456310"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call (330) 745-6310</a>
+      </div>
+    </div>
+    <div class="booth" role="img" aria-label="Illustration of a cherry-red tufted vinyl booth back in a chrome frame">
+      <div class="booth-inner">
+        <svg class="tuft" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+          <defs>
+            <radialGradient id="puff" cx="50%" cy="42%" r="62%"><stop offset="0" stop-color="#e0334b" stop-opacity=".85"/><stop offset=".55" stop-color="#b5122b" stop-opacity="0"/><stop offset="1" stop-color="#5e0614" stop-opacity=".55"/></radialGradient>
+            <radialGradient id="btn" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#aab5ba"/><stop offset="1" stop-color="#4f5b61"/></radialGradient>
+            <pattern id="dia" width="80" height="80" patternUnits="userSpaceOnUse" patternTransform="translate(0 0)">
+              <rect width="80" height="80" fill="#b5122b"/>
+              <path d="M40 0 L80 40 L40 80 L0 40 Z" fill="url(#puff)"/>
+              <path d="M40 0 L80 40 L40 80 L0 40 Z" fill="none" stroke="#6b0716" stroke-width="3"/>
+              <path d="M40 3 L77 40" stroke="#e8586c" stroke-width="1" opacity=".5"/>
+            </pattern>
+          </defs>
+          <rect width="400" height="300" fill="url(#dia)"/>
+          <g fill="url(#btn)" stroke="#3b454a" stroke-width="1">
+            <circle cx="40" cy="0" r="6"/><circle cx="120" cy="0" r="6"/><circle cx="200" cy="0" r="6"/><circle cx="280" cy="0" r="6"/><circle cx="360" cy="0" r="6"/>
+            <circle cx="0" cy="40" r="6"/><circle cx="80" cy="40" r="6"/><circle cx="160" cy="40" r="6"/><circle cx="240" cy="40" r="6"/><circle cx="320" cy="40" r="6"/><circle cx="400" cy="40" r="6"/>
+            <circle cx="40" cy="80" r="6"/><circle cx="120" cy="80" r="6"/><circle cx="200" cy="80" r="6"/><circle cx="280" cy="80" r="6"/><circle cx="360" cy="80" r="6"/>
+            <circle cx="0" cy="120" r="6"/><circle cx="80" cy="120" r="6"/><circle cx="160" cy="120" r="6"/><circle cx="240" cy="120" r="6"/><circle cx="320" cy="120" r="6"/><circle cx="400" cy="120" r="6"/>
+            <circle cx="40" cy="160" r="6"/><circle cx="120" cy="160" r="6"/><circle cx="200" cy="160" r="6"/><circle cx="280" cy="160" r="6"/><circle cx="360" cy="160" r="6"/>
+            <circle cx="0" cy="200" r="6"/><circle cx="80" cy="200" r="6"/><circle cx="160" cy="200" r="6"/><circle cx="240" cy="200" r="6"/><circle cx="320" cy="200" r="6"/><circle cx="400" cy="200" r="6"/>
+            <circle cx="40" cy="240" r="6"/><circle cx="120" cy="240" r="6"/><circle cx="200" cy="240" r="6"/><circle cx="280" cy="240" r="6"/><circle cx="360" cy="240" r="6"/>
+            <circle cx="0" cy="280" r="6"/><circle cx="80" cy="280" r="6"/><circle cx="160" cy="280" r="6"/><circle cx="240" cy="280" r="6"/><circle cx="320" cy="280" r="6"/><circle cx="400" cy="280" r="6"/>
+          </g>
+        </svg>
+        <div class="plate"><b>4.3</b>from 312 ratings on Restaurantji</div>
+      </div>
+    </div>
   </div>
 </header>
+<div class="chrome" aria-hidden="true"></div>
 
-<main id="top">
-  <section class="hero">
-    <div class="wrap hero-in">
-      <p class="eyebrow">50&#39;s Diner · Norton Ave, Barberton</p>
-      <h1>Breakfast at six.<br>Swiss steak by supper.</h1>
-      <p class="lede">A 1950s diner on Norton Ave in Barberton. Breakfast from 6am, home-style lunch and dinner, and car shows.</p>
-      <div class="cta-row">
-        <a class="btn" href="tel:3307456310"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call the diner</a>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=581%20Norton%20Ave%2C%20Barberton%2C%20OH%2044203" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Directions</a>
-      </div>
-      <p class="status" id="open-status" aria-live="polite"></p>
-    </div>
-  </section>
-
-  <section id="services" class="section">
+<main>
+  <section class="menu" id="menu">
     <div class="wrap">
-      <h2>Menu</h2>
-      <h3 class="menu-section">Breakfast</h3><ul class="svc-list">
-        <li class="svc">
-          <div class="svc-top"><h3>Deluxe breakfast</h3></div>
-          
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Eggs, home fries &amp; bacon</h3></div>
-          
-        </li></ul><h3 class="menu-section">Lunch &amp; dinner</h3><ul class="svc-list">
-        <li class="svc">
-          <div class="svc-top"><h3>Swiss steak</h3></div>
-          
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Al&#39;s Hungarian Sausage</h3></div>
-          
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Meatloaf</h3></div>
-          
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Country fried steak</h3></div>
-          
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Chicken fried steak</h3></div>
-          
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Liver &amp; onions</h3></div>
-          
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Spaghetti &amp; meatballs</h3></div>
-          
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>All-you-can-eat fish</h3></div>
-          
-        </li></ul><h3 class="menu-section">Burgers &amp; sandwiches</h3><ul class="svc-list">
-        <li class="svc">
-          <div class="svc-top"><h3>Bacon cheeseburger</h3></div>
-          
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>BLT club platter</h3></div>
-          
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Chicken sandwich</h3></div>
-          
-        </li></ul><h3 class="menu-section">Dessert</h3><ul class="svc-list">
-        <li class="svc">
-          <div class="svc-top"><h3>Apple pie à la mode</h3></div>
-          
-        </li></ul>
-      <p class="note">A few of the regulars&#39; favorites. Call (330) 745-6310 or stop in for today&#39;s full menu, specials and prices.</p>
-    </div>
-  </section>
-
-  <section class="section alt">
-    <div class="wrap two-col">
-      <div>
-        <h2>A real 50&#39;s diner in Barberton.</h2>
-        <p>Dee&#39;s 50&#39;s Place Diner at 581 Norton Ave serves breakfast from 6am, then home-style plates like Swiss steak, meatloaf and Al&#39;s Hungarian Sausage until 7:30pm, Monday through Saturday. On Sundays the doors are open 7am to 1:30pm. Eat in, sit outside or call ahead for carry-out.</p>
-        <ul class="chips"><li>Breakfast from 6am, Mon–Sat</li><li>Sundays 7am–1:30pm</li><li>Outdoor seating</li><li>Carry-out: call (330) 745-6310</li><li>Car shows: ask for dates</li></ul>
+      <div class="menu-head">
+        <h2>On the board</h2>
+        <p>A few of the regulars' favorites. Call <a href="tel:+13307456310">(330) 745-6310</a> or stop in for the full menu and today's specials.</p>
       </div>
-      <div class="reviews"><a class="rating" href="https://www.restaurantji.com/oh/barberton/dees-50s-place-diner-/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg><strong>4.3</strong><span>312 reviews on Restaurantji</span></a></div>
-    </div>
-  </section>
-  
-
-  <section id="hours" class="section">
-    <div class="wrap two-col">
-      <div>
-        <h2>Hours</h2>
-        <table class="hours"><tbody>
-        <tr data-day="1" data-slots="06:00-19:30-7:30pm">
-          <th scope="row">Monday</th>
-          <td>6am – 7:30pm</td>
-        </tr>
-        <tr data-day="2" data-slots="06:00-19:30-7:30pm">
-          <th scope="row">Tuesday</th>
-          <td>6am – 7:30pm</td>
-        </tr>
-        <tr data-day="3" data-slots="06:00-19:30-7:30pm">
-          <th scope="row">Wednesday</th>
-          <td>6am – 7:30pm</td>
-        </tr>
-        <tr data-day="4" data-slots="06:00-19:30-7:30pm">
-          <th scope="row">Thursday</th>
-          <td>6am – 7:30pm</td>
-        </tr>
-        <tr data-day="5" data-slots="06:00-19:30-7:30pm">
-          <th scope="row">Friday</th>
-          <td>6am – 7:30pm</td>
-        </tr>
-        <tr data-day="6" data-slots="06:00-19:30-7:30pm">
-          <th scope="row">Saturday</th>
-          <td>6am – 7:30pm</td>
-        </tr>
-        <tr data-day="0" data-slots="07:00-13:30-1:30pm">
-          <th scope="row">Sunday</th>
-          <td>7am – 1:30pm</td>
-        </tr></tbody></table>
-      </div>
-      <div id="visit">
-        <h2>Visit</h2>
-        <address>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=581%20Norton%20Ave%2C%20Barberton%2C%20OH%2044203" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>581 Norton Ave, Barberton, OH 44203</a>
-          <a href="tel:3307456310"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(330) 745-6310</a>
-          
-        </address>
-        <div class="map">
-          <iframe title="Map to Dee&#39;s 50&#39;s Place Diner" src="https://www.google.com/maps?q=Dee's%2050's%20Place%20Diner%2C%20581%20Norton%20Ave%2C%20Barberton%2C%20OH%2044203&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="board-frame">
+        <div class="board">
+          <ul>
+            <li class="hd">Breakfast</li>
+            <li>Deluxe breakfast</li>
+            <li>Eggs, home fries &amp; bacon</li>
+            <li class="hd">Burgers &amp; sandwiches</li>
+            <li>Bacon cheeseburger</li>
+            <li>BLT club platter</li>
+            <li>Chicken sandwich</li>
+            <li class="hd">Dessert</li>
+            <li>Apple pie à la mode</li>
+          </ul>
+          <ul>
+            <li class="hd">Lunch &amp; dinner</li>
+            <li>Swiss steak</li>
+            <li>Al's Hungarian Sausage</li>
+            <li>Meatloaf</li>
+            <li>Country fried steak</li>
+            <li>Chicken fried steak</li>
+            <li>Liver &amp; onions</li>
+            <li>Spaghetti &amp; meatballs</li>
+            <li>All-you-can-eat fish</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section book-band">
-    <div class="wrap band-in">
-      <h2>Hungry? Come on by Norton Ave.</h2>
-      <a class="btn" href="tel:3307456310"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call the diner</a>
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="panel find">
+        <h2>Find the diner</h2>
+        <address>581 Norton Ave<br>Barberton, OH 44203</address>
+        <div class="actions">
+          <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Dee%27s%2050%27s%20Place%20Diner%2C%20581%20Norton%20Ave%2C%20Barberton%2C%20OH%2044203" target="_blank" rel="noopener">Get directions</a>
+          <a class="link" href="tel:+13307456310">Call (330) 745-6310</a>
+        </div>
+        <div class="sign" aria-hidden="true">
+          <svg viewBox="0 0 340 90" xmlns="http://www.w3.org/2000/svg">
+            <defs><linearGradient id="ch" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".25" stop-color="#dfe5e8"/><stop offset=".55" stop-color="#8e9aa1"/><stop offset=".7" stop-color="#eef2f3"/><stop offset="1" stop-color="#a7b2b8"/></linearGradient></defs>
+            <rect x="0" y="18" width="12" height="72" fill="#5d6a70"/>
+            <path d="M12 12 H300 L336 45 L300 78 H12 Z" fill="url(#ch)" stroke="#4f5b61" stroke-width="2"/>
+            <path d="M22 20 H297 L328 45 L297 70 H22 Z" fill="#0b4f4b"/>
+            <text x="36" y="56" fill="#fff" font-family="Rammetto One, Arial Black, sans-serif" font-size="30">Norton Ave</text>
+          </svg>
+        </div>
+      </div>
+      <div class="panel hours">
+        <div class="hours-inner">
+          <h2>Hours</h2>
+          <div class="hrow"><span>Mon to Sat</span><span>6am to 7:30pm</span></div>
+          <div class="hrow"><span>Sunday</span><span>7am to 1:30pm</span></div>
+          <ul class="also">
+            <li>Outdoor seating</li>
+            <li>Carry-out: call ahead</li>
+            <li>Car shows: ask for dates</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 </main>
 
-<footer class="foot">
-  <div class="wrap foot-in">
-    <p>© <span id="yr"></span> Dee&#39;s 50&#39;s Place Diner</p>
-    <p class="socials"><a href="https://www.facebook.com/dees50s/" rel="noopener" target="_blank">Facebook</a></p>
+<div class="chrome" aria-hidden="true"></div>
+<footer>
+  <div class="wrap">
+    <div><strong>Dee's 50's Place Diner</strong><br>581 Norton Ave, Barberton, OH 44203</div>
+    <div><a href="tel:+13307456310">(330) 745-6310</a><a href="https://www.facebook.com/dees50s/" target="_blank" rel="noopener">Dee's on Facebook</a></div>
   </div>
 </footer>
 
-<nav class="mobile-bar" aria-label="Quick actions">
-  <a href="tel:3307456310"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call</span></a>
-  <a href="https://www.google.com/maps/dir/?api=1&destination=581%20Norton%20Ave%2C%20Barberton%2C%20OH%2044203" target="_blank" rel="noopener" class="primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Directions</span></a>
-  <a href="#hours"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg><span>Hours</span></a>
-</nav>
-
-<script>
-(function(){
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  // "Open now" uses the shop's own time zone, not the visitor's clock.
-  var parts={};
-  new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'long',hour:'2-digit',minute:'2-digit',hourCycle:'h23'})
-    .formatToParts(new Date()).forEach(function(p){parts[p.type]=p.value});
-  var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  var day=days.indexOf(parts.weekday),mins=(+parts.hour)*60+(+parts.minute);
-  var toMin=function(s){var p=s.split(':');return +p[0]*60+ +p[1]};
-  var rows=document.querySelectorAll('.hours tr'),el=document.getElementById('open-status'),msg='';
-  rows.forEach(function(r){
-    if(+r.dataset.day!==day)return;
-    r.classList.add('today');
-    // data-slots: "09:00-13:30-1:30pm,16:00-19:30-7:30pm" (split shifts allowed)
-    msg='<span class="dot"></span>Closed now';
-    (r.dataset.slots||'').split(',').forEach(function(s){
-      var p=s.split('-');
-      if(p[0]&&mins>=toMin(p[0])&&mins<toMin(p[1]))msg='<span class="dot open"></span>Open now · until '+p[2];
-    });
-  });
-  el.innerHTML=msg;
-})();
-</script>
+<div class="callbar"><span>Dee's 50's Place Diner</span><a href="tel:+13307456310">Call now</a></div>
 </body>
 </html>

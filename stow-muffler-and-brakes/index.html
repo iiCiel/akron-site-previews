@@ -3,249 +3,269 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Stow Muffler &amp; Brakes | Auto repair in Stow, OH</title>
-<meta name="description" content="Stow Muffler &amp; Brakes at 3265 Kent Road, Stow, OH 44224. Muffler and exhaust repair, brake service, car A/C and general auto repair. BBB rating A+. Call (330) 688-8131 for a quote.">
-<meta property="og:title" content="Stow Muffler &amp; Brakes">
-<meta property="og:description" content="Mufflers, exhaust and brake repair on Kent Road in Stow, plus car A/C and general repair. Call for a quote.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#f5f3ef">
+<title>Stow Muffler &amp; Brakes | Kent Road, Stow, Ohio</title>
+<meta name="description" content="Stow Muffler & Brakes at 3265 Kent Road, Stow, OH 44224. Muffler and exhaust repair, brake service, car A/C and general auto repair. Call (330) 688-8131 for a quote.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&amp;family=Source+Sans+3:wght@400;600&display=swap">
-<style>/* Shared stylesheet. Colors and fonts come from each client's site.json via :root vars. */
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.6 var(--font);-webkit-font-smoothing:antialiased;padding-bottom:72px}
-@media (min-width:760px){body{padding-bottom:0}}
-img{max-width:100%;display:block}
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@600;800;900&family=Commissioner:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --asphalt:#1b1e22;
+  --asphalt2:#262a30;
+  --green:#00704f;
+  --green-deep:#00513a;
+  --blue:#00569c;
+  --white:#f7faf6;
+  --amber:#ffc20e;
+  --steel:#8a949c;
+  --muted:#b7c1bb;
+  --display:'Encode Sans Semi Expanded','Arial',sans-serif;
+  --text:'Commissioner',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--asphalt);color:var(--white);font:400 1.125rem/1.6 var(--text);overflow-x:hidden}
+::selection{background:var(--amber);color:#1b1e22}
 a{color:inherit}
-h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0 0 .6em;letter-spacing:-.01em}
-h2{font-size:clamp(1.8rem,5vw,2.6rem)}
-svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
-.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.demo-bar{background:#000;color:#d5ddd8;font-size:.9375rem;text-align:center;padding:.6rem 1rem;line-height:1.35}
+.demo-bar a{color:var(--amber);font-weight:700}
+.wrap{max-width:1120px;margin:0 auto;padding:0 1.25rem}
 
-.demo-bar{background:var(--accent);color:var(--accent-text);text-align:center;font-size:.8rem;font-weight:600;padding:6px 16px}
+/* ---------- sign construction ---------- */
+.sign{position:relative;background:var(--green);border-radius:16px;box-shadow:0 18px 34px rgba(0,0,0,.55);color:var(--white);overflow:hidden;
+  background-image:linear-gradient(115deg,rgba(255,255,255,.09) 0 18%,transparent 18% 100%)}
+.sign::before{content:"";position:absolute;inset:8px;border:4px solid var(--white);border-radius:10px;pointer-events:none}
+.sign.blue{background-color:var(--blue)}
+.sign h1,.sign h2,.sign h3{font-family:var(--display);font-weight:800;line-height:1.02;letter-spacing:-.01em;text-wrap:balance}
+.sign .legend{text-shadow:0 0 .6px rgba(255,255,255,.8)}
 
-.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.top-in{display:flex;align-items:center;gap:16px;height:60px}
-.logo{min-width:0;font-family:var(--display);text-decoration:none;font-size:1.1rem;margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{display:none;gap:24px}
-.top nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
-.top nav a:hover{color:var(--text)}
-@media (min-width:760px){.top nav{display:flex}}
+/* ---------- hero gantry ---------- */
+.hero{padding:2.5rem 0 3.25rem}
+.gantry{position:relative;padding-top:34px}
+.gantry::before{content:"";position:absolute;left:-1.25rem;right:-1.25rem;top:0;height:14px;background:linear-gradient(#59636b,#3b434a);border-bottom:3px solid #20252a}
+.gantry::after{content:"";position:absolute;top:14px;left:12%;right:12%;height:20px;
+  background:linear-gradient(90deg,#4a535a 0 14px,transparent 14px calc(100% - 14px),#4a535a calc(100% - 14px))}
+.hero .sign{display:grid;grid-template-columns:minmax(0,2.4fr) minmax(0,1fr);min-height:540px;animation:lightup 1.4s cubic-bezier(.16,1,.3,1) both}
+.hero .sign .left{padding:3.6rem 1.5rem 3.2rem 2.6rem;display:flex;flex-direction:column;justify-content:center}
+.hero .sign .right{padding:2.6rem 1.8rem 2.6rem 2.2rem;display:flex;flex-direction:column;justify-content:center;gap:1.1rem;position:relative}
+.hero .sign .right::before{content:"";position:absolute;left:0;top:26px;bottom:26px;width:4px;background:var(--white);border-radius:2px}
+.hero h1{font-size:clamp(2.1rem,5vw,3.8rem);font-weight:900}
+.hero h1 span{display:block}
+.hero .where{display:flex;align-items:center;gap:1rem;margin-top:2.6rem}
+.hero .where svg{flex:none;width:68px;height:auto}
+.hero .where p{font-family:var(--display);font-weight:800;font-size:clamp(1.25rem,2.6vw,1.75rem);line-height:1.12}
+.hero .where p small{display:block;font-family:var(--text);font-weight:400;font-size:1.0625rem;color:#e3efe8;margin-top:.15rem}
+.hero .right .ask{font-family:var(--display);font-weight:800;font-size:1.5rem;line-height:1.1}
+.hero .right .num{font-family:var(--display);font-weight:900;font-size:clamp(1.9rem,1.8vw,1.7rem);line-height:1;white-space:nowrap}
+@media (min-width:881px){.hero .right .num{font-size:1.65rem}}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 1.6rem;border-radius:8px;font-family:var(--display);font-weight:800;font-size:1.3rem;text-decoration:none;white-space:nowrap}
+.btn-white{background:var(--white);color:var(--green-deep)}
+.btn-white:hover{background:#fff;box-shadow:0 0 0 4px rgba(255,194,14,.9)}
+.btn-amber{background:var(--amber);color:#1b1e22}
+.btn-amber:hover{box-shadow:0 0 0 4px rgba(255,255,255,.7)}
+.hero .right .btn{align-self:flex-start}
+.hero .right .sub{font-size:1.0625rem;color:#e3efe8}
 
-.btn{display:inline-flex;align-items:center;gap:.5em;background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:.85em 1.4em;border-radius:999px;min-height:48px;transition:transform .15s,filter .15s}
-.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.btn-sm{padding:.55em 1.1em;min-height:40px;font-size:.9rem;white-space:nowrap;flex:none}
-.btn-ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--text) 30%,transparent)}
+/* road line under the hero */
+.road{height:44px;background:var(--asphalt2);position:relative;border-top:2px solid #0f1114;border-bottom:2px solid #0f1114}
+.road::before{content:"";position:absolute;left:0;right:0;top:50%;height:6px;margin-top:-3px;
+  background:repeating-linear-gradient(90deg,var(--amber) 0 54px,transparent 54px 108px)}
+.road::after{content:"";position:absolute;left:0;right:0;top:5px;height:3px;background:var(--white);opacity:.85}
 
-.hero{position:relative;padding:72px 0 64px;overflow:hidden;
-  background:
-    linear-gradient(180deg,transparent 40%,var(--bg)),
-    var(--hero-img,none) center/cover,
-    repeating-linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,transparent) 0 18px,transparent 18px 36px),
-    var(--bg)}
-.hero::after{content:"";position:absolute;inset:0;background:color-mix(in srgb,var(--bg) 55%,transparent);z-index:0}
-.hero-in{position:relative;z-index:1}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:var(--accent);margin:0 0 14px}
-.hero h1{font-size:clamp(2.6rem,11vw,5.6rem)}
-.lede{font-size:1.15rem;color:var(--muted);max-width:34ch;margin:0 0 28px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.status{margin:22px 0 0;font-weight:600;color:var(--muted);min-height:1.6em;display:flex;align-items:center;gap:8px}
-.dot{width:10px;height:10px;border-radius:50%;background:#c2524a;display:inline-block}
-.dot.open{background:#4caf6e;box-shadow:0 0 0 4px rgba(76,175,110,.2)}
-@media (min-width:760px){.hero{padding:120px 0 100px}}
+/* ---------- sections ---------- */
+section{padding:4.2rem 0}
+h2.plain{font-family:var(--display);font-weight:800;font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.05;letter-spacing:-.01em;margin-bottom:.7rem;text-wrap:balance}
+.lede{text-wrap:pretty;color:var(--muted);max-width:56ch;margin-bottom:2.2rem}
 
-.section{padding:64px 0}
-.section.alt{background:var(--surface)}
-.svc-list{list-style:none;padding:0;margin:0;display:grid;gap:4px 48px}
-@media (min-width:760px){.svc-list{grid-template-columns:1fr 1fr}}
-.svc{padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.svc-top{display:flex;align-items:baseline;gap:10px}
-.svc h3{font-family:var(--font);font-weight:800;font-size:1.1rem;margin:0}
-.dots{flex:1;border-bottom:2px dotted color-mix(in srgb,var(--text) 25%,transparent);transform:translateY(-4px)}
-.svc strong{color:var(--accent);font-size:1.15rem}
-.svc p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
-.dur{white-space:nowrap}
-.note{color:var(--muted);font-size:.85rem;margin-top:20px}
-.menu-section{font-family:var(--display);font-size:1.3rem;color:var(--accent);margin:36px 0 4px;text-transform:uppercase;letter-spacing:.06em}
-.menu-section:first-of-type{margin-top:8px}
+.signs{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;align-items:stretch;position:relative;padding-top:34px}
+.signs::before{content:"";position:absolute;left:-1.25rem;right:-1.25rem;top:0;height:14px;background:linear-gradient(#59636b,#3b434a);border-bottom:3px solid #20252a}
+.signs::after{content:"";position:absolute;top:14px;left:12%;right:12%;height:20px;background:linear-gradient(90deg,#4a535a 0 14px,transparent 14px 50%,#4a535a 50% calc(50% + 14px),transparent calc(50% + 14px) calc(100% - 14px),#4a535a calc(100% - 14px))}
+.signs .sign{padding:2.1rem 2rem 2rem}
+.signs .sign h3{font-size:clamp(1.7rem,3.2vw,2.35rem);margin-bottom:.55rem;padding-right:46px}
+.signs .sign p{font-size:1.125rem;max-width:34ch;color:#f1f7f3}
+.signs .sign .arrow{position:absolute;right:26px;top:26px;width:30px;height:auto}
+.s-ac p,.s-gen p{color:#eaf3fb}
+.caution{margin-top:3rem;display:flex;align-items:center;gap:1.2rem;background:var(--amber);color:#1b1e22;border:6px solid #1b1e22;outline:3px solid var(--amber);outline-offset:-1px;border-radius:12px;padding:1.2rem 1.5rem;max-width:760px;box-shadow:0 14px 28px rgba(0,0,0,.45)}
+.caution svg{flex:none;width:54px;height:54px}
+.caution p{font-family:var(--display);font-weight:800;font-size:clamp(1.15rem,2.5vw,1.55rem);line-height:1.2}
+.caution a{text-decoration-thickness:3px;text-underline-offset:3px}
 
-.two-col{display:grid;gap:48px}
-@media (min-width:860px){.two-col{grid-template-columns:1fr 1fr;align-items:start}}
-.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
-.chips li{border:1px solid color-mix(in srgb,var(--accent) 50%,transparent);color:var(--accent);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600}
-.one-col{max-width:720px}
-.reviews{display:grid;gap:16px;align-content:start}
-.rating{display:flex;align-items:center;gap:10px;text-decoration:none;background:var(--bg);border-radius:16px;padding:18px 22px;border-left:4px solid var(--accent)}
-.rating svg{width:28px;height:28px;color:var(--accent)}
-.rating strong{font-family:var(--display);font-size:1.8rem;line-height:1}
-.rating span{color:var(--muted);font-size:.9rem}
-.review{margin:0;background:var(--bg);border-radius:16px;padding:20px 22px;border-left:4px solid var(--accent)}
-.review blockquote{margin:0 0 8px;font-size:1.05rem}
-.review figcaption{color:var(--muted);font-size:.85rem}
+.about{background:var(--asphalt2);border-top:2px solid #0f1114;border-bottom:2px solid #0f1114}
+.about .grid{display:grid;grid-template-columns:1.5fr 1fr;gap:3rem;align-items:center}
+.about p.body{max-width:58ch}
+.about .badge{display:flex;flex-direction:column;align-items:center;text-align:center;gap:.9rem}
+.about .badge svg{width:min(220px,60%);height:auto;filter:drop-shadow(0 12px 18px rgba(0,0,0,.5))}
+.about .badge p{font-family:var(--display);font-weight:800;font-size:1.35rem;line-height:1.15}
+.about .badge small{display:block;font-family:var(--text);font-weight:400;font-size:1rem;color:var(--muted);margin-top:.2rem}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem;list-style:none;padding:0}
+.chips li{border:2px solid var(--steel);border-radius:999px;padding:.35rem 1rem;font-size:1.0625rem}
 
-.grid-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;padding:8px 0}
-.grid-g img{aspect-ratio:1;object-fit:cover;border-radius:10px}
+/* variable message sign */
+.vms{display:inline-block;margin-top:1.8rem;background:#0b0c0e;border:6px solid #3a424a;border-radius:10px;padding:.9rem 1.3rem;box-shadow:0 12px 22px rgba(0,0,0,.5), inset 0 0 30px rgba(0,0,0,.9)}
+.vms p{font-family:var(--display);font-weight:800;color:var(--amber);text-shadow:0 0 8px rgba(255,194,14,.5);line-height:1.15;font-size:1.25rem;letter-spacing:.02em}
 
-.hours{width:100%;border-collapse:collapse}
-.hours th,.hours td{text-align:left;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.hours th{font-weight:600}
-.hours td{text-align:right;color:var(--muted)}
-.hours tr.today th,.hours tr.today td{color:var(--accent);font-weight:800}
-address{font-style:normal;display:grid;gap:10px;margin-bottom:20px}
-address a{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600}
-address a:hover{color:var(--accent)}
-.map{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--surface)}
-.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
+/* visit */
+.visit{background:var(--asphalt2);border-top:2px solid #0f1114}
+.visit .grid{display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:center}
+.marker{width:min(300px,100%);padding:2rem 1.6rem 1.8rem;text-align:center}
+.marker .big{font-family:var(--display);font-weight:900;font-size:4.2rem;line-height:1;margin-bottom:.2rem}
+.marker .st{font-family:var(--display);font-weight:800;font-size:1.65rem;line-height:1.1}
+.marker .city{font-size:1.0625rem;color:#e3efe8;margin-top:.35rem}
+.visit address{font-style:normal;font-size:1.3rem;line-height:1.45;margin-bottom:1.5rem}
+.visit .row{display:flex;flex-wrap:wrap;gap:1rem}
+.btn-line{border:3px solid var(--white);color:var(--white)}
+.btn-line:hover{background:var(--white);color:#1b1e22}
 
-.book-band{background:var(--accent);color:var(--accent-text)}
-.band-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
-.band-in h2{margin:0}
-.book-band .btn{background:var(--accent-text);color:var(--accent)}
+footer{padding:2.2rem 0 2.8rem;color:var(--muted);font-size:1rem;border-top:2px solid #0f1114;background:#121417}
+footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;justify-content:space-between}
+footer a{color:var(--white)}
 
-.foot{padding:28px 0;color:var(--muted);font-size:.88rem}
-.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-.foot p{margin:0}
-.socials{display:flex;gap:16px}
+.callbar{display:none}
 
-.mobile-bar{position:fixed;inset:auto 0 0 0;z-index:30;display:grid;grid-template-columns:1fr 1.3fr 1fr;background:var(--surface);border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent);padding-bottom:env(safe-area-inset-bottom)}
-.mobile-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;text-decoration:none;font-size:.78rem;font-weight:700}
-.mobile-bar a.primary{background:var(--accent);color:var(--accent-text)}
-.mobile-bar svg{width:22px;height:22px}
-@media (min-width:760px){.mobile-bar{display:none}}
+@keyframes lightup{
+  0%{filter:brightness(.35) saturate(.7)}
+  55%{filter:brightness(.55) saturate(.8)}
+  100%{filter:none}
+}
 
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+@media (max-width:880px){
+  .hero .sign{grid-template-columns:1fr}
+  .hero .sign .left{padding:2.2rem 1.6rem 1.6rem}
+  .hero .sign .right{padding:1.8rem 1.6rem 2.2rem}
+  .hero .sign .right::before{left:26px;right:26px;top:0;bottom:auto;width:auto;height:4px}
+  .gantry::after{left:8%;right:8%}
+  .signs{grid-template-columns:1fr;padding-top:0}
+  .signs::before,.signs::after{display:none}
+  .about .grid,.visit .grid{grid-template-columns:1fr;gap:2rem}
+}
+@media (max-width:640px){
+  body{font-size:1.0625rem;padding-bottom:84px}
+  section{padding:3rem 0}
+  .hero{padding:1.6rem 0 2.4rem}
+  .gantry{padding-top:28px}
+  .hero .sign .left{padding:1.9rem 1.35rem 1.4rem}
+  .hero .sign .right{padding:1.6rem 1.35rem 1.9rem}
+  .hero .where svg{width:46px}
+  .hero .right .btn{align-self:stretch;min-height:60px}
+  .hero .right .sub{display:none}
+  .signs .sign{padding:1.8rem 1.35rem 1.7rem}
+  .caution{padding:1rem 1.1rem;gap:.9rem;border-width:5px}
+  .caution svg{width:44px;height:44px}
+  footer .wrap{flex-direction:column}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--green-deep);border-top:4px solid var(--white);padding:.6rem .9rem calc(.6rem + env(safe-area-inset-bottom));gap:.75rem;align-items:center;justify-content:space-between;box-shadow:0 -8px 18px rgba(0,0,0,.45)}
+  .callbar span{font-family:var(--display);font-weight:800;font-size:1.05rem;line-height:1.1}
+  .callbar a{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 1.3rem;background:var(--amber);color:#1b1e22;font-family:var(--display);font-weight:800;font-size:1.25rem;text-decoration:none;border-radius:8px;white-space:nowrap}
+}
+@media (prefers-reduced-motion:reduce){
+  .hero .sign{animation:none}
+}
 </style>
-<style>:root{--bg:#f5f3ef;--surface:#e8e2d9;--text:#1c1714;--muted:#574e47;--accent:#9a3412;--accent-text:#ffffff;--font:'Source Sans 3', system-ui, sans-serif;--display:'Oswald', 'Source Sans 3', sans-serif}</style>
-
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arrow" viewBox="0 0 30 44"><path d="M15 43 L1 27 H10 V1 H20 V27 H29 Z" fill="#f7faf6"/></symbol>
+  <symbol id="shield" viewBox="0 0 48 56"><path d="M24 2 L45 8 V28 C45 41 36 50 24 54 C12 50 3 41 3 28 V8 Z" fill="#f7faf6" stroke="#10130f" stroke-width="3" stroke-linejoin="round"/><path d="M24 7 L40 11.5 V28 C40 38 33 45 24 48.5 C15 45 8 38 8 28 V11.5 Z" fill="none" stroke="#10130f" stroke-width="1.6"/></symbol>
+</svg>
+
 <div class="demo-bar">Free preview made for Stow Muffler &amp; Brakes by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
-<header class="top">
-  <div class="wrap top-in">
-    <a class="logo" href="#top">Stow Muffler &amp; Brakes</a>
-    <nav aria-label="Main"><a href="#services">Services</a><a href="#hours">Hours</a><a href="#visit">Visit</a></nav>
-    <a class="btn btn-sm" href="tel:3306888131">Call for a quote</a>
-  </div>
-</header>
 
-<main id="top">
-  <section class="hero">
-    <div class="wrap hero-in">
-      <p class="eyebrow">Mufflers &amp; brakes · Kent Road, Stow</p>
-      <h1>Squealing brakes?<br>Rumbling exhaust?</h1>
-      <p class="lede">Mufflers, exhaust and brake repair on Kent Road in Stow, plus car A/C and general repair. Call for a quote.</p>
-      <div class="cta-row">
-        <a class="btn" href="tel:3306888131"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call for a quote</a>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=3265%20Kent%20Road%2C%20Stow%2C%20OH%2044224" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Directions</a>
-      </div>
-      <p class="status" id="open-status" aria-live="polite"></p>
-    </div>
-  </section>
-
-  <section id="services" class="section">
-    <div class="wrap">
-      <h2>Services</h2>
-      <ul class="svc-list">
-        <li class="svc">
-          <div class="svc-top"><h3>Mufflers &amp; exhaust</h3></div>
-          <p>Muffler and exhaust system repair: mufflers, pipes and the rest of the system under your car.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Brakes</h3></div>
-          <p>Brake service and repair. Call with your year, make and model for a quote.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Car A/C</h3></div>
-          <p>Air conditioning problems looked at and repaired.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>General auto repair</h3></div>
-          <p>Other repair work too. Call and describe the problem.</p>
-        </li></ul>
-      <p class="note">Every car is different, so call (330) 688-8131 for a quote before you bring it in.</p>
-    </div>
-  </section>
-
-  <section class="section alt">
-    <div class="wrap one-col">
-      <div>
-        <h2>Stow&#39;s muffler and brake shop.</h2>
-        <p>Stow Muffler &amp; Brakes on Kent Road in Stow handles muffler and exhaust work, brake service, car A/C and general repairs. It holds an A+ rating from the BBB. Call (330) 688-8131 for a quote or to check today&#39;s hours.</p>
-        <ul class="chips"><li>Mufflers &amp; exhaust</li><li>Brake service</li><li>BBB rating A+</li><li>3265 Kent Road, Stow</li></ul>
-      </div>
-      
-    </div>
-  </section>
-  
-
-  <section id="hours" class="section">
-    <div class="wrap two-col">
-      <div>
-        <h2>Hours</h2>
-        <p class="note">Call <a href="tel:3306888131">(330) 688-8131</a> for today's hours.</p>
-      </div>
-      <div id="visit">
-        <h2>Visit</h2>
-        <address>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=3265%20Kent%20Road%2C%20Stow%2C%20OH%2044224" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>3265 Kent Road, Stow, OH 44224</a>
-          <a href="tel:3306888131"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(330) 688-8131</a>
-          
-        </address>
-        <div class="map">
-          <iframe title="Map to Stow Muffler &amp; Brakes" src="https://www.google.com/maps?q=Stow%20Muffler%20%26%20Brakes%2C%203265%20Kent%20Road%2C%20Stow%2C%20OH%2044224&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<header class="hero">
+  <div class="wrap">
+    <div class="gantry">
+      <div class="sign">
+        <div class="left">
+          <h1 class="legend"><span>Squealing brakes?</span><span>Rumbling exhaust?</span></h1>
+          <div class="where">
+            <svg viewBox="0 0 48 56" role="img" aria-label="Route shield with the street number 3265"><use href="#shield"/><text x="24" y="35" text-anchor="middle" font-family="Encode Sans Semi Expanded, Arial, sans-serif" font-weight="900" font-size="12" textLength="30" lengthAdjust="spacingAndGlyphs" fill="#10130f">3265</text></svg>
+            <p>Stow Muffler &amp; Brakes<small>Kent Road, Stow</small></p>
+          </div>
+        </div>
+        <div class="right">
+          <p class="ask">Call for a quote</p>
+          <p class="num"><a href="tel:+13306888131" style="text-decoration:none">(330) 688-8131</a></p>
+          <a class="btn btn-white" href="tel:+13306888131">Call now</a>
+          <p class="sub">Have your car's year, make and model ready.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</header>
+<div class="road" aria-hidden="true"></div>
 
-  <section class="section book-band">
-    <div class="wrap band-in">
-      <h2>Noisy exhaust or soft brakes? Call Stow Muffler &amp; Brakes for a quote.</h2>
-      <a class="btn" href="tel:3306888131"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call for a quote</a>
+<main>
+<section id="services">
+  <div class="wrap">
+    <h2 class="plain">What we fix</h2>
+    <p class="lede">Muffler and exhaust, brakes, car A/C and general repair, all at one address on Kent Road.</p>
+    <div class="signs">
+      <div class="sign s-muff">
+        <svg class="arrow" viewBox="0 0 30 44" width="30" height="44" aria-hidden="true"><use href="#arrow"/></svg>
+        <h3 class="legend">Mufflers &amp; exhaust</h3>
+        <p>Muffler and exhaust system repair: mufflers, pipes and the rest of the system under your car.</p>
+      </div>
+      <div class="sign s-brake">
+        <svg class="arrow" viewBox="0 0 30 44" width="30" height="44" aria-hidden="true"><use href="#arrow"/></svg>
+        <h3 class="legend">Brakes</h3>
+        <p>Brake service and repair. Call with your year, make and model for a quote.</p>
+      </div>
+      <div class="sign blue s-ac">
+        <h3 class="legend">Car A/C</h3>
+        <p>Air conditioning problems looked at and repaired.</p>
+      </div>
+      <div class="sign blue s-gen">
+        <h3 class="legend">General auto repair</h3>
+        <p>Other repair work too. Call and describe the problem.</p>
+      </div>
     </div>
-  </section>
+    <div class="caution">
+      <svg viewBox="0 0 54 54" aria-hidden="true"><path d="M27 3 L51 27 L27 51 L3 27 Z" fill="#1b1e22"/><path d="M27 8 L46 27 L27 46 L8 27 Z" fill="none" stroke="#ffc20e" stroke-width="2"/><path d="M20 27 H31 M27 22 L32 27 L27 32" stroke="#ffc20e" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <p>Every car is different, so call <a href="tel:+13306888131">(330) 688-8131</a> for a quote before you bring it in.</p>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap grid">
+    <div>
+      <h2 class="plain">Stow's muffler and brake shop.</h2>
+      <p class="body">Stow Muffler &amp; Brakes on Kent Road in Stow handles muffler and exhaust work, brake service, car A/C and general repairs. It holds an A+ rating from the BBB. Call (330) 688-8131 for a quote or to check today's hours.</p>
+    </div>
+    <div class="badge">
+      <svg viewBox="0 0 48 56" role="img" aria-label="Shield reading A plus"><use href="#shield"/><text x="24" y="36" text-anchor="middle" font-family="Encode Sans Semi Expanded, Arial, sans-serif" font-weight="900" font-size="19" fill="#10130f">A+</text></svg>
+      <p>BBB rating A+<small>Rating as shown on the shop's BBB profile</small></p>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="wrap grid">
+    <div class="sign marker">
+      <div class="big legend">3265</div>
+      <div class="st legend">Kent Road</div>
+      <div class="city">Stow, OH 44224</div>
+    </div>
+    <div>
+      <h2 class="plain">Find us on Kent Road</h2>
+      <address>Stow Muffler &amp; Brakes<br>3265 Kent Road<br>Stow, OH 44224</address>
+      <div class="row">
+        <a class="btn btn-amber" href="tel:+13306888131">Call (330) 688-8131</a>
+        <a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&amp;query=Stow%20Muffler%20%26%20Brakes%2C%203265%20Kent%20Road%2C%20Stow%2C%20OH%2044224" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="vms" role="img" aria-label="Call for today's hours, (330) 688-8131"><p>CALL FOR TODAY'S HOURS</p><p>(330) 688-8131</p></div>
+    </div>
+  </div>
+</section>
 </main>
 
-<footer class="foot">
-  <div class="wrap foot-in">
-    <p>© <span id="yr"></span> Stow Muffler &amp; Brakes</p>
-    <p class="socials"></p>
+<footer>
+  <div class="wrap">
+    <span>Stow Muffler &amp; Brakes · 3265 Kent Road, Stow, OH 44224 · <a href="tel:+13306888131">(330) 688-8131</a></span>
+    <span>Free preview, not the official website.</span>
   </div>
 </footer>
 
-<nav class="mobile-bar" aria-label="Quick actions">
-  <a href="tel:3306888131"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call</span></a>
-  <a href="https://www.google.com/maps/dir/?api=1&destination=3265%20Kent%20Road%2C%20Stow%2C%20OH%2044224" target="_blank" rel="noopener" class="primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Directions</span></a>
-  <a href="#hours"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg><span>Hours</span></a>
-</nav>
-
-<script>
-(function(){
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  // "Open now" uses the shop's own time zone, not the visitor's clock.
-  var parts={};
-  new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'long',hour:'2-digit',minute:'2-digit',hourCycle:'h23'})
-    .formatToParts(new Date()).forEach(function(p){parts[p.type]=p.value});
-  var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  var day=days.indexOf(parts.weekday),mins=(+parts.hour)*60+(+parts.minute);
-  var toMin=function(s){var p=s.split(':');return +p[0]*60+ +p[1]};
-  var rows=document.querySelectorAll('.hours tr'),el=document.getElementById('open-status'),msg='';
-  rows.forEach(function(r){
-    if(+r.dataset.day!==day)return;
-    r.classList.add('today');
-    // data-slots: "09:00-13:30-1:30pm,16:00-19:30-7:30pm" (split shifts allowed)
-    msg='<span class="dot"></span>Closed now';
-    (r.dataset.slots||'').split(',').forEach(function(s){
-      var p=s.split('-');
-      if(p[0]&&mins>=toMin(p[0])&&mins<toMin(p[1]))msg='<span class="dot open"></span>Open now · until '+p[2];
-    });
-  });
-  el.innerHTML=msg;
-})();
-</script>
+<div class="callbar"><span>Stow Muffler &amp; Brakes</span><a href="tel:+13306888131">Call now</a></div>
 </body>
 </html>
