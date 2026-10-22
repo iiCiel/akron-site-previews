@@ -3,253 +3,231 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Lee&#39;s Heating &amp; Air Conditioning | Heating &amp; cooling in Stow, OH</title>
-<meta name="description" content="Lee&#39;s Heating &amp; Air Conditioning, Stow, Ohio. Furnace and AC repair, tune-ups, installation and replacement, including custom duct work. Serving homes in Stow and nearby. Call (330) 434-6001.">
-<meta property="og:title" content="Lee&#39;s Heating &amp; Air Conditioning">
-<meta property="og:description" content="Furnace and air conditioning repair, tune-ups and installation for homes in Stow and the Akron area. Call for a quote.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#f6f3ee">
 <meta name="robots" content="noindex, nofollow">
+<title>Lee's Heating &amp; Air Conditioning | Stow, Ohio</title>
+<meta name="description" content="Lee's Heating &amp; Air Conditioning, Stow, Ohio. Furnace and AC repair, tune-ups, installation and replacement for homes in Stow and the Akron area. Call (330) 434-6001.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&amp;family=Source+Sans+3:wght@400;600&display=swap">
-<style>/* Shared stylesheet. Colors and fonts come from each client's site.json via :root vars. */
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#F1F4F2;      /* siding white */
+  --ink:#2B1D14;        /* walnut */
+  --gold:#E4A11B;       /* harvest gold */
+  --orange:#B93E12;     /* burnt orange */
+  --rust:#8E2B18;
+  --avocado:#6E7B24;
+  --sky:#3E8BB8;
+  --blue:#174A6B;       /* deep blue */
+  --pale:#BCD9E8;       /* pale sky */
+  --display:"Caprasimo","Cooper Black","Bookman Old Style",Georgia,serif;
+  --text:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --pad:clamp(1.25rem,5vw,4rem);
+  --curve:clamp(2.5rem,7vw,6rem);
+}
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.6 var(--font);-webkit-font-smoothing:antialiased;padding-bottom:72px}
-@media (min-width:760px){body{padding-bottom:0}}
-img{max-width:100%;display:block}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--ink);font-family:var(--text);font-size:1.125rem;line-height:1.6}
+img,svg{display:block;max-width:100%}
 a{color:inherit}
-h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0 0 .6em;letter-spacing:-.01em}
-h2{font-size:clamp(1.8rem,5vw,2.6rem)}
-svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
-.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+::selection{background:var(--gold);color:var(--ink)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.on-dark :focus-visible,.cta :focus-visible{outline-color:var(--gold)}
 
-.demo-bar{background:var(--accent);color:var(--accent-text);text-align:center;font-size:.8rem;font-weight:600;padding:6px 16px}
+.demo-bar{background:var(--ink);color:#fff;text-align:center;font-size:.875rem;line-height:1.4;padding:.65rem 1rem}
+.demo-bar a{color:var(--gold);font-weight:600;text-underline-offset:3px}
 
-.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.top-in{display:flex;align-items:center;gap:16px;height:60px}
-.logo{min-width:0;font-family:var(--display);text-decoration:none;font-size:1.1rem;margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{display:none;gap:24px}
-.top nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
-.top nav a:hover{color:var(--text)}
-@media (min-width:760px){.top nav{display:flex}}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.04;margin:0;letter-spacing:-.005em}
+p{margin:0}
 
-.btn{display:inline-flex;align-items:center;gap:.5em;background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:.85em 1.4em;border-radius:999px;min-height:48px;transition:transform .15s,filter .15s}
-.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.btn-sm{padding:.55em 1.1em;min-height:40px;font-size:.9rem;white-space:nowrap;flex:none}
-.btn-ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--text) 30%,transparent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:3.5rem;padding:.7rem 1.9rem;border-radius:999px;font-weight:700;font-size:1.2rem;text-decoration:none;background:var(--orange);color:#fff;border:0;transition:background-color .2s}
+.btn:hover{background:var(--rust)}
+.btn-alt{background:var(--gold);color:var(--ink)}
+.btn-alt:hover{background:#f1b73c}
 
-.hero{position:relative;padding:72px 0 64px;overflow:hidden;
-  background:
-    linear-gradient(180deg,transparent 40%,var(--bg)),
-    var(--hero-img,none) center/cover,
-    repeating-linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,transparent) 0 18px,transparent 18px 36px),
-    var(--bg)}
-.hero::after{content:"";position:absolute;inset:0;background:color-mix(in srgb,var(--bg) 55%,transparent);z-index:0}
-.hero-in{position:relative;z-index:1}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:var(--accent);margin:0 0 14px}
-.hero h1{font-size:clamp(2.6rem,11vw,5.6rem)}
-.lede{font-size:1.15rem;color:var(--muted);max-width:34ch;margin:0 0 28px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.status{margin:22px 0 0;font-weight:600;color:var(--muted);min-height:1.6em;display:flex;align-items:center;gap:8px}
-.dot{width:10px;height:10px;border-radius:50%;background:#c2524a;display:inline-block}
-.dot.open{background:#4caf6e;box-shadow:0 0 0 4px rgba(76,175,110,.2)}
-@media (min-width:760px){.hero{padding:120px 0 100px}}
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding:clamp(2.5rem,6vw,5rem) var(--pad) 0}
+.hero-copy{position:relative;z-index:1;max-width:52rem}
+.hero h1{font-size:clamp(2.25rem,7vw,5.4rem);}
+.hero h1 span{display:inline-block}
+.hero .lede{margin-top:1.4rem;max-width:34rem;font-size:clamp(1.1rem,2vw,1.3rem)}
+.hero-actions{margin-top:1.8rem;display:flex;flex-wrap:wrap;align-items:center;gap:.6rem 1.4rem}
+.hero-actions .since{font-size:1rem;max-width:16rem;line-height:1.35}
+.sweep{width:100%;height:15rem;margin-top:1.75rem}
+.sweep-s{width:calc(100% + 2*var(--pad));margin-inline:calc(var(--pad) * -1)}
+.sweep-t{display:none}
+@keyframes reveal{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@media (prefers-reduced-motion:no-preference){
+  .hero .sweep{animation:reveal 1.4s cubic-bezier(.16,1,.3,1) both}
+}
+@media (min-width:48rem){.sweep{height:20rem}}
+@media (min-width:62rem){
+  .hero{padding-bottom:19vw}
+  .sweep-s{display:none}
+  .sweep-t{display:block;position:absolute;right:0;bottom:0;width:100%;height:100%;margin:0}
+}
 
-.section{padding:64px 0}
-.section.alt{background:var(--surface)}
-.svc-list{list-style:none;padding:0;margin:0;display:grid;gap:4px 48px}
-@media (min-width:760px){.svc-list{grid-template-columns:1fr 1fr}}
-.svc{padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.svc-top{display:flex;align-items:baseline;gap:10px}
-.svc h3{font-family:var(--font);font-weight:800;font-size:1.1rem;margin:0}
-.dots{flex:1;border-bottom:2px dotted color-mix(in srgb,var(--text) 25%,transparent);transform:translateY(-4px)}
-.svc strong{color:var(--accent);font-size:1.15rem}
-.svc p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
-.dur{white-space:nowrap}
-.note{color:var(--muted);font-size:.85rem;margin-top:20px}
-.menu-section{font-family:var(--display);font-size:1.3rem;color:var(--accent);margin:36px 0 4px;text-transform:uppercase;letter-spacing:.06em}
-.menu-section:first-of-type{margin-top:8px}
+/* ---------- services ---------- */
+.services{padding:clamp(3rem,8vw,6rem) var(--pad) 0}
+.services>h2{font-size:clamp(2rem,4.6vw,3.5rem);max-width:18ch;text-wrap:balance}
+.panels{margin-top:clamp(1.5rem,3vw,2.5rem);display:grid;gap:1rem;grid-template-columns:1fr}
+.panel{padding:clamp(1.5rem,3.5vw,2.75rem);border-radius:var(--curve) 0 0 0}
+.panel h3{font-size:clamp(2.4rem,5vw,3.75rem)}
+.panel dl{margin:1.4rem 0 0}
+.panel dt{font-weight:700;font-size:1.25rem}
+.panel dd{margin:.15rem 0 1.1rem;max-width:30rem}
+.panel dd:last-child{margin-bottom:0}
+.heat{background:var(--gold)}
+.cool{background:var(--pale)}
+.both{background:var(--orange);color:#fff;border-radius:0 0 var(--curve) 0;display:grid;gap:1.25rem 3rem}
+.both h3{font-size:clamp(1.6rem,3vw,2.2rem)}
+.both p{margin-top:.4rem;max-width:30rem}
+.note{margin-top:1.4rem;max-width:40rem}
+@media (min-width:48rem){
+  .panels{grid-template-columns:1fr 1fr}
+  .both{grid-column:1/-1;grid-template-columns:1fr 1fr}
+}
 
-.two-col{display:grid;gap:48px}
-@media (min-width:860px){.two-col{grid-template-columns:1fr 1fr;align-items:start}}
-.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
-.chips li{border:1px solid color-mix(in srgb,var(--accent) 50%,transparent);color:var(--accent);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600}
-.one-col{max-width:720px}
-.reviews{display:grid;gap:16px;align-content:start}
-.rating{display:flex;align-items:center;gap:10px;text-decoration:none;background:var(--bg);border-radius:16px;padding:18px 22px;border-left:4px solid var(--accent)}
-.rating svg{width:28px;height:28px;color:var(--accent)}
-.rating strong{font-family:var(--display);font-size:1.8rem;line-height:1}
-.rating span{color:var(--muted);font-size:.9rem}
-.review{margin:0;background:var(--bg);border-radius:16px;padding:20px 22px;border-left:4px solid var(--accent)}
-.review blockquote{margin:0 0 8px;font-size:1.05rem}
-.review figcaption{color:var(--muted);font-size:.85rem}
+/* ---------- about ---------- */
+.about{padding:clamp(3.5rem,9vw,7rem) var(--pad);display:grid;gap:2rem 4rem;align-items:start}
+.about h2{font-size:clamp(2.2rem,5.4vw,4.4rem);max-width:11ch;text-wrap:balance}
+.about .body{max-width:34rem}
+.about .body p+p{margin-top:1rem}
+.area{background:var(--ink);color:#fff;padding:clamp(1.5rem,3vw,2.25rem);border-radius:0 var(--curve) 0 0;max-width:34rem}
+.area h3{font-size:1.7rem;color:var(--gold)}
+.area p{margin-top:.6rem}
+.area a{font-weight:700;color:#fff;text-underline-offset:3px;text-decoration-thickness:2px}
+@media (min-width:62rem){
+  .about{grid-template-columns:1fr 1fr}
+  .about h2{grid-column:1}
+  .about .body{grid-column:1}
+  .area{grid-column:2;grid-row:1/3;align-self:end}
+}
 
-.grid-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;padding:8px 0}
-.grid-g img{aspect-ratio:1;object-fit:cover;border-radius:10px}
+/* ---------- call to action ---------- */
+.cta{position:relative;overflow:hidden;background:var(--blue);color:#fff}
+.cta .sweep{position:absolute;inset:0;width:100%;height:100%;margin:0}
+.cta-copy{position:relative;padding:clamp(10rem,18vw,16rem) var(--pad) clamp(3rem,7vw,5rem) 7rem}
+.cta h2{font-size:clamp(2.2rem,5.6vw,4.6rem);max-width:14ch;text-wrap:balance}
+.cta p{margin-top:1rem;max-width:32rem}
+.cta .btn{margin-top:1.6rem;font-size:clamp(1.3rem,3vw,1.7rem);min-height:4rem}
+.cta .fb{margin-top:1.4rem;font-size:1rem}
+.cta .fb a{font-weight:600;text-underline-offset:3px}
+@media (min-width:48rem){.cta-copy{padding-left:max(var(--pad),24vw)}}
 
-.hours{width:100%;border-collapse:collapse}
-.hours th,.hours td{text-align:left;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.hours th{font-weight:600}
-.hours td{text-align:right;color:var(--muted)}
-.hours tr.today th,.hours tr.today td{color:var(--accent);font-weight:800}
-address{font-style:normal;display:grid;gap:10px;margin-bottom:20px}
-address a{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600}
-address a:hover{color:var(--accent)}
-.map{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--surface)}
-.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
+footer{background:var(--ink);color:#fff;padding:1.75rem var(--pad) 1.75rem;font-size:.9375rem;line-height:1.5}
+footer p{max-width:44rem}
 
-.book-band{background:var(--accent);color:var(--accent-text)}
-.band-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
-.band-in h2{margin:0}
-.book-band .btn{background:var(--accent-text);color:var(--accent)}
-
-.foot{padding:28px 0;color:var(--muted);font-size:.88rem}
-.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-.foot p{margin:0}
-.socials{display:flex;gap:16px}
-
-.mobile-bar{position:fixed;inset:auto 0 0 0;z-index:30;display:grid;grid-template-columns:1fr 1.3fr 1fr;background:var(--surface);border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent);padding-bottom:env(safe-area-inset-bottom)}
-.mobile-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;text-decoration:none;font-size:.78rem;font-weight:700}
-.mobile-bar a.primary{background:var(--accent);color:var(--accent-text)}
-.mobile-bar svg{width:22px;height:22px}
-@media (min-width:760px){.mobile-bar{display:none}}
-
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+/* ---------- phone call bar ---------- */
+.callbar{display:none}
+@media (max-width:47.99rem){
+  body{padding-bottom:4.75rem}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:.6rem .75rem calc(.6rem + env(safe-area-inset-bottom));background:var(--ink)}
+  .callbar a{flex:1;display:flex;align-items:center;justify-content:center;min-height:3.5rem;border-radius:999px;background:var(--gold);color:var(--ink);font-weight:700;font-size:1.2rem;text-decoration:none}
+}
 </style>
-<style>:root{--bg:#f6f3ee;--surface:#e7e0d3;--text:#1d1a16;--muted:#5a5246;--accent:#b3361b;--accent-text:#ffffff;--font:'Source Sans 3', system-ui, sans-serif;--display:'Oswald', 'Source Sans 3', sans-serif}</style>
-
 </head>
 <body>
-<div class="demo-bar">Free preview made for Lee&#39;s Heating &amp; Air Conditioning by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
-<header class="top">
-  <div class="wrap top-in">
-    <a class="logo" href="#top">Lee&#39;s Heating &amp; Air Conditioning</a>
-    <nav aria-label="Main"><a href="#services">Services</a><a href="#hours">Hours</a><a href="#visit">Visit</a></nav>
-    <a class="btn btn-sm" href="tel:3304346001">Call for a quote</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <g id="bands">
+      <path stroke="#E4A11B" fill="none" stroke-width="30" d="M -700 240 H 900 A 90 90 0 0 0 990 150 V -600"/>
+      <path stroke="#B93E12" fill="none" stroke-width="30" d="M -700 270 H 900 A 120 120 0 0 0 1020 150 V -600"/>
+      <path stroke="#8E2B18" fill="none" stroke-width="30" d="M -700 300 H 900 A 150 150 0 0 0 1050 150 V -600"/>
+      <path stroke="#6E7B24" fill="none" stroke-width="30" d="M -700 330 H 900 A 180 180 0 0 0 1080 150 V -600"/>
+      <path stroke="#3E8BB8" fill="none" stroke-width="30" d="M -700 360 H 900 A 210 210 0 0 0 1110 150 V -600"/>
+      <path stroke="#174A6B" fill="none" stroke-width="30" d="M -700 390 H 900 A 240 240 0 0 0 1140 150 V -600"/>
+    </g>
+  </defs>
+</svg>
+
+<div class="demo-bar">Free preview made for Lee's Heating &amp; Air Conditioning by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
+
+<header class="hero" id="top">
+  <div class="hero-copy">
+    <h1><span>Warm in January.</span> <span>Cool in July.</span> <span>Call Lee's.</span></h1>
+    <p class="lede">Furnace and air conditioning repair, tune-ups and installation for homes in Stow and the Akron area.</p>
+    <div class="hero-actions">
+      <a class="btn" href="tel:+13304346001">Call (330) 434-6001</a>
+      <p class="since">Serving the Stow area since 1977, according to its BBB profile.</p>
+    </div>
   </div>
+  <svg class="sweep sweep-s" viewBox="0 0 1155 420" preserveAspectRatio="xMaxYMax slice" aria-hidden="true" focusable="false">
+    <use href="#bands"/>
+  </svg>
+  <svg class="sweep sweep-t" viewBox="0 -580 1155 1000" preserveAspectRatio="xMaxYMax slice" aria-hidden="true" focusable="false">
+    <use href="#bands"/>
+  </svg>
 </header>
 
-<main id="top">
-  <section class="hero">
-    <div class="wrap hero-in">
-      <p class="eyebrow">Heating &amp; air conditioning · Stow, Ohio</p>
-      <h1>Furnace or AC acting up?<br>Call Lee&#39;s.</h1>
-      <p class="lede">Furnace and air conditioning repair, tune-ups and installation for homes in Stow and the Akron area. Call for a quote.</p>
-      <div class="cta-row">
-        <a class="btn" href="tel:3304346001"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call for a quote</a>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Serving%20the%20Stow%20area%2C%20Stow%2C%20OH%2044224" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Directions</a>
-      </div>
-      <p class="status" id="open-status" aria-live="polite"></p>
+<main>
+<section class="services" id="services" aria-labelledby="services-h">
+  <h2 id="services-h">What Lee's works on</h2>
+  <div class="panels">
+    <div class="panel heat">
+      <h3>Heat</h3>
+      <dl>
+        <dt>Furnace repair</dt>
+        <dd>Heating system repair and maintenance.</dd>
+        <dt>Furnace installation</dt>
+        <dd>New furnace installation.</dd>
+      </dl>
     </div>
-  </section>
-
-  <section id="services" class="section">
-    <div class="wrap">
-      <h2>Services</h2>
-      <ul class="svc-list">
-        <li class="svc">
-          <div class="svc-top"><h3>Furnace repair</h3></div>
-          <p>Heating system repair and maintenance.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>AC repair</h3></div>
-          <p>Air conditioning repair and maintenance.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Tune-ups</h3></div>
-          <p>Seasonal system tune-ups to keep things running.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Installation</h3></div>
-          <p>New AC and furnace installation.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Replacement</h3></div>
-          <p>System replacements, including custom duct work.</p>
-        </li></ul>
-      <p class="note">Every home is different. Call (330) 434-6001 to describe the problem and get a quote.</p>
+    <div class="panel cool">
+      <h3>Air</h3>
+      <dl>
+        <dt>AC repair</dt>
+        <dd>Air conditioning repair and maintenance.</dd>
+        <dt>AC installation</dt>
+        <dd>New air conditioning installation.</dd>
+      </dl>
     </div>
-  </section>
-
-  <section class="section alt">
-    <div class="wrap one-col">
+    <div class="panel both">
       <div>
-        <h2>Stow&#39;s heating and cooling company.</h2>
-        <p>Lee&#39;s Heating &amp; Air Conditioning has been serving homes in the Stow area since 1977, according to its Better Business Bureau profile, which lists Ed Lee as owner. Call (330) 434-6001 to talk through a heating or cooling problem.</p>
-        <ul class="chips"><li>Furnace &amp; AC repair</li><li>Tune-ups &amp; maintenance</li><li>Installation &amp; replacement</li><li>Serving Stow since 1977</li></ul>
+        <h3>Tune-ups</h3>
+        <p>Seasonal system tune-ups to keep things running.</p>
       </div>
-      
-    </div>
-  </section>
-  
-
-  <section id="hours" class="section">
-    <div class="wrap two-col">
       <div>
-        <h2>Hours</h2>
-        <p class="note">Call <a href="tel:3304346001">(330) 434-6001</a> for today's hours.</p>
-      </div>
-      <div id="visit">
-        <h2>Visit</h2>
-        <address>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=Serving%20the%20Stow%20area%2C%20Stow%2C%20OH%2044224" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Serving the Stow area, Stow, OH 44224</a>
-          <a href="tel:3304346001"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(330) 434-6001</a>
-          
-        </address>
-        <div class="map">
-          <iframe title="Map to Lee&#39;s Heating &amp; Air Conditioning" src="https://www.google.com/maps?q=Stow%2C%20OH%2044224&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <h3>Replacement</h3>
+        <p>System replacements, including custom duct work.</p>
       </div>
     </div>
-  </section>
+  </div>
+  <p class="note">Every home is different. Call and describe what's going on, and you can get a quote.</p>
+</section>
 
-  <section class="section book-band">
-    <div class="wrap band-in">
-      <h2>Heat or AC not working? Call Lee&#39;s.</h2>
-      <a class="btn" href="tel:3304346001"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call for a quote</a>
-    </div>
-  </section>
+<section class="about" id="about" aria-labelledby="about-h">
+  <h2 id="about-h">Started in May 1977.</h2>
+  <div class="body">
+    <p>Lee's Heating &amp; Air Conditioning has been serving homes in the Stow area since 1977, according to its Better Business Bureau profile, which lists Ed Lee as owner.</p>
+    <p>If something is off with your heat or your air, the quickest way to talk it through is a phone call.</p>
+  </div>
+  <div class="area">
+    <h3>Stow and the Akron area</h3>
+    <p>Lee's works on homes in Stow and nearby. Not sure whether they cover your street? Ask when you call.</p>
+    <p><a href="tel:+13304346001">(330) 434-6001</a></p>
+  </div>
+</section>
 </main>
 
-<footer class="foot">
-  <div class="wrap foot-in">
-    <p>© <span id="yr"></span> Lee&#39;s Heating &amp; Air Conditioning</p>
-    <p class="socials"><a href="https://www.facebook.com/leesheating/" rel="noopener" target="_blank">Facebook</a></p>
+<section class="cta" id="call" aria-labelledby="cta-h">
+  <svg class="sweep" viewBox="0 -580 1155 1000" preserveAspectRatio="xMinYMin slice" aria-hidden="true" focusable="false">
+    <use href="#bands" transform="rotate(180 577.5 -80)"/>
+  </svg>
+  <div class="cta-copy">
+    <h2 id="cta-h">Heat or air not working?</h2>
+    <p>Call Lee's, tell them what's happening, and ask for a quote.</p>
+    <a class="btn btn-alt" href="tel:+13304346001">Call (330) 434-6001</a>
+    <p class="fb">Also on <a href="https://www.facebook.com/leesheating/" target="_blank" rel="noopener">Facebook</a>.</p>
   </div>
+</section>
+
+<footer>
+  <p>Preview by Soliman A., University of Akron. Not affiliated with Lee's Heating &amp; Air Conditioning. The name, phone number, 1977 start date and services come from public listings, including the Better Business Bureau.</p>
 </footer>
 
-<nav class="mobile-bar" aria-label="Quick actions">
-  <a href="tel:3304346001"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call</span></a>
-  <a href="https://www.google.com/maps/dir/?api=1&destination=Serving%20the%20Stow%20area%2C%20Stow%2C%20OH%2044224" target="_blank" rel="noopener" class="primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Directions</span></a>
-  <a href="#hours"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg><span>Hours</span></a>
-</nav>
+<div class="callbar"><a href="tel:+13304346001">Call (330) 434-6001</a></div>
 
-<script>
-(function(){
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  // "Open now" uses the shop's own time zone, not the visitor's clock.
-  var parts={};
-  new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'long',hour:'2-digit',minute:'2-digit',hourCycle:'h23'})
-    .formatToParts(new Date()).forEach(function(p){parts[p.type]=p.value});
-  var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  var day=days.indexOf(parts.weekday),mins=(+parts.hour)*60+(+parts.minute);
-  var toMin=function(s){var p=s.split(':');return +p[0]*60+ +p[1]};
-  var rows=document.querySelectorAll('.hours tr'),el=document.getElementById('open-status'),msg='';
-  rows.forEach(function(r){
-    if(+r.dataset.day!==day)return;
-    r.classList.add('today');
-    // data-slots: "09:00-13:30-1:30pm,16:00-19:30-7:30pm" (split shifts allowed)
-    msg='<span class="dot"></span>Closed now';
-    (r.dataset.slots||'').split(',').forEach(function(s){
-      var p=s.split('-');
-      if(p[0]&&mins>=toMin(p[0])&&mins<toMin(p[1]))msg='<span class="dot open"></span>Open now · until '+p[2];
-    });
-  });
-  el.innerHTML=msg;
-})();
-</script>
 </body>
 </html>

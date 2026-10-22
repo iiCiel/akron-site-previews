@@ -3,257 +3,235 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>A to Zoff Heating &amp; Air Conditioning | Heating &amp; cooling in Akron, OH</title>
-<meta name="description" content="A to Zoff Heating &amp; Air Conditioning at 1105 Canton Rd, Akron, OH 44312. Carrier Factory Authorized Dealer with NATE-certified technicians. Furnace, air conditioner and heat pump repair, maintenance and installation. Call (330) 733-7902.">
-<meta property="og:title" content="A to Zoff Heating &amp; Air Conditioning">
-<meta property="og:description" content="Heating and air conditioning repair, maintenance and installation from Canton Rd in Akron. Carrier dealer. Call for a quote.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#f4f6f8">
 <meta name="robots" content="noindex, nofollow">
+<title>A to Zoff Heating &amp; Air Conditioning | Akron, Ohio (free preview)</title>
+<meta name="description" content="Furnace, air conditioner and heat pump repair, maintenance and installation from Canton Rd in Akron. Carrier Factory Authorized Dealer. Call (330) 733-7902.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&amp;family=Source+Sans+3:wght@400;600&display=swap">
-<style>/* Shared stylesheet. Colors and fonts come from each client's site.json via :root vars. */
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.6 var(--font);-webkit-font-smoothing:antialiased;padding-bottom:72px}
-@media (min-width:760px){body{padding-bottom:0}}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0 0 .6em;letter-spacing:-.01em}
-h2{font-size:clamp(1.8rem,5vw,2.6rem)}
-svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
-.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ice:#eef6fb;
+  --cold:#b9dcf1;
+  --heat:#ff6236;
+  --ink:#0d1e38;
+  --cold-text:#17709f;
+  --heat-text:#c2300e;
+  --muted:#3b4b63;
+  --display:'Bricolage Grotesque','Arial Narrow','Helvetica Neue',Arial,sans-serif;
+  --body:'Instrument Sans','Helvetica Neue',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ice);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.55;overflow-x:hidden}
+img,svg{max-width:100%}
+a{color:inherit;text-underline-offset:.2em}
+::selection{background:var(--heat);color:var(--ink)}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 6px #fff;border-radius:2px}
+.dark :focus-visible{outline-color:#fff;box-shadow:0 0 0 6px var(--ink)}
 
-.demo-bar{background:var(--accent);color:var(--accent-text);text-align:center;font-size:.8rem;font-weight:600;padding:6px 16px}
+.demo-bar{background:var(--ink);color:#fff;font-size:.875rem;line-height:1.4;text-align:center;padding:.6rem 1rem}
+.demo-bar a{color:#fff;font-weight:600}
 
-.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.top-in{display:flex;align-items:center;gap:16px;height:60px}
-.logo{min-width:0;font-family:var(--display);text-decoration:none;font-size:1.1rem;margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{display:none;gap:24px}
-.top nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
-.top nav a:hover{color:var(--text)}
-@media (min-width:760px){.top nav{display:flex}}
+/* top bar */
+.top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.75rem clamp(1rem,4vw,3rem);background:var(--ice)}
+.mark{font-family:var(--display);font-variation-settings:"wdth" 80;font-weight:800;font-size:1.25rem;letter-spacing:-.01em;line-height:1.1;text-decoration:none}
+.mark span{display:block;font-weight:500;font-size:.8125rem;letter-spacing:0;font-variation-settings:"wdth" 100;color:var(--muted)}
+.top-call{display:none;font-weight:600;text-decoration:none;min-height:44px;align-items:center;padding:0 .25rem;border-bottom:2px solid var(--heat)}
 
-.btn{display:inline-flex;align-items:center;gap:.5em;background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:.85em 1.4em;border-radius:999px;min-height:48px;transition:transform .15s,filter .15s}
-.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.btn-sm{padding:.55em 1.1em;min-height:40px;font-size:.9rem;white-space:nowrap;flex:none}
-.btn-ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--text) 30%,transparent)}
+/* hero: cold | hot */
+.split{display:grid;grid-template-columns:1fr 1fr;height:clamp(300px,54vh,560px);overflow:hidden}
+.pane{position:relative;overflow:hidden;display:flex;align-items:flex-end}
+.pane.cold{background:var(--cold)}
+.pane.hot{background:var(--heat);justify-content:flex-end}
+.pane .say{position:absolute;top:clamp(.9rem,2.5vw,2rem);font-family:var(--display);font-weight:700;font-size:clamp(1.15rem,2.4vw,1.75rem);line-height:1}
+.cold .say{left:clamp(1rem,3vw,3rem)}
+.hot .say{right:clamp(1rem,3vw,3rem)}
+.big{font-family:var(--display);font-variation-settings:"wdth" 75,"opsz" 96;font-weight:800;font-size:clamp(12rem,32vw,29rem);line-height:.74;margin:0 0 .1em;color:var(--ink);user-select:none}
+.cold .big{margin-left:clamp(.75rem,4vw,4rem)}
+.hot .big{margin-right:clamp(.75rem,4vw,4rem)}
+@media (prefers-reduced-motion:no-preference){
+  .cold .big{animation:fromleft 1s cubic-bezier(.16,1,.3,1) both}
+  .hot .big{animation:fromright 1s cubic-bezier(.16,1,.3,1) both}
+  @keyframes fromleft{from{transform:translateX(-45%)}to{transform:none}}
+  @keyframes fromright{from{transform:translateX(45%)}to{transform:none}}
+}
 
-.hero{position:relative;padding:72px 0 64px;overflow:hidden;
-  background:
-    linear-gradient(180deg,transparent 40%,var(--bg)),
-    var(--hero-img,none) center/cover,
-    repeating-linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,transparent) 0 18px,transparent 18px 36px),
-    var(--bg)}
-.hero::after{content:"";position:absolute;inset:0;background:color-mix(in srgb,var(--bg) 55%,transparent);z-index:0}
-.hero-in{position:relative;z-index:1}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:var(--accent);margin:0 0 14px}
-.hero h1{font-size:clamp(2.6rem,11vw,5.6rem)}
-.lede{font-size:1.15rem;color:var(--muted);max-width:34ch;margin:0 0 28px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.status{margin:22px 0 0;font-weight:600;color:var(--muted);min-height:1.6em;display:flex;align-items:center;gap:8px}
-.dot{width:10px;height:10px;border-radius:50%;background:#c2524a;display:inline-block}
-.dot.open{background:#4caf6e;box-shadow:0 0 0 4px rgba(76,175,110,.2)}
-@media (min-width:760px){.hero{padding:120px 0 100px}}
+.intro{display:grid;gap:1.5rem 4rem;padding:clamp(1.75rem,4vw,3.5rem) clamp(1rem,4vw,3rem);max-width:90rem;margin:0 auto}
+h1{font-family:var(--display);font-variation-settings:"wdth" 82,"opsz" 96;font-weight:800;font-size:clamp(2.5rem,6.4vw,5.5rem);line-height:.95;letter-spacing:-.025em;margin:0;text-wrap:balance}
+.intro p{margin:0 0 1.25rem;max-width:34rem;font-size:1.1875rem;color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem 1.25rem;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 1.5rem;background:var(--heat);color:var(--ink);font-weight:600;font-size:1.125rem;text-decoration:none;border:2px solid var(--ink);border-radius:4px;box-shadow:4px 4px 0 var(--ink);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+.btn.alt{background:#fff}
+.plain{display:inline-flex;align-items:center;min-height:44px;font-weight:600}
+@media (min-width:60rem){.intro{grid-template-columns:1.25fr 1fr;align-items:end}}
 
-.section{padding:64px 0}
-.section.alt{background:var(--surface)}
-.svc-list{list-style:none;padding:0;margin:0;display:grid;gap:4px 48px}
-@media (min-width:760px){.svc-list{grid-template-columns:1fr 1fr}}
-.svc{padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.svc-top{display:flex;align-items:baseline;gap:10px}
-.svc h3{font-family:var(--font);font-weight:800;font-size:1.1rem;margin:0}
-.dots{flex:1;border-bottom:2px dotted color-mix(in srgb,var(--text) 25%,transparent);transform:translateY(-4px)}
-.svc strong{color:var(--accent);font-size:1.15rem}
-.svc p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
-.dur{white-space:nowrap}
-.note{color:var(--muted);font-size:.85rem;margin-top:20px}
-.menu-section{font-family:var(--display);font-size:1.3rem;color:var(--accent);margin:36px 0 4px;text-transform:uppercase;letter-spacing:.06em}
-.menu-section:first-of-type{margin-top:8px}
+@media (max-width:47.9rem){.split{height:340px}.big{font-size:17rem}}
+/* alphabet */
+.abc{background:#fff;padding:clamp(2.5rem,6vw,5rem) clamp(1rem,4vw,3rem) 0}
+.wrap{max-width:90rem;margin:0 auto}
+h2{font-family:var(--display);font-variation-settings:"wdth" 85,"opsz" 72;font-weight:800;font-size:clamp(1.9rem,4vw,3.25rem);line-height:1;letter-spacing:-.02em;margin:0 0 .75rem;text-wrap:balance}
+.lede{margin:0 0 2rem;max-width:40rem;color:var(--muted)}
+.strip{list-style:none;margin:0 0 clamp(2rem,5vw,4rem);padding:0;display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.strip li{display:flex}
+.strip a,.strip span{flex:1;display:flex;align-items:center;justify-content:center;min-height:48px;font-family:var(--display);font-variation-settings:"wdth" 80;font-weight:800;font-size:1.5rem;border-radius:3px;text-decoration:none}
+.strip span{color:#aab9c8;background:var(--ice)}
+.strip a{background:var(--ink);color:#fff}
+.strip a.c{background:var(--cold);color:var(--ink)}
+.strip a.h{background:var(--heat);color:var(--ink)}
+.strip a:hover{outline:3px solid var(--ink);outline-offset:2px}
+@media (min-width:48rem){.strip{grid-template-columns:repeat(13,1fr)}.strip a,.strip span{min-height:64px;font-size:1.875rem}}
 
-.two-col{display:grid;gap:48px}
-@media (min-width:860px){.two-col{grid-template-columns:1fr 1fr;align-items:start}}
-.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
-.chips li{border:1px solid color-mix(in srgb,var(--accent) 50%,transparent);color:var(--accent);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600}
-.one-col{max-width:720px}
-.reviews{display:grid;gap:16px;align-content:start}
-.rating{display:flex;align-items:center;gap:10px;text-decoration:none;background:var(--bg);border-radius:16px;padding:18px 22px;border-left:4px solid var(--accent)}
-.rating svg{width:28px;height:28px;color:var(--accent)}
-.rating strong{font-family:var(--display);font-size:1.8rem;line-height:1}
-.rating span{color:var(--muted);font-size:.9rem}
-.review{margin:0;background:var(--bg);border-radius:16px;padding:20px 22px;border-left:4px solid var(--accent)}
-.review blockquote{margin:0 0 8px;font-size:1.05rem}
-.review figcaption{color:var(--muted);font-size:.85rem}
+/* index entries */
+.entries{list-style:none;margin:0;padding:0}
+.entry{display:grid;grid-template-columns:minmax(5rem,.22fr) 1fr;gap:0 clamp(1rem,3vw,3rem);align-items:center;padding:1.25rem 0;border-top:3px solid var(--ink);scroll-margin-top:1rem}
+.entry:last-child{border-bottom:3px solid var(--ink)}
+.entry .l{font-family:var(--display);font-variation-settings:"wdth" 75,"opsz" 96;font-weight:800;font-size:clamp(6rem,19vw,15rem);line-height:.8;letter-spacing:-.03em;color:var(--ink)}
+.entry .l.c{color:var(--cold-text)}
+.entry .l.h{color:var(--heat-text)}
+.entry h3{font-family:var(--display);font-variation-settings:"wdth" 90;font-weight:700;font-size:clamp(1.6rem,3.8vw,3rem);line-height:1.05;margin:0 0 .4rem;letter-spacing:-.015em}
+.entry p{margin:0;max-width:34rem;color:var(--muted)}
+.entry .both{background:linear-gradient(90deg,var(--cold-text) 50%,var(--heat-text) 50%);-webkit-background-clip:text;background-clip:text;color:transparent}
+@media (min-width:60rem){.entry{padding:1.5rem 0}.entry p{font-size:1.25rem}}
 
-.grid-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;padding:8px 0}
-.grid-g img{aspect-ratio:1;object-fit:cover;border-radius:10px}
+/* Z */
+.zoff{background:var(--ink);color:#fff;margin-top:clamp(2.5rem,6vw,5rem);padding:clamp(2rem,5vw,4.5rem) clamp(1rem,4vw,3rem) clamp(2.5rem,5vw,4.5rem)}
+.zoff .wrap{display:grid;gap:1.5rem clamp(1rem,4vw,4rem);grid-template-columns:minmax(5.5rem,.32fr) 1fr;align-items:start;scroll-margin-top:1rem}
+.zoff .l{font-family:var(--display);font-variation-settings:"wdth" 75,"opsz" 96;font-weight:800;font-size:clamp(7rem,22vw,18rem);line-height:.78;letter-spacing:-.03em;color:var(--heat)}
+.zoff h2{margin-bottom:1rem}
+.zoff p{margin:0 0 1rem;max-width:36rem;color:#d3deea}
+.zoff address{font-style:normal;font-weight:600;font-size:1.25rem;color:#fff;margin:1.25rem 0 1.5rem;line-height:1.35}
+.zoff .btn{box-shadow:4px 4px 0 var(--cold)}
+.zoff .btn:hover{box-shadow:2px 2px 0 var(--cold)}
+.zoff .btn.alt{color:var(--ink)}
+.zoff .btn{border-color:#fff}
+.foot{background:var(--ink);color:#b4c3d4;font-size:.875rem;padding:0 clamp(1rem,4vw,3rem) 6rem;border-top:0}
+.foot .wrap{border-top:1px solid #34476a;padding-top:1.25rem}
+.foot p{margin:0;max-width:44rem}
+.foot a{color:#fff}
 
-.hours{width:100%;border-collapse:collapse}
-.hours th,.hours td{text-align:left;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.hours th{font-weight:600}
-.hours td{text-align:right;color:var(--muted)}
-.hours tr.today th,.hours tr.today td{color:var(--accent);font-weight:800}
-address{font-style:normal;display:grid;gap:10px;margin-bottom:20px}
-address a{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600}
-address a:hover{color:var(--accent)}
-.map{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--surface)}
-.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
-
-.book-band{background:var(--accent);color:var(--accent-text)}
-.band-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
-.band-in h2{margin:0}
-.book-band .btn{background:var(--accent-text);color:var(--accent)}
-
-.foot{padding:28px 0;color:var(--muted);font-size:.88rem}
-.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-.foot p{margin:0}
-.socials{display:flex;gap:16px}
-
-.mobile-bar{position:fixed;inset:auto 0 0 0;z-index:30;display:grid;grid-template-columns:1fr 1.3fr 1fr;background:var(--surface);border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent);padding-bottom:env(safe-area-inset-bottom)}
-.mobile-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;text-decoration:none;font-size:.78rem;font-weight:700}
-.mobile-bar a.primary{background:var(--accent);color:var(--accent-text)}
-.mobile-bar svg{width:22px;height:22px}
-@media (min-width:760px){.mobile-bar{display:none}}
-
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+/* sticky call bar, phones only */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--ink);padding:.5rem .75rem calc(.5rem + env(safe-area-inset-bottom));border-top:3px solid var(--heat)}
+.callbar a{display:flex;align-items:center;justify-content:center;min-height:52px;background:var(--heat);color:var(--ink);font-weight:700;font-size:1.1875rem;text-decoration:none;border-radius:4px}
+@media (min-width:48rem){
+  .callbar{display:none}
+  .top-call{display:inline-flex}
+  .foot{padding-bottom:2.5rem}
+}
 </style>
-<style>:root{--bg:#f4f6f8;--surface:#e0e6ec;--text:#111a24;--muted:#46535f;--accent:#b3321f;--accent-text:#ffffff;--font:'Source Sans 3', system-ui, sans-serif;--display:'Oswald', 'Source Sans 3', sans-serif}</style>
-
 </head>
 <body>
 <div class="demo-bar">Free preview made for A to Zoff Heating &amp; Air Conditioning by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
+
 <header class="top">
-  <div class="wrap top-in">
-    <a class="logo" href="#top">A to Zoff Heating &amp; Air Conditioning</a>
-    <nav aria-label="Main"><a href="#services">Services</a><a href="#hours">Hours</a><a href="#visit">Visit</a></nav>
-    <a class="btn btn-sm" href="tel:3307337902">Call for a quote</a>
-  </div>
+  <a class="mark" href="#top">A to Zoff<span>Heating &amp; Air Conditioning</span></a>
+  <a class="top-call" href="tel:+13307337902">(330) 733-7902</a>
 </header>
 
 <main id="top">
-  <section class="hero">
-    <div class="wrap hero-in">
-      <p class="eyebrow">Heating &amp; air conditioning · Akron</p>
-      <h1>No heat? No cool air?<br>Call A to Zoff.</h1>
-      <p class="lede">Heating and air conditioning repair, maintenance and installation from Canton Rd in Akron. Carrier dealer. Call for a quote.</p>
-      <div class="cta-row">
-        <a class="btn" href="tel:3307337902"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call for a quote</a>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=1105%20Canton%20Rd%2C%20Akron%2C%20OH%2044312" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Directions</a>
+  <div class="split" aria-hidden="true">
+    <div class="pane cold"><span class="say">Cooling</span><span class="big">A</span></div>
+    <div class="pane hot"><span class="say">Heating</span><span class="big">Z</span></div>
+  </div>
+
+  <section class="intro">
+    <h1>Heating and cooling, A to Z.</h1>
+    <div>
+      <p>Furnaces, air conditioners and heat pumps: repair, maintenance and installation from Canton Rd in Akron. A Carrier Factory Authorized Dealer.</p>
+      <div class="btns">
+        <a class="btn" href="tel:+13307337902">Call (330) 733-7902</a>
+        <a class="plain" href="#index">See the A to Z</a>
       </div>
-      <p class="status" id="open-status" aria-live="polite"></p>
     </div>
   </section>
 
-  <section id="services" class="section">
+  <section class="abc" id="index" aria-labelledby="idx-h">
     <div class="wrap">
-      <h2>Services</h2>
-      <ul class="svc-list">
-        <li class="svc">
-          <div class="svc-top"><h3>Furnace repair &amp; service</h3></div>
-          <p>Furnace repair and service for your home.</p>
+      <h2 id="idx-h">Everything they do, in alphabetical order.</h2>
+      <p class="lede">Find your letter. Or just call and describe what the house is doing.</p>
+
+      <ol class="strip" aria-label="Jump to a letter">
+        <li><a class="c" href="#a" aria-label="A, air conditioners">A</a></li>
+        <li><span aria-hidden="true">B</span></li>
+        <li><span aria-hidden="true">C</span></li>
+        <li><span aria-hidden="true">D</span></li>
+        <li><span aria-hidden="true">E</span></li>
+        <li><a class="h" href="#f" aria-label="F, furnaces">F</a></li>
+        <li><span aria-hidden="true">G</span></li>
+        <li><a href="#h" aria-label="H, heat pumps">H</a></li>
+        <li><a href="#i" aria-label="I, installation">I</a></li>
+        <li><span aria-hidden="true">J</span></li>
+        <li><span aria-hidden="true">K</span></li>
+        <li><span aria-hidden="true">L</span></li>
+        <li><a href="#m" aria-label="M, maintenance">M</a></li>
+        <li><span aria-hidden="true">N</span></li>
+        <li><span aria-hidden="true">O</span></li>
+        <li><span aria-hidden="true">P</span></li>
+        <li><span aria-hidden="true">Q</span></li>
+        <li><a href="#r" aria-label="R, repair">R</a></li>
+        <li><span aria-hidden="true">S</span></li>
+        <li><span aria-hidden="true">T</span></li>
+        <li><span aria-hidden="true">U</span></li>
+        <li><span aria-hidden="true">V</span></li>
+        <li><span aria-hidden="true">W</span></li>
+        <li><span aria-hidden="true">X</span></li>
+        <li><span aria-hidden="true">Y</span></li>
+        <li><a class="h" href="#z" aria-label="Z, Zoff">Z</a></li>
+      </ol>
+
+      <ol class="entries">
+        <li class="entry" id="a">
+          <span class="l c" aria-hidden="true">A</span>
+          <div><h3>Air conditioners</h3><p>Repair and service when the house won't cool, plus new air conditioner installation.</p></div>
         </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Air conditioner repair &amp; service</h3></div>
-          <p>AC repair and service when the house won&#39;t cool.</p>
+        <li class="entry" id="f">
+          <span class="l h" aria-hidden="true">F</span>
+          <div><h3>Furnaces</h3><p>Furnace repair and service for your home, and installation of a new furnace.</p></div>
         </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Heat pump repair</h3></div>
-          <p>Heat pump repair and service.</p>
+        <li class="entry" id="h">
+          <span class="l" aria-hidden="true"><span class="both">H</span></span>
+          <div><h3>Heat pumps</h3><p>Heat pump repair and service. One system that heats and cools.</p></div>
         </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Annual maintenance</h3></div>
-          <p>Inspection and tune-up for your heating and cooling system.</p>
+        <li class="entry" id="i">
+          <span class="l" aria-hidden="true">I</span>
+          <div><h3>Installation</h3><p>A new air conditioner, furnace, heat pump or whole-system installation.</p></div>
         </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Installation</h3></div>
-          <p>New air conditioner, furnace, heat pump or whole-system installation.</p>
+        <li class="entry" id="m">
+          <span class="l" aria-hidden="true">M</span>
+          <div><h3>Maintenance</h3><p>Inspection and tune-up for your heating and cooling system.</p></div>
         </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Carrier systems</h3></div>
-          <p>Carrier Factory Authorized Dealer with NATE-certified technicians.</p>
-        </li></ul>
-      <p class="note">Every home is different. Call (330) 733-7902 to describe the problem and get a quote.</p>
+        <li class="entry" id="r">
+          <span class="l" aria-hidden="true">R</span>
+          <div><h3>Repair</h3><p>Furnaces, air conditioners and heat pumps, looked at and fixed. Call to describe the problem and get a quote.</p></div>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <section class="section alt">
-    <div class="wrap one-col">
+  <section class="zoff dark" aria-labelledby="z-h">
+    <div class="wrap" id="z">
+      <span class="l" aria-hidden="true">Z</span>
       <div>
-        <h2>Akron&#39;s Carrier dealer on Canton Rd.</h2>
-        <p>A to Zoff Heating &amp; Air Conditioning works out of Canton Rd in Akron. It is a Carrier Factory Authorized Dealer with NATE-certified technicians, handling repair, maintenance and installation for furnaces, air conditioners and heat pumps. The business is a long-established name in the area and recently changed ownership. Call (330) 733-7902 to talk through the job.</p>
-        <ul class="chips"><li>Carrier Factory Authorized Dealer</li><li>NATE-certified technicians</li><li>Repair, maintenance &amp; installation</li><li>Under new ownership</li></ul>
-      </div>
-      
-    </div>
-  </section>
-  
-
-  <section id="hours" class="section">
-    <div class="wrap two-col">
-      <div>
-        <h2>Hours</h2>
-        <p class="note">Call <a href="tel:3307337902">(330) 733-7902</a> for today's hours.</p>
-      </div>
-      <div id="visit">
-        <h2>Visit</h2>
-        <address>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=1105%20Canton%20Rd%2C%20Akron%2C%20OH%2044312" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>1105 Canton Rd, Akron, OH 44312</a>
-          <a href="tel:3307337902"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(330) 733-7902</a>
-          
-        </address>
-        <div class="map">
-          <iframe title="Map to A to Zoff Heating &amp; Air Conditioning" src="https://www.google.com/maps?q=A%20to%20Zoff%20Heating%20%26%20Air%20Conditioning%2C%201105%20Canton%20Rd%2C%20Akron%2C%20OH%2044312&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h2 id="z-h">Zoff, as in A to Zoff.</h2>
+        <p>A to Zoff Heating &amp; Air Conditioning is a Carrier Factory Authorized Dealer with NATE-certified technicians. The business recently changed ownership.</p>
+        <p>Call to talk through the job, ask about hours and get a quote.</p>
+        <address>1105 Canton Rd<br>Akron, OH 44312</address>
+        <div class="btns">
+          <a class="btn" href="tel:+13307337902">Call (330) 733-7902</a>
+          <a class="btn alt" href="https://www.google.com/maps/search/?api=1&amp;query=A%20to%20Zoff%20Heating%20%26%20Air%20Conditioning%2C%201105%20Canton%20Rd%2C%20Akron%2C%20OH%2044312" target="_blank" rel="noopener">Get directions</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section book-band">
-    <div class="wrap band-in">
-      <h2>Furnace or AC acting up? Call A to Zoff for a quote.</h2>
-      <a class="btn" href="tel:3307337902"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call for a quote</a>
     </div>
   </section>
 </main>
 
 <footer class="foot">
-  <div class="wrap foot-in">
-    <p>© <span id="yr"></span> A to Zoff Heating &amp; Air Conditioning</p>
-    <p class="socials"><a href="https://www.facebook.com/p/A-to-Zoff-Heating-and-Air-Conditioning-61566664530326/" rel="noopener" target="_blank">Facebook</a></p>
+  <div class="wrap">
+    <p>Preview by Soliman A., University of Akron. Not affiliated with A to Zoff Heating &amp; Air Conditioning. Carrier is a trademark of its owner. Details come from the business's public listings; confirm with the shop.</p>
   </div>
 </footer>
 
-<nav class="mobile-bar" aria-label="Quick actions">
-  <a href="tel:3307337902"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call</span></a>
-  <a href="https://www.google.com/maps/dir/?api=1&destination=1105%20Canton%20Rd%2C%20Akron%2C%20OH%2044312" target="_blank" rel="noopener" class="primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Directions</span></a>
-  <a href="#hours"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg><span>Hours</span></a>
-</nav>
-
-<script>
-(function(){
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  // "Open now" uses the shop's own time zone, not the visitor's clock.
-  var parts={};
-  new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'long',hour:'2-digit',minute:'2-digit',hourCycle:'h23'})
-    .formatToParts(new Date()).forEach(function(p){parts[p.type]=p.value});
-  var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  var day=days.indexOf(parts.weekday),mins=(+parts.hour)*60+(+parts.minute);
-  var toMin=function(s){var p=s.split(':');return +p[0]*60+ +p[1]};
-  var rows=document.querySelectorAll('.hours tr'),el=document.getElementById('open-status'),msg='';
-  rows.forEach(function(r){
-    if(+r.dataset.day!==day)return;
-    r.classList.add('today');
-    // data-slots: "09:00-13:30-1:30pm,16:00-19:30-7:30pm" (split shifts allowed)
-    msg='<span class="dot"></span>Closed now';
-    (r.dataset.slots||'').split(',').forEach(function(s){
-      var p=s.split('-');
-      if(p[0]&&mins>=toMin(p[0])&&mins<toMin(p[1]))msg='<span class="dot open"></span>Open now · until '+p[2];
-    });
-  });
-  el.innerHTML=msg;
-})();
-</script>
+<div class="callbar"><a href="tel:+13307337902">Call (330) 733-7902</a></div>
 </body>
 </html>

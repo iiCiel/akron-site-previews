@@ -3,277 +3,274 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jim&#39;s Automotive | Auto repair in Barberton, OH</title>
-<meta name="description" content="Jim&#39;s Automotive at 742 Wooster Rd W, Barberton, OH 44203. Auto maintenance, complete auto repair and tire repair, specializing in electrical problems. BBB accredited with an A+ rating. Open Monday to Friday, 8am to 5pm. Call (330) 753-5756 for a quote.">
-<meta property="og:title" content="Jim&#39;s Automotive">
-<meta property="og:description" content="Auto repair and maintenance on Wooster Rd W in Barberton, specializing in electrical problems. Call for a quote.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#f3f3f8">
 <meta name="robots" content="noindex, nofollow">
+<title>Jim's Automotive | Auto repair in Barberton, Ohio | Electrical problems</title>
+<meta name="description" content="Jim's Automotive at 742 Wooster Rd W, Barberton. Specializing in electrical problems, plus complete auto repair, maintenance and tire repair. Open Monday to Friday, 8am to 5pm. Call (330) 753-5756.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&amp;family=IBM+Plex+Sans:wght@400;600&display=swap">
-<style>/* Shared stylesheet. Colors and fonts come from each client's site.json via :root vars. */
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.6 var(--font);-webkit-font-smoothing:antialiased;padding-bottom:72px}
-@media (min-width:760px){body{padding-bottom:0}}
-img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0 0 .6em;letter-spacing:-.01em}
-h2{font-size:clamp(1.8rem,5vw,2.6rem)}
-svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
-.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#d9dcdc;        /* galvanized sheet */
+  --panel:#eceeed;        /* manual page */
+  --ink:#1b2328;          /* steel-blue black */
+  --muted:#434f58;
+  --steel:#8f9898;
+  --red:#b3241a;
+  --yellow:#e6b422;
+  --green:#1c8048;
+  --blue:#1b5fb0;
+  --display:'Barlow Condensed','Arial Narrow',sans-serif;
+  --body:'Public Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font:400 1.0625rem/1.6 var(--body);color:var(--ink);
+  background-color:var(--paper);
+  background-image:
+    linear-gradient(rgba(27,35,40,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(27,35,40,.055) 1px,transparent 1px);
+  background-size:28px 28px;
+  overflow-x:hidden;
+}
+::selection{background:var(--yellow);color:var(--ink)}
+a{color:inherit;text-underline-offset:.2em}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:.98;margin:0;letter-spacing:-.005em;text-wrap:balance}
+p{margin:0}
 
-.demo-bar{background:var(--accent);color:var(--accent-text);text-align:center;font-size:.8rem;font-weight:600;padding:6px 16px}
+.demo-bar{background:var(--ink);color:#fff;text-align:center;font-size:.875rem;padding:.6rem 1rem;line-height:1.4}
+.demo-bar a{color:#fff;font-weight:700}
 
-.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.top-in{display:flex;align-items:center;gap:16px;height:60px}
-.logo{min-width:0;font-family:var(--display);text-decoration:none;font-size:1.1rem;margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{display:none;gap:24px}
-.top nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
-.top nav a:hover{color:var(--text)}
-@media (min-width:760px){.top nav{display:flex}}
+.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
 
-.btn{display:inline-flex;align-items:center;gap:.5em;background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:.85em 1.4em;border-radius:999px;min-height:48px;transition:transform .15s,filter .15s}
-.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.btn-sm{padding:.55em 1.1em;min-height:40px;font-size:.9rem;white-space:nowrap;flex:none}
-.btn-ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--text) 30%,transparent)}
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.1rem 0}
+.mark{font-family:var(--display);font-weight:700;font-size:1.65rem;line-height:1;text-decoration:none;display:flex;align-items:center;gap:.7rem}
+.mark i{display:block;width:34px;height:10px;border-radius:5px;background:linear-gradient(90deg,var(--red) 0 25%,var(--yellow) 0 50%,var(--green) 0 75%,var(--blue) 0);box-shadow:0 0 0 1.5px rgba(27,35,40,.6)}
+.call{
+  display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.5rem 1.35rem;
+  background:var(--red);color:#fff;font:700 1.15rem/1 var(--body);text-decoration:none;border-radius:4px;
+  box-shadow:0 3px 0 #6e1710;transition:transform .12s ease-out,box-shadow .12s ease-out;
+}
+.call:hover{transform:translateY(2px);box-shadow:0 1px 0 #6e1710}
+.top .call{font-size:1rem}
 
-.hero{position:relative;padding:72px 0 64px;overflow:hidden;
-  background:
-    linear-gradient(180deg,transparent 40%,var(--bg)),
-    var(--hero-img,none) center/cover,
-    repeating-linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,transparent) 0 18px,transparent 18px 36px),
-    var(--bg)}
-.hero::after{content:"";position:absolute;inset:0;background:color-mix(in srgb,var(--bg) 55%,transparent);z-index:0}
-.hero-in{position:relative;z-index:1}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:var(--accent);margin:0 0 14px}
-.hero h1{font-size:clamp(2.6rem,11vw,5.6rem)}
-.lede{font-size:1.15rem;color:var(--muted);max-width:34ch;margin:0 0 28px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.status{margin:22px 0 0;font-weight:600;color:var(--muted);min-height:1.6em;display:flex;align-items:center;gap:8px}
-.dot{width:10px;height:10px;border-radius:50%;background:#c2524a;display:inline-block}
-.dot.open{background:#4caf6e;box-shadow:0 0 0 4px rgba(76,175,110,.2)}
-@media (min-width:760px){.hero{padding:120px 0 100px}}
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(1.5rem,4vw,4rem);align-items:center;padding:clamp(1.5rem,4vw,3.5rem) 0 clamp(2.5rem,6vw,5rem)}
+.hero h1{font-size:clamp(3.1rem,8.2vw,6.4rem)}
+.hero .lead{font-size:1.2rem;max-width:34ch;margin-top:1.4rem;color:var(--muted)}
+.hero .lead strong{color:var(--ink)}
+.hero .actions{margin-top:1.8rem;display:flex;flex-wrap:wrap;gap:1rem 1.4rem;align-items:center}
+.hero .call{font-size:1.3rem;padding-inline:1.7rem;min-height:56px}
+.hero .hours{font-size:.95rem;color:var(--muted)}
+.schematic{width:100%;height:auto;display:block}
+.schematic text{font-family:var(--display);font-weight:700}
+.w{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.w.edge{stroke:var(--ink);stroke-width:12}
+.w.core{stroke-width:8}
+.w.draw{stroke-dasharray:1;animation:trace 1.5s cubic-bezier(.25,1,.5,1) both}
+.d2{animation-delay:.9s}.d3{animation-delay:1.15s}.d4{animation-delay:1.4s}.d5{animation-delay:1.65s}
+.stripe{animation:show 0s 3s both}
+@keyframes show{from{opacity:0}to{opacity:1}}
+@keyframes trace{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
 
-.section{padding:64px 0}
-.section.alt{background:var(--surface)}
-.svc-list{list-style:none;padding:0;margin:0;display:grid;gap:4px 48px}
-@media (min-width:760px){.svc-list{grid-template-columns:1fr 1fr}}
-.svc{padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.svc-top{display:flex;align-items:baseline;gap:10px}
-.svc h3{font-family:var(--font);font-weight:800;font-size:1.1rem;margin:0}
-.dots{flex:1;border-bottom:2px dotted color-mix(in srgb,var(--text) 25%,transparent);transform:translateY(-4px)}
-.svc strong{color:var(--accent);font-size:1.15rem}
-.svc p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
-.dur{white-space:nowrap}
-.note{color:var(--muted);font-size:.85rem;margin-top:20px}
-.menu-section{font-family:var(--display);font-size:1.3rem;color:var(--accent);margin:36px 0 4px;text-transform:uppercase;letter-spacing:.06em}
-.menu-section:first-of-type{margin-top:8px}
+/* circuits */
+.circuits{padding:clamp(2rem,5vw,4rem) 0 clamp(2.5rem,6vw,5rem);background:var(--panel);border-block:2px solid var(--ink)}
+.circuits h2{font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:.4rem}
+.circuits .intro{color:var(--muted);max-width:52ch;margin-bottom:clamp(1.5rem,4vw,3rem)}
+.runs{list-style:none;margin:0;padding:0;display:grid;gap:clamp(1.6rem,3.5vw,2.8rem)}
+.run{display:grid;grid-template-columns:var(--len) 52px minmax(0,1fr);align-items:start;column-gap:1rem}
+.wire{height:10px;margin-top:calc(.5em + 4px);background:var(--c);border-radius:5px 0 0 5px;box-shadow:0 0 0 1.5px rgba(27,35,40,.65);position:relative;font-size:1.6rem}
+.run--main .wire{height:14px;border-radius:7px 0 0 7px;font-size:2.8rem}
+.wire::after{content:"";position:absolute;right:-30px;top:50%;width:34px;height:20px;margin-top:-10px;background:linear-gradient(#a9b0b0,#7f8888);border:1.5px solid var(--ink);border-radius:2px 3px 3px 2px}
+.run--main .wire::after{height:26px;margin-top:-13px}
+.lug{width:44px;height:44px;border-radius:50%;border:3px solid var(--ink);background:radial-gradient(circle,var(--panel) 0 8px,#a9b0b0 9px);justify-self:end;margin-top:calc(.5em - 6px);font-size:1.6rem;margin-right:-6px;position:relative;z-index:1}
+.run--main .lug{margin-top:calc(.5em - 4px);font-size:2.8rem}
+.run h3{font-size:1.9rem}
+.run--main h3{font-size:clamp(2.4rem,5vw,3.4rem)}
+.run>div{max-width:min(860px,100%)}
+.run p{margin-top:.5rem;max-width:56ch}
+.run--main p{font-size:1.15rem}
+.tell{margin:1.2rem 0 0;padding:0;list-style:none;display:grid;gap:.5rem;max-width:56ch}
+.tell li{padding-left:1.6rem;position:relative}
+.tell li::before{content:"";position:absolute;left:0;top:.62em;width:.9rem;height:3px;background:var(--red)}
+.run--red{--c:var(--red)}.run--yellow{--c:var(--yellow)}.run--green{--c:var(--green)}.run--blue{--c:var(--blue)}
+.run{--len:clamp(60px,calc((100vw - 1180px)/2 + 150px),300px)}
+.quote{margin-top:clamp(1.6rem,4vw,2.6rem);font-weight:500}
 
-.two-col{display:grid;gap:48px}
-@media (min-width:860px){.two-col{grid-template-columns:1fr 1fr;align-items:start}}
-.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
-.chips li{border:1px solid color-mix(in srgb,var(--accent) 50%,transparent);color:var(--accent);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600}
-.one-col{max-width:720px}
-.reviews{display:grid;gap:16px;align-content:start}
-.rating{display:flex;align-items:center;gap:10px;text-decoration:none;background:var(--bg);border-radius:16px;padding:18px 22px;border-left:4px solid var(--accent)}
-.rating svg{width:28px;height:28px;color:var(--accent)}
-.rating strong{font-family:var(--display);font-size:1.8rem;line-height:1}
-.rating span{color:var(--muted);font-size:.9rem}
-.review{margin:0;background:var(--bg);border-radius:16px;padding:20px 22px;border-left:4px solid var(--accent)}
-.review blockquote{margin:0 0 8px;font-size:1.05rem}
-.review figcaption{color:var(--muted);font-size:.85rem}
+@media (min-width:900px){.run--main>div{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);column-gap:3rem;align-items:start}.run--main h3{grid-column:1/-1}.run--main .tell{margin-top:.5rem;padding:1rem 1.2rem;background:var(--paper);border-left:4px solid var(--red)}}
+/* title block + closing */
+.sheet{padding:clamp(2.5rem,6vw,5rem) 0 clamp(2.5rem,6vw,4.5rem)}
+.sheet h2{font-size:clamp(2.2rem,5vw,3.6rem);max-width:16ch}
+.titleblock{margin:clamp(1.6rem,4vw,2.6rem) 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:2px;border:3px solid var(--ink);background:var(--ink)}
+.cell{padding:1rem 1.2rem 1.15rem;background:var(--panel);min-width:0}
+.cell small{display:block;font-size:.82rem;color:var(--muted);margin-bottom:.15rem}
+.cell b{font:700 1.5rem/1.15 var(--display);display:block}
+.cell a{font-weight:700}
+.cell span{display:block}
+.cell.wide{grid-column:span 2}
+.cell.full{grid-column:1/-1}
+.end{display:flex;align-items:center;margin-top:clamp(2rem,5vw,3.4rem)}
+.ground{flex:1;height:14px;border-radius:7px 0 0 7px;background:var(--ink);position:relative;box-shadow:0 0 0 1.5px rgba(27,35,40,.65);margin-right:-4px;overflow:hidden}
+.ground::before{content:"";position:absolute;inset:4px 0;background:repeating-linear-gradient(90deg,#f2f2f0 0 22px,transparent 22px 40px)}
+.end .call{font-size:clamp(1.25rem,3vw,1.8rem);min-height:64px;padding-inline:clamp(1.2rem,3vw,2.2rem);position:relative;z-index:1}
 
-.grid-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;padding:8px 0}
-.grid-g img{aspect-ratio:1;object-fit:cover;border-radius:10px}
+footer{border-top:2px solid var(--ink);padding:1.4rem 0 2rem;font-size:.9rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:.4rem 2rem;justify-content:space-between}
 
-.hours{width:100%;border-collapse:collapse}
-.hours th,.hours td{text-align:left;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.hours th{font-weight:600}
-.hours td{text-align:right;color:var(--muted)}
-.hours tr.today th,.hours tr.today td{color:var(--accent);font-weight:800}
-address{font-style:normal;display:grid;gap:10px;margin-bottom:20px}
-address a{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600}
-address a:hover{color:var(--accent)}
-.map{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--surface)}
-.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
+.sticky{display:none}
 
-.book-band{background:var(--accent);color:var(--accent-text)}
-.band-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
-.band-in h2{margin:0}
-.book-band .btn{background:var(--accent-text);color:var(--accent)}
-
-.foot{padding:28px 0;color:var(--muted);font-size:.88rem}
-.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-.foot p{margin:0}
-.socials{display:flex;gap:16px}
-
-.mobile-bar{position:fixed;inset:auto 0 0 0;z-index:30;display:grid;grid-template-columns:1fr 1.3fr 1fr;background:var(--surface);border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent);padding-bottom:env(safe-area-inset-bottom)}
-.mobile-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;text-decoration:none;font-size:.78rem;font-weight:700}
-.mobile-bar a.primary{background:var(--accent);color:var(--accent-text)}
-.mobile-bar svg{width:22px;height:22px}
-@media (min-width:760px){.mobile-bar{display:none}}
-
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr}
+  .schematic{max-width:520px}
+  .titleblock{grid-template-columns:1fr 1fr}
+  .cell.full{grid-column:1/-1}
+}
+@media (max-width:640px){
+  body{padding-bottom:76px;font-size:1rem}
+  .top .call{display:none}
+  .run{grid-template-columns:var(--len) 46px minmax(0,1fr);column-gap:.6rem}
+  .run{--len:32px}
+  .run h3{font-size:1.6rem}
+  .run--main h3{font-size:2.2rem}
+  .lug{width:40px;height:40px}
+  .titleblock{grid-template-columns:1fr}
+  .cell.wide,.cell.full{grid-column:auto}
+  .hero .actions .call{width:100%}
+  .sticky{
+    display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;align-items:center;justify-content:center;gap:.6rem;
+    min-height:64px;padding:.6rem 1rem calc(.6rem + env(safe-area-inset-bottom));
+    background:var(--red);color:#fff;font:700 1.25rem/1 var(--body);text-decoration:none;border-top:3px solid var(--ink);
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  .w.draw,.stripe{animation:none}
+  html{scroll-behavior:auto}
+  .call{transition:none}
+}
 </style>
-<style>:root{--bg:#f3f3f8;--surface:#e2e1f0;--text:#16152b;--muted:#4f4d6a;--accent:#4a2fbd;--accent-text:#ffffff;--font:'IBM Plex Sans', system-ui, sans-serif;--display:'Rajdhani', 'IBM Plex Sans', sans-serif}</style>
-
 </head>
 <body>
-<div class="demo-bar">Free preview made for Jim&#39;s Automotive by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
-<header class="top">
-  <div class="wrap top-in">
-    <a class="logo" href="#top">Jim&#39;s Automotive</a>
-    <nav aria-label="Main"><a href="#services">Services</a><a href="#hours">Hours</a><a href="#visit">Visit</a></nav>
-    <a class="btn btn-sm" href="tel:3307535756">Call for a quote</a>
-  </div>
+<div class="demo-bar">Free preview made for Jim's Automotive by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
+
+<header class="wrap top">
+  <a class="mark" href="#top"><i aria-hidden="true"></i>Jim's Automotive</a>
+  <a class="call" href="tel:+13307535756">Call (330) 753-5756</a>
 </header>
 
 <main id="top">
-  <section class="hero">
-    <div class="wrap hero-in">
-      <p class="eyebrow">Auto repair · Wooster Rd W, Barberton</p>
-      <h1>Electrical gremlins?<br>Jim&#39;s tracks them down.</h1>
-      <p class="lede">Auto repair and maintenance on Wooster Rd W in Barberton, specializing in electrical problems. Call for a quote.</p>
-      <div class="cta-row">
-        <a class="btn" href="tel:3307535756"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call for a quote</a>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=742%20Wooster%20Rd%20W%2C%20Barberton%2C%20OH%2044203" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Directions</a>
-      </div>
-      <p class="status" id="open-status" aria-live="polite"></p>
+<section class="wrap hero" aria-labelledby="h1">
+  <div>
+    <h1 id="h1">Specializing in electrical problems.</h1>
+    <p class="lead">Jim's Automotive on Wooster Rd W in Barberton has been fixing cars since 2005. Complete auto repair, maintenance and tire repair too. Call and tell them what the car is doing.</p>
+    <div class="actions">
+      <a class="call" href="tel:+13307535756">Call (330) 753-5756</a>
+      <span class="hours">Open Monday to Friday, 8am to 5pm</span>
     </div>
-  </section>
+  </div>
 
-  <section id="services" class="section">
-    <div class="wrap">
-      <h2>Services</h2>
-      <ul class="svc-list">
-        <li class="svc">
-          <div class="svc-top"><h3>Electrical problems</h3></div>
-          <p>The shop&#39;s specialty. Call and describe what the car is doing.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Complete auto repair</h3></div>
-          <p>Repairs on your car, truck or Jeep. Call with your year, make and model for a quote.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Auto maintenance</h3></div>
-          <p>Regular maintenance to keep your vehicle running.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Tire repair</h3></div>
-          <p>Flat or leaking tire? Call before you come in.</p>
-        </li></ul>
-      <p class="note">Every car is different, so call (330) 753-5756 for a quote.</p>
-    </div>
-  </section>
+  <svg class="schematic" viewBox="0 0 600 440" role="img" aria-label="Wiring diagram: a battery feeds your car through a fuse, and four wires from the car run to a connector marked Jim's Automotive.">
+    <!-- ground -->
+    <path class="w edge" d="M110 200 V262" pathLength="1"/>
+    <path class="w core" stroke="#1b2328" d="M110 200 V262" pathLength="1"/>
+    <path d="M80 262 H140 M90 274 H130 M100 286 H120" stroke="#1b2328" stroke-width="5" stroke-linecap="round"/>
+    <!-- battery -->
+    <rect x="30" y="110" width="160" height="90" rx="8" fill="#2c363c" stroke="#1b2328" stroke-width="3"/>
+    <rect x="52" y="98" width="28" height="14" rx="2" fill="#a9b0b0" stroke="#1b2328" stroke-width="3"/>
+    <rect x="140" y="98" width="28" height="14" rx="2" fill="#a9b0b0" stroke="#1b2328" stroke-width="3"/>
+    <text x="110" y="168" text-anchor="middle" font-size="40" fill="#fff">12 V</text>
+    <text x="66" y="136" text-anchor="middle" font-size="24" fill="#f1b5ae">+</text>
+    <!-- red feed -->
+    <path class="w edge draw" d="M66 98 V48 H475 V112" pathLength="1"/>
+    <path class="w core draw" stroke="#b3241a" d="M66 98 V48 H475 V112" pathLength="1"/>
+    <!-- fuse -->
+    <rect x="228" y="33" width="66" height="30" rx="5" fill="#f4f3ea" stroke="#1b2328" stroke-width="3"/>
+    <path d="M238 48 H284" stroke="#1b2328" stroke-width="3"/>
+    <text x="261" y="20" text-anchor="middle" font-size="22" fill="#434f58">Fuse</text>
+    <!-- car box -->
+    <rect x="380" y="112" width="200" height="108" rx="10" fill="#eceeed" stroke="#1b2328" stroke-width="3"/>
+    <text x="480" y="180" text-anchor="middle" font-size="40" fill="#1b2328">Your car</text>
+    <!-- four wires down -->
+    <path class="w edge draw d2" d="M418 220 V330" pathLength="1"/><path class="w core draw d2" stroke="#e6b422" d="M418 220 V330" pathLength="1"/>
+    <path class="w edge draw d3" d="M458 220 V330" pathLength="1"/><path class="w core draw d3" stroke="#1c8048" d="M458 220 V330" pathLength="1"/>
+    <path class="w edge draw d4" d="M498 220 V330" pathLength="1"/><path class="w core draw d4" stroke="#1b5fb0" d="M498 220 V330" pathLength="1"/>
+    <path class="w edge draw d5" d="M538 220 V330" pathLength="1"/><path class="w core draw d5" stroke="#1b2328" d="M538 220 V330" pathLength="1"/>
+    <path class="w stripe" stroke="#f2f2f0" stroke-width="3" stroke-dasharray="7 9" d="M538 224 V326"/>
+    <!-- connector -->
+    <rect x="370" y="330" width="220" height="92" rx="12" fill="#2c363c" stroke="#1b2328" stroke-width="3"/>
+    <rect x="384" y="340" width="192" height="8" rx="3" fill="#5c6870"/>
+    <text x="480" y="382" text-anchor="middle" font-size="34" fill="#fff">Jim's Automotive</text>
+    <text x="480" y="410" text-anchor="middle" font-size="26" fill="#d9dcdc">(330) 753-5756</text>
+  </svg>
+</section>
 
-  <section class="section alt">
-    <div class="wrap one-col">
+<section class="circuits" aria-labelledby="h2s">
+  <div class="wrap">
+    <h2 id="h2s">What the shop works on</h2>
+    <p class="intro">Four jobs, from the shop's own description. Every car is different, so a call is the way to get a quote.</p>
+  </div>
+  <ul class="runs">
+    <li class="run run--main run--red">
+      <span class="wire" aria-hidden="true"></span><span class="lug" aria-hidden="true"></span>
       <div>
-        <h2>21 years fixing cars in Barberton.</h2>
-        <p>Jim&#39;s Automotive has been fixing cars in Barberton since 2005 and specializes in electrical problems, along with complete auto repair, maintenance and tire repair. It has been BBB accredited since 2016 with an A+ rating. Call (330) 753-5756 for a quote or stop by Monday through Friday, 8am to 5pm.</p>
-        <ul class="chips"><li>Specializing in electrical problems</li><li>BBB A+ · accredited since 2016</li><li>In Barberton since 2005</li><li>Open Mon–Fri 8am–5pm</li></ul>
+        <h3>Electrical problems</h3>
+        <p>This is what Jim's Automotive specializes in. Lights that flicker, something that works only sometimes, a car that acts differently on a cold start: an intermittent fault is easier to find when you can say when it happens.</p>
+        <ul class="tell">
+          <li>Say what the car does, and when: cold, wet, at idle, after a drive.</li>
+          <li>Have the year, make and model handy.</li>
+        </ul>
       </div>
-      
-    </div>
-  </section>
-  
-
-  <section id="hours" class="section">
-    <div class="wrap two-col">
+    </li>
+    <li class="run run--green">
+      <span class="wire" aria-hidden="true"></span><span class="lug" aria-hidden="true"></span>
       <div>
-        <h2>Hours</h2>
-        <table class="hours"><tbody>
-        <tr data-day="1" data-slots="08:00-17:00-5pm">
-          <th scope="row">Monday</th>
-          <td>8am – 5pm</td>
-        </tr>
-        <tr data-day="2" data-slots="08:00-17:00-5pm">
-          <th scope="row">Tuesday</th>
-          <td>8am – 5pm</td>
-        </tr>
-        <tr data-day="3" data-slots="08:00-17:00-5pm">
-          <th scope="row">Wednesday</th>
-          <td>8am – 5pm</td>
-        </tr>
-        <tr data-day="4" data-slots="08:00-17:00-5pm">
-          <th scope="row">Thursday</th>
-          <td>8am – 5pm</td>
-        </tr>
-        <tr data-day="5" data-slots="08:00-17:00-5pm">
-          <th scope="row">Friday</th>
-          <td>8am – 5pm</td>
-        </tr>
-        <tr data-day="6" data-slots="">
-          <th scope="row">Saturday</th>
-          <td>Closed</td>
-        </tr>
-        <tr data-day="0" data-slots="">
-          <th scope="row">Sunday</th>
-          <td>Closed</td>
-        </tr></tbody></table>
+        <h3>Complete auto repair</h3>
+        <p>Repairs for your car, truck or Jeep. Call with the year, make and model for a quote.</p>
       </div>
-      <div id="visit">
-        <h2>Visit</h2>
-        <address>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=742%20Wooster%20Rd%20W%2C%20Barberton%2C%20OH%2044203" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>742 Wooster Rd W, Barberton, OH 44203</a>
-          <a href="tel:3307535756"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(330) 753-5756</a>
-          
-        </address>
-        <div class="map">
-          <iframe title="Map to Jim&#39;s Automotive" src="https://www.google.com/maps?q=Jim's%20Automotive%2C%20742%20Wooster%20Rd%20W%2C%20Barberton%2C%20OH%2044203&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    </li>
+    <li class="run run--blue">
+      <span class="wire" aria-hidden="true"></span><span class="lug" aria-hidden="true"></span>
+      <div>
+        <h3>Auto maintenance</h3>
+        <p>Regular maintenance to keep your vehicle running.</p>
       </div>
-    </div>
-  </section>
+    </li>
+    <li class="run run--yellow">
+      <span class="wire" aria-hidden="true"></span><span class="lug" aria-hidden="true"></span>
+      <div>
+        <h3>Tire repair</h3>
+        <p>Flat or leaking tire? Call before you come in.</p>
+      </div>
+    </li>
+  </ul>
+</section>
 
-  <section class="section book-band">
-    <div class="wrap band-in">
-      <h2>Car acting strange? Call Jim&#39;s for a quote.</h2>
-      <a class="btn" href="tel:3307535756"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call for a quote</a>
-    </div>
-  </section>
+<section class="wrap sheet" aria-labelledby="h2v">
+  <h2 id="h2v">Find the shop. Call before you come.</h2>
+  <div class="titleblock">
+    <div class="cell wide"><small>Shop</small><b>Jim's Automotive</b><span>Auto repair and maintenance, specializing in electrical problems</span></div>
+    <div class="cell"><small>In Barberton since</small><b>2005</b></div>
+    <div class="cell"><small>Address</small><b>742 Wooster Rd W<br>Barberton, OH 44203</b><a href="https://www.google.com/maps/search/?api=1&amp;query=Jim%27s%20Automotive%2C%20742%20Wooster%20Rd%20W%2C%20Barberton%2C%20OH%2044203">Get directions</a></div>
+    <div class="cell"><small>Hours</small><b>Mon to Fri, 8am to 5pm</b><span>Saturday and Sunday closed</span></div>
+    <div class="cell"><small>Phone</small><b><a href="tel:+13307535756">(330) 753-5756</a></b></div>
+    <div class="cell full"><small>Accreditation</small><b>BBB accredited business, A+ rating</b><span>Accredited since 2016, according to the Better Business Bureau</span></div>
+  </div>
+  <div class="end">
+    <span class="ground" aria-hidden="true"></span>
+    <a class="call" href="tel:+13307535756">Call (330) 753-5756</a>
+  </div>
+</section>
 </main>
 
-<footer class="foot">
-  <div class="wrap foot-in">
-    <p>© <span id="yr"></span> Jim&#39;s Automotive · Since 2005</p>
-    <p class="socials"><a href="https://www.facebook.com/jimsautomotivebarberton/" rel="noopener" target="_blank">Facebook</a></p>
+<footer>
+  <div class="wrap">
+    <span>Preview by Soliman A., University of Akron. Not affiliated with Jim's Automotive.</span>
+    <span>Facts from the shop's public Facebook page and BBB profile.</span>
   </div>
 </footer>
 
-<nav class="mobile-bar" aria-label="Quick actions">
-  <a href="tel:3307535756"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call</span></a>
-  <a href="https://www.google.com/maps/dir/?api=1&destination=742%20Wooster%20Rd%20W%2C%20Barberton%2C%20OH%2044203" target="_blank" rel="noopener" class="primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Directions</span></a>
-  <a href="#hours"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg><span>Hours</span></a>
-</nav>
-
-<script>
-(function(){
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  // "Open now" uses the shop's own time zone, not the visitor's clock.
-  var parts={};
-  new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'long',hour:'2-digit',minute:'2-digit',hourCycle:'h23'})
-    .formatToParts(new Date()).forEach(function(p){parts[p.type]=p.value});
-  var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  var day=days.indexOf(parts.weekday),mins=(+parts.hour)*60+(+parts.minute);
-  var toMin=function(s){var p=s.split(':');return +p[0]*60+ +p[1]};
-  var rows=document.querySelectorAll('.hours tr'),el=document.getElementById('open-status'),msg='';
-  rows.forEach(function(r){
-    if(+r.dataset.day!==day)return;
-    r.classList.add('today');
-    // data-slots: "09:00-13:30-1:30pm,16:00-19:30-7:30pm" (split shifts allowed)
-    msg='<span class="dot"></span>Closed now';
-    (r.dataset.slots||'').split(',').forEach(function(s){
-      var p=s.split('-');
-      if(p[0]&&mins>=toMin(p[0])&&mins<toMin(p[1]))msg='<span class="dot open"></span>Open now · until '+p[2];
-    });
-  });
-  el.innerHTML=msg;
-})();
-</script>
+<a class="sticky" href="tel:+13307535756">Call (330) 753-5756</a>
 </body>
 </html>

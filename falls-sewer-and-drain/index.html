@@ -3,285 +3,245 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Falls Sewer &amp; Drain Cleaning | Plumber in Cuyahoga Falls, OH</title>
-<meta name="description" content="Falls Sewer &amp; Drain Cleaning at 229 Lehigh Ave, Cuyahoga Falls, OH 44221. Drain and sewer cleaning, clogged kitchen and bathroom drains, faucets, garbage disposals, sinks, toilets and water valves, on newer and older plumbing. Open Monday to Saturday. Call (330) 920-1266.">
-<meta property="og:title" content="Falls Sewer &amp; Drain Cleaning">
-<meta property="og:description" content="Drain and sewer cleaning plus plumbing repairs from Lehigh Ave in Cuyahoga Falls, including older plumbing. Call for a quote.">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#f2f5f9">
 <meta name="robots" content="noindex, nofollow">
+<title>Falls Sewer &amp; Drain Cleaning | Cuyahoga Falls, Ohio</title>
+<meta name="description" content="Drain and sewer cleaning plus everyday plumbing repairs in Cuyahoga Falls, in older houses and newer ones. Call (330) 920-1266. Free preview page.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&amp;family=Source+Sans+3:wght@400;600&display=swap">
-<style>/* Shared stylesheet. Colors and fonts come from each client's site.json via :root vars. */
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.6 var(--font);-webkit-font-smoothing:antialiased;padding-bottom:72px}
-@media (min-width:760px){body{padding-bottom:0}}
-img{max-width:100%;display:block}
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&family=Zilla+Slab:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mist:#DDE9EA; --ink:#14262B; --ink2:#3B525A;
+  --sod:#55632F; --loam:#3A2A1F; --clay:#7B4E33; --stone:#565D61; --deep:#0A2E33;
+  --water:#2BB5AB; --water-d:#0E6E69; --water-l:#8FE6DC;
+  --paper:#F6EBDD; --paper2:#E6D2BC;
+  --pw:26px; --gut:84px; --maxw:1080px;
+  --pipe-left:calc(max(0px,(100% - var(--maxw))/2) + 14px);
+  --pc:calc(var(--gut) - 14px - var(--pw)/2);
+  --slab:"Zilla Slab",Rockwell,"Roboto Slab",Georgia,serif;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scrollbar-color:var(--water-d) var(--deep)}
+body{margin:0;font-family:var(--sans);font-size:1.0625rem;line-height:1.6;color:var(--ink);background:var(--deep);-webkit-text-size-adjust:100%}
+::selection{background:var(--water);color:#031C1B}
 a{color:inherit}
-h1,h2,h3{font-family:var(--display);line-height:1.05;margin:0 0 .6em;letter-spacing:-.01em}
-h2{font-size:clamp(1.8rem,5vw,2.6rem)}
-svg{width:1.1em;height:1.1em;fill:currentColor;flex:none}
-.wrap{width:min(1100px,100% - 32px);margin-inline:auto}
+:focus-visible{outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 6px #0A2E33;border-radius:3px}
+.demo-bar{background:#231811;color:#F3EAD9;font-size:.875rem;line-height:1.4;padding:.7rem 1rem;text-align:center}
+.demo-bar a{color:#fff;text-underline-offset:3px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px 0 var(--gut);position:relative}
 
-.demo-bar{background:var(--accent);color:var(--accent-text);text-align:center;font-size:.8rem;font-weight:600;padding:6px 16px}
+/* ---------- above ground ---------- */
+.sky{background:var(--mist);position:relative;padding-top:2rem;overflow:hidden}
+.sky .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:1.5rem;align-items:end}
+.brand{font-family:var(--slab);font-weight:700;font-size:1.25rem;margin:0 0 3.2rem;color:var(--loam)}
+h1{font-family:var(--slab);font-weight:700;font-size:clamp(2.35rem,5.6vw,4.3rem);line-height:1.04;letter-spacing:-.01em;margin:0 0 1.25rem;max-width:13em;text-wrap:balance;color:var(--loam)}
+.lede{font-size:1.2rem;max-width:34em;margin:0 0 1.75rem;color:var(--ink)}
+.hero-text{padding-bottom:3.25rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:.7rem 1.6rem;background:var(--water);color:#031C1B;font-family:var(--slab);font-weight:700;font-size:1.3rem;text-decoration:none;border:solid var(--water-d);border-width:0 10px;border-radius:4px;transition:background .15s}
+.btn:hover{background:var(--water-l)}
+.hrs{margin:1rem 0 0;font-size:.95rem;color:var(--ink2)}
+.house{display:block;width:100%;max-width:400px;height:auto;margin-left:auto}
+.riser{position:absolute;left:var(--pipe-left);bottom:0;width:var(--pw);height:46px;background:linear-gradient(90deg,#0B5753,#2BB5AB 40%,#8FE6DC 52%,#1A8F89 72%,#0B5753);z-index:3}
+.riser::before{content:"";position:absolute;left:-7px;right:-7px;top:-10px;height:14px;background:#0E6E69;border-radius:4px}
+.riser::after{content:"";position:absolute;left:4px;right:4px;top:-18px;height:10px;background:#0B5753;border-radius:3px 3px 0 0}
 
-.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.top-in{display:flex;align-items:center;gap:16px;height:60px}
-.logo{min-width:0;font-family:var(--display);text-decoration:none;font-size:1.1rem;margin-right:auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.top nav{display:none;gap:24px}
-.top nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
-.top nav a:hover{color:var(--text)}
-@media (min-width:760px){.top nav{display:flex}}
+/* ---------- below ground ---------- */
+.strata{position:relative;border-top:14px solid var(--sod)}
+.pipe{position:absolute;left:var(--pipe-left);top:0;bottom:12px;width:var(--pw);z-index:3;background:linear-gradient(90deg,#0B5753,#2BB5AB 40%,#8FE6DC 52%,#1A8F89 72%,#0B5753);box-shadow:0 0 0 1px rgba(0,0,0,.25)}
+.pipe::after{content:"";position:absolute;left:calc(50% - 3px);top:0;bottom:0;width:6px;background:repeating-linear-gradient(180deg,rgba(255,255,255,.75) 0 10px,transparent 10px 34px);background-size:6px 34px;animation:flow 1.8s linear infinite;opacity:.8}
+@keyframes flow{to{background-position:0 34px}}
+.layer{position:relative;padding:4.75rem 0 4.25rem;background-color:var(--bg);color:var(--fg)}
+.layer+.layer{margin-top:0}
+.layer .edge{position:absolute;left:0;top:-39px;width:100%;height:40px;display:block;z-index:1}
+.layer .edge path{fill:var(--bg)}
+.layer .wrap{z-index:2}
+.loam{--bg:var(--loam);--fg:var(--paper);--fg2:#E4D3BF;
+  background-image:radial-gradient(circle at 20% 30%,rgba(255,255,255,.07) 0 2px,transparent 3px),radial-gradient(circle at 70% 70%,rgba(255,255,255,.05) 0 3px,transparent 4px);background-size:73px 61px,131px 97px}
+.clay{--bg:var(--clay);--fg:var(--paper);--fg2:#EEDCC8;
+  background-image:repeating-linear-gradient(98deg,rgba(0,0,0,.07) 0 2px,transparent 2px 44px),radial-gradient(ellipse at 40% 50%,rgba(255,255,255,.07) 0 5px,transparent 6px);background-size:auto,97px 71px}
+.stone{--bg:var(--stone);--fg:#F4F6F6;--fg2:#DCE2E4;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60'%3E%3Cpath d='M0 0H120M0 30H120M0 60H120M40 0V30M100 0V30M10 30V60M70 30V60' fill='none' stroke='%23fff' stroke-opacity='.09' stroke-width='2'/%3E%3C/svg%3E");background-size:120px 60px}
+.water{--bg:var(--deep);--fg:#EAF6F5;--fg2:#BFDAD8;padding-bottom:4rem}
 
-.btn{display:inline-flex;align-items:center;gap:.5em;background:var(--accent);color:var(--accent-text);font-weight:800;text-decoration:none;padding:.85em 1.4em;border-radius:999px;min-height:48px;transition:transform .15s,filter .15s}
-.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}
-.btn:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.btn-sm{padding:.55em 1.1em;min-height:40px;font-size:.9rem;white-space:nowrap;flex:none}
-.btn-ghost{background:transparent;color:var(--text);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--text) 30%,transparent)}
+h2{font-family:var(--slab);font-weight:700;font-size:clamp(1.85rem,4vw,2.9rem);line-height:1.1;margin:0 0 1.1rem;max-width:16em;text-wrap:balance;position:relative}
+/* a branch off the lateral */
+h2::before{content:"";position:absolute;left:calc(-1 * var(--pc));width:calc(var(--pc) - 12px);top:calc(.55em - 9px);height:18px;background:linear-gradient(180deg,#0B5753,#2BB5AB 40%,#8FE6DC 52%,#1A8F89 72%,#0B5753)}
+h2::after{content:"";position:absolute;left:calc(-1 * var(--pc) - 9px);top:calc(.55em - 17px);width:calc(var(--pw) + 18px);height:34px;background:#0E6E69;border-radius:5px;box-shadow:inset 0 0 0 3px rgba(143,230,220,.35)}
+.layer p{max-width:36em;margin:0 0 1rem;color:var(--fg2)}
+.layer p.lead{font-size:1.2rem;color:var(--fg)}.stone p.lead{font-size:clamp(1.35rem,2.6vw,1.9rem);line-height:1.35;font-family:var(--slab);font-weight:600;max-width:24em}
+.rows{display:grid;gap:1.6rem 3rem;margin:2.2rem 0 0;padding:0;list-style:none;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));max-width:52rem}
+.rows li{padding-left:1.7rem;position:relative}
+.rows li::before{content:"";position:absolute;left:0;top:.55em;width:.8rem;height:.8rem;border-radius:50%;border:3px solid var(--water);background:transparent}
+.rows h3{font-family:var(--slab);font-size:1.4rem;line-height:1.2;margin:0 0 .3rem;color:var(--fg)}
+.rows p{margin:0;font-size:1rem}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:3rem;align-items:center}
+.clog{width:100%;height:auto;display:block;border-radius:6px}
+.big{font-family:var(--slab);font-weight:600;font-size:clamp(1.7rem,3.4vw,2.5rem);line-height:1.15;margin:1.6rem 0 .4rem;color:var(--fg)}
 
-.hero{position:relative;padding:72px 0 64px;overflow:hidden;
-  background:
-    linear-gradient(180deg,transparent 40%,var(--bg)),
-    var(--hero-img,none) center/cover,
-    repeating-linear-gradient(135deg,color-mix(in srgb,var(--accent) 9%,transparent) 0 18px,transparent 18px 36px),
-    var(--bg)}
-.hero::after{content:"";position:absolute;inset:0;background:color-mix(in srgb,var(--bg) 55%,transparent);z-index:0}
-.hero-in{position:relative;z-index:1}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;font-weight:800;color:var(--accent);margin:0 0 14px}
-.hero h1{font-size:clamp(2.6rem,11vw,5.6rem)}
-.lede{font-size:1.15rem;color:var(--muted);max-width:34ch;margin:0 0 28px}
-.cta-row{display:flex;flex-wrap:wrap;gap:12px}
-.status{margin:22px 0 0;font-weight:600;color:var(--muted);min-height:1.6em;display:flex;align-items:center;gap:8px}
-.dot{width:10px;height:10px;border-radius:50%;background:#c2524a;display:inline-block}
-.dot.open{background:#4caf6e;box-shadow:0 0 0 4px rgba(76,175,110,.2)}
-@media (min-width:760px){.hero{padding:120px 0 100px}}
+.phone-big{display:inline-block;font-family:var(--slab);font-weight:700;font-size:clamp(2.4rem,7vw,4.6rem);line-height:1.05;color:#fff;text-decoration:none;margin:.4rem 0 1.4rem;letter-spacing:-.01em;min-height:44px}
+.phone-big:hover{color:var(--water-l)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.5rem 3rem;margin-top:2.75rem;max-width:46rem}
+.facts h3{font-family:var(--slab);font-size:1.25rem;margin:0 0 .35rem;color:#fff}
+.facts p{margin:0 0 .35rem}
+.facts a{display:inline-block;padding:.6rem 0;min-height:44px}
+.hours{margin:0;padding:0;list-style:none}
+.hours li{display:flex;gap:1.5rem;justify-content:space-between;max-width:21rem;padding:.2rem 0}.hours li span:last-child{white-space:nowrap}
+.mainrow{position:relative;height:60px;background:var(--deep)}
+.main{position:absolute;left:var(--pipe-left);right:0;bottom:12px;height:36px;z-index:4;border-radius:0 0 0 18px;background:linear-gradient(180deg,#0B5753,#2BB5AB 40%,#8FE6DC 52%,#1A8F89 72%,#0B5753);box-shadow:0 0 0 1px rgba(0,0,0,.25)}
+.main::after{content:"";position:absolute;left:0;right:0;top:calc(50% - 3px);height:6px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.75) 0 10px,transparent 10px 34px);background-size:34px 6px;animation:flowx 1.8s linear infinite;opacity:.8}
+@keyframes flowx{to{background-position:34px 0}}
+footer{background:#061C20;color:#B4CFCD;font-size:.9rem;padding:1.6rem 0 2rem}
+footer p{margin:0 0 .4rem;max-width:44rem}
+footer a{color:#fff}
+.callbar{display:none}
 
-.section{padding:64px 0}
-.section.alt{background:var(--surface)}
-.svc-list{list-style:none;padding:0;margin:0;display:grid;gap:4px 48px}
-@media (min-width:760px){.svc-list{grid-template-columns:1fr 1fr}}
-.svc{padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.svc-top{display:flex;align-items:baseline;gap:10px}
-.svc h3{font-family:var(--font);font-weight:800;font-size:1.1rem;margin:0}
-.dots{flex:1;border-bottom:2px dotted color-mix(in srgb,var(--text) 25%,transparent);transform:translateY(-4px)}
-.svc strong{color:var(--accent);font-size:1.15rem}
-.svc p{margin:4px 0 0;color:var(--muted);font-size:.95rem}
-.dur{white-space:nowrap}
-.note{color:var(--muted);font-size:.85rem;margin-top:20px}
-.menu-section{font-family:var(--display);font-size:1.3rem;color:var(--accent);margin:36px 0 4px;text-transform:uppercase;letter-spacing:.06em}
-.menu-section:first-of-type{margin-top:8px}
-
-.two-col{display:grid;gap:48px}
-@media (min-width:860px){.two-col{grid-template-columns:1fr 1fr;align-items:start}}
-.chips{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
-.chips li{border:1px solid color-mix(in srgb,var(--accent) 50%,transparent);color:var(--accent);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:600}
-.one-col{max-width:720px}
-.reviews{display:grid;gap:16px;align-content:start}
-.rating{display:flex;align-items:center;gap:10px;text-decoration:none;background:var(--bg);border-radius:16px;padding:18px 22px;border-left:4px solid var(--accent)}
-.rating svg{width:28px;height:28px;color:var(--accent)}
-.rating strong{font-family:var(--display);font-size:1.8rem;line-height:1}
-.rating span{color:var(--muted);font-size:.9rem}
-.review{margin:0;background:var(--bg);border-radius:16px;padding:20px 22px;border-left:4px solid var(--accent)}
-.review blockquote{margin:0 0 8px;font-size:1.05rem}
-.review figcaption{color:var(--muted);font-size:.85rem}
-
-.grid-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:8px;padding:8px 0}
-.grid-g img{aspect-ratio:1;object-fit:cover;border-radius:10px}
-
-.hours{width:100%;border-collapse:collapse}
-.hours th,.hours td{text-align:left;padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.hours th{font-weight:600}
-.hours td{text-align:right;color:var(--muted)}
-.hours tr.today th,.hours tr.today td{color:var(--accent);font-weight:800}
-address{font-style:normal;display:grid;gap:10px;margin-bottom:20px}
-address a{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600}
-address a:hover{color:var(--accent)}
-.map{border-radius:16px;overflow:hidden;aspect-ratio:4/3;background:var(--surface)}
-.map iframe{width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
-
-.book-band{background:var(--accent);color:var(--accent-text)}
-.band-in{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
-.band-in h2{margin:0}
-.book-band .btn{background:var(--accent-text);color:var(--accent)}
-
-.foot{padding:28px 0;color:var(--muted);font-size:.88rem}
-.foot-in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-.foot p{margin:0}
-.socials{display:flex;gap:16px}
-
-.mobile-bar{position:fixed;inset:auto 0 0 0;z-index:30;display:grid;grid-template-columns:1fr 1.3fr 1fr;background:var(--surface);border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent);padding-bottom:env(safe-area-inset-bottom)}
-.mobile-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-height:64px;text-decoration:none;font-size:.78rem;font-weight:700}
-.mobile-bar a.primary{background:var(--accent);color:var(--accent-text)}
-.mobile-bar svg{width:22px;height:22px}
-@media (min-width:760px){.mobile-bar{display:none}}
-
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+@media (max-width:860px){
+  .sky .wrap{grid-template-columns:1fr}
+  .house{max-width:300px;margin:0 0 0 auto}
+  .hero-text{padding-bottom:1.5rem}
+  .split{grid-template-columns:1fr;gap:2rem}
+}
+@media (max-width:640px){
+  :root{--pw:20px;--gut:58px}
+  .wrap{padding-right:18px}
+  .brand{margin-bottom:2rem}
+  .layer{padding:4.5rem 0 3.5rem}
+  .phone-big{font-size:clamp(2.1rem,10.5vw,2.8rem)}
+  .btn{width:100%}
+  body{padding-bottom:72px}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;min-height:56px;align-items:center;justify-content:center;gap:.5rem;background:var(--water);color:#031C1B;font-family:var(--slab);font-weight:700;font-size:1.3rem;text-decoration:none;border-top:4px solid var(--water-d)}
+  h2::before{height:14px;top:calc(.55em - 7px)}
+  h2::after{width:calc(var(--pw) + 14px);left:calc(-1 * var(--pc) - 7px);height:28px;top:calc(.55em - 14px)}
+}
+@media (prefers-reduced-motion:reduce){
+  .pipe::after,.main::after{animation:none}
+  html{scroll-behavior:auto}
+  .btn{transition:none}
+}
 </style>
-<style>:root{--bg:#f2f5f9;--surface:#dde5ef;--text:#0f1a2a;--muted:#43526a;--accent:#1f4e8c;--accent-text:#ffffff;--font:'Source Sans 3', system-ui, sans-serif;--display:'Oswald', 'Source Sans 3', sans-serif}</style>
-
 </head>
 <body>
 <div class="demo-bar">Free preview made for Falls Sewer &amp; Drain Cleaning by <a href="https://iiciel.github.io/Portfolio" target="_blank" rel="noopener">Soliman A.</a> · not the official website</div>
-<header class="top">
-  <div class="wrap top-in">
-    <a class="logo" href="#top">Falls Sewer &amp; Drain Cleaning</a>
-    <nav aria-label="Main"><a href="#services">Services</a><a href="#hours">Hours</a><a href="#visit">Visit</a></nav>
-    <a class="btn btn-sm" href="tel:3309201266">Call for a quote</a>
+
+<header class="sky">
+  <div class="wrap">
+    <div class="hero-text">
+      <p class="brand">Falls Sewer &amp; Drain Cleaning</p>
+      <h1>Drain and sewer cleaning in Cuyahoga Falls</h1>
+      <p class="lede">Slow drains, backed-up sewer lines and the plumbing repairs around them, in older houses as well as newer ones. Call and describe the problem.</p>
+      <a class="btn" href="tel:+13309201266">Call (330) 920-1266</a>
+      <p class="hrs">Open Monday to Saturday, 9 am to 5 pm.</p>
+    </div>
+    <svg class="house" viewBox="0 0 360 250" role="img" aria-label="Drawing of an older two-story house with a porch">
+      <rect x="236" y="26" width="28" height="64" fill="#7B4E33"/>
+      <rect x="230" y="20" width="40" height="10" fill="#3A2A1F"/>
+      <polygon points="20,112 180,18 340,112" fill="#3A2A1F"/>
+      <rect x="40" y="108" width="280" height="142" fill="#CDB48F"/>
+      <g stroke="#B79B72" stroke-width="2"><path d="M40 128H320M40 148H320M40 168H320M40 188H320M40 208H320M40 228H320"/></g>
+      <rect x="64" y="124" width="44" height="58" fill="#F4E7C4" stroke="#3A2A1F" stroke-width="5"/>
+      <path d="M86 124V182M64 153H108" stroke="#3A2A1F" stroke-width="3"/>
+      <rect x="252" y="124" width="44" height="58" fill="#F4E7C4" stroke="#3A2A1F" stroke-width="5"/>
+      <path d="M274 124V182M252 153H296" stroke="#3A2A1F" stroke-width="3"/>
+      <polygon points="162,66 180,52 198,66 198,88 162,88" fill="#F4E7C4" stroke="#3A2A1F" stroke-width="4"/>
+      <rect x="40" y="196" width="190" height="8" fill="#3A2A1F"/>
+      <rect x="40" y="204" width="190" height="46" fill="#B79B72"/>
+      <rect x="150" y="206" width="48" height="44" fill="#7B4E33" stroke="#3A2A1F" stroke-width="4"/>
+      <circle cx="190" cy="230" r="3" fill="#F4E7C4"/>
+      <rect x="46" y="204" width="8" height="46" fill="#3A2A1F"/>
+      <rect x="216" y="204" width="8" height="46" fill="#3A2A1F"/>
+      <rect x="130" y="244" width="88" height="6" fill="#8C8F8F"/>
+      <rect x="246" y="198" width="74" height="52" fill="#6F7478"/>
+      <path d="M246 214H320M246 232H320M270 198V214M296 214V232M270 232V250" stroke="#565D61" stroke-width="2"/>
+    </svg>
   </div>
+  <div class="riser" aria-hidden="true"></div>
 </header>
 
-<main id="top">
-  <section class="hero">
-    <div class="wrap hero-in">
-      <p class="eyebrow">Sewer &amp; drain cleaning · Cuyahoga Falls</p>
-      <h1>Drain backed up?<br>Call Falls Sewer &amp; Drain.</h1>
-      <p class="lede">Drain and sewer cleaning plus plumbing repairs from Lehigh Ave in Cuyahoga Falls, including older plumbing. Call for a quote.</p>
-      <div class="cta-row">
-        <a class="btn" href="tel:3309201266"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call for a quote</a>
-        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=229%20Lehigh%20Ave%2C%20Cuyahoga%20Falls%2C%20OH%2044221" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Directions</a>
-      </div>
-      <p class="status" id="open-status" aria-live="polite"></p>
-    </div>
-  </section>
+<main class="strata">
+  <div class="pipe" aria-hidden="true"></div>
 
-  <section id="services" class="section">
+  <section class="layer loam" id="fixtures">
     <div class="wrap">
-      <h2>Services</h2>
-      <ul class="svc-list">
-        <li class="svc">
-          <div class="svc-top"><h3>Drain cleaning</h3></div>
+      <h2>Faucets, toilets and other small repairs</h2>
+      <p class="lead">The jobs inside the house: the ones that drip, run on, or won&rsquo;t drain.</p>
+      <ul class="rows">
+        <li><h3>Faucets and fixtures</h3><p>Leaking faucets, sinks and toilets repaired or replaced.</p></li>
+        <li><h3>Garbage disposals</h3><p>Garbage disposal repair and replacement.</p></li>
+        <li><h3>Water valves</h3><p>Main water valve replacement and other valve work.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="layer clay" id="drains">
+    <svg class="edge" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40V18C60 6 110 26 190 14S320 2 400 16S560 30 650 12S800 4 880 20S1050 28 1130 10L1200 16V40Z"/></svg>
+    <div class="wrap">
+      <h2>Slow drains and backed-up sewer lines</h2>
+      <div class="split">
+        <div>
+          <p class="lead">This is the main work at Falls Sewer &amp; Drain Cleaning.</p>
+          <p class="big">Drain cleaning</p>
           <p>Clogged kitchen and bathroom drains cleared.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Sewer line cleaning</h3></div>
+          <p class="big">Sewer line cleaning</p>
           <p>Sewer cleaning for slow or backed-up drains.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Faucets &amp; fixtures</h3></div>
-          <p>Leaking faucets, sinks and toilets repaired or replaced.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Garbage disposals</h3></div>
-          <p>Garbage disposal repair and replacement.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Water valves</h3></div>
-          <p>Main water valve replacement and other valve work.</p>
-        </li>
-        <li class="svc">
-          <div class="svc-top"><h3>Older plumbing</h3></div>
-          <p>Experienced with older plumbing systems as well as newer ones.</p>
-        </li></ul>
-      <p class="note">Every job is different. Call (330) 920-1266 to describe the problem and get a quote.</p>
+        </div>
+        <svg class="clog" viewBox="0 0 420 150" role="img" aria-label="Drawing of a pipe, blocked on the left and running clear on the right">
+          <rect width="420" height="150" fill="#5E3B26"/>
+          <rect x="0" y="34" width="420" height="82" fill="#B9B3A8"/>
+          <rect x="0" y="46" width="420" height="58" fill="#2A1A10"/>
+          <path d="M0 46H420M0 104H420" stroke="#8C867B" stroke-width="3"/>
+          <path d="M16 76C40 62 66 68 90 62S140 70 158 80C170 98 140 104 110 104H16Z" fill="#8C7A5B"/>
+          <circle cx="60" cy="88" r="9" fill="#6F5F45"/><circle cx="104" cy="92" r="7" fill="#A3916F"/><circle cx="132" cy="82" r="6" fill="#6F5F45"/>
+          <path d="M200 104H420V82C390 72 360 90 330 82S270 74 240 84S206 90 200 86Z" fill="#2BB5AB"/>
+          <path d="M214 90C240 82 270 90 300 84S360 80 420 86" fill="none" stroke="#8FE6DC" stroke-width="3"/>
+          <rect x="250" y="26" width="16" height="98" fill="#9A948A"/><rect x="250" y="26" width="16" height="98" fill="none" stroke="#8C867B" stroke-width="2"/>
+        </svg>
+      </div>
     </div>
   </section>
 
-  <section class="section alt">
-    <div class="wrap one-col">
-      <div>
-        <h2>Cuyahoga Falls&#39; sewer &amp; drain people.</h2>
-        <p>Falls Sewer &amp; Drain Cleaning works out of Lehigh Ave in Cuyahoga Falls. The focus is drain and sewer cleaning, along with everyday plumbing repairs like faucets, toilets, sinks, garbage disposals and water valves, in newer homes and older ones. Call (330) 920-1266 Monday through Saturday to describe the problem.</p>
-        <ul class="chips"><li>Drain &amp; sewer cleaning</li><li>Plumbing repairs</li><li>Older plumbing welcome</li><li>Open Saturdays 9am–5pm</li></ul>
-      </div>
-      
+  <section class="layer stone" id="older">
+    <svg class="edge" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40V10C90 24 150 4 260 16S420 28 520 10S700 2 790 18S980 30 1070 12L1200 20V40Z"/></svg>
+    <div class="wrap">
+      <h2>Older houses, older pipes</h2>
+      <p class="lead">Falls Sewer &amp; Drain Cleaning is experienced with older plumbing systems as well as newer ones.</p>
+      <p>If your house isn&rsquo;t new, just say so when you call.</p>
     </div>
   </section>
-  
 
-  <section id="hours" class="section">
-    <div class="wrap two-col">
-      <div>
-        <h2>Hours</h2>
-        <table class="hours"><tbody>
-        <tr data-day="1" data-slots="09:00-17:00-5pm">
-          <th scope="row">Monday</th>
-          <td>9am – 5pm</td>
-        </tr>
-        <tr data-day="2" data-slots="09:00-17:00-5pm">
-          <th scope="row">Tuesday</th>
-          <td>9am – 5pm</td>
-        </tr>
-        <tr data-day="3" data-slots="09:00-17:00-5pm">
-          <th scope="row">Wednesday</th>
-          <td>9am – 5pm</td>
-        </tr>
-        <tr data-day="4" data-slots="09:00-17:00-5pm">
-          <th scope="row">Thursday</th>
-          <td>9am – 5pm</td>
-        </tr>
-        <tr data-day="5" data-slots="09:00-17:00-5pm">
-          <th scope="row">Friday</th>
-          <td>9am – 5pm</td>
-        </tr>
-        <tr data-day="6" data-slots="09:00-17:00-5pm">
-          <th scope="row">Saturday</th>
-          <td>9am – 5pm</td>
-        </tr>
-        <tr data-day="0" data-slots="">
-          <th scope="row">Sunday</th>
-          <td>Closed</td>
-        </tr></tbody></table>
-      </div>
-      <div id="visit">
-        <h2>Visit</h2>
-        <address>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=229%20Lehigh%20Ave%2C%20Cuyahoga%20Falls%2C%20OH%2044221" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>229 Lehigh Ave, Cuyahoga Falls, OH 44221</a>
-          <a href="tel:3309201266"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>(330) 920-1266</a>
-          
-        </address>
-        <div class="map">
-          <iframe title="Map to Falls Sewer &amp; Drain Cleaning" src="https://www.google.com/maps?q=Falls%20Sewer%20%26%20Drain%20Cleaning%2C%20229%20Lehigh%20Ave%2C%20Cuyahoga%20Falls%2C%20OH%2044221&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <section class="layer water" id="call">
+    <svg class="edge" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40V20C70 8 140 28 240 16S400 4 500 18S690 30 780 12S990 6 1080 22L1200 14V40Z"/></svg>
+    <div class="wrap">
+      <h2>Call and describe the problem</h2>
+      <p class="lead">Every job is different. Call to describe it and get a quote.</p>
+      <a class="phone-big" href="tel:+13309201266">(330) 920-1266</a>
+      <div class="facts">
+        <div>
+          <h3>Hours</h3>
+          <ul class="hours">
+            <li><span>Monday to Saturday</span><span>9 am to 5 pm</span></li>
+            <li><span>Sunday</span><span>Closed</span></li>
+          </ul>
+          <p>Hours come from a business directory. Call to confirm.</p>
+        </div>
+        <div>
+          <h3>Where</h3>
+          <p>Based in Cuyahoga Falls, Ohio.</p>
+          <a href="https://www.facebook.com/p/Falls-Sewer-Drain-61555732370920/" target="_blank" rel="noopener">Falls Sewer &amp; Drain on Facebook</a>
         </div>
       </div>
     </div>
   </section>
-
-  <section class="section book-band">
-    <div class="wrap band-in">
-      <h2>Slow drain or sewer backup? Call Falls Sewer &amp; Drain.</h2>
-      <a class="btn" href="tel:3309201266"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>Call for a quote</a>
-    </div>
-  </section>
+  <div class="mainrow"><div class="main" aria-hidden="true"></div></div>
 </main>
 
-<footer class="foot">
-  <div class="wrap foot-in">
-    <p>© <span id="yr"></span> Falls Sewer &amp; Drain Cleaning</p>
-    <p class="socials"><a href="https://www.facebook.com/p/Falls-Sewer-Drain-61555732370920/" rel="noopener" target="_blank">Facebook</a></p>
+<footer>
+  <div class="wrap">
+    <p>Preview by Soliman A., University of Akron. Not affiliated with Falls Sewer &amp; Drain Cleaning.</p>
+    <p>Drawings are illustrations, not photos of the business.</p>
   </div>
 </footer>
 
-<nav class="mobile-bar" aria-label="Quick actions">
-  <a href="tel:3309201266"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg><span>Call</span></a>
-  <a href="https://www.google.com/maps/dir/?api=1&destination=229%20Lehigh%20Ave%2C%20Cuyahoga%20Falls%2C%20OH%2044221" target="_blank" rel="noopener" class="primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Directions</span></a>
-  <a href="#hours"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zm-2 8h14v10H5z"/></svg><span>Hours</span></a>
-</nav>
-
-<script>
-(function(){
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  // "Open now" uses the shop's own time zone, not the visitor's clock.
-  var parts={};
-  new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',weekday:'long',hour:'2-digit',minute:'2-digit',hourCycle:'h23'})
-    .formatToParts(new Date()).forEach(function(p){parts[p.type]=p.value});
-  var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-  var day=days.indexOf(parts.weekday),mins=(+parts.hour)*60+(+parts.minute);
-  var toMin=function(s){var p=s.split(':');return +p[0]*60+ +p[1]};
-  var rows=document.querySelectorAll('.hours tr'),el=document.getElementById('open-status'),msg='';
-  rows.forEach(function(r){
-    if(+r.dataset.day!==day)return;
-    r.classList.add('today');
-    // data-slots: "09:00-13:30-1:30pm,16:00-19:30-7:30pm" (split shifts allowed)
-    msg='<span class="dot"></span>Closed now';
-    (r.dataset.slots||'').split(',').forEach(function(s){
-      var p=s.split('-');
-      if(p[0]&&mins>=toMin(p[0])&&mins<toMin(p[1]))msg='<span class="dot open"></span>Open now · until '+p[2];
-    });
-  });
-  el.innerHTML=msg;
-})();
-</script>
+<a class="callbar" href="tel:+13309201266">Call (330) 920-1266</a>
 </body>
 </html>
